@@ -263,7 +263,10 @@ function increment(team, field) {
 
 function recordMatchup(matchId, home, away) {
   const key = `${matchId}|${home}|${away}`;
-  matchupCounters.set(key, (matchupCounters.get(key) || 0) + 1);
+  if (!matchupCounters.has(key)) {
+    matchupCounters.set(key, { count: 0, homeWins: 0, awayWins: 0 });
+  }
+  return matchupCounters.get(key);
 }
 
 for (let iteration = 0; iteration < SIMULATIONS; iteration += 1) {
@@ -289,8 +292,11 @@ for (let iteration = 0; iteration < SIMULATIONS; iteration += 1) {
     const home = slots[homeSlot];
     const thirdSlot = thirdAllocation[homeSlot];
     const away = awaySlot === "third" ? slots[thirdSlot] : slots[awaySlot];
-    recordMatchup(matchId, home, away);
+    const matchup = recordMatchup(matchId, home, away);
+    matchup.count += 1;
     winners[matchId] = sampleKnockoutWinner(home, away);
+    if (winners[matchId] === home) matchup.homeWins += 1;
+    else matchup.awayWins += 1;
     increment(winners[matchId], "roundOf16");
   }
 
@@ -299,8 +305,11 @@ for (let iteration = 0; iteration < SIMULATIONS; iteration += 1) {
     for (const [matchId, homeSource, awaySource] of laterRounds[stage]) {
       const home = winners[homeSource];
       const away = winners[awaySource];
-      recordMatchup(matchId, home, away);
+      const matchup = recordMatchup(matchId, home, away);
+      matchup.count += 1;
       winners[matchId] = sampleKnockoutWinner(home, away);
+      if (winners[matchId] === home) matchup.homeWins += 1;
+      else matchup.awayWins += 1;
       increment(winners[matchId], stageFields[stage]);
     }
   }
@@ -327,15 +336,26 @@ const teams = [...counters.entries()]
   .map((team, index) => ({ rank: index + 1, ...team }));
 
 const projectedMatches = {};
-for (const [key, count] of matchupCounters) {
+for (const [key, counts] of matchupCounters) {
   const [matchId, home, away] = key.split("|");
-  if (!projectedMatches[matchId] || count > projectedMatches[matchId].count) {
+  if (
+    !projectedMatches[matchId] ||
+    counts.count > projectedMatches[matchId].count
+  ) {
     projectedMatches[matchId] = {
       matchId,
       home: displayName(home),
       away: displayName(away),
-      probability: percent(count),
-      count,
+      probability: percent(counts.count),
+      homeWinProbability:
+        Math.round((counts.homeWins / counts.count) * 1000) / 10,
+      awayWinProbability:
+        Math.round((counts.awayWins / counts.count) * 1000) / 10,
+      predictedWinner:
+        counts.homeWins >= counts.awayWins
+          ? displayName(home)
+          : displayName(away),
+      count: counts.count,
     };
   }
 }

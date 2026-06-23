@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T12:43:36.630Z",
+  "generatedAt": "2026-06-23T13:59:22.108Z",
   "status": "tournament_simulation_validated",
   "simulations": 100000,
   "seed": 20260623,
@@ -768,187 +768,280 @@
       "matchId": "M73",
       "home": "Korea Republic",
       "away": "Switzerland",
-      "probability": 38.4
+      "probability": 38.4,
+      "homeWinProbability": 49.4,
+      "awayWinProbability": 50.6,
+      "predictedWinner": "Switzerland"
     },
     "M74": {
       "matchId": "M74",
       "home": "Germany",
       "away": "Paraguay",
-      "probability": 30.9
+      "probability": 30.9,
+      "homeWinProbability": 69.7,
+      "awayWinProbability": 30.3,
+      "predictedWinner": "Germany"
     },
     "M75": {
       "matchId": "M75",
       "home": "Japan",
       "away": "Morocco",
-      "probability": 26.9
+      "probability": 26.9,
+      "homeWinProbability": 46.5,
+      "awayWinProbability": 53.5,
+      "predictedWinner": "Morocco"
     },
     "M76": {
       "matchId": "M76",
       "home": "Brazil",
       "away": "Netherlands",
-      "probability": 27.4
+      "probability": 27.4,
+      "homeWinProbability": 48.8,
+      "awayWinProbability": 51.2,
+      "predictedWinner": "Netherlands"
     },
     "M77": {
       "matchId": "M77",
       "home": "France",
       "away": "Sweden",
-      "probability": 35.3
+      "probability": 35.3,
+      "homeWinProbability": 70.9,
+      "awayWinProbability": 29.1,
+      "predictedWinner": "France"
     },
     "M78": {
       "matchId": "M78",
       "home": "Côte d'Ivoire",
       "away": "Norway",
-      "probability": 41.5
+      "probability": 41.5,
+      "homeWinProbability": 45.2,
+      "awayWinProbability": 54.8,
+      "predictedWinner": "Norway"
     },
     "M79": {
       "matchId": "M79",
       "home": "Mexico",
       "away": "Scotland",
-      "probability": 29.5
+      "probability": 29.5,
+      "homeWinProbability": 64.5,
+      "awayWinProbability": 35.5,
+      "predictedWinner": "Mexico"
     },
     "M80": {
       "matchId": "M80",
       "home": "England",
       "away": "Congo DR",
-      "probability": 15.6
+      "probability": 15.6,
+      "homeWinProbability": 68.9,
+      "awayWinProbability": 31.1,
+      "predictedWinner": "England"
     },
     "M81": {
       "matchId": "M81",
       "home": "USA",
       "away": "Bosnia and Herzegovina",
-      "probability": 42.9
+      "probability": 42.9,
+      "homeWinProbability": 66.1,
+      "awayWinProbability": 33.9,
+      "predictedWinner": "USA"
     },
     "M82": {
       "matchId": "M82",
       "home": "Egypt",
       "away": "Korea Republic",
-      "probability": 13.8
+      "probability": 13.8,
+      "homeWinProbability": 47.8,
+      "awayWinProbability": 52.2,
+      "predictedWinner": "Korea Republic"
     },
     "M83": {
       "matchId": "M83",
       "home": "Portugal",
       "away": "Ghana",
-      "probability": 12.9
+      "probability": 12.9,
+      "homeWinProbability": 70.9,
+      "awayWinProbability": 29.1,
+      "predictedWinner": "Portugal"
     },
     "M84": {
       "matchId": "M84",
       "home": "Spain",
       "away": "Austria",
-      "probability": 49.4
+      "probability": 49.4,
+      "homeWinProbability": 60,
+      "awayWinProbability": 40,
+      "predictedWinner": "Spain"
     },
     "M85": {
       "matchId": "M85",
       "home": "Canada",
       "away": "IR Iran",
-      "probability": 15.8
+      "probability": 15.8,
+      "homeWinProbability": 49.2,
+      "awayWinProbability": 50.8,
+      "predictedWinner": "IR Iran"
     },
     "M86": {
       "matchId": "M86",
       "home": "Argentina",
       "away": "Cabo Verde",
-      "probability": 53.6
+      "probability": 53.6,
+      "homeWinProbability": 83,
+      "awayWinProbability": 17,
+      "predictedWinner": "Argentina"
     },
     "M87": {
       "matchId": "M87",
       "home": "Colombia",
       "away": "Ghana",
-      "probability": 14.1
+      "probability": 14.1,
+      "homeWinProbability": 69.7,
+      "awayWinProbability": 30.3,
+      "predictedWinner": "Colombia"
     },
     "M88": {
       "matchId": "M88",
       "home": "Australia",
       "away": "Belgium",
-      "probability": 34
+      "probability": 34,
+      "homeWinProbability": 41.9,
+      "awayWinProbability": 58.1,
+      "predictedWinner": "Belgium"
     },
     "M89": {
       "matchId": "M89",
       "home": "Germany",
       "away": "France",
-      "probability": 23.8
+      "probability": 23.8,
+      "homeWinProbability": 50.6,
+      "awayWinProbability": 49.4,
+      "predictedWinner": "Germany"
     },
     "M90": {
       "matchId": "M90",
       "home": "Switzerland",
       "away": "Morocco",
-      "probability": 13.1
+      "probability": 13.1,
+      "homeWinProbability": 32.2,
+      "awayWinProbability": 67.8,
+      "predictedWinner": "Morocco"
     },
     "M91": {
       "matchId": "M91",
       "home": "Netherlands",
       "away": "Norway",
-      "probability": 8.7
+      "probability": 8.7,
+      "homeWinProbability": 50.4,
+      "awayWinProbability": 49.6,
+      "predictedWinner": "Netherlands"
     },
     "M92": {
       "matchId": "M92",
       "home": "Mexico",
       "away": "England",
-      "probability": 27.2
+      "probability": 27.2,
+      "homeWinProbability": 40.9,
+      "awayWinProbability": 59.1,
+      "predictedWinner": "England"
     },
     "M93": {
       "matchId": "M93",
       "home": "Portugal",
       "away": "Spain",
-      "probability": 9.1
+      "probability": 9.1,
+      "homeWinProbability": 40.3,
+      "awayWinProbability": 59.7,
+      "predictedWinner": "Spain"
     },
     "M94": {
       "matchId": "M94",
       "home": "USA",
       "away": "Egypt",
-      "probability": 17.4
+      "probability": 17.4,
+      "homeWinProbability": 48.6,
+      "awayWinProbability": 51.4,
+      "predictedWinner": "Egypt"
     },
     "M95": {
       "matchId": "M95",
       "home": "Argentina",
       "away": "Australia",
-      "probability": 27
+      "probability": 27,
+      "homeWinProbability": 75.6,
+      "awayWinProbability": 24.4,
+      "predictedWinner": "Argentina"
     },
     "M96": {
       "matchId": "M96",
       "home": "Canada",
       "away": "Colombia",
-      "probability": 12.3
+      "probability": 12.3,
+      "homeWinProbability": 49.2,
+      "awayWinProbability": 50.8,
+      "predictedWinner": "Colombia"
     },
     "M97": {
       "matchId": "M97",
       "home": "Germany",
       "away": "Morocco",
-      "probability": 8.3
+      "probability": 8.3,
+      "homeWinProbability": 40.5,
+      "awayWinProbability": 59.5,
+      "predictedWinner": "Morocco"
     },
     "M98": {
       "matchId": "M98",
       "home": "Spain",
       "away": "USA",
-      "probability": 8.5
+      "probability": 8.5,
+      "homeWinProbability": 70.4,
+      "awayWinProbability": 29.6,
+      "predictedWinner": "Spain"
     },
     "M99": {
       "matchId": "M99",
       "home": "Norway",
       "away": "England",
-      "probability": 4.9
+      "probability": 4.9,
+      "homeWinProbability": 40.1,
+      "awayWinProbability": 59.9,
+      "predictedWinner": "England"
     },
     "M100": {
       "matchId": "M100",
       "home": "Argentina",
       "away": "Canada",
-      "probability": 12.1
+      "probability": 12.1,
+      "homeWinProbability": 71.1,
+      "awayWinProbability": 28.9,
+      "predictedWinner": "Argentina"
     },
     "M101": {
       "matchId": "M101",
       "home": "Germany",
       "away": "Spain",
-      "probability": 4.1
+      "probability": 4.1,
+      "homeWinProbability": 41.9,
+      "awayWinProbability": 58.1,
+      "predictedWinner": "Spain"
     },
     "M102": {
       "matchId": "M102",
       "home": "England",
       "away": "Argentina",
-      "probability": 7.7
+      "probability": 7.7,
+      "homeWinProbability": 38.4,
+      "awayWinProbability": 61.6,
+      "predictedWinner": "Argentina"
     },
     "M104": {
       "matchId": "M104",
       "home": "Spain",
       "away": "Argentina",
-      "probability": 3.8
+      "probability": 3.8,
+      "homeWinProbability": 40.5,
+      "awayWinProbability": 59.5,
+      "predictedWinner": "Argentina"
     }
   }
 }

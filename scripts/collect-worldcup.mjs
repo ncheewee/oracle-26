@@ -21,7 +21,7 @@ async function collectFixtures(page) {
   await waitForContent(page, 'a[href*="/match-centre/match/"]');
 
   return page.locator('a[href*="/match-centre/match/"]').evaluateAll((nodes) =>
-    nodes.map((node) => {
+    nodes.map((node, index) => {
       const teams = [...node.querySelectorAll('[class*="match-row_team__"]')];
       const getTeam = (team) => ({
         name:
@@ -46,6 +46,7 @@ async function collectFixtures(page) {
 
       return {
         id: node.getAttribute("href")?.split("/").pop(),
+        matchNumber: index + 1,
         url: new URL(node.getAttribute("href"), location.origin).href,
         home: getTeam(teams[0]),
         away: getTeam(teams[1]),

@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=phase3" />
+    <link rel="stylesheet" href="./styles.css?v=phase4" />
   </head>
   <body>
     <div class="noise"></div>
@@ -51,6 +51,7 @@
           <div><span>LAST VERIFIED</span><strong id="last-updated">—</strong></div>
           <div><span>SOURCE</span><strong>FIFA + OPEN DATA</strong></div>
           <div class="live-pill"><i></i> LIVE DATA</div>
+          <button id="refresh-data" class="refresh-button" type="button">↻ CHECK LATEST</button>
         </div>
       </header>
 
@@ -101,13 +102,30 @@
             <div id="integrity-chart" class="integrity-chart loading-block"></div>
           </article>
         </div>
+        <div class="intelligence-grid">
+          <article class="panel winner-intelligence">
+            <div class="panel-title"><span>WHY THE MODEL FAVOURS <b id="intel-team">—</b></span><small>EXPLAINABLE INTELLIGENCE</small></div>
+            <div class="advancement-funnel" id="advancement-funnel"></div>
+            <div class="driver-grid" id="winner-drivers"></div>
+          </article>
+          <article class="panel latest-signal">
+            <div class="panel-title"><span>LATEST VERIFIED SIGNAL</span><small id="freshness-label">CHECKING AGE</small></div>
+            <div id="latest-signal-content"></div>
+            <div id="refresh-status" class="refresh-status">Snapshot loaded from the verified pipeline.</div>
+          </article>
+          <article class="panel market-lens">
+            <div class="panel-title"><span>SINGAPORE POOLS MARKET LENS</span><small>MODEL VALUE ≠ GUARANTEE</small></div>
+            <div id="market-watchlist"></div>
+            <p class="safer-play">The safest bet is no bet. If gambling, use only discretionary money and set a hard limit. NCPG: 1800-6-668-668.</p>
+          </article>
+        </div>
       </section>
 
       <section id="bracket" class="view">
         <div class="notice-strip"><i></i><strong>VALIDATED TOURNAMENT SIMULATION</strong><span>Official 495-case third-place allocation mapping applied.</span></div>
         <article class="panel bracket-panel">
-          <div class="panel-title"><span>PROJECTED ROUND OF 32</span><small>MOST FREQUENT MATCHUP PER SLOT</small></div>
-          <div id="projected-bracket" class="projected-bracket loading-block"></div>
+          <div class="panel-title"><span>FULL TOURNAMENT BRACKET</span><small>COMPLETED RESULTS + MOST LIKELY PATH</small></div>
+          <div id="full-bracket" class="full-bracket loading-block"></div>
         </article>
         <div class="section-heading"><span>LIVE GROUP TABLES</span><small>OFFICIAL CURRENT STATE</small></div>
         <div id="group-grid" class="group-grid loading-block"></div>
@@ -178,6 +196,6 @@
       </section>
     </main>
 
-    <script type="module" src="./app.js?v=phase3"></script>
+    <script type="module" src="./app.js?v=phase4"></script>
   </body>
 </html>
