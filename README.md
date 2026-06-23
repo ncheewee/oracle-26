@@ -44,12 +44,16 @@ Open `http://localhost:4173`.
 - Model methodology and release gates
 - Calibrated Elo-Poisson match probabilities
 - Held-out backtest performance metrics
+- 100,000-run tournament simulation
+- Official 495-case third-place allocation mapping
+- Team advancement and title probabilities
 - Scheduled six-hour browser collection
 - Automated GitHub Pages deployment
 
-Match predictions are published after passing the baseline validation gates.
-Exact tournament winner probability remains locked until the official 48-team
-bracket simulation is implemented and validated.
+Match and tournament predictions are published after passing their respective
+validation gates. The tournament engine completes the remaining group matches,
+ranks all third-place teams, applies FIFA's full Annex C allocation mapping and
+simulates every knockout round.
 
 ## Intended production architecture
 

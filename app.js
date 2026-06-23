@@ -11,6 +11,7 @@ const fmtDate = (iso) =>
 let worldCup;
 let audit;
 let model;
+let simulation;
 
 const aliases = {
   "Korea Republic": "South Korea",
@@ -94,27 +95,30 @@ function renderOverview() {
   $("#progress-percent").textContent = `${tournament.completedMatches} / ${tournament.totalMatches}`;
   $("#progress-bar").style.width = `${pct}%`;
 
-  if (model?.status === "baseline_validated") {
-    const favorite = model.provisionalFavorite;
-    $("#hero-overline").textContent = "PROVISIONAL TOURNAMENT FAVOURITE";
-    $("#hero-heading").innerHTML = `${favorite.name}<br><em>baseline leader</em>`;
+  if (simulation?.status === "tournament_simulation_validated") {
+    const favorite = simulation.winner;
+    $("#hero-overline").textContent = "PREDICTED TOURNAMENT WINNER";
+    $("#hero-heading").innerHTML =
+      `${favorite.name}<br><em>${favorite.probabilities.champion}% title chance</em>`;
     $("#hero-description").textContent =
-      `Highest current Elo-Poisson strength rating (${favorite.rating}). Exact title probability remains locked until the official bracket simulator is validated.`;
-    $("#orb-label").textContent = "ELO RATING";
-    $("#orb-value").textContent = favorite.rating;
-    $("#orb-note").textContent = "BASELINE V1";
+      `${simulation.simulations.toLocaleString()} seeded simulations using current standings, remaining group-match probabilities and all 495 official third-place allocations.`;
+    $("#orb-label").textContent = "WIN PROBABILITY";
+    $("#orb-value").textContent = `${favorite.probabilities.champion}%`;
+    $("#orb-note").textContent = `${favorite.probabilities.final}% MAKE FINAL`;
   }
 
-  const leaders = standings
-    .map((group) => ({ ...group.teams[0], group: group.group }))
-    .sort((a, b) => b.points - a.points || b.goalDifference - a.goalDifference)
-    .slice(0, 6);
+  const flagByName = new Map(
+    standings.flatMap((group) =>
+      group.teams.map((team) => [canonical(team.name), team.flag]),
+    ),
+  );
+  const leaders = simulation.teams.slice(0, 6);
   $("#leaders-list").innerHTML = leaders
     .map(
       (team) => `<div class="leader-row">
-        ${flag(team)}
-        <div><strong>${team.name}</strong><span>${team.group} · GD ${team.goalDifference > 0 ? "+" : ""}${team.goalDifference}</span></div>
-        <b>${team.points} PTS</b>
+        ${flag({ flag: flagByName.get(team.canonicalName) })}
+        <div><strong>${team.name}</strong><span>${team.probabilities.final}% final · ${team.probabilities.semifinal}% semi-final</span></div>
+        <b>${team.probabilities.champion}%</b>
       </div>`,
     )
     .join("");
@@ -160,6 +164,30 @@ function renderGroups() {
           )
           .join("")}
       </article>`,
+    )
+    .join("");
+}
+
+function renderBracket() {
+  const flagMap = new Map(
+    worldCup.standings.flatMap((group) =>
+      group.teams.map((team) => [team.name, team.flag]),
+    ),
+  );
+  $("#projected-bracket").innerHTML = Object.values(
+    simulation.projectedMatches,
+  )
+    .filter((match) => /^M(7[3-9]|8[0-8])$/.test(match.matchId))
+    .sort(
+      (a, b) =>
+        Number(a.matchId.slice(1)) - Number(b.matchId.slice(1)),
+    )
+    .map(
+      (match) => `<div class="bracket-match">
+        <div class="bracket-id"><span>${match.matchId}</span><b>${match.probability}% path frequency</b></div>
+        <div>${flag({ flag: flagMap.get(match.home) })}<strong>${match.home}</strong></div>
+        <div>${flag({ flag: flagMap.get(match.away) })}<strong>${match.away}</strong></div>
+      </div>`,
     )
     .join("");
 }
@@ -223,6 +251,26 @@ function renderComparison() {
       ["DEFENCE RATE", modelA.defence, modelB.defence],
     );
   }
+  const simA = simulation?.teams.find(
+    (team) => team.canonicalName === canonical(a.name),
+  );
+  const simB = simulation?.teams.find(
+    (team) => team.canonicalName === canonical(b.name),
+  );
+  if (simA && simB) {
+    stats.push(
+      [
+        "TITLE PROBABILITY",
+        `${simA.probabilities.champion}%`,
+        `${simB.probabilities.champion}%`,
+      ],
+      [
+        "FINAL PROBABILITY",
+        `${simA.probabilities.final}%`,
+        `${simB.probabilities.final}%`,
+      ],
+    );
+  }
   $("#comparison").innerHTML = `
     <div class="compare-header">
       <div class="compare-team">${flag(a)}<h2>${a.name}</h2><p>${a.group} · POSITION ${a.position}</p></div>
@@ -271,14 +319,16 @@ function renderModel() {
     const publicGate = $(".gate-list .locked");
     publicGate.className = "pass";
     publicGate.querySelector("i").textContent = "✓";
-    publicGate.querySelector("span").textContent = "Match predictions";
+    publicGate.querySelector("span").textContent = "Tournament predictions";
     publicGate.querySelector("strong").textContent = "LIVE";
+    const simulationStep = $$(".flow-step").at(-1);
+    simulationStep.className = "flow-step complete";
   }
 }
 
 async function boot() {
   try {
-    [worldCup, audit, model] = await Promise.all([
+    [worldCup, audit, model, simulation] = await Promise.all([
       fetch("./outputs/worldcup.json").then((response) => {
         if (!response.ok) throw new Error("World Cup feed unavailable");
         return response.json();
@@ -291,12 +341,17 @@ async function boot() {
         if (!response.ok) throw new Error("Model feed unavailable");
         return response.json();
       }),
+      fetch("./outputs/tournament-simulation.json").then((response) => {
+        if (!response.ok) throw new Error("Tournament simulation unavailable");
+        return response.json();
+      }),
     ]);
     $("#last-updated").textContent = fmtDate(worldCup.generatedAt).toUpperCase();
     $("#pipeline-status").textContent = `${audit.summary.verified} fields verified`;
 
     renderOverview();
     renderGroups();
+    renderBracket();
     renderMatches();
 
     const teams = allTeams();

@@ -7,7 +7,8 @@
     "audit": "node scripts/audit-data.mjs",
     "collect": "node scripts/collect-worldcup.mjs",
     "model": "node scripts/train-model.mjs",
-    "refresh": "pnpm run audit && pnpm run collect && pnpm run model",
+    "simulate": "node scripts/simulate-tournament.mjs",
+    "refresh": "pnpm run audit && pnpm run collect && pnpm run model && pnpm run simulate",
     "serve": "python3 -m http.server 4173",
     "test": "node --test"
   },
