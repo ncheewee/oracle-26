@@ -1,0 +1,16 @@
+{
+  "name": "oracle-26",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit": "node scripts/audit-data.mjs",
+    "collect": "node scripts/collect-worldcup.mjs",
+    "refresh": "pnpm run audit && pnpm run collect",
+    "serve": "python3 -m http.server 4173",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "generatedAt": "2026-06-23T07:42:12.552Z",
+  "summary": {
+    "verified": 34,
+    "derivable": 7,
+    "unavailable": 3,
+    "blocked": 3
+  },
+  "fifa": {
+    "fixtureLinks": 104,
+    "samples": [
+      {
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+        "fixture": "Known completed match",
+        "completed": true
+      },
+      {
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021456",
+        "fixture": "Known completed match",
+        "completed": true
+      },
+      {
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021490",
+        "fixture": "Known completed match",
+        "completed": true
+      },
+      {
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441",
+        "fixture": "KORKorea Republic2FT1CZECzechiaFirst Stage·Group A·Guadalajara Stadium(Guadalajara)",
+        "completed": true
+      },
+      {
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449",
+        "fixture": "CANCanada1FT1BIHBosnia and HerzegovinaFirst Stage·Group B·Toronto Stadium(Toronto)",
+        "completed": true
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "field": "fixtures",
+      "status": "verified",
+      "source": "FIFA rendered fixtures",
+      "detail": "Observed label: Match Fixtures",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "results",
+      "status": "verified",
+      "source": "FIFA rendered fixtures",
+      "detail": "Observed label: FT",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "kickoff",
+      "status": "verified",
+      "source": "FIFA rendered fixtures",
+      "detail": "Observed label: Match Time",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "stage",
+      "status": "verified",
+      "source": "FIFA rendered fixtures",
+      "detail": "Observed label: First Stage",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "group",
+      "status": "verified",
+      "source": "FIFA rendered fixtures",
+      "detail": "Observed label: Group",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "venue",
+      "status": "verified",
+      "source": "FIFA rendered fixtures",
+      "detail": "Observed label: Stadium",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "standings",
+      "status": "verified",
+      "source": "FIFA rendered standings",
+      "detail": "Checked standings table labels",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "official_ranking",
+      "status": "verified",
+      "source": "FIFA ranking",
+      "detail": "Last official update: 11 June 2026",
+      "url": "https://inside.fifa.com/fifa-world-ranking/men",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "lineups",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "events",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "possession",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "goals",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "attempts",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "shots_on_target",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "final_third_entries",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "offers_to_receive",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "line_breaks",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "cards",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "fouls",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "offsides",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "passes",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "crosses",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "corners",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "free_kicks",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "forced_turnovers",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "pressing",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "player_distance",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "player_speed",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "player_sprints",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "recent_form",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "head_to_head",
+      "status": "verified",
+      "source": "FIFA rendered match centre",
+      "detail": "Observed in 5/5 sampled matches",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "squad",
+      "status": "verified",
+      "source": "FIFA team pages",
+      "detail": "2 team links observed on sampled match page",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/canada",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "fifa_reuse_permission",
+      "status": "blocked",
+      "source": "FIFA Terms of Service",
+      "detail": "Terms restrict content reuse; legal review or written permission remains advisable",
+      "url": "https://www.fifa.com/terms-of-service",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "historical_event_training_data",
+      "status": "verified",
+      "source": "StatsBomb Open Data",
+      "detail": "11 World Cup competition-season records found",
+      "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "weather",
+      "status": "verified",
+      "source": "Open-Meteo",
+      "detail": "HTTP 200; venue coordinates must be mapped",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=19.4326&longitude=-99.1332&current=temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "backup_fixtures",
+      "status": "blocked",
+      "source": "football-data.org",
+      "detail": "HTTP 403; API token may be required",
+      "url": "https://api.football-data.org/v4/competitions/WC",
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "injuries",
+      "status": "unavailable",
+      "source": "Current audited sources",
+      "detail": "Not consistently structured across all teams and matches",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "player_availability",
+      "status": "unavailable",
+      "source": "Current audited sources",
+      "detail": "Not consistently structured across all teams and matches",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "expected_goals",
+      "status": "unavailable",
+      "source": "Current audited sources",
+      "detail": "Not consistently structured across all teams and matches",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "market_consensus",
+      "status": "blocked",
+      "source": "Licensed odds provider required",
+      "detail": "Excluded from initial public build",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "attack_rating",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "defence_rating",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "form_rating",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "match_probabilities",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "predicted_score",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "tournament_win_probability",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    },
+    {
+      "field": "model_confidence",
+      "status": "derivable",
+      "source": "ORACLE 26 model",
+      "detail": "Computed only from validated inputs and labelled as a model estimate",
+      "url": null,
+      "observedAt": "2026-06-23T07:42:12.552Z"
+    }
+  ]
+}

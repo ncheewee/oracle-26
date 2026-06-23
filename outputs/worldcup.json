@@ -1,0 +1,3032 @@
+{
+  "generatedAt": "2026-06-23T08:03:12.282Z",
+  "source": {
+    "name": "FIFA",
+    "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+    "fixturesUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+    "standingsUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings"
+  },
+  "tournament": {
+    "name": "World Cup 2026",
+    "totalMatches": 104,
+    "completedMatches": 44,
+    "remainingMatches": 60,
+    "liveMatches": 0
+  },
+  "fixtures": [
+    {
+      "id": "400021443",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+      "home": {
+        "name": "Mexico",
+        "code": "MEX",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "away": {
+        "name": "South Africa",
+        "code": "RSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City"
+    },
+    {
+      "id": "400021441",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441",
+      "home": {
+        "name": "Korea Republic",
+        "code": "KOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
+      },
+      "away": {
+        "name": "Czechia",
+        "code": "CZE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara"
+    },
+    {
+      "id": "400021449",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021449",
+      "home": {
+        "name": "Canada",
+        "code": "CAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
+      },
+      "away": {
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "Toronto Stadium",
+      "city": "Toronto"
+    },
+    {
+      "id": "400021458",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021458",
+      "home": {
+        "name": "USA",
+        "code": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "away": {
+        "name": "Paraguay",
+        "code": "PAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021447",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021447",
+      "home": {
+        "name": "Qatar",
+        "code": "QAT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT"
+      },
+      "away": {
+        "name": "Switzerland",
+        "code": "SUI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area"
+    },
+    {
+      "id": "400021456",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021456",
+      "home": {
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
+      },
+      "away": {
+        "name": "Morocco",
+        "code": "MAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021453",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021453",
+      "home": {
+        "name": "Haiti",
+        "code": "HAI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
+      },
+      "away": {
+        "name": "Scotland",
+        "code": "SCO",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021463",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021463",
+      "home": {
+        "name": "Australia",
+        "code": "AUS",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
+      },
+      "away": {
+        "name": "Türkiye",
+        "code": "TUR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021464",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021464",
+      "home": {
+        "name": "Germany",
+        "code": "GER",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "away": {
+        "name": "Curaçao",
+        "code": "CUW",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW"
+      },
+      "homeScore": 7,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021470",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470",
+      "home": {
+        "name": "Netherlands",
+        "code": "NED",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
+      },
+      "away": {
+        "name": "Japan",
+        "code": "JPN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021467",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021467",
+      "home": {
+        "name": "Côte d'Ivoire",
+        "code": "CIV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
+      },
+      "away": {
+        "name": "Ecuador",
+        "code": "ECU",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia"
+    },
+    {
+      "id": "400021474",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021474",
+      "home": {
+        "name": "Sweden",
+        "code": "SWE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
+      },
+      "away": {
+        "name": "Tunisia",
+        "code": "TUN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN"
+      },
+      "homeScore": 5,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey"
+    },
+    {
+      "id": "400021482",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021482",
+      "home": {
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
+      },
+      "away": {
+        "name": "Cabo Verde",
+        "code": "CPV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021478",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021478",
+      "home": {
+        "name": "Belgium",
+        "code": "BEL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
+      },
+      "away": {
+        "name": "Egypt",
+        "code": "EGY",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Seattle Stadium",
+      "city": "Seattle"
+    },
+    {
+      "id": "400021486",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021486",
+      "home": {
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA"
+      },
+      "away": {
+        "name": "Uruguay",
+        "code": "URU",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021476",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021476",
+      "home": {
+        "name": "IR Iran",
+        "code": "IRN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
+      },
+      "away": {
+        "name": "New Zealand",
+        "code": "NZL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021490",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021490",
+      "home": {
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
+      },
+      "away": {
+        "name": "Senegal",
+        "code": "SEN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021488",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021488",
+      "home": {
+        "name": "Iraq",
+        "code": "IRQ",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
+      },
+      "away": {
+        "name": "Norway",
+        "code": "NOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
+      },
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021496",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021496",
+      "home": {
+        "name": "Argentina",
+        "code": "ARG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "away": {
+        "name": "Algeria",
+        "code": "ALG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City"
+    },
+    {
+      "id": "400021498",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021498",
+      "home": {
+        "name": "Austria",
+        "code": "AUT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
+      },
+      "away": {
+        "name": "Jordan",
+        "code": "JOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR"
+      },
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area"
+    },
+    {
+      "id": "400021502",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021502",
+      "home": {
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
+      },
+      "away": {
+        "name": "Congo DR",
+        "code": "COD",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021507",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021507",
+      "home": {
+        "name": "England",
+        "code": "ENG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
+      },
+      "away": {
+        "name": "Croatia",
+        "code": "CRO",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO"
+      },
+      "homeScore": 4,
+      "awayScore": 2,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021510",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021510",
+      "home": {
+        "name": "Ghana",
+        "code": "GHA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA"
+      },
+      "away": {
+        "name": "Panama",
+        "code": "PAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Toronto Stadium",
+      "city": "Toronto"
+    },
+    {
+      "id": "400021504",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021504",
+      "home": {
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
+      },
+      "away": {
+        "name": "Colombia",
+        "code": "COL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
+      },
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City"
+    },
+    {
+      "id": "400021440",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440",
+      "home": {
+        "name": "Czechia",
+        "code": "CZE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE"
+      },
+      "away": {
+        "name": "South Africa",
+        "code": "RSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
+      },
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021446",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021446",
+      "home": {
+        "name": "Switzerland",
+        "code": "SUI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
+      },
+      "away": {
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
+      },
+      "homeScore": 4,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021450",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021450",
+      "home": {
+        "name": "Canada",
+        "code": "CAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
+      },
+      "away": {
+        "name": "Qatar",
+        "code": "QAT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT"
+      },
+      "homeScore": 6,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021442",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021442",
+      "home": {
+        "name": "Mexico",
+        "code": "MEX",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "away": {
+        "name": "Korea Republic",
+        "code": "KOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
+      },
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara"
+    },
+    {
+      "id": "400021462",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462",
+      "home": {
+        "name": "USA",
+        "code": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "away": {
+        "name": "Australia",
+        "code": "AUS",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "Seattle Stadium",
+      "city": "Seattle"
+    },
+    {
+      "id": "400021454",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021454",
+      "home": {
+        "name": "Scotland",
+        "code": "SCO",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO"
+      },
+      "away": {
+        "name": "Morocco",
+        "code": "MAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021457",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021457",
+      "home": {
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
+      },
+      "away": {
+        "name": "Haiti",
+        "code": "HAI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia"
+    },
+    {
+      "id": "400021460",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021460",
+      "home": {
+        "name": "Türkiye",
+        "code": "TUR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR"
+      },
+      "away": {
+        "name": "Paraguay",
+        "code": "PAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area"
+    },
+    {
+      "id": "400021472",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021472",
+      "home": {
+        "name": "Netherlands",
+        "code": "NED",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
+      },
+      "away": {
+        "name": "Sweden",
+        "code": "SWE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
+      },
+      "homeScore": 5,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021469",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021469",
+      "home": {
+        "name": "Germany",
+        "code": "GER",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "away": {
+        "name": "Côte d'Ivoire",
+        "code": "CIV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
+      },
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Toronto Stadium",
+      "city": "Toronto"
+    },
+    {
+      "id": "400021465",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021465",
+      "home": {
+        "name": "Ecuador",
+        "code": "ECU",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU"
+      },
+      "away": {
+        "name": "Curaçao",
+        "code": "CUW",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City"
+    },
+    {
+      "id": "400021475",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021475",
+      "home": {
+        "name": "Tunisia",
+        "code": "TUN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN"
+      },
+      "away": {
+        "name": "Japan",
+        "code": "JPN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
+      },
+      "homeScore": 0,
+      "awayScore": 4,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey"
+    },
+    {
+      "id": "400021483",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021483",
+      "home": {
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
+      },
+      "away": {
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA"
+      },
+      "homeScore": 4,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021477",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021477",
+      "home": {
+        "name": "Belgium",
+        "code": "BEL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
+      },
+      "away": {
+        "name": "IR Iran",
+        "code": "IRN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021487",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021487",
+      "home": {
+        "name": "Uruguay",
+        "code": "URU",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU"
+      },
+      "away": {
+        "name": "Cabo Verde",
+        "code": "CPV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
+      },
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021480",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021480",
+      "home": {
+        "name": "New Zealand",
+        "code": "NZL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL"
+      },
+      "away": {
+        "name": "Egypt",
+        "code": "EGY",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
+      },
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021494",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021494",
+      "home": {
+        "name": "Argentina",
+        "code": "ARG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "away": {
+        "name": "Austria",
+        "code": "AUT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
+      },
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021492",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021492",
+      "home": {
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
+      },
+      "away": {
+        "name": "Iraq",
+        "code": "IRQ",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
+      },
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia"
+    },
+    {
+      "id": "400021491",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021491",
+      "home": {
+        "name": "Norway",
+        "code": "NOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
+      },
+      "away": {
+        "name": "Senegal",
+        "code": "SEN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
+      },
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021499",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021499",
+      "home": {
+        "name": "Jordan",
+        "code": "JOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR"
+      },
+      "away": {
+        "name": "Algeria",
+        "code": "ALG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
+      },
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "FT",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area"
+    },
+    {
+      "id": "400021503",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021503",
+      "home": {
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021506",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021506",
+      "home": {
+        "name": "England",
+        "code": "ENG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
+      },
+      "away": {
+        "name": "Ghana",
+        "code": "GHA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021511",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021511",
+      "home": {
+        "name": "Panama",
+        "code": "PAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN"
+      },
+      "away": {
+        "name": "Croatia",
+        "code": "CRO",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Toronto Stadium",
+      "city": "Toronto"
+    },
+    {
+      "id": "400021501",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021501",
+      "home": {
+        "name": "Colombia",
+        "code": "COL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
+      },
+      "away": {
+        "name": "Congo DR",
+        "code": "COD",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara"
+    },
+    {
+      "id": "400021451",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451",
+      "home": {
+        "name": "Switzerland",
+        "code": "SUI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
+      },
+      "away": {
+        "name": "Canada",
+        "code": "CAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021448",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021448",
+      "home": {
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
+      },
+      "away": {
+        "name": "Qatar",
+        "code": "QAT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "Seattle Stadium",
+      "city": "Seattle"
+    },
+    {
+      "id": "400021455",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021455",
+      "home": {
+        "name": "Scotland",
+        "code": "SCO",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO"
+      },
+      "away": {
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021452",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021452",
+      "home": {
+        "name": "Morocco",
+        "code": "MAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
+      },
+      "away": {
+        "name": "Haiti",
+        "code": "HAI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021444",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021444",
+      "home": {
+        "name": "Czechia",
+        "code": "CZE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE"
+      },
+      "away": {
+        "name": "Mexico",
+        "code": "MEX",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City"
+    },
+    {
+      "id": "400021445",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021445",
+      "home": {
+        "name": "South Africa",
+        "code": "RSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
+      },
+      "away": {
+        "name": "Korea Republic",
+        "code": "KOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey"
+    },
+    {
+      "id": "400021468",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021468",
+      "home": {
+        "name": "Curaçao",
+        "code": "CUW",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW"
+      },
+      "away": {
+        "name": "Côte d'Ivoire",
+        "code": "CIV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia"
+    },
+    {
+      "id": "400021466",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021466",
+      "home": {
+        "name": "Ecuador",
+        "code": "ECU",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU"
+      },
+      "away": {
+        "name": "Germany",
+        "code": "GER",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021471",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021471",
+      "home": {
+        "name": "Japan",
+        "code": "JPN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
+      },
+      "away": {
+        "name": "Sweden",
+        "code": "SWE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021473",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021473",
+      "home": {
+        "name": "Tunisia",
+        "code": "TUN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN"
+      },
+      "away": {
+        "name": "Netherlands",
+        "code": "NED",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City"
+    },
+    {
+      "id": "400021459",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021459",
+      "home": {
+        "name": "Türkiye",
+        "code": "TUR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR"
+      },
+      "away": {
+        "name": "USA",
+        "code": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021461",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021461",
+      "home": {
+        "name": "Paraguay",
+        "code": "PAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
+      },
+      "away": {
+        "name": "Australia",
+        "code": "AUS",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area"
+    },
+    {
+      "id": "400021489",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489",
+      "home": {
+        "name": "Norway",
+        "code": "NOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
+      },
+      "away": {
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021493",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021493",
+      "home": {
+        "name": "Senegal",
+        "code": "SEN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
+      },
+      "away": {
+        "name": "Iraq",
+        "code": "IRQ",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Toronto Stadium",
+      "city": "Toronto"
+    },
+    {
+      "id": "400021485",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021485",
+      "home": {
+        "name": "Cabo Verde",
+        "code": "CPV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
+      },
+      "away": {
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021484",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021484",
+      "home": {
+        "name": "Uruguay",
+        "code": "URU",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU"
+      },
+      "away": {
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara"
+    },
+    {
+      "id": "400021479",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021479",
+      "home": {
+        "name": "Egypt",
+        "code": "EGY",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
+      },
+      "away": {
+        "name": "IR Iran",
+        "code": "IRN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Seattle Stadium",
+      "city": "Seattle"
+    },
+    {
+      "id": "400021481",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021481",
+      "home": {
+        "name": "New Zealand",
+        "code": "NZL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL"
+      },
+      "away": {
+        "name": "Belgium",
+        "code": "BEL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021508",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021508",
+      "home": {
+        "name": "Panama",
+        "code": "PAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN"
+      },
+      "away": {
+        "name": "England",
+        "code": "ENG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021509",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021509",
+      "home": {
+        "name": "Croatia",
+        "code": "CRO",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO"
+      },
+      "away": {
+        "name": "Ghana",
+        "code": "GHA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia"
+    },
+    {
+      "id": "400021505",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021505",
+      "home": {
+        "name": "Colombia",
+        "code": "COL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
+      },
+      "away": {
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021500",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021500",
+      "home": {
+        "name": "Congo DR",
+        "code": "COD",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021497",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021497",
+      "home": {
+        "name": "Algeria",
+        "code": "ALG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
+      },
+      "away": {
+        "name": "Austria",
+        "code": "AUT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City"
+    },
+    {
+      "id": "400021495",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021495",
+      "home": {
+        "name": "Jordan",
+        "code": "JOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR"
+      },
+      "away": {
+        "name": "Argentina",
+        "code": "ARG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021518",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021518",
+      "home": {
+        "name": "2A",
+        "code": "2A",
+        "flag": null
+      },
+      "away": {
+        "name": "2B",
+        "code": "2B",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021516",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021516",
+      "home": {
+        "name": "1C",
+        "code": "1C",
+        "flag": null
+      },
+      "away": {
+        "name": "2F",
+        "code": "2F",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021513",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021513",
+      "home": {
+        "name": "Germany",
+        "code": "GER",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "away": {
+        "name": "3ABCDF",
+        "code": "3ABCDF",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021522",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021522",
+      "home": {
+        "name": "1F",
+        "code": "1F",
+        "flag": null
+      },
+      "away": {
+        "name": "2C",
+        "code": "2C",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey"
+    },
+    {
+      "id": "400021514",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021514",
+      "home": {
+        "name": "2E",
+        "code": "2E",
+        "flag": null
+      },
+      "away": {
+        "name": "2I",
+        "code": "2I",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021523",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021523",
+      "home": {
+        "name": "1I",
+        "code": "1I",
+        "flag": null
+      },
+      "away": {
+        "name": "3CDFGH",
+        "code": "3CDFGH",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021520",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021520",
+      "home": {
+        "name": "Mexico",
+        "code": "MEX",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "away": {
+        "name": "3CEFHI",
+        "code": "3CEFHI",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City"
+    },
+    {
+      "id": "400021512",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021512",
+      "home": {
+        "name": "1L",
+        "code": "1L",
+        "flag": null
+      },
+      "away": {
+        "name": "3EHIJK",
+        "code": "3EHIJK",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021525",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021525",
+      "home": {
+        "name": "1G",
+        "code": "1G",
+        "flag": null
+      },
+      "away": {
+        "name": "3AEHIJ",
+        "code": "3AEHIJ",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Seattle Stadium",
+      "city": "Seattle"
+    },
+    {
+      "id": "400021524",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021524",
+      "home": {
+        "name": "USA",
+        "code": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "away": {
+        "name": "3BEFIJ",
+        "code": "3BEFIJ",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area"
+    },
+    {
+      "id": "400021519",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021519",
+      "home": {
+        "name": "1H",
+        "code": "1H",
+        "flag": null
+      },
+      "away": {
+        "name": "2J",
+        "code": "2J",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021526",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021526",
+      "home": {
+        "name": "2K",
+        "code": "2K",
+        "flag": null
+      },
+      "away": {
+        "name": "2L",
+        "code": "2L",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Toronto Stadium",
+      "city": "Toronto"
+    },
+    {
+      "id": "400021527",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021527",
+      "home": {
+        "name": "1B",
+        "code": "1B",
+        "flag": null
+      },
+      "away": {
+        "name": "3EFGIJ",
+        "code": "3EFGIJ",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021515",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021515",
+      "home": {
+        "name": "2D",
+        "code": "2D",
+        "flag": null
+      },
+      "away": {
+        "name": "2G",
+        "code": "2G",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021521",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021521",
+      "home": {
+        "name": "Argentina",
+        "code": "ARG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "away": {
+        "name": "2H",
+        "code": "2H",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021517",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021517",
+      "home": {
+        "name": "1K",
+        "code": "1K",
+        "flag": null
+      },
+      "away": {
+        "name": "3DEIJL",
+        "code": "3DEIJL",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City"
+    },
+    {
+      "id": "400021530",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021530",
+      "home": {
+        "name": "W73",
+        "code": "W73",
+        "flag": null
+      },
+      "away": {
+        "name": "W75",
+        "code": "W75",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Houston Stadium",
+      "city": "Houston"
+    },
+    {
+      "id": "400021533",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021533",
+      "home": {
+        "name": "W74",
+        "code": "W74",
+        "flag": null
+      },
+      "away": {
+        "name": "W77",
+        "code": "W77",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia"
+    },
+    {
+      "id": "400021532",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021532",
+      "home": {
+        "name": "W76",
+        "code": "W76",
+        "flag": null
+      },
+      "away": {
+        "name": "W78",
+        "code": "W78",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    },
+    {
+      "id": "400021531",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021531",
+      "home": {
+        "name": "W79",
+        "code": "W79",
+        "flag": null
+      },
+      "away": {
+        "name": "W80",
+        "code": "W80",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City"
+    },
+    {
+      "id": "400021529",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021529",
+      "home": {
+        "name": "W83",
+        "code": "W83",
+        "flag": null
+      },
+      "away": {
+        "name": "W84",
+        "code": "W84",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021534",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021534",
+      "home": {
+        "name": "W81",
+        "code": "W81",
+        "flag": null
+      },
+      "away": {
+        "name": "W82",
+        "code": "W82",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Seattle Stadium",
+      "city": "Seattle"
+    },
+    {
+      "id": "400021528",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021528",
+      "home": {
+        "name": "W86",
+        "code": "W86",
+        "flag": null
+      },
+      "away": {
+        "name": "W88",
+        "code": "W88",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021535",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021535",
+      "home": {
+        "name": "W85",
+        "code": "W85",
+        "flag": null
+      },
+      "away": {
+        "name": "W87",
+        "code": "W87",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver"
+    },
+    {
+      "id": "400021536",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021536",
+      "home": {
+        "name": "W89",
+        "code": "W89",
+        "flag": null
+      },
+      "away": {
+        "name": "W90",
+        "code": "W90",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Boston Stadium",
+      "city": "Boston"
+    },
+    {
+      "id": "400021538",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021538",
+      "home": {
+        "name": "W93",
+        "code": "W93",
+        "flag": null
+      },
+      "away": {
+        "name": "W94",
+        "code": "W94",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "400021539",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021539",
+      "home": {
+        "name": "W91",
+        "code": "W91",
+        "flag": null
+      },
+      "away": {
+        "name": "W92",
+        "code": "W92",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021537",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021537",
+      "home": {
+        "name": "W95",
+        "code": "W95",
+        "flag": null
+      },
+      "away": {
+        "name": "W96",
+        "code": "W96",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City"
+    },
+    {
+      "id": "400021541",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021541",
+      "home": {
+        "name": "W97",
+        "code": "W97",
+        "flag": null
+      },
+      "away": {
+        "name": "W98",
+        "code": "W98",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Semi-final",
+      "group": null,
+      "venue": "Dallas Stadium",
+      "city": "Dallas"
+    },
+    {
+      "id": "400021540",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540",
+      "home": {
+        "name": "W99",
+        "code": "W99",
+        "flag": null
+      },
+      "away": {
+        "name": "W100",
+        "code": "W100",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Semi-final",
+      "group": null,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta"
+    },
+    {
+      "id": "400021542",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289291/400021542",
+      "home": {
+        "name": "RU101",
+        "code": "RU101",
+        "flag": null
+      },
+      "away": {
+        "name": "RU102",
+        "code": "RU102",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Play-off for third place",
+      "group": null,
+      "venue": "Miami Stadium",
+      "city": "Miami"
+    },
+    {
+      "id": "400021543",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543",
+      "home": {
+        "name": "W101",
+        "code": "W101",
+        "flag": null
+      },
+      "away": {
+        "name": "W102",
+        "code": "W102",
+        "flag": null
+      },
+      "homeScore": null,
+      "awayScore": null,
+      "status": "Scheduled",
+      "stage": "Final",
+      "group": null,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey"
+    }
+  ],
+  "standings": [
+    {
+      "group": "Group A",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Mexico",
+          "code": "MEX",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "goalDifference": 3,
+          "conductScore": -5,
+          "points": 6,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "name": "Korea Republic",
+          "code": "KOR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "conductScore": -3,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Czechia",
+          "code": "CZE",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDifference": -1,
+          "conductScore": -1,
+          "points": 1,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "South Africa",
+          "code": "RSA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "goalDifference": -2,
+          "conductScore": -12,
+          "points": 1,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group B",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Canada",
+          "code": "CAN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "goalDifference": 6,
+          "conductScore": -3,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Switzerland",
+          "code": "SUI",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDifference": 3,
+          "conductScore": -2,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Bosnia and Herzegovina",
+          "code": "BIH",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3,
+          "conductScore": -9,
+          "points": 1,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Qatar",
+          "code": "QAT",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDifference": -6,
+          "conductScore": -11,
+          "points": 1,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group C",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Brazil",
+          "code": "BRA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDifference": 3,
+          "conductScore": -3,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Morocco",
+          "code": "MAR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1,
+          "conductScore": -1,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Scotland",
+          "code": "SCO",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
+          "conductScore": -4,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Haiti",
+          "code": "HAI",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 4,
+          "goalDifference": -4,
+          "conductScore": -4,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group D",
+      "teams": [
+        {
+          "position": 1,
+          "name": "USA",
+          "code": "USA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDifference": 5,
+          "conductScore": -4,
+          "points": 6,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "name": "Australia",
+          "code": "AUS",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "conductScore": -4,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Paraguay",
+          "code": "PAR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDifference": -2,
+          "conductScore": -11,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Türkiye",
+          "code": "TUR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "goalDifference": -3,
+          "conductScore": -3,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group E",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Germany",
+          "code": "GER",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "goalDifference": 7,
+          "conductScore": 0,
+          "points": 6,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "name": "Côte d'Ivoire",
+          "code": "CIV",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "conductScore": -3,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Ecuador",
+          "code": "ECU",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1,
+          "conductScore": -2,
+          "points": 1,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Curaçao",
+          "code": "CUW",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDifference": -6,
+          "conductScore": -5,
+          "points": 1,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group F",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Netherlands",
+          "code": "NED",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "conductScore": -3,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Japan",
+          "code": "JPN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "goalDifference": 4,
+          "conductScore": 0,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Sweden",
+          "code": "SWE",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
+          "goalDifference": 0,
+          "conductScore": -3,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Tunisia",
+          "code": "TUN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 9,
+          "goalDifference": -8,
+          "conductScore": -1,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group G",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Egypt",
+          "code": "EGY",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2,
+          "conductScore": -3,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "IR Iran",
+          "code": "IRN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "conductScore": -2,
+          "points": 2,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Belgium",
+          "code": "BEL",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
+          "conductScore": -7,
+          "points": 2,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "New Zealand",
+          "code": "NZL",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "goalDifference": -2,
+          "conductScore": -2,
+          "points": 1,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group H",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Spain",
+          "code": "ESP",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "goalDifference": 4,
+          "conductScore": -1,
+          "points": 4,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Uruguay",
+          "code": "URU",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDifference": 0,
+          "conductScore": -2,
+          "points": 2,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Cabo Verde",
+          "code": "CPV",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "conductScore": -3,
+          "points": 2,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Saudi Arabia",
+          "code": "KSA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "goalDifference": -4,
+          "conductScore": -3,
+          "points": 1,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group I",
+      "teams": [
+        {
+          "position": 1,
+          "name": "France",
+          "code": "FRA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDifference": 5,
+          "conductScore": 0,
+          "points": 6,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Norway",
+          "code": "NOR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "conductScore": 0,
+          "points": 6,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Senegal",
+          "code": "SEN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "goalDifference": -3,
+          "conductScore": 0,
+          "points": 0,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Iraq",
+          "code": "IRQ",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDifference": -6,
+          "conductScore": -2,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group J",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Argentina",
+          "code": "ARG",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 0,
+          "goalDifference": 5,
+          "conductScore": -2,
+          "points": 6,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "name": "Austria",
+          "code": "AUT",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDifference": 0,
+          "conductScore": -3,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Algeria",
+          "code": "ALG",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDifference": -2,
+          "conductScore": -1,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Jordan",
+          "code": "JOR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3,
+          "conductScore": -1,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group K",
+      "teams": [
+        {
+          "position": 1,
+          "name": "Colombia",
+          "code": "COL",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "goalDifference": 2,
+          "conductScore": -1,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Congo DR",
+          "code": "COD",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
+          "conductScore": -1,
+          "points": 1,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Portugal",
+          "code": "POR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
+          "conductScore": -3,
+          "points": 1,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Uzbekistan",
+          "code": "UZB",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "goalDifference": -2,
+          "conductScore": -1,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "group": "Group L",
+      "teams": [
+        {
+          "position": 1,
+          "name": "England",
+          "code": "ENG",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2,
+          "conductScore": 0,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 2,
+          "name": "Ghana",
+          "code": "GHA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1,
+          "conductScore": -1,
+          "points": 3,
+          "qualified": false
+        },
+        {
+          "position": 3,
+          "name": "Panama",
+          "code": "PAN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1,
+          "conductScore": -2,
+          "points": 0,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "name": "Croatia",
+          "code": "CRO",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDifference": -2,
+          "conductScore": 0,
+          "points": 0,
+          "qualified": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+  "fixturesUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+  "standingsUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+  "rankingUrl": "https://inside.fifa.com/fifa-world-ranking/men",
+  "termsUrl": "https://www.fifa.com/terms-of-service",
+  "supplemental": {
+    "statsbomb": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
+    "openMeteo": "https://api.open-meteo.com/v1/forecast?latitude=19.4326&longitude=-99.1332&current=temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m",
+    "footballData": "https://api.football-data.org/v4/competitions/WC"
+  },
+  "knownCompletedMatches": [
+    "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
+    "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021456",
+    "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021490"
+  ],
+  "sampleCompletedMatches": 3,
+  "sampleUpcomingMatches": 2
+}

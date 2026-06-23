@@ -1,0 +1,58 @@
+{
+  "facts": {
+    "tournament": [
+      "fixtures",
+      "results",
+      "kickoff",
+      "stage",
+      "group",
+      "venue",
+      "standings"
+    ],
+    "match": [
+      "lineups",
+      "events",
+      "possession",
+      "goals",
+      "attempts",
+      "shots_on_target",
+      "final_third_entries",
+      "offers_to_receive",
+      "line_breaks",
+      "cards",
+      "fouls",
+      "offsides",
+      "passes",
+      "crosses",
+      "corners",
+      "free_kicks",
+      "forced_turnovers",
+      "pressing",
+      "player_distance",
+      "player_speed",
+      "player_sprints"
+    ],
+    "team": [
+      "official_ranking",
+      "recent_form",
+      "head_to_head",
+      "squad"
+    ],
+    "conditional": [
+      "injuries",
+      "player_availability",
+      "weather",
+      "expected_goals",
+      "market_consensus"
+    ]
+  },
+  "derived": [
+    "attack_rating",
+    "defence_rating",
+    "form_rating",
+    "match_probabilities",
+    "predicted_score",
+    "tournament_win_probability",
+    "model_confidence"
+  ]
+}

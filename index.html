@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ORACLE 26 — a transparent, data-backed World Cup prediction dashboard."
+    />
+    <title>ORACLE 26 — World Cup Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="ORACLE 26 home">
+        <span class="brand-mark">O<span>26</span></span>
+        <span><strong>ORACLE</strong><small>WORLD CUP INTELLIGENCE</small></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="overview"><span>01</span>Command center</button>
+        <button class="nav-item" data-view="bracket"><span>02</span>Tournament path</button>
+        <button class="nav-item" data-view="matches"><span>03</span>Match center</button>
+        <button class="nav-item" data-view="teams"><span>04</span>Team comparison</button>
+        <button class="nav-item" data-view="model"><span>05</span>Model lab</button>
+      </nav>
+      <div class="sidebar-foot">
+        <span class="status-dot"></span>
+        <div><strong>DATA PIPELINE</strong><small id="pipeline-status">Loading verified feed…</small></div>
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <a class="brand" href="#overview"><span class="brand-mark">O<span>26</span></span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">MENU</button>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">2026 WORLD CUP / LIVE ANALYTICS</p>
+          <h1 id="view-title">Command center</h1>
+        </div>
+        <div class="topbar-meta">
+          <div><span>LAST VERIFIED</span><strong id="last-updated">—</strong></div>
+          <div><span>SOURCE</span><strong>FIFA + OPEN DATA</strong></div>
+          <div class="live-pill"><i></i> LIVE DATA</div>
+        </div>
+      </header>
+
+      <section id="overview" class="view active">
+        <div class="hero-grid">
+          <article class="panel hero-panel">
+            <div class="panel-kicker"><span>TOURNAMENT SIGNAL</span><span id="tournament-progress">—</span></div>
+            <div class="hero-copy">
+              <p class="overline">PREDICTION ENGINE</p>
+              <h2>Calibration<br /><em>in progress</em></h2>
+              <p>
+                Probabilities remain locked until historical backtesting passes.
+                Live facts below are sourced; no synthetic values are displayed.
+              </p>
+              <button class="text-link" data-jump="model">VIEW MODEL READINESS <span>↗</span></button>
+            </div>
+            <div class="orb" aria-hidden="true">
+              <div class="orb-ring ring-one"></div>
+              <div class="orb-ring ring-two"></div>
+              <div class="orb-core"><span>MODEL</span><strong>LOCKED</strong><small>VALIDATION GATE</small></div>
+            </div>
+          </article>
+
+          <article class="panel telemetry">
+            <div class="panel-title"><span>LIVE TELEMETRY</span><small>VERIFIED ONLY</small></div>
+            <div class="metric-grid">
+              <div><span>MATCHES</span><strong id="metric-total">—</strong><small>tournament total</small></div>
+              <div><span>COMPLETED</span><strong id="metric-completed">—</strong><small>full time</small></div>
+              <div><span>GROUPS</span><strong id="metric-groups">—</strong><small>live tables</small></div>
+              <div><span>FIELDS</span><strong id="metric-fields">—</strong><small>source verified</small></div>
+            </div>
+            <div class="progress-track"><span id="progress-bar"></span></div>
+            <div class="progress-labels"><span>GROUP STAGE</span><span id="progress-percent">—</span></div>
+          </article>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel leaders-panel">
+            <div class="panel-title"><span>GROUP LEADERS</span><small>BY POINTS / GOAL DIFFERENCE</small></div>
+            <div id="leaders-list" class="leaders-list loading-block"></div>
+          </article>
+          <article class="panel results-panel">
+            <div class="panel-title"><span>LATEST RESULTS</span><button data-jump="matches">VIEW ALL</button></div>
+            <div id="latest-results" class="match-list loading-block"></div>
+          </article>
+          <article class="panel integrity-panel">
+            <div class="panel-title"><span>DATA INTEGRITY</span><small>ANTI-HALLUCINATION GATE</small></div>
+            <div id="integrity-chart" class="integrity-chart loading-block"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="bracket" class="view">
+        <div class="notice-strip"><i></i><strong>OFFICIAL TOURNAMENT STATE</strong><span>Predicted paths unlock only after model validation.</span></div>
+        <div id="group-grid" class="group-grid loading-block"></div>
+      </section>
+
+      <section id="matches" class="view">
+        <div class="filterbar panel">
+          <label>SEARCH<input id="match-search" type="search" placeholder="Team, group, venue…" /></label>
+          <label>STATUS<select id="status-filter"><option value="all">All matches</option><option value="FT">Completed</option><option value="upcoming">Upcoming</option></select></label>
+          <div class="filter-count"><span>VISIBLE</span><strong id="match-count">—</strong></div>
+        </div>
+        <div id="all-matches" class="all-matches loading-block"></div>
+      </section>
+
+      <section id="teams" class="view">
+        <div class="team-selectors panel">
+          <label>TEAM A<select id="team-a"></select></label>
+          <div class="versus">VS</div>
+          <label>TEAM B<select id="team-b"></select></label>
+        </div>
+        <div id="comparison" class="comparison loading-block"></div>
+      </section>
+
+      <section id="model" class="view">
+        <div class="model-grid">
+          <article class="panel pipeline-panel">
+            <div class="panel-title"><span>MODEL PIPELINE</span><small>PHASED RELEASE</small></div>
+            <div class="pipeline-flow">
+              <div class="flow-step complete"><b>01</b><span>DATA INGESTION</span><small>Live FIFA facts + open datasets</small></div>
+              <i>→</i>
+              <div class="flow-step active"><b>02</b><span>FEATURE ENGINEERING</span><small>Form, attack, defence, venue</small></div>
+              <i>→</i>
+              <div class="flow-step"><b>03</b><span>ENSEMBLE</span><small>Elo + Poisson + gradient boost</small></div>
+              <i>→</i>
+              <div class="flow-step"><b>04</b><span>CALIBRATION</span><small>Brier score + backtesting</small></div>
+              <i>→</i>
+              <div class="flow-step"><b>05</b><span>SIMULATION</span><small>Full tournament Monte Carlo</small></div>
+            </div>
+          </article>
+          <article class="panel readiness-panel">
+            <div class="panel-title"><span>RELEASE GATES</span><small>NO SHORTCUTS</small></div>
+            <div class="gate-list">
+              <div class="pass"><i>✓</i><span>Source provenance</span><strong>PASS</strong></div>
+              <div class="pass"><i>✓</i><span>Missing-value policy</span><strong>PASS</strong></div>
+              <div class="pending"><i>•</i><span>Historical backtest</span><strong>PENDING</strong></div>
+              <div class="pending"><i>•</i><span>Probability calibration</span><strong>PENDING</strong></div>
+              <div class="locked"><i>×</i><span>Public predictions</span><strong>LOCKED</strong></div>
+            </div>
+          </article>
+          <article class="panel coverage-panel">
+            <div class="panel-title"><span>SOURCE COVERAGE</span><small id="coverage-timestamp">CURRENT AUDIT</small></div>
+            <div id="coverage-list"></div>
+          </article>
+          <article class="panel disclaimer-panel">
+            <p class="overline">TRANSPARENCY NOTE</p>
+            <h3>Facts are sourced.<br />Ratings are derived.<br />Predictions are estimates.</h3>
+            <p>
+              Every production value will retain a source URL and retrieval time.
+              Unavailable information stays unavailable rather than being inferred
+              into existence.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
