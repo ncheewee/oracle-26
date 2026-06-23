@@ -42,11 +42,14 @@ Open `http://localhost:4173`.
 - Match search and status filtering
 - Official-stat team comparison
 - Model methodology and release gates
+- Calibrated Elo-Poisson match probabilities
+- Held-out backtest performance metrics
 - Scheduled six-hour browser collection
 - Automated GitHub Pages deployment
 
-Predictions are not yet published. Phase 2 adds historical feature generation,
-backtesting, probability calibration and tournament simulation.
+Match predictions are published after passing the baseline validation gates.
+Exact tournament winner probability remains locked until the official 48-team
+bracket simulation is implemented and validated.
 
 ## Intended production architecture
 

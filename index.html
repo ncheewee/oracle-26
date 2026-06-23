@@ -59,9 +59,9 @@
           <article class="panel hero-panel">
             <div class="panel-kicker"><span>TOURNAMENT SIGNAL</span><span id="tournament-progress">—</span></div>
             <div class="hero-copy">
-              <p class="overline">PREDICTION ENGINE</p>
-              <h2>Calibration<br /><em>in progress</em></h2>
-              <p>
+              <p class="overline" id="hero-overline">PREDICTION ENGINE</p>
+              <h2 id="hero-heading">Calibration<br /><em>in progress</em></h2>
+              <p id="hero-description">
                 Probabilities remain locked until historical backtesting passes.
                 Live facts below are sourced; no synthetic values are displayed.
               </p>
@@ -70,7 +70,7 @@
             <div class="orb" aria-hidden="true">
               <div class="orb-ring ring-one"></div>
               <div class="orb-ring ring-two"></div>
-              <div class="orb-core"><span>MODEL</span><strong>LOCKED</strong><small>VALIDATION GATE</small></div>
+              <div class="orb-core"><span id="orb-label">MODEL</span><strong id="orb-value">LOCKED</strong><small id="orb-note">VALIDATION GATE</small></div>
             </div>
           </article>
 
@@ -155,6 +155,10 @@
           <article class="panel coverage-panel">
             <div class="panel-title"><span>SOURCE COVERAGE</span><small id="coverage-timestamp">CURRENT AUDIT</small></div>
             <div id="coverage-list"></div>
+          </article>
+          <article class="panel performance-panel">
+            <div class="panel-title"><span>BACKTEST PERFORMANCE</span><small>HELD-OUT MATCHES</small></div>
+            <div id="performance-grid" class="metric-grid compact"></div>
           </article>
           <article class="panel disclaimer-panel">
             <p class="overline">TRANSPARENCY NOTE</p>

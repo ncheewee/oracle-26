@@ -160,6 +160,14 @@ input:focus, select:focus { border-color: var(--cyan); }
 .match-card-top b { color: var(--lime); }
 .match-card .match-row { border: 0; padding: 0; }
 .match-meta { color: #65717e; font: 8px DM Mono; border-top: 1px solid #1b232d; margin-top: 14px; padding-top: 10px; }
+.prediction-strip { border-top: 1px solid #1b232d; margin-top: 14px; padding-top: 12px; }
+.prediction-head { display: flex; justify-content: space-between; align-items: center; font: 8px DM Mono; margin-bottom: 9px; color: var(--muted); }
+.prediction-head b { color: var(--gold); font-size: 12px; }
+.probability-bars { display: grid; gap: 6px; }
+.probability-bars > div { display: grid; grid-template-columns: 36px 1fr 40px; gap: 8px; align-items: center; font: 7px DM Mono; }
+.probability-bars i { display: block; height: 3px; background: #202833; }
+.probability-bars i b { display: block; height: 100%; background: var(--cyan); }
+.probability-bars strong { text-align: right; font: 8px DM Mono; }
 .team-selectors { padding: 20px; display: grid; grid-template-columns: 1fr 70px 1fr; align-items: end; }
 .versus { display: grid; place-items: center; height: 42px; color: var(--red); font: 12px DM Mono; }
 .comparison { margin-top: 14px; }
@@ -195,6 +203,9 @@ input:focus, select:focus { border-color: var(--cyan); }
 .gate-list .locked i, .gate-list .locked strong { color: var(--red); }
 .coverage-row { display: grid; grid-template-columns: 1fr 100px 50px; gap: 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid #1b232c; font-size: 10px; }
 .coverage-row .bar { height: 3px; } .coverage-row b { text-align: right; font: 9px DM Mono; }
+.performance-panel .metric-grid { margin-top: 4px; }
+.metric-grid.compact div { padding: 18px 8px; }
+.metric-grid.compact strong { font-size: 23px; }
 .disclaimer-panel { display: flex; flex-direction: column; justify-content: center; min-height: 310px; }
 .disclaimer-panel h3 { font-size: 27px; line-height: 1.2; margin: 6px 0 14px; }
 .disclaimer-panel > p:last-child { color: var(--muted); font-size: 11px; line-height: 1.7; }

@@ -6,7 +6,8 @@
   "scripts": {
     "audit": "node scripts/audit-data.mjs",
     "collect": "node scripts/collect-worldcup.mjs",
-    "refresh": "pnpm run audit && pnpm run collect",
+    "model": "node scripts/train-model.mjs",
+    "refresh": "pnpm run audit && pnpm run collect && pnpm run model",
     "serve": "python3 -m http.server 4173",
     "test": "node --test"
   },

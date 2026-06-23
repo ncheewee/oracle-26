@@ -1,0 +1,1157 @@
+{
+  "generatedAt": "2026-06-23T08:31:32.468Z",
+  "asOf": "2026-06-23",
+  "status": "baseline_validated",
+  "model": {
+    "name": "Elo-Poisson Ensemble v1",
+    "description": "58% Elo outcome model and 42% recency-weighted Poisson goal model, temperature calibrated on 2018–2021 matches.",
+    "trainingStart": "2000-01-01",
+    "validationWindow": "2018-01-01 to 2021-12-31",
+    "testWindow": "2022-01-01 to 2026-06-10",
+    "temperature": 0.7
+  },
+  "source": {
+    "name": "International football results from 1872",
+    "repository": "https://github.com/martj42/international_results",
+    "license": "CC0-1.0",
+    "rows": 49477,
+    "caveat": "Community-compiled dataset cross-referenced from multiple football sources."
+  },
+  "performance": {
+    "matches": 4568,
+    "accuracy": 59.5,
+    "brier": 0.176,
+    "logLoss": 0.901,
+    "calibrationError": 3.5
+  },
+  "gates": {
+    "sampleSize": true,
+    "accuracy": true,
+    "brier": true,
+    "calibration": true
+  },
+  "provisionalFavorite": {
+    "name": "Argentina",
+    "rating": 2079,
+    "attack": 2.4,
+    "defence": 0.34,
+    "matches": 343,
+    "rank": 1
+  },
+  "contenders": [
+    {
+      "name": "Argentina",
+      "rating": 2079,
+      "attack": 2.4,
+      "defence": 0.34,
+      "matches": 343,
+      "rank": 1
+    },
+    {
+      "name": "Spain",
+      "rating": 2056,
+      "attack": 2.51,
+      "defence": 0.72,
+      "matches": 344,
+      "rank": 2
+    },
+    {
+      "name": "France",
+      "rating": 2031,
+      "attack": 2.31,
+      "defence": 1.02,
+      "matches": 351,
+      "rank": 3
+    },
+    {
+      "name": "England",
+      "rating": 1999,
+      "attack": 2.26,
+      "defence": 0.58,
+      "matches": 319,
+      "rank": 4
+    },
+    {
+      "name": "Brazil",
+      "rating": 1984,
+      "attack": 2.06,
+      "defence": 0.98,
+      "matches": 373,
+      "rank": 5
+    },
+    {
+      "name": "Colombia",
+      "rating": 1966,
+      "attack": 2.05,
+      "defence": 0.99,
+      "matches": 324,
+      "rank": 6
+    },
+    {
+      "name": "Japan",
+      "rating": 1962,
+      "attack": 2.33,
+      "defence": 0.61,
+      "matches": 398,
+      "rank": 7
+    },
+    {
+      "name": "Netherlands",
+      "rating": 1945,
+      "attack": 2.51,
+      "defence": 1.01,
+      "matches": 322,
+      "rank": 8
+    },
+    {
+      "name": "Morocco",
+      "rating": 1944,
+      "attack": 2.03,
+      "defence": 0.38,
+      "matches": 309,
+      "rank": 9
+    },
+    {
+      "name": "Germany",
+      "rating": 1944,
+      "attack": 2.78,
+      "defence": 1.01,
+      "matches": 354,
+      "rank": 10
+    },
+    {
+      "name": "Portugal",
+      "rating": 1935,
+      "attack": 2.27,
+      "defence": 0.93,
+      "matches": 334,
+      "rank": 11
+    },
+    {
+      "name": "Mexico",
+      "rating": 1910,
+      "attack": 1.57,
+      "defence": 0.61,
+      "matches": 475,
+      "rank": 12
+    },
+    {
+      "name": "Belgium",
+      "rating": 1876,
+      "attack": 2.39,
+      "defence": 0.81,
+      "matches": 288,
+      "rank": 13
+    },
+    {
+      "name": "Ecuador",
+      "rating": 1864,
+      "attack": 1,
+      "defence": 0.5,
+      "matches": 317,
+      "rank": 14
+    },
+    {
+      "name": "Iran",
+      "rating": 1863,
+      "attack": 1.85,
+      "defence": 0.76,
+      "matches": 354,
+      "rank": 15
+    },
+    {
+      "name": "Australia",
+      "rating": 1862,
+      "attack": 1.52,
+      "defence": 0.87,
+      "matches": 298,
+      "rank": 16
+    },
+    {
+      "name": "Croatia",
+      "rating": 1862,
+      "attack": 1.94,
+      "defence": 1.32,
+      "matches": 306,
+      "rank": 17
+    },
+    {
+      "name": "United States",
+      "rating": 1859,
+      "attack": 1.96,
+      "defence": 1.41,
+      "matches": 425,
+      "rank": 18
+    },
+    {
+      "name": "Uruguay",
+      "rating": 1859,
+      "attack": 1.1,
+      "defence": 0.94,
+      "matches": 321,
+      "rank": 19
+    },
+    {
+      "name": "Norway",
+      "rating": 1857,
+      "attack": 2.73,
+      "defence": 0.92,
+      "matches": 282,
+      "rank": 20
+    },
+    {
+      "name": "South Korea",
+      "rating": 1849,
+      "attack": 1.69,
+      "defence": 0.95,
+      "matches": 401,
+      "rank": 21
+    },
+    {
+      "name": "Switzerland",
+      "rating": 1844,
+      "attack": 2.08,
+      "defence": 1.08,
+      "matches": 288,
+      "rank": 22
+    },
+    {
+      "name": "Senegal",
+      "rating": 1836,
+      "attack": 1.9,
+      "defence": 0.91,
+      "matches": 309,
+      "rank": 23
+    },
+    {
+      "name": "Algeria",
+      "rating": 1831,
+      "attack": 2.09,
+      "defence": 0.7,
+      "matches": 304,
+      "rank": 24
+    },
+    {
+      "name": "Canada",
+      "rating": 1830,
+      "attack": 1.68,
+      "defence": 0.64,
+      "matches": 258,
+      "rank": 25
+    },
+    {
+      "name": "Austria",
+      "rating": 1805,
+      "attack": 2.29,
+      "defence": 0.73,
+      "matches": 257,
+      "rank": 26
+    },
+    {
+      "name": "Paraguay",
+      "rating": 1793,
+      "attack": 1.19,
+      "defence": 1.15,
+      "matches": 307,
+      "rank": 27
+    },
+    {
+      "name": "Egypt",
+      "rating": 1793,
+      "attack": 1.43,
+      "defence": 0.78,
+      "matches": 355,
+      "rank": 28
+    },
+    {
+      "name": "Ivory Coast",
+      "rating": 1787,
+      "attack": 1.78,
+      "defence": 0.7,
+      "matches": 303,
+      "rank": 29
+    },
+    {
+      "name": "Uzbekistan",
+      "rating": 1779,
+      "attack": 1.3,
+      "defence": 1.02,
+      "matches": 293,
+      "rank": 30
+    },
+    {
+      "name": "Turkey",
+      "rating": 1775,
+      "attack": 1.78,
+      "defence": 1.2,
+      "matches": 313,
+      "rank": 31
+    },
+    {
+      "name": "Panama",
+      "rating": 1755,
+      "attack": 1.59,
+      "defence": 1.4,
+      "matches": 363,
+      "rank": 32
+    },
+    {
+      "name": "Scotland",
+      "rating": 1745,
+      "attack": 1.63,
+      "defence": 1.13,
+      "matches": 243,
+      "rank": 33
+    },
+    {
+      "name": "Jordan",
+      "rating": 1720,
+      "attack": 1.51,
+      "defence": 1.64,
+      "matches": 384,
+      "rank": 34
+    },
+    {
+      "name": "DR Congo",
+      "rating": 1720,
+      "attack": 1.21,
+      "defence": 0.63,
+      "matches": 267,
+      "rank": 35
+    },
+    {
+      "name": "Sweden",
+      "rating": 1713,
+      "attack": 2.01,
+      "defence": 1.87,
+      "matches": 343,
+      "rank": 36
+    },
+    {
+      "name": "Iraq",
+      "rating": 1702,
+      "attack": 1.08,
+      "defence": 1.18,
+      "matches": 385,
+      "rank": 37
+    },
+    {
+      "name": "New Zealand",
+      "rating": 1697,
+      "attack": 1.62,
+      "defence": 1.5,
+      "matches": 179,
+      "rank": 38
+    },
+    {
+      "name": "Czech Republic",
+      "rating": 1691,
+      "attack": 1.98,
+      "defence": 1.18,
+      "matches": 294,
+      "rank": 39
+    },
+    {
+      "name": "Saudi Arabia",
+      "rating": 1686,
+      "attack": 1.02,
+      "defence": 1.34,
+      "matches": 418,
+      "rank": 40
+    },
+    {
+      "name": "Tunisia",
+      "rating": 1672,
+      "attack": 1.18,
+      "defence": 1.61,
+      "matches": 342,
+      "rank": 41
+    },
+    {
+      "name": "Ghana",
+      "rating": 1660,
+      "attack": 1.27,
+      "defence": 1.26,
+      "matches": 309,
+      "rank": 42
+    },
+    {
+      "name": "Haiti",
+      "rating": 1657,
+      "attack": 1.71,
+      "defence": 1.27,
+      "matches": 259,
+      "rank": 43
+    },
+    {
+      "name": "Cape Verde",
+      "rating": 1656,
+      "attack": 1.31,
+      "defence": 1.11,
+      "matches": 185,
+      "rank": 44
+    },
+    {
+      "name": "South Africa",
+      "rating": 1644,
+      "attack": 1.29,
+      "defence": 0.93,
+      "matches": 375,
+      "rank": 45
+    },
+    {
+      "name": "Curacao",
+      "rating": 1604,
+      "attack": 1.69,
+      "defence": 1.63,
+      "matches": 152,
+      "rank": 46
+    },
+    {
+      "name": "Qatar",
+      "rating": 1586,
+      "attack": 0.97,
+      "defence": 1.83,
+      "matches": 419,
+      "rank": 47
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "rating": 1577,
+      "attack": 1.3,
+      "defence": 1.53,
+      "matches": 251,
+      "rank": 48
+    }
+  ],
+  "predictions": [
+    {
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "probabilities": {
+        "home": 62,
+        "draw": 16.8,
+        "away": 21.3
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.52,
+        "away": 1.1
+      },
+      "confidence": 62,
+      "factors": {
+        "ratingDifference": 156,
+        "homeRating": 1935,
+        "awayRating": 1779,
+        "homeMatches": 334,
+        "awayMatches": 293
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "probabilities": {
+        "home": 63.7,
+        "draw": 16.7,
+        "away": 19.6
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.14,
+        "away": 1.09
+      },
+      "confidence": 63.7,
+      "factors": {
+        "ratingDifference": 247,
+        "homeRating": 1966,
+        "awayRating": 1720,
+        "homeMatches": 324,
+        "awayMatches": 267
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "home": "England",
+      "away": "Ghana",
+      "probabilities": {
+        "home": 78.2,
+        "draw": 13.4,
+        "away": 8.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 0
+      },
+      "expectedGoals": {
+        "home": 1.69,
+        "away": 0.86
+      },
+      "confidence": 78.2,
+      "factors": {
+        "ratingDifference": 339,
+        "homeRating": 1999,
+        "awayRating": 1660,
+        "homeMatches": 319,
+        "awayMatches": 309
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Panama",
+      "away": "Croatia",
+      "probabilities": {
+        "home": 28.1,
+        "draw": 18.1,
+        "away": 53.8
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.45,
+        "away": 1.65
+      },
+      "confidence": 53.8,
+      "factors": {
+        "ratingDifference": -107,
+        "homeRating": 1755,
+        "awayRating": 1862,
+        "homeMatches": 363,
+        "awayMatches": 306
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Mexico",
+      "away": "Czech Republic",
+      "probabilities": {
+        "home": 71.3,
+        "draw": 15,
+        "away": 13.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.47,
+        "away": 1.03
+      },
+      "confidence": 71.3,
+      "factors": {
+        "ratingDifference": 284,
+        "homeRating": 1910,
+        "awayRating": 1691,
+        "homeMatches": 475,
+        "awayMatches": 294
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "home": "South Africa",
+      "away": "South Korea",
+      "probabilities": {
+        "home": 21,
+        "draw": 16.3,
+        "away": 62.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.11,
+        "away": 1.26
+      },
+      "confidence": 62.7,
+      "factors": {
+        "ratingDifference": -205,
+        "homeRating": 1644,
+        "awayRating": 1849,
+        "homeMatches": 375,
+        "awayMatches": 401
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Canada",
+      "away": "Switzerland",
+      "probabilities": {
+        "home": 49.3,
+        "draw": 21.7,
+        "away": 29
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.46,
+        "away": 1.08
+      },
+      "confidence": 49.3,
+      "factors": {
+        "ratingDifference": 51,
+        "homeRating": 1830,
+        "awayRating": 1844,
+        "homeMatches": 258,
+        "awayMatches": 288
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar",
+      "probabilities": {
+        "home": 42.1,
+        "draw": 23.1,
+        "away": 34.8
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.54,
+        "away": 1.22
+      },
+      "confidence": 42.1,
+      "factors": {
+        "ratingDifference": -9,
+        "homeRating": 1577,
+        "awayRating": 1586,
+        "homeMatches": 251,
+        "awayMatches": 419
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Scotland",
+      "away": "Brazil",
+      "probabilities": {
+        "home": 18.3,
+        "draw": 14.7,
+        "away": 66.9
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.27,
+        "away": 1.53
+      },
+      "confidence": 66.9,
+      "factors": {
+        "ratingDifference": -240,
+        "homeRating": 1745,
+        "awayRating": 1984,
+        "homeMatches": 243,
+        "awayMatches": 373
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Morocco",
+      "away": "Haiti",
+      "probabilities": {
+        "home": 75.9,
+        "draw": 14,
+        "away": 10.1
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 0
+      },
+      "expectedGoals": {
+        "home": 1.6,
+        "away": 0.81
+      },
+      "confidence": 75.9,
+      "factors": {
+        "ratingDifference": 286,
+        "homeRating": 1944,
+        "awayRating": 1657,
+        "homeMatches": 309,
+        "awayMatches": 259
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "home": "United States",
+      "away": "Turkey",
+      "probabilities": {
+        "home": 58.1,
+        "draw": 16.3,
+        "away": 25.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.65,
+        "away": 1.49
+      },
+      "confidence": 58.1,
+      "factors": {
+        "ratingDifference": 149,
+        "homeRating": 1859,
+        "awayRating": 1775,
+        "homeMatches": 425,
+        "awayMatches": 313
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "probabilities": {
+        "home": 28.2,
+        "draw": 21.8,
+        "away": 50
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.02,
+        "away": 1.32
+      },
+      "confidence": 50,
+      "factors": {
+        "ratingDifference": -69,
+        "homeRating": 1793,
+        "awayRating": 1862,
+        "homeMatches": 307,
+        "awayMatches": 298
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Curacao",
+      "away": "Ivory Coast",
+      "probabilities": {
+        "home": 17.9,
+        "draw": 14.8,
+        "away": 67.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.09,
+        "away": 1.7
+      },
+      "confidence": 67.4,
+      "factors": {
+        "ratingDifference": -183,
+        "homeRating": 1604,
+        "awayRating": 1787,
+        "homeMatches": 152,
+        "awayMatches": 303
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Ecuador",
+      "away": "Germany",
+      "probabilities": {
+        "home": 28.8,
+        "draw": 22.1,
+        "away": 49.1
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.01,
+        "away": 1.18
+      },
+      "confidence": 49.1,
+      "factors": {
+        "ratingDifference": -79,
+        "homeRating": 1864,
+        "awayRating": 1944,
+        "homeMatches": 317,
+        "awayMatches": 354
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Japan",
+      "away": "Sweden",
+      "probabilities": {
+        "home": 76,
+        "draw": 12.2,
+        "away": 11.8
+      },
+      "predictedScore": {
+        "home": 2,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 2.09,
+        "away": 1.11
+      },
+      "confidence": 76,
+      "factors": {
+        "ratingDifference": 249,
+        "homeRating": 1962,
+        "awayRating": 1713,
+        "homeMatches": 398,
+        "awayMatches": 343
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "probabilities": {
+        "home": 11.1,
+        "draw": 12.5,
+        "away": 76.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 2
+      },
+      "expectedGoals": {
+        "home": 1.09,
+        "away": 2.01
+      },
+      "confidence": 76.4,
+      "factors": {
+        "ratingDifference": -273,
+        "homeRating": 1672,
+        "awayRating": 1945,
+        "homeMatches": 342,
+        "awayMatches": 322
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Egypt",
+      "away": "Iran",
+      "probabilities": {
+        "home": 29.9,
+        "draw": 22.4,
+        "away": 47.8
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.04,
+        "away": 1.2
+      },
+      "confidence": 47.8,
+      "factors": {
+        "ratingDifference": -69,
+        "homeRating": 1793,
+        "awayRating": 1863,
+        "homeMatches": 355,
+        "awayMatches": 354
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "probabilities": {
+        "home": 17.2,
+        "draw": 14.1,
+        "away": 68.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.15,
+        "away": 1.89
+      },
+      "confidence": 68.7,
+      "factors": {
+        "ratingDifference": -179,
+        "homeRating": 1697,
+        "awayRating": 1876,
+        "homeMatches": 179,
+        "awayMatches": 288
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "probabilities": {
+        "home": 39.5,
+        "draw": 23.5,
+        "away": 37.1
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.33,
+        "away": 1.06
+      },
+      "confidence": 39.5,
+      "factors": {
+        "ratingDifference": -30,
+        "homeRating": 1656,
+        "awayRating": 1686,
+        "homeMatches": 185,
+        "awayMatches": 418
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Uruguay",
+      "away": "Spain",
+      "probabilities": {
+        "home": 15.8,
+        "draw": 14.9,
+        "away": 69.3
+      },
+      "predictedScore": {
+        "home": 0,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 0.89,
+        "away": 1.53
+      },
+      "confidence": 69.3,
+      "factors": {
+        "ratingDifference": -198,
+        "homeRating": 1859,
+        "awayRating": 2056,
+        "homeMatches": 321,
+        "awayMatches": 344
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Norway",
+      "away": "France",
+      "probabilities": {
+        "home": 28.6,
+        "draw": 15.4,
+        "away": 55.9
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.66,
+        "away": 1.46
+      },
+      "confidence": 55.9,
+      "factors": {
+        "ratingDifference": -174,
+        "homeRating": 1857,
+        "awayRating": 2031,
+        "homeMatches": 282,
+        "awayMatches": 351
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Senegal",
+      "away": "Iraq",
+      "probabilities": {
+        "home": 60.8,
+        "draw": 17.8,
+        "away": 21.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 0
+      },
+      "expectedGoals": {
+        "home": 1.5,
+        "away": 0.99
+      },
+      "confidence": 60.8,
+      "factors": {
+        "ratingDifference": 134,
+        "homeRating": 1836,
+        "awayRating": 1702,
+        "homeMatches": 309,
+        "awayMatches": 385
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Algeria",
+      "away": "Austria",
+      "probabilities": {
+        "home": 40.2,
+        "draw": 23.4,
+        "away": 36.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.23,
+        "away": 1.26
+      },
+      "confidence": 40.2,
+      "factors": {
+        "ratingDifference": 26,
+        "homeRating": 1831,
+        "awayRating": 1805,
+        "homeMatches": 304,
+        "awayMatches": 257
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Jordan",
+      "away": "Argentina",
+      "probabilities": {
+        "home": 5.5,
+        "draw": 11.4,
+        "away": 83.1
+      },
+      "predictedScore": {
+        "home": 0,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 0.72,
+        "away": 1.98
+      },
+      "confidence": 83.1,
+      "factors": {
+        "ratingDifference": -359,
+        "homeRating": 1720,
+        "awayRating": 2079,
+        "homeMatches": 384,
+        "awayMatches": 343
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Colombia",
+      "away": "Portugal",
+      "probabilities": {
+        "home": 40.3,
+        "draw": 22,
+        "away": 37.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.38,
+        "away": 1.49
+      },
+      "confidence": 40.3,
+      "factors": {
+        "ratingDifference": 32,
+        "homeRating": 1966,
+        "awayRating": 1935,
+        "homeMatches": 324,
+        "awayMatches": 334
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "probabilities": {
+        "home": 35.8,
+        "draw": 23.9,
+        "away": 40.2
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 0
+      },
+      "expectedGoals": {
+        "home": 1.11,
+        "away": 0.9
+      },
+      "confidence": 40.2,
+      "factors": {
+        "ratingDifference": -59,
+        "homeRating": 1720,
+        "awayRating": 1779,
+        "homeMatches": 267,
+        "awayMatches": 293
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Panama",
+      "away": "England",
+      "probabilities": {
+        "home": 12.5,
+        "draw": 13.4,
+        "away": 74.1
+      },
+      "predictedScore": {
+        "home": 0,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 0.96,
+        "away": 1.78
+      },
+      "confidence": 74.1,
+      "factors": {
+        "ratingDifference": -244,
+        "homeRating": 1755,
+        "awayRating": 1999,
+        "homeMatches": 363,
+        "awayMatches": 319
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Croatia",
+      "away": "Ghana",
+      "probabilities": {
+        "home": 64.7,
+        "draw": 14.7,
+        "away": 20.5
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.56,
+        "away": 1.29
+      },
+      "confidence": 64.7,
+      "factors": {
+        "ratingDifference": 202,
+        "homeRating": 1862,
+        "awayRating": 1660,
+        "homeMatches": 306,
+        "awayMatches": 309
+      }
+    }
+  ]
+}

@@ -10,6 +10,20 @@ const fmtDate = (iso) =>
 
 let worldCup;
 let audit;
+let model;
+
+const aliases = {
+  "Korea Republic": "South Korea",
+  Czechia: "Czech Republic",
+  "Côte d'Ivoire": "Ivory Coast",
+  "Cabo Verde": "Cape Verde",
+  Türkiye: "Turkey",
+  "IR Iran": "Iran",
+  "Congo DR": "DR Congo",
+  USA: "United States",
+  Curaçao: "Curacao",
+};
+const canonical = (name) => aliases[name] || name;
 
 function flag(team) {
   return `<img class="team-flag" src="${team.flag || ""}" alt="" loading="lazy">`;
@@ -24,6 +38,33 @@ function matchRow(match) {
     <div class="match-team">${flag(match.home)}<span>${match.home.name}</span></div>
     ${score}
     <div class="match-team away"><span>${match.away.name}</span>${flag(match.away)}</div>
+  </div>`;
+}
+
+function predictionFor(match) {
+  if (!model || model.status !== "baseline_validated") return null;
+  return model.predictions.find(
+    (prediction) =>
+      prediction.home === canonical(match.home.name) &&
+      prediction.away === canonical(match.away.name),
+  );
+}
+
+function predictionPanel(match) {
+  const prediction = predictionFor(match);
+  if (!prediction) return "";
+  const values = [
+    [match.home.code, prediction.probabilities.home],
+    ["DRAW", prediction.probabilities.draw],
+    [match.away.code, prediction.probabilities.away],
+  ];
+  return `<div class="prediction-strip">
+    <div class="prediction-head"><span>MODEL PREDICTION</span><b>${prediction.predictedScore.home}–${prediction.predictedScore.away}</b></div>
+    <div class="probability-bars">${values
+      .map(
+        ([label, value]) => `<div><span>${label}</span><i><b style="width:${value}%"></b></i><strong>${value}%</strong></div>`,
+      )
+      .join("")}</div>
   </div>`;
 }
 
@@ -52,6 +93,17 @@ function renderOverview() {
   $("#tournament-progress").textContent = `${pct}% COMPLETE`;
   $("#progress-percent").textContent = `${tournament.completedMatches} / ${tournament.totalMatches}`;
   $("#progress-bar").style.width = `${pct}%`;
+
+  if (model?.status === "baseline_validated") {
+    const favorite = model.provisionalFavorite;
+    $("#hero-overline").textContent = "PROVISIONAL TOURNAMENT FAVOURITE";
+    $("#hero-heading").innerHTML = `${favorite.name}<br><em>baseline leader</em>`;
+    $("#hero-description").textContent =
+      `Highest current Elo-Poisson strength rating (${favorite.rating}). Exact title probability remains locked until the official bracket simulator is validated.`;
+    $("#orb-label").textContent = "ELO RATING";
+    $("#orb-value").textContent = favorite.rating;
+    $("#orb-note").textContent = "BASELINE V1";
+  }
 
   const leaders = standings
     .map((group) => ({ ...group.teams[0], group: group.group }))
@@ -137,6 +189,7 @@ function renderMatches() {
       (match) => `<article class="match-card">
         <div class="match-card-top"><span>${match.group || match.stage || "TOURNAMENT"}</span><b>${match.status}</b></div>
         ${matchRow(match)}
+        ${predictionPanel(match)}
         <div class="match-meta">${[match.venue, match.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
       </article>`,
     )
@@ -161,6 +214,15 @@ function renderComparison() {
     ["GOALS AGAINST", a.goalsAgainst, b.goalsAgainst],
     ["GOAL DIFFERENCE", a.goalDifference, b.goalDifference],
   ];
+  const modelA = model?.contenders.find((team) => team.name === canonical(a.name));
+  const modelB = model?.contenders.find((team) => team.name === canonical(b.name));
+  if (modelA && modelB) {
+    stats.push(
+      ["ELO-POISSON RATING", modelA.rating, modelB.rating],
+      ["ATTACK RATE", modelA.attack, modelB.attack],
+      ["DEFENCE RATE", modelA.defence, modelB.defence],
+    );
+  }
   $("#comparison").innerHTML = `
     <div class="compare-header">
       <div class="compare-team">${flag(a)}<h2>${a.name}</h2><p>${a.group} · POSITION ${a.position}</p></div>
@@ -188,17 +250,45 @@ function renderModel() {
     )
     .join("");
   $("#coverage-timestamp").textContent = fmtDate(audit.generatedAt).toUpperCase();
+  if (model) {
+    const metrics = [
+      ["TEST MATCHES", model.performance.matches, "2022–2026"],
+      ["ACCURACY", `${model.performance.accuracy}%`, "3-way outcome"],
+      ["BRIER", model.performance.brier, "lower is better"],
+      ["CALIBRATION", `${model.performance.calibrationError}%`, "error"],
+    ];
+    $("#performance-grid").innerHTML = metrics
+      .map(
+        ([label, value, note]) =>
+          `<div><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`,
+      )
+      .join("");
+    $$(".gate-list .pending").forEach((gate) => {
+      gate.className = "pass";
+      gate.querySelector("i").textContent = "✓";
+      gate.querySelector("strong").textContent = "PASS";
+    });
+    const publicGate = $(".gate-list .locked");
+    publicGate.className = "pass";
+    publicGate.querySelector("i").textContent = "✓";
+    publicGate.querySelector("span").textContent = "Match predictions";
+    publicGate.querySelector("strong").textContent = "LIVE";
+  }
 }
 
 async function boot() {
   try {
-    [worldCup, audit] = await Promise.all([
+    [worldCup, audit, model] = await Promise.all([
       fetch("./outputs/worldcup.json").then((response) => {
         if (!response.ok) throw new Error("World Cup feed unavailable");
         return response.json();
       }),
       fetch("./outputs/data-availability.json").then((response) => {
         if (!response.ok) throw new Error("Audit feed unavailable");
+        return response.json();
+      }),
+      fetch("./outputs/model.json").then((response) => {
+        if (!response.ok) throw new Error("Model feed unavailable");
         return response.json();
       }),
     ]);
