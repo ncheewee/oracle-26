@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T02:57:09.969Z",
+  "generatedAt": "2026-06-24T06:55:24.381Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 47,
-    "remainingMatches": 57,
-    "liveMatches": 1
+    "completedMatches": 48,
+    "remainingMatches": 56,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -1062,9 +1062,9 @@
         "code": "COD",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
       },
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
-      "status": "HT",
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Guadalajara Stadium",
@@ -2999,6 +2999,22 @@
       "teams": [
         {
           "position": 1,
+          "name": "Colombia",
+          "code": "COL",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDifference": 3,
+          "conductScore": -3,
+          "points": 6,
+          "qualified": false
+        },
+        {
+          "position": 2,
           "name": "Portugal",
           "code": "POR",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR",
@@ -3014,35 +3030,19 @@
           "qualified": false
         },
         {
-          "position": 2,
-          "name": "Colombia",
-          "code": "COL",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL",
-          "played": 2,
-          "won": 1,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 3,
-          "goalsAgainst": 1,
-          "goalDifference": 2,
-          "conductScore": -1,
-          "points": 4,
-          "qualified": false
-        },
-        {
           "position": 3,
           "name": "Congo DR",
           "code": "COD",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD",
           "played": 2,
           "won": 0,
-          "drawn": 2,
-          "lost": 0,
+          "drawn": 1,
+          "lost": 1,
           "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "conductScore": -1,
-          "points": 2,
+          "goalsAgainst": 2,
+          "goalDifference": -1,
+          "conductScore": -2,
+          "points": 1,
           "qualified": false
         },
         {
