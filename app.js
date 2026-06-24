@@ -706,7 +706,7 @@ function renderBetting() {
       <div><span>ODDS SNAPSHOT</span><strong>${freshLabel}</strong><small>${market?.source?.name || "Singapore Pools"}</small></div>
       <div><span>UPCOMING MARKETS</span><strong>${upcomingEvents.size}</strong><small>matched to model fixtures</small></div>
       <div><span>SIGNAL SPLIT</span><strong>${greenCount}G / ${amberCount}A</strong><small>green and amber value signals</small></div>
-      <div><span>TOP BALANCED</span><strong>${best ? best.label : "NO BET"}</strong><small>${best ? `${best.signal.label} · ${best.expectedReturn}% EV · ${best.decimalOdds.toFixed(2)} odds` : "no qualifying edge"}</small></div>
+      <div><span>TOP BALANCED</span><strong>${best ? best.label : "NO BET"}</strong><small>${best ? `${best.expectedReturn}% EV · ${best.decimalOdds.toFixed(2)} odds` : "no qualifying edge"}</small></div>
     </div>
     <p class="betting-warning">EV/value is price quality. Signal strength is model conviction. Default sorting uses both; use the dropdowns to inspect pure EV, model confidence, odds, or avoid/no-bet outcomes.</p>`;
   $("#betting-count").textContent = dateColumns.reduce(
@@ -755,8 +755,8 @@ function nextBettingDateColumns(rows) {
 function renderBettingColumns(columns) {
   return `<div class="betting-day-grid">${columns
     .map(
-      (column, index) => `<section class="betting-day">
-        <h3><span>DAY ${index + 1}</span><strong>${column.label}</strong><small>${column.rows.length} outcome${column.rows.length === 1 ? "" : "s"}</small></h3>
+      (column) => `<section class="betting-day">
+        <h3><strong>${column.label}</strong><small>${column.rows.length} outcome${column.rows.length === 1 ? "" : "s"}</small></h3>
         <div>${column.rows.length ? column.rows.map(renderBettingRow).join("") : '<div class="market-empty">No matched outcomes for this date.</div>'}</div>
       </section>`,
     )
@@ -827,7 +827,7 @@ function renderBettingRow(row) {
     <div class="bet-matchline">${row.homeName} vs ${row.awayName}</div>
     <div class="bet-metrics">
       <b>${row.decimalOdds.toFixed(2)}</b>
-      <b>${row.modelProbability}%</b>
+      <b class="model-chip signal-${row.signal.label.toLowerCase()}">${row.modelProbability}%</b>
       <em>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}%</em>
     </div>
     <small class="bet-subline">${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp edge · ${row.marketImpliedProbability}% market</small>

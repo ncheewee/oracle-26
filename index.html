@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=phase8" />
+    <link rel="stylesheet" href="./styles.css?v=phase9" />
   </head>
   <body>
     <div class="noise"></div>
@@ -259,6 +259,11 @@
               </label>
               <div class="filter-count"><span>VISIBLE</span><strong id="betting-count">—</strong></div>
             </div>
+            <div class="betting-legend" aria-label="Betting model confidence colour legend">
+              <span><i class="legend-green"></i>Green: price + confidence align</span>
+              <span><i class="legend-amber"></i>Amber: speculative value</span>
+              <span><i class="legend-red"></i>Red: avoid / no-bet</span>
+            </div>
             <div id="betting-board" class="betting-board loading-block"></div>
           </article>
           <article class="panel betting-avoid-panel">
@@ -269,6 +274,6 @@
       </section>
     </main>
 
-    <script type="module" src="./app.js?v=phase8"></script>
+    <script type="module" src="./app.js?v=phase9"></script>
   </body>
 </html>
