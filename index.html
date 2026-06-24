@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=phase4" />
+    <link rel="stylesheet" href="./styles.css?v=phase5" />
   </head>
   <body>
     <div class="noise"></div>
@@ -29,6 +29,7 @@
         <button class="nav-item" data-view="matches"><span>03</span>Match center</button>
         <button class="nav-item" data-view="teams"><span>04</span>Team comparison</button>
         <button class="nav-item" data-view="model"><span>05</span>Model lab</button>
+        <button class="nav-item" data-view="scorecard"><span>06</span>Scorecard</button>
       </nav>
       <div class="sidebar-foot">
         <span class="status-dot"></span>
@@ -194,8 +195,30 @@
           </article>
         </div>
       </section>
+
+      <section id="scorecard" class="view">
+        <div class="notice-strip"><i></i><strong>RETROSPECTIVE AUDIT</strong><span>Completed-match scorecard uses verified FIFA results and the current calibrated model state; frozen pre-match forecast archiving starts from the hourly pipeline going forward.</span></div>
+        <div class="scorecard-grid">
+          <article class="panel scorecard-summary">
+            <div class="panel-title"><span>MODEL VS ACTUAL</span><small>TOURNAMENT RESULTS THUS FAR</small></div>
+            <div id="scorecard-metrics" class="scorecard-metrics loading-block"></div>
+          </article>
+          <article class="panel scorecard-readout">
+            <div class="panel-title"><span>SIGNAL READOUT</span><small>WHAT THE ERRORS SAY</small></div>
+            <div id="scorecard-signals" class="scorecard-signals loading-block"></div>
+          </article>
+          <article class="panel winner-journey-panel">
+            <div class="panel-title"><span>PREDICTED WINNER JOURNEY</span><small>REINFORCERS + WATCHOUTS</small></div>
+            <div id="winner-journey" class="winner-journey loading-block"></div>
+          </article>
+          <article class="panel audit-table-panel">
+            <div class="panel-title"><span>MATCH-BY-MATCH AUDIT</span><small>LAST COMPLETED FIXTURES</small></div>
+            <div id="scorecard-table" class="scorecard-table loading-block"></div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <script type="module" src="./app.js?v=phase4"></script>
+    <script type="module" src="./app.js?v=phase5"></script>
   </body>
 </html>

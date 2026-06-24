@@ -26,6 +26,122 @@ const aliases = {
   Curaçao: "Curacao",
 };
 const canonical = (name) => aliases[name] || name;
+const pct = (value) => `${Math.round(value * 10) / 10}%`;
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function poisson(lambda, goals) {
+  let factorial = 1;
+  for (let value = 2; value <= goals; value += 1) factorial *= value;
+  return (Math.exp(-lambda) * lambda ** goals) / factorial;
+}
+
+function poissonProbabilities(homeLambda, awayLambda) {
+  const probabilities = [0, 0, 0];
+  const scorelines = [];
+  for (let home = 0; home <= 8; home += 1) {
+    for (let away = 0; away <= 8; away += 1) {
+      const probability = poisson(homeLambda, home) * poisson(awayLambda, away);
+      const outcome = home > away ? 0 : home === away ? 1 : 2;
+      probabilities[outcome] += probability;
+      scorelines.push({ home, away, probability });
+    }
+  }
+  const total = probabilities.reduce((sum, value) => sum + value, 0);
+  return {
+    probabilities: probabilities.map((value) => value / total),
+    scoreline: scorelines.sort((a, b) => b.probability - a.probability)[0],
+  };
+}
+
+function applyTemperature(probabilities, temperature) {
+  const powered = probabilities.map((value) => value ** (1 / temperature));
+  const total = powered.reduce((sum, value) => sum + value, 0);
+  return powered.map((value) => value / total);
+}
+
+function contenderState(name) {
+  return (
+    model?.contenders.find((team) => team.name === canonical(name)) || {
+      name: canonical(name),
+      rating: 1500,
+      attack: 1.35,
+      defence: 1.35,
+      matches: 0,
+    }
+  );
+}
+
+function modelExpectationForMatch(match) {
+  const home = contenderState(match.home.name);
+  const away = contenderState(match.away.name);
+  const ratingDifference = home.rating - away.rating;
+  const expectedHome = 1 / (1 + 10 ** (-ratingDifference / 400));
+  const draw = clamp(0.27 - Math.abs(ratingDifference) / 1800, 0.16, 0.28);
+  const elo = [
+    expectedHome * (1 - draw),
+    draw,
+    (1 - expectedHome) * (1 - draw),
+  ];
+  const homeLambda = clamp(Math.sqrt(home.attack * away.defence), 0.25, 3.8);
+  const awayLambda = clamp(Math.sqrt(away.attack * home.defence), 0.25, 3.8);
+  const goalModel = poissonProbabilities(homeLambda, awayLambda);
+  const raw = elo.map(
+    (value, index) => value * 0.58 + goalModel.probabilities[index] * 0.42,
+  );
+  const total = raw.reduce((sum, value) => sum + value, 0);
+  const probabilities = applyTemperature(
+    raw.map((value) => value / total),
+    model?.model?.temperature || 1,
+  );
+  const labels = ["HOME", "DRAW", "AWAY"];
+  const predictedIndex = probabilities.indexOf(Math.max(...probabilities));
+  return {
+    probabilities,
+    predictedIndex,
+    predictedLabel: labels[predictedIndex],
+    confidence: probabilities[predictedIndex],
+    scoreline: goalModel.scoreline,
+    expectedGoals: [homeLambda, awayLambda],
+    ratingDifference,
+  };
+}
+
+function actualOutcomeIndex(match) {
+  if (match.homeScore > match.awayScore) return 0;
+  if (match.homeScore === match.awayScore) return 1;
+  return 2;
+}
+
+function scorecardRows() {
+  return worldCup.fixtures
+    .filter((match) => match.status === "FT")
+    .map((match) => {
+      const expectation = modelExpectationForMatch(match);
+      const actualIndex = actualOutcomeIndex(match);
+      const actualProbability = expectation.probabilities[actualIndex];
+      const actualLabel =
+        actualIndex === 0 ? match.home.code : actualIndex === 1 ? "DRAW" : match.away.code;
+      const predictedLabel =
+        expectation.predictedIndex === 0
+          ? match.home.code
+          : expectation.predictedIndex === 1
+            ? "DRAW"
+            : match.away.code;
+      return {
+        match,
+        expectation,
+        actualIndex,
+        actualLabel,
+        predictedLabel,
+        hit: expectation.predictedIndex === actualIndex,
+        actualProbability,
+        surprise: 1 - actualProbability,
+      };
+    });
+}
 
 function flag(team) {
   return `<img class="team-flag" src="${team.flag || ""}" alt="" loading="lazy">`;
@@ -282,6 +398,158 @@ function renderWinnerIntelligence() {
     .join("");
 }
 
+function winnerFixtures() {
+  const winnerName = simulation.winner?.name;
+  if (!winnerName) return [];
+  return worldCup.fixtures.filter(
+    (match) =>
+      match.matchNumber <= 72 &&
+      (canonical(match.home.name) === canonical(winnerName) ||
+        canonical(match.away.name) === canonical(winnerName)),
+  );
+}
+
+function renderWinnerJourney() {
+  const winner = simulation.winner;
+  const strengthData = model.contenders.find(
+    (team) => team.name === winner.canonicalName,
+  );
+  const groupTeam = worldCup.standings
+    .flatMap((group) => group.teams.map((team) => ({ ...team, group: group.group })))
+    .find((team) => canonical(team.name) === winner.canonicalName);
+  const fixtures = winnerFixtures();
+  const completed = fixtures.filter((match) => match.status === "FT");
+  const next = fixtures.find((match) => match.status !== "FT");
+  const cleanSheets = completed.filter((match) => {
+    const isHome = canonical(match.home.name) === winner.canonicalName;
+    return (isHome ? match.awayScore : match.homeScore) === 0;
+  }).length;
+  const wins = completed.filter((match) => {
+    const isHome = canonical(match.home.name) === winner.canonicalName;
+    return isHome ? match.homeScore > match.awayScore : match.awayScore > match.homeScore;
+  }).length;
+  const scored = completed.reduce((sum, match) => {
+    const isHome = canonical(match.home.name) === winner.canonicalName;
+    return sum + (isHome ? match.homeScore : match.awayScore);
+  }, 0);
+  const conceded = completed.reduce((sum, match) => {
+    const isHome = canonical(match.home.name) === winner.canonicalName;
+    return sum + (isHome ? match.awayScore : match.homeScore);
+  }, 0);
+  const nextPrediction = next ? predictionFor(next) : null;
+  const nextWinProbability = nextPrediction
+    ? canonical(next.home.name) === winner.canonicalName
+      ? nextPrediction.probabilities.home
+      : nextPrediction.probabilities.away
+    : null;
+  const reinforcers = [
+    `${groupTeam.points} points from ${groupTeam.played} verified group matches, sitting ${groupTeam.position}${groupTeam.position === 1 ? "st" : groupTeam.position === 2 ? "nd" : groupTeam.position === 3 ? "rd" : "th"} in ${groupTeam.group}.`,
+    `${scored} scored / ${conceded} conceded so far; ${cleanSheets} clean sheet${cleanSheets === 1 ? "" : "s"} supports the low ${strengthData.defence} defence-rate signal.`,
+    `${winner.probabilities.groupWinner}% group-win and ${winner.probabilities.final}% final probabilities keep the simulated route favourable.`,
+  ];
+  const watchouts = [
+    `${winner.probabilities.champion}% title probability means the model still sees a wide-open tournament, not a certainty.`,
+    next
+      ? `Next verified fixture: ${next.home.name} vs ${next.away.name}${nextWinProbability ? `; model gives ${winner.name} ${nextWinProbability}% to win.` : "."}`
+      : "Group stage complete for this team; knockout draw volatility becomes the main uncertainty.",
+    wins === completed.length
+      ? "Perfect results help, but knockout simulations still depend on opponent path and Annex C allocation."
+      : "Dropped points already exist in the path, so the forecast relies more on strength profile than flawless form.",
+  ];
+  $("#winner-journey").innerHTML = `
+    <div class="journey-hero">
+      <div><span>CURRENT PICK</span><strong>${winner.name}</strong><small>${winner.probabilities.champion}% champion · ${winner.probabilities.final}% final</small></div>
+      <div><span>TOURNAMENT FORM</span><strong>${wins}-${completed.length - wins}</strong><small>${scored} GF · ${conceded} GA</small></div>
+    </div>
+    <div class="journey-fixtures">
+      ${fixtures
+        .map((match) => {
+          const isDone = match.status === "FT";
+          return `<div class="${isDone ? "done" : "next"}">
+            <span>M${match.matchNumber}</span>
+            <strong>${match.home.name} ${isDone ? match.homeScore : ""} ${isDone ? "—" : "vs"} ${isDone ? match.awayScore : ""} ${match.away.name}</strong>
+            <em>${isDone ? "VERIFIED RESULT" : "NEXT SIGNAL"}</em>
+          </div>`;
+        })
+        .join("")}
+    </div>
+    <div class="journey-columns">
+      <div><h3>Reinforces forecast</h3>${reinforcers.map((item) => `<p>${item}</p>`).join("")}</div>
+      <div><h3>Could weaken forecast</h3>${watchouts.map((item) => `<p>${item}</p>`).join("")}</div>
+    </div>`;
+}
+
+function renderScorecard() {
+  const rows = scorecardRows();
+  if (!rows.length) return;
+  const hits = rows.filter((row) => row.hit).length;
+  const accuracy = (hits / rows.length) * 100;
+  const brier =
+    rows.reduce(
+      (sum, row) =>
+        sum +
+        row.expectation.probabilities.reduce(
+          (inner, probability, index) =>
+            inner + (probability - (index === row.actualIndex ? 1 : 0)) ** 2,
+          0,
+        ) /
+          3,
+      0,
+    ) / rows.length;
+  const avgConfidence =
+    (rows.reduce((sum, row) => sum + row.expectation.confidence, 0) / rows.length) *
+    100;
+  const avgActualProbability =
+    (rows.reduce((sum, row) => sum + row.actualProbability, 0) / rows.length) *
+    100;
+  const drawRows = rows.filter((row) => row.actualIndex === 1);
+  const drawHits = drawRows.filter((row) => row.hit).length;
+  const biggestSurprises = [...rows]
+    .sort((a, b) => b.surprise - a.surprise)
+    .slice(0, 3);
+  const strongestHits = rows
+    .filter((row) => row.hit)
+    .sort((a, b) => b.expectation.confidence - a.expectation.confidence)
+    .slice(0, 3);
+  $("#scorecard-metrics").innerHTML = [
+    ["AUDITED MATCHES", rows.length, "completed FIFA results"],
+    ["OUTCOME HIT RATE", pct(accuracy), "home/draw/away pick"],
+    ["AVG CONFIDENCE", pct(avgConfidence), "when model makes its top call"],
+    ["BRIER SCORE", Math.round(brier * 1000) / 1000, "lower is better"],
+    ["ACTUAL-LIKELIHOOD", pct(avgActualProbability), "probability assigned to what happened"],
+    ["DRAW READ", `${drawHits}/${drawRows.length}`, "draw outcomes correctly called"],
+  ]
+    .map(
+      ([label, value, note]) =>
+        `<div><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`,
+    )
+    .join("");
+  $("#scorecard-signals").innerHTML = `
+    <div class="signal-stack">
+      <div><span>TOP CONFIDENT HITS</span>${strongestHits
+        .map((row) => `<p>${row.match.home.name} ${row.match.homeScore}-${row.match.awayScore} ${row.match.away.name}<b>${row.predictedLabel} · ${pct(row.expectation.confidence * 100)}</b></p>`)
+        .join("")}</div>
+      <div><span>BIGGEST SURPRISES</span>${biggestSurprises
+        .map((row) => `<p>${row.match.home.name} ${row.match.homeScore}-${row.match.awayScore} ${row.match.away.name}<b>${pct(row.actualProbability * 100)} assigned to actual</b></p>`)
+        .join("")}</div>
+    </div>
+    <p class="audit-note">This is a live retrospective scorecard from the current calibrated model state. It is useful for model behaviour and calibration, but not a claim that every completed match had a frozen pre-match forecast saved before kickoff.</p>`;
+  $("#scorecard-table").innerHTML = rows
+    .slice(-16)
+    .reverse()
+    .map(
+      (row) => `<div class="audit-row ${row.hit ? "hit" : "miss"}">
+        <span>M${row.match.matchNumber}</span>
+        <strong>${row.match.home.name} ${row.match.homeScore}–${row.match.awayScore} ${row.match.away.name}</strong>
+        <b>${row.predictedLabel}</b>
+        <em>${row.hit ? "HIT" : "MISS"}</em>
+        <small>${pct(row.actualProbability * 100)} actual likelihood</small>
+      </div>`,
+    )
+    .join("");
+  renderWinnerJourney();
+}
+
 function renderLatestSignal() {
   const latest = worldCup.fixtures
     .filter((match) => match.status === "FT")
@@ -481,6 +749,7 @@ function renderAll() {
   renderMatches();
   renderComparison();
   renderModel();
+  renderScorecard();
 }
 
 async function fetchJson(path, label, cacheBust = false) {
