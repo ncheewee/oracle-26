@@ -4,6 +4,7 @@ import process from "node:process";
 import { chromium } from "playwright";
 
 const root = process.cwd();
+const outputPath = path.join(root, "outputs/market-odds.json");
 const simulation = JSON.parse(
   await fs.readFile(path.join(root, "outputs/tournament-simulation.json"), "utf8"),
 );
@@ -15,6 +16,31 @@ const aliases = {
   Bosnia: "Bosnia and Herzegovina",
   "Czech Republic": "Czechia",
 };
+
+async function preserveCachedMarket(reason) {
+  try {
+    const cached = JSON.parse(await fs.readFile(outputPath, "utf8"));
+    const output = {
+      ...cached,
+      refreshStatus: "market_unavailable_using_cached_snapshot",
+      lastAttemptAt: new Date().toISOString(),
+      warning: reason,
+    };
+    await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);
+    console.log(
+      JSON.stringify({
+        status: output.refreshStatus,
+        warning: reason,
+        cachedGeneratedAt: cached.generatedAt,
+        championshipSelections: cached.championship?.length || 0,
+        matches: cached.matches?.length || 0,
+      }),
+    );
+    process.exit(0);
+  } catch {
+    throw new Error(reason);
+  }
+}
 
 const browser = await chromium.launch({ headless: true });
 let outrights = null;
@@ -40,7 +66,9 @@ try {
 }
 
 if (!outrights || !upcoming) {
-  throw new Error("Singapore Pools public odds responses were not captured");
+  await preserveCachedMarket(
+    "Singapore Pools public odds responses were not captured",
+  );
 }
 
 const winnerEvent = outrights.events.find((event) =>
@@ -49,7 +77,9 @@ const winnerEvent = outrights.events.find((event) =>
 const winnerMarket = winnerEvent?.markets.find(
   (market) => market.name === "Championship Winner",
 );
-if (!winnerMarket) throw new Error("Championship Winner market unavailable");
+if (!winnerMarket) {
+  await preserveCachedMarket("Championship Winner market unavailable");
+}
 
 const teamProbability = new Map(
   simulation.teams.map((team) => [team.name, team.probabilities.champion]),
@@ -138,10 +168,7 @@ const output = {
   matches,
 };
 
-await fs.writeFile(
-  path.join(root, "outputs/market-odds.json"),
-  `${JSON.stringify(output, null, 2)}\n`,
-);
+await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);
 console.log(
   JSON.stringify({
     championshipSelections: championship.length,

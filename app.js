@@ -45,11 +45,38 @@ function matchRow(match) {
 
 function predictionFor(match) {
   if (!model || model.status !== "baseline_validated") return null;
-  return model.predictions.find(
+  const home = canonical(match.home.name);
+  const away = canonical(match.away.name);
+  const direct = model.predictions.find(
     (prediction) =>
-      prediction.home === canonical(match.home.name) &&
-      prediction.away === canonical(match.away.name),
+      prediction.home === home &&
+      prediction.away === away,
   );
+  if (direct) return direct;
+  const reversed = model.predictions.find(
+    (prediction) =>
+      prediction.home === away &&
+      prediction.away === home,
+  );
+  if (!reversed) return null;
+  return {
+    ...reversed,
+    home,
+    away,
+    probabilities: {
+      home: reversed.probabilities.away,
+      draw: reversed.probabilities.draw,
+      away: reversed.probabilities.home,
+    },
+    predictedScore: {
+      home: reversed.predictedScore.away,
+      away: reversed.predictedScore.home,
+    },
+    expectedGoals: {
+      home: reversed.expectedGoals.away,
+      away: reversed.expectedGoals.home,
+    },
+  };
 }
 
 function predictionPanel(match) {
@@ -282,9 +309,12 @@ function renderLatestSignal() {
 }
 
 function renderMarketLens() {
+  const warning = market.refreshStatus
+    ? `<div class="market-warning">Odds refresh warning: ${market.warning}. Showing last official Singapore Pools snapshot from ${fmtDate(market.generatedAt)}.</div>`
+    : "";
   if (!market?.valueWatchlist?.length) {
     $("#market-watchlist").innerHTML =
-      '<div class="market-empty">No qualifying model-versus-market edge in the current official odds snapshot.</div>';
+      `${warning}<div class="market-empty">No qualifying model-versus-market edge in the current official odds snapshot.</div>`;
     return;
   }
   const conviction = {
@@ -292,7 +322,7 @@ function renderMarketLens() {
     Morocco: "SPECULATIVE VALUE",
     Japan: "SPECULATIVE VALUE",
   };
-  $("#market-watchlist").innerHTML = market.valueWatchlist
+  $("#market-watchlist").innerHTML = warning + market.valueWatchlist
     .slice(0, 3)
     .map(
       (item) => `<div class="market-row">
@@ -466,7 +496,8 @@ async function checkLatest() {
   const previousSnapshot = worldCup.generatedAt;
   button.disabled = true;
   button.textContent = "↻ CHECKING…";
-  status.textContent = "Checking the latest deployed verified snapshot…";
+  status.textContent =
+    "Checking the latest deployed verified snapshot. Live scraping runs in the data pipeline, not inside this static page.";
   try {
     [worldCup, audit, model, simulation, market] = await Promise.all([
       fetchJson("./outputs/worldcup.json", "World Cup feed", true),
@@ -482,7 +513,7 @@ async function checkLatest() {
     renderAll();
     status.textContent =
       worldCup.generatedAt === previousSnapshot
-        ? "Already on the latest deployed snapshot. Source ingestion runs separately in the verified pipeline."
+        ? "Already on the latest deployed snapshot. If a match just ended, run or wait for the data pipeline to scrape FIFA and redeploy."
         : `New verified snapshot loaded: ${fmtDate(worldCup.generatedAt)}.`;
   } catch (error) {
     status.textContent = `Latest check failed: ${error.message}. Existing verified snapshot retained.`;

@@ -655,5 +655,8 @@
         "Argentina": 1.15
       }
     }
-  ]
+  ],
+  "refreshStatus": "market_unavailable_using_cached_snapshot",
+  "lastAttemptAt": "2026-06-24T01:30:42.967Z",
+  "warning": "Championship Winner market unavailable"
 }

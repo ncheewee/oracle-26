@@ -214,6 +214,15 @@ h1 { text-transform: uppercase; letter-spacing: -.04em; font-size: clamp(26px, 3
 .market-row > div:not(:first-child) b { margin-top: 5px; font: 11px DM Mono; }
 .market-row em { color: var(--lime); font: normal 11px DM Mono; }
 .market-empty { color: var(--muted); font-size: 11px; line-height: 1.6; padding: 28px 0; }
+.market-warning {
+  border: 1px solid rgba(255, 193, 112, .35);
+  background: rgba(255, 193, 112, .08);
+  color: #ffd59a;
+  font-size: 10px;
+  line-height: 1.55;
+  padding: 10px 12px;
+  margin: 0 0 10px;
+}
 .safer-play {
   color: #99a4af; border-top: 1px solid #26313c; margin: 15px 0 0; padding-top: 15px;
   font-size: 10px; line-height: 1.55;

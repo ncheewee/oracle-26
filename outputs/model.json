@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-23T13:59:19.722Z",
-  "asOf": "2026-06-23",
+  "generatedAt": "2026-06-24T01:28:11.399Z",
+  "asOf": "2026-06-24",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -425,110 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "date": "2026-06-23",
-      "home": "Portugal",
-      "away": "Uzbekistan",
-      "probabilities": {
-        "home": 62,
-        "draw": 16.8,
-        "away": 21.3
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.52,
-        "away": 1.1
-      },
-      "confidence": 62,
-      "factors": {
-        "ratingDifference": 156,
-        "homeRating": 1935,
-        "awayRating": 1779,
-        "homeMatches": 334,
-        "awayMatches": 293
-      }
-    },
-    {
-      "date": "2026-06-23",
-      "home": "Colombia",
-      "away": "DR Congo",
-      "probabilities": {
-        "home": 63.7,
-        "draw": 16.7,
-        "away": 19.6
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.14,
-        "away": 1.09
-      },
-      "confidence": 63.7,
-      "factors": {
-        "ratingDifference": 247,
-        "homeRating": 1966,
-        "awayRating": 1720,
-        "homeMatches": 324,
-        "awayMatches": 267
-      }
-    },
-    {
-      "date": "2026-06-23",
-      "home": "England",
-      "away": "Ghana",
-      "probabilities": {
-        "home": 78.2,
-        "draw": 13.4,
-        "away": 8.4
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 0
-      },
-      "expectedGoals": {
-        "home": 1.69,
-        "away": 0.86
-      },
-      "confidence": 78.2,
-      "factors": {
-        "ratingDifference": 339,
-        "homeRating": 1999,
-        "awayRating": 1660,
-        "homeMatches": 319,
-        "awayMatches": 309
-      }
-    },
-    {
-      "date": "2026-06-23",
-      "home": "Panama",
-      "away": "Croatia",
-      "probabilities": {
-        "home": 28.1,
-        "draw": 18.1,
-        "away": 53.8
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.45,
-        "away": 1.65
-      },
-      "confidence": 53.8,
-      "factors": {
-        "ratingDifference": -107,
-        "homeRating": 1755,
-        "awayRating": 1862,
-        "homeMatches": 363,
-        "awayMatches": 306
-      }
-    },
     {
       "date": "2026-06-24",
       "home": "Mexico",

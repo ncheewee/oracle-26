@@ -87,8 +87,16 @@ function sampleGroupScore(match) {
     (prediction) =>
       prediction.home === match.home && prediction.away === match.away,
   );
+  const knownReversed = known
+    ? null
+    : model.predictions.find(
+        (prediction) =>
+          prediction.home === match.away && prediction.away === match.home,
+      );
   const lambdas = known
     ? [known.expectedGoals.home, known.expectedGoals.away]
+    : knownReversed
+      ? [knownReversed.expectedGoals.away, knownReversed.expectedGoals.home]
     : expectedGoals(match.home, match.away);
   return [poisson(lambdas[0]), poisson(lambdas[1])];
 }
@@ -104,14 +112,13 @@ function sampleKnockoutWinner(homeName, awayName) {
   return random() < homeChance ? homeName : awayName;
 }
 
-const remainingGroupMatches = model.predictions.map((prediction) => ({
-  home: prediction.home,
-  away: prediction.away,
-  group:
-    worldCup.standings.find((group) =>
-      group.teams.some((team) => canonical(team.name) === prediction.home),
-    )?.group || null,
-}));
+const remainingGroupMatches = worldCup.fixtures
+  .filter((match) => match.matchNumber <= 72 && match.status !== "FT")
+  .map((match) => ({
+    home: canonical(match.home.name),
+    away: canonical(match.away.name),
+    group: match.group,
+  }));
 
 if (
   remainingGroupMatches.length !==
