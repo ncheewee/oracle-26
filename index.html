@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=phase6" />
+    <link rel="stylesheet" href="./styles.css?v=phase7" />
   </head>
   <body>
     <div class="noise"></div>
@@ -229,13 +229,36 @@
           <article class="panel betting-rules">
             <div class="panel-title"><span>HOW TO READ THIS</span><small>MODEL EDGE ≠ CERTAINTY</small></div>
             <div class="betting-copy">
-              <p><strong>Value watch</strong> means the model probability is higher than Singapore Pools' implied probability after a conservative threshold.</p>
-              <p><strong>No bet / avoid</strong> means the market price is unattractive versus the model, even if the team may still win.</p>
-              <p>Sorted by model expected return first, then decimal odds. Odds and availability can change quickly.</p>
+              <p><strong>EV / value</strong> asks whether the odds are generous versus model probability. It can be high even for unlikely long shots.</p>
+              <p><strong>Signal strength</strong> asks whether model confidence is strong enough to care. Green means price + conviction align; amber means speculative value; red means no-bet/avoid.</p>
+              <p><strong>Default sort</strong> uses balanced value: signal strength first, then expected return. This avoids blindly ranking fragile long-shot EV above more dependable opportunities.</p>
             </div>
           </article>
           <article class="panel betting-board-panel">
-            <div class="panel-title"><span>BEST VALUE FIRST</span><small>UPCOMING MATCHES ONLY</small></div>
+            <div class="panel-title"><span>BETTING BOARD</span><small>UPCOMING MATCHES ONLY</small></div>
+            <div class="betting-controls">
+              <label>SORT BY
+                <select id="betting-sort">
+                  <option value="balanced">Balanced value</option>
+                  <option value="ev">Expected value</option>
+                  <option value="signal">Signal strength</option>
+                  <option value="confidence">Model confidence</option>
+                  <option value="odds">Highest odds</option>
+                  <option value="kickoff">Kickoff time</option>
+                </select>
+              </label>
+              <label>FILTER
+                <select id="betting-filter">
+                  <option value="value">Value + leans</option>
+                  <option value="all">All outcomes</option>
+                  <option value="green">Green signals</option>
+                  <option value="amber">Amber signals</option>
+                  <option value="red">Red / no bet</option>
+                  <option value="avoid">Avoid only</option>
+                </select>
+              </label>
+              <div class="filter-count"><span>VISIBLE</span><strong id="betting-count">—</strong></div>
+            </div>
             <div id="betting-board" class="betting-board loading-block"></div>
           </article>
           <article class="panel betting-avoid-panel">
@@ -246,6 +269,6 @@
       </section>
     </main>
 
-    <script type="module" src="./app.js?v=phase6"></script>
+    <script type="module" src="./app.js?v=phase7"></script>
   </body>
 </html>

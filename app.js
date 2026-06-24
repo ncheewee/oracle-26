@@ -13,6 +13,8 @@ let audit;
 let model;
 let simulation;
 let market;
+let bettingSort = "balanced";
+let bettingFilter = "value";
 
 const aliases = {
   "Korea Republic": "South Korea",
@@ -262,12 +264,16 @@ function marketOutcomeRows() {
           Math.round((outcome.modelProbability - marketImpliedProbability) * 10) / 10;
         const expectedReturn =
           Math.round(((outcome.modelProbability / 100) * outcome.decimalOdds - 1) * 1000) / 10;
+        const signal = signalForBet({
+          modelProbability: outcome.modelProbability,
+          probabilityEdge,
+          expectedReturn,
+        });
         const recommendation =
-          outcome.modelProbability >= 18 &&
-          probabilityEdge >= 2 &&
+          signal.label === "GREEN" &&
           expectedReturn >= 8
             ? "VALUE WATCH"
-            : probabilityEdge > 0 && expectedReturn > 0
+            : signal.label === "AMBER"
               ? "LEAN ONLY"
               : probabilityEdge <= -6 || expectedReturn <= -18
                 ? "AVOID"
@@ -281,10 +287,41 @@ function marketOutcomeRows() {
           marketImpliedProbability,
           probabilityEdge,
           expectedReturn,
+          signal,
           recommendation,
         };
       });
   });
+}
+
+function signalForBet(row) {
+  if (
+    row.modelProbability >= 45 &&
+    row.probabilityEdge >= 2 &&
+    row.expectedReturn > 0
+  ) {
+    return {
+      label: "GREEN",
+      rank: 3,
+      note: "model conviction and price both align",
+    };
+  }
+  if (
+    row.expectedReturn > 0 &&
+    row.probabilityEdge > 0 &&
+    row.modelProbability >= 18
+  ) {
+    return {
+      label: "AMBER",
+      rank: 2,
+      note: "positive value but speculative or lower conviction",
+    };
+  }
+  return {
+    label: "RED",
+    rank: 1,
+    note: "price is weak or confidence is too low",
+  };
 }
 
 function predictionPanel(match) {
@@ -644,14 +681,10 @@ function renderScorecard() {
 
 function renderBetting() {
   const rows = marketOutcomeRows();
-  const valueRows = rows
-    .filter((row) => ["VALUE WATCH", "LEAN ONLY"].includes(row.recommendation))
-    .sort(
-      (a, b) =>
-        b.expectedReturn - a.expectedReturn ||
-        b.probabilityEdge - a.probabilityEdge ||
-        b.decimalOdds - a.decimalOdds,
-    );
+  const valueRows = sortBettingRows(
+    rows.filter((row) => ["VALUE WATCH", "LEAN ONLY"].includes(row.recommendation)),
+    "balanced",
+  );
   const avoidRows = rows
     .filter((row) => ["AVOID", "NO BET"].includes(row.recommendation))
     .sort(
@@ -659,8 +692,11 @@ function renderBetting() {
         a.expectedReturn - b.expectedReturn ||
         a.probabilityEdge - b.probabilityEdge,
     );
+  const visibleRows = sortBettingRows(filterBettingRows(rows), bettingSort);
   const best = valueRows[0];
   const upcomingEvents = new Set(rows.map((row) => row.event.eventId));
+  const greenCount = rows.filter((row) => row.signal.label === "GREEN").length;
+  const amberCount = rows.filter((row) => row.signal.label === "AMBER").length;
   const freshLabel = market?.refreshStatus
     ? `STALE / ${market.warning || "using cached odds"}`
     : `UPDATED ${fmtDate(market.generatedAt).toUpperCase()}`;
@@ -668,18 +704,70 @@ function renderBetting() {
     <div class="betting-kpi-grid">
       <div><span>ODDS SNAPSHOT</span><strong>${freshLabel}</strong><small>${market?.source?.name || "Singapore Pools"}</small></div>
       <div><span>UPCOMING MARKETS</span><strong>${upcomingEvents.size}</strong><small>matched to model fixtures</small></div>
-      <div><span>VALUE WATCHES</span><strong>${valueRows.filter((row) => row.recommendation === "VALUE WATCH").length}</strong><small>positive edge above gate</small></div>
-      <div><span>TOP SIGNAL</span><strong>${best ? best.label : "NO BET"}</strong><small>${best ? `${best.expectedReturn}% model EV · ${best.decimalOdds.toFixed(2)} odds` : "no qualifying edge"}</small></div>
+      <div><span>SIGNAL SPLIT</span><strong>${greenCount}G / ${amberCount}A</strong><small>green and amber value signals</small></div>
+      <div><span>TOP BALANCED</span><strong>${best ? best.label : "NO BET"}</strong><small>${best ? `${best.signal.label} · ${best.expectedReturn}% EV · ${best.decimalOdds.toFixed(2)} odds` : "no qualifying edge"}</small></div>
     </div>
-    <p class="betting-warning">This board ranks pricing gaps, not certainty. A high-odds outcome can still be unlikely; stake nothing you cannot afford to lose.</p>`;
+    <p class="betting-warning">EV/value is price quality. Signal strength is model conviction. Default sorting uses both; use the dropdowns to inspect pure EV, model confidence, odds, or avoid/no-bet outcomes.</p>`;
+  $("#betting-count").textContent = visibleRows.length;
   $("#betting-board").innerHTML =
-    valueRows.length
-      ? valueRows.slice(0, 12).map(renderBettingRow).join("")
-      : '<div class="market-empty">No positive model-versus-market edge in upcoming Singapore Pools match odds.</div>';
+    visibleRows.length
+      ? visibleRows.slice(0, 18).map(renderBettingRow).join("")
+      : '<div class="market-empty">No outcomes match the current betting filter.</div>';
   $("#betting-avoid").innerHTML =
     avoidRows.length
       ? avoidRows.slice(0, 10).map(renderBettingRow).join("")
       : '<div class="market-empty">No strongly negative model edge found in upcoming match odds.</div>';
+}
+
+function filterBettingRows(rows) {
+  if (bettingFilter === "all") return rows;
+  if (bettingFilter === "value") {
+    return rows.filter((row) => ["VALUE WATCH", "LEAN ONLY"].includes(row.recommendation));
+  }
+  if (bettingFilter === "green") {
+    return rows.filter((row) => row.signal.label === "GREEN");
+  }
+  if (bettingFilter === "amber") {
+    return rows.filter((row) => row.signal.label === "AMBER");
+  }
+  if (bettingFilter === "red") {
+    return rows.filter((row) => row.signal.label === "RED");
+  }
+  if (bettingFilter === "avoid") {
+    return rows.filter((row) => row.recommendation === "AVOID");
+  }
+  return rows;
+}
+
+function sortBettingRows(rows, sortMode) {
+  const sorted = [...rows];
+  const kickoff = (row) => new Date(row.event.startTime).getTime();
+  const sorters = {
+    balanced: (a, b) =>
+      b.signal.rank - a.signal.rank ||
+      b.expectedReturn - a.expectedReturn ||
+      b.probabilityEdge - a.probabilityEdge ||
+      b.modelProbability - a.modelProbability,
+    ev: (a, b) =>
+      b.expectedReturn - a.expectedReturn ||
+      b.probabilityEdge - a.probabilityEdge ||
+      b.signal.rank - a.signal.rank,
+    signal: (a, b) =>
+      b.signal.rank - a.signal.rank ||
+      b.modelProbability - a.modelProbability ||
+      b.expectedReturn - a.expectedReturn,
+    confidence: (a, b) =>
+      b.modelProbability - a.modelProbability ||
+      b.probabilityEdge - a.probabilityEdge,
+    odds: (a, b) =>
+      b.decimalOdds - a.decimalOdds ||
+      b.expectedReturn - a.expectedReturn,
+    kickoff: (a, b) =>
+      kickoff(a) - kickoff(b) ||
+      b.signal.rank - a.signal.rank ||
+      b.expectedReturn - a.expectedReturn,
+  };
+  return sorted.sort(sorters[sortMode] || sorters.balanced);
 }
 
 function renderBettingRow(row) {
@@ -692,6 +780,7 @@ function renderBettingRow(row) {
   return `<div class="bet-row ${cls}">
     <div class="bet-match"><span>M${row.fixture.matchNumber} · ${row.fixture.status}</span><strong>${row.homeName} vs ${row.awayName}</strong><small>${new Date(row.event.startTime).toLocaleString("en-SG", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</small></div>
     <div><span>SELECTION</span><strong>${row.label}</strong><small>${row.recommendation}</small></div>
+    <div><span>SIGNAL</span><strong class="signal-${row.signal.label.toLowerCase()}">${row.signal.label}</strong><small>${row.signal.note}</small></div>
     <div><span>SP ODDS</span><strong>${row.decimalOdds.toFixed(2)}</strong><small>${row.marketImpliedProbability}% implied</small></div>
     <div><span>MODEL</span><strong>${row.modelProbability}%</strong><small>${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp edge</small></div>
     <em>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}% EV</em>
@@ -984,6 +1073,14 @@ $("#status-filter").addEventListener("change", renderMatches);
 $("#team-a").addEventListener("change", renderComparison);
 $("#team-b").addEventListener("change", renderComparison);
 $("#refresh-data").addEventListener("click", checkLatest);
+$("#betting-sort").addEventListener("change", (event) => {
+  bettingSort = event.target.value;
+  renderBetting();
+});
+$("#betting-filter").addEventListener("change", (event) => {
+  bettingFilter = event.target.value;
+  renderBetting();
+});
 
 const initialView = location.hash.slice(1);
 if (initialView && document.getElementById(initialView)) setView(initialView);
