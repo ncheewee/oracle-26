@@ -393,9 +393,6 @@ function explainBet(row) {
   const expectedGoalLine = prediction
     ? `${row.homeName} ${prediction.expectedGoals.home.toFixed(2)} xG · ${row.awayName} ${prediction.expectedGoals.away.toFixed(2)} xG`
     : "Expected goals unavailable for this pairing.";
-  const scoreline = prediction
-    ? `${prediction.predictedScore.home}-${prediction.predictedScore.away}`
-    : "—";
   const probabilityEntries = prediction
     ? [
         { key: "home", label: row.homeName, value: prediction.probabilities.home },
@@ -404,19 +401,6 @@ function explainBet(row) {
       ]
     : [];
   const aggregateLeader = probabilityEntries.sort((a, b) => b.value - a.value)[0];
-  const exactScoreOutcome = prediction
-    ? prediction.predictedScore.home > prediction.predictedScore.away
-      ? "home"
-      : prediction.predictedScore.home === prediction.predictedScore.away
-        ? "draw"
-        : "away"
-    : null;
-  const scorelineNote =
-    prediction && aggregateLeader && exactScoreOutcome !== aggregateLeader.key
-      ? `Most likely exact score is ${scoreline}, but aggregate 1X2 probability favours ${aggregateLeader.label} because multiple ${aggregateLeader.label.toLowerCase()} scorelines add up to ${aggregateLeader.value}%.`
-      : prediction && aggregateLeader
-        ? `Most likely exact score and aggregate 1X2 leader both point to ${aggregateLeader.label}.`
-        : expectedGoalLine;
   const recentHome = recentTeamResults(row.homeName);
   const recentAway = recentTeamResults(row.awayName);
   const selectedRecord = selectedGroup
@@ -437,7 +421,7 @@ function explainBet(row) {
       <div><span>SP odds</span><strong>${row.decimalOdds.toFixed(2)}</strong><small>${row.marketImpliedProbability}% market implied</small></div>
       <div><span>Model</span><strong class="signal-${row.signal.label.toLowerCase()}">${selectedProbability}%</strong><small>${row.signal.note}</small></div>
       <div><span>Edge</span><strong>${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp</strong><small>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}% EV</small></div>
-      <div><span>Most likely score</span><strong>${scoreline}</strong><small>${expectedGoalLine}</small></div>
+      <div><span>Expected goals</span><strong>${prediction ? `${prediction.expectedGoals.home.toFixed(2)} · ${prediction.expectedGoals.away.toFixed(2)}` : "—"}</strong><small>${expectedGoalLine}</small></div>
     </div>
     <div class="bet-explainer-grid">
       <section>
@@ -453,7 +437,7 @@ function explainBet(row) {
           <p><span>Draw</span><b>${prediction?.probabilities.draw ?? "—"}%</b></p>
           <p><span>${row.awayName}</span><b>${prediction?.probabilities.away ?? "—"}%</b></p>
         </div>
-        <p>${scorelineNote}</p>
+        <p>${aggregateLeader ? `Aggregate 1X2 leader: ${aggregateLeader.label} at ${aggregateLeader.value}%. Exact scorelines are intentionally hidden here because they can distract from the betting outcome.` : "Outcome probabilities are unavailable for this pairing."}</p>
         ${
           fixturePrediction && fixturePrediction !== prediction
             ? `<small>FIFA fixture orientation: ${fixtureHome} ${fixtureProbabilities.home}% · Draw ${fixtureProbabilities.draw}% · ${fixtureAway} ${fixtureProbabilities.away}%.</small>`
@@ -486,7 +470,7 @@ function predictionPanel(match) {
     [match.away.code, prediction.probabilities.away],
   ];
   return `<div class="prediction-strip">
-    <div class="prediction-head"><span>MOST LIKELY SCORE</span><b>${prediction.predictedScore.home}–${prediction.predictedScore.away}</b></div>
+    <div class="prediction-head"><span>1X2 OUTCOME MODEL</span><b>${Math.max(...values.map(([, value]) => value))}% TOP OUTCOME</b></div>
     <div class="probability-bars">${values
       .map(
         ([label, value]) => `<div><span>${label}</span><i><b style="width:${value}%"></b></i><strong>${value}%</strong></div>`,
