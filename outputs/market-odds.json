@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T16:31:18.073Z",
+  "generatedAt": "2026-06-24T18:59:52.992Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -387,22 +387,22 @@
       "eventId": "140109",
       "eventNumber": null,
       "name": "Bosnia vs Qatar",
-      "startTime": "2026-06-24T19:00:00Z",
+      "startTime": "2026-06-24T19:05:00Z",
       "prices": {
-        "Bosnia": 1.3,
-        "Draw": 4.8,
-        "Qatar": 7
+        "Bosnia": 1.35,
+        "Draw": 4.5,
+        "Qatar": 6.5
       }
     },
     {
       "eventId": "140111",
       "eventNumber": null,
       "name": "Switzerland vs Canada",
-      "startTime": "2026-06-24T19:00:00Z",
+      "startTime": "2026-06-24T19:05:00Z",
       "prices": {
-        "Switzerland": 2.3,
-        "Draw": 2.55,
-        "Canada": 3.3
+        "Switzerland": 2.5,
+        "Draw": 2.4,
+        "Canada": 3.1
       }
     },
     {
@@ -412,8 +412,8 @@
       "startTime": "2026-06-24T22:00:00Z",
       "prices": {
         "Morocco": 1.13,
-        "Draw": 5.8,
-        "Haiti": 15
+        "Draw": 6,
+        "Haiti": 13
       }
     },
     {
@@ -445,8 +445,8 @@
       "startTime": "2026-06-25T01:00:00Z",
       "prices": {
         "South Africa": 5.5,
-        "Draw": 3.8,
-        "Korea Republic": 1.48
+        "Draw": 4,
+        "Korea Republic": 1.42
       }
     },
     {
@@ -466,7 +466,7 @@
       "name": "Ecuador vs Germany",
       "startTime": "2026-06-25T20:00:00Z",
       "prices": {
-        "Ecuador": 3.9,
+        "Ecuador": 3.8,
         "Draw": 3.8,
         "Germany": 1.67
       }
@@ -499,9 +499,9 @@
       "name": "Paraguay vs Australia",
       "startTime": "2026-06-26T02:00:00Z",
       "prices": {
-        "Paraguay": 2.65,
+        "Paraguay": 2.7,
         "Draw": 2.15,
-        "Australia": 3.6
+        "Australia": 3.5
       }
     },
     {
@@ -511,8 +511,8 @@
       "startTime": "2026-06-26T02:00:00Z",
       "prices": {
         "Turkey": 3.5,
-        "Draw": 3.6,
-        "USA": 1.77
+        "Draw": 3.7,
+        "USA": 1.75
       }
     },
     {
@@ -565,9 +565,9 @@
       "name": "Egypt vs Iran",
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
-        "Egypt": 2.3,
+        "Egypt": 2.25,
         "Draw": 2.55,
-        "Iran": 3.3
+        "Iran": 3.4
       }
     },
     {
@@ -576,9 +576,9 @@
       "name": "New Zealand vs Belgium",
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
-        "New Zealand": 11,
-        "Draw": 5.8,
-        "Belgium": 1.15
+        "New Zealand": 12,
+        "Draw": 6.5,
+        "Belgium": 1.12
       }
     },
     {
@@ -609,9 +609,9 @@
       "name": "Colombia vs Portugal",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Colombia": 3.7,
+        "Colombia": 3.8,
         "Draw": 3.4,
-        "Portugal": 1.77
+        "Portugal": 1.75
       }
     },
     {
@@ -620,8 +620,8 @@
       "name": "Congo DR vs Uzbekistan",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Congo DR": 1.67,
-        "Draw": 3.5,
+        "Congo DR": 1.7,
+        "Draw": 3.4,
         "Uzbekistan": 4
       }
     },
@@ -631,8 +631,8 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.2,
-        "Draw": 2.3,
+        "Algeria": 3.1,
+        "Draw": 2.35,
         "Austria": 2.7
       }
     },
@@ -643,9 +643,12 @@
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
         "Jordan": 17,
-        "Draw": 6.5,
-        "Argentina": 1.1
+        "Draw": 5.8,
+        "Argentina": 1.12
       }
     }
-  ]
+  ],
+  "refreshStatus": "market_unavailable_using_cached_snapshot",
+  "lastAttemptAt": "2026-06-24T18:59:52.991Z",
+  "warning": "Championship Winner market unavailable"
 }
