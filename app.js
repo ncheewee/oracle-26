@@ -693,6 +693,7 @@ function renderBetting() {
         a.probabilityEdge - b.probabilityEdge,
     );
   const visibleRows = sortBettingRows(filterBettingRows(rows), bettingSort);
+  const dateColumns = nextBettingDateColumns(visibleRows);
   const best = valueRows[0];
   const upcomingEvents = new Set(rows.map((row) => row.event.eventId));
   const greenCount = rows.filter((row) => row.signal.label === "GREEN").length;
@@ -708,15 +709,58 @@ function renderBetting() {
       <div><span>TOP BALANCED</span><strong>${best ? best.label : "NO BET"}</strong><small>${best ? `${best.signal.label} · ${best.expectedReturn}% EV · ${best.decimalOdds.toFixed(2)} odds` : "no qualifying edge"}</small></div>
     </div>
     <p class="betting-warning">EV/value is price quality. Signal strength is model conviction. Default sorting uses both; use the dropdowns to inspect pure EV, model confidence, odds, or avoid/no-bet outcomes.</p>`;
-  $("#betting-count").textContent = visibleRows.length;
+  $("#betting-count").textContent = dateColumns.reduce(
+    (sum, column) => sum + column.rows.length,
+    0,
+  );
   $("#betting-board").innerHTML =
     visibleRows.length
-      ? visibleRows.slice(0, 18).map(renderBettingRow).join("")
+      ? renderBettingColumns(dateColumns)
       : '<div class="market-empty">No outcomes match the current betting filter.</div>';
   $("#betting-avoid").innerHTML =
     avoidRows.length
       ? avoidRows.slice(0, 10).map(renderBettingRow).join("")
       : '<div class="market-empty">No strongly negative model edge found in upcoming match odds.</div>';
+}
+
+function singaporeDateKey(iso) {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Singapore",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(iso));
+}
+
+function singaporeDateLabel(dateKey) {
+  return new Intl.DateTimeFormat("en-SG", {
+    timeZone: "Asia/Singapore",
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+  }).format(new Date(`${dateKey}T00:00:00+08:00`));
+}
+
+function nextBettingDateColumns(rows) {
+  const keys = [...new Set(rows.map((row) => singaporeDateKey(row.event.startTime)))]
+    .sort()
+    .slice(0, 3);
+  return keys.map((key) => ({
+    key,
+    label: singaporeDateLabel(key),
+    rows: rows.filter((row) => singaporeDateKey(row.event.startTime) === key),
+  }));
+}
+
+function renderBettingColumns(columns) {
+  return `<div class="betting-day-grid">${columns
+    .map(
+      (column, index) => `<section class="betting-day">
+        <h3><span>DAY ${index + 1}</span><strong>${column.label}</strong><small>${column.rows.length} outcome${column.rows.length === 1 ? "" : "s"}</small></h3>
+        <div>${column.rows.length ? column.rows.map(renderBettingRow).join("") : '<div class="market-empty">No matched outcomes for this date.</div>'}</div>
+      </section>`,
+    )
+    .join("")}</div>`;
 }
 
 function filterBettingRows(rows) {

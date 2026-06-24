@@ -375,6 +375,24 @@ input:focus, select:focus { border-color: var(--cyan); }
   margin-top: 18px; padding: 14px; border: 1px solid #26313d; background: #090e14;
 }
 .betting-board { display: grid; gap: 8px; margin-top: 18px; }
+.betting-day-grid { display: grid; grid-template-columns: repeat(3, minmax(260px, 1fr)); gap: 12px; align-items: start; }
+.betting-day { border: 1px solid #26313d; background: #080c11; min-width: 0; }
+.betting-day h3 {
+  position: sticky; top: 112px; z-index: 2; margin: 0; padding: 13px 14px;
+  background: linear-gradient(135deg, #111922, #090e14); border-bottom: 1px solid #26313d;
+}
+.betting-day h3 span, .betting-day h3 strong, .betting-day h3 small { display: block; }
+.betting-day h3 span { color: var(--red); font: 9px DM Mono; letter-spacing: .12em; }
+.betting-day h3 strong { color: var(--text); font: 16px DM Mono; margin: 5px 0; text-transform: uppercase; }
+.betting-day h3 small { color: var(--muted); font: 10px DM Mono; }
+.betting-day > div { display: grid; gap: 8px; padding: 10px; }
+.betting-day .bet-row {
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  gap: 9px;
+  padding: 13px;
+}
+.betting-day .bet-row em { text-align: left; font-size: 17px; }
 .bet-row {
   display: grid; grid-template-columns: 1.25fr .75fr .72fr .62fr .62fr 90px; gap: 12px; align-items: center;
   border: 1px solid #202a35; background: #090e14; padding: 14px; font-size: 12px;
@@ -450,6 +468,8 @@ input:focus, select:focus { border-color: var(--cyan); }
   .scorecard-metrics, .journey-hero, .journey-columns { grid-template-columns: 1fr; }
   .betting-kpi-grid { grid-template-columns: 1fr; }
   .betting-controls { grid-template-columns: 1fr; }
+  .betting-day-grid { grid-template-columns: 1fr; }
+  .betting-day h3 { position: static; }
   .journey-fixtures { grid-template-columns: 1fr; }
   .audit-row { grid-template-columns: 45px 1fr 55px; }
   .bet-row, .compact-board .bet-row { grid-template-columns: 1fr; }
