@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T18:59:52.992Z",
+  "generatedAt": "2026-06-24T20:55:42.325Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -384,35 +384,13 @@
   ],
   "matches": [
     {
-      "eventId": "140109",
-      "eventNumber": null,
-      "name": "Bosnia vs Qatar",
-      "startTime": "2026-06-24T19:05:00Z",
-      "prices": {
-        "Bosnia": 1.35,
-        "Draw": 4.5,
-        "Qatar": 6.5
-      }
-    },
-    {
-      "eventId": "140111",
-      "eventNumber": null,
-      "name": "Switzerland vs Canada",
-      "startTime": "2026-06-24T19:05:00Z",
-      "prices": {
-        "Switzerland": 2.5,
-        "Draw": 2.4,
-        "Canada": 3.1
-      }
-    },
-    {
       "eventId": "140117",
       "eventNumber": null,
       "name": "Morocco vs Haiti",
       "startTime": "2026-06-24T22:00:00Z",
       "prices": {
-        "Morocco": 1.13,
-        "Draw": 6,
+        "Morocco": 1.15,
+        "Draw": 5.2,
         "Haiti": 13
       }
     },
@@ -422,9 +400,9 @@
       "name": "Scotland vs Brazil",
       "startTime": "2026-06-24T22:00:00Z",
       "prices": {
-        "Scotland": 10,
+        "Scotland": 9.5,
         "Draw": 5.2,
-        "Brazil": 1.2
+        "Brazil": 1.22
       }
     },
     {
@@ -466,7 +444,7 @@
       "name": "Ecuador vs Germany",
       "startTime": "2026-06-25T20:00:00Z",
       "prices": {
-        "Ecuador": 3.8,
+        "Ecuador": 3.9,
         "Draw": 3.8,
         "Germany": 1.67
       }
@@ -488,8 +466,8 @@
       "name": "Tunisia vs Holland",
       "startTime": "2026-06-25T23:00:00Z",
       "prices": {
-        "Tunisia": 17,
-        "Draw": 8.5,
+        "Tunisia": 19,
+        "Draw": 8,
         "Holland": 1.05
       }
     },
@@ -499,9 +477,9 @@
       "name": "Paraguay vs Australia",
       "startTime": "2026-06-26T02:00:00Z",
       "prices": {
-        "Paraguay": 2.7,
+        "Paraguay": 2.9,
         "Draw": 2.15,
-        "Australia": 3.5
+        "Australia": 3.2
       }
     },
     {
@@ -511,8 +489,8 @@
       "startTime": "2026-06-26T02:00:00Z",
       "prices": {
         "Turkey": 3.5,
-        "Draw": 3.7,
-        "USA": 1.75
+        "Draw": 3.6,
+        "USA": 1.77
       }
     },
     {
@@ -543,9 +521,9 @@
       "name": "Cape Verde vs Saudi Arabia",
       "startTime": "2026-06-27T00:00:00Z",
       "prices": {
-        "Cape Verde": 2.05,
+        "Cape Verde": 2.1,
         "Draw": 3.3,
-        "Saudi Arabia": 2.8
+        "Saudi Arabia": 2.75
       }
     },
     {
@@ -587,9 +565,9 @@
       "name": "Croatia vs Ghana",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Croatia": 1.7,
-        "Draw": 3.1,
-        "Ghana": 4.7
+        "Croatia": 1.77,
+        "Draw": 3.05,
+        "Ghana": 4.5
       }
     },
     {
@@ -598,8 +576,8 @@
       "name": "Panama vs England",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Panama": 12,
-        "Draw": 6,
+        "Panama": 11,
+        "Draw": 6.5,
         "England": 1.13
       }
     },
@@ -620,9 +598,9 @@
       "name": "Congo DR vs Uzbekistan",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Congo DR": 1.7,
+        "Congo DR": 1.67,
         "Draw": 3.4,
-        "Uzbekistan": 4
+        "Uzbekistan": 4.1
       }
     },
     {
@@ -631,9 +609,9 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.1,
-        "Draw": 2.35,
-        "Austria": 2.7
+        "Algeria": 3.4,
+        "Draw": 2.25,
+        "Austria": 2.65
       }
     },
     {
@@ -642,13 +620,13 @@
       "name": "Jordan vs Argentina",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Jordan": 17,
-        "Draw": 5.8,
-        "Argentina": 1.12
+        "Jordan": 19,
+        "Draw": 6.5,
+        "Argentina": 1.1
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-24T18:59:52.991Z",
+  "lastAttemptAt": "2026-06-24T20:55:42.325Z",
   "warning": "Championship Winner market unavailable"
 }
