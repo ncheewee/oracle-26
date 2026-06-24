@@ -17,26 +17,16 @@ const aliases = {
   "Czech Republic": "Czechia",
 };
 
-async function preserveCachedMarket(reason) {
+async function cachedMarketFallback(reason) {
   try {
     const cached = JSON.parse(await fs.readFile(outputPath, "utf8"));
-    const output = {
-      ...cached,
+    return {
+      championship: cached.championship || [],
+      valueWatchlist: cached.valueWatchlist || [],
       refreshStatus: "market_unavailable_using_cached_snapshot",
       lastAttemptAt: new Date().toISOString(),
       warning: reason,
     };
-    await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);
-    console.log(
-      JSON.stringify({
-        status: output.refreshStatus,
-        warning: reason,
-        cachedGeneratedAt: cached.generatedAt,
-        championshipSelections: cached.championship?.length || 0,
-        matches: cached.matches?.length || 0,
-      }),
-    );
-    process.exit(0);
   } catch {
     throw new Error(reason);
   }
@@ -66,7 +56,7 @@ try {
 }
 
 if (!outrights || !upcoming) {
-  await preserveCachedMarket(
+  throw new Error(
     "Singapore Pools public odds responses were not captured",
   );
 }
@@ -77,52 +67,56 @@ const winnerEvent = outrights.events.find((event) =>
 const winnerMarket = winnerEvent?.markets.find(
   (market) => market.name === "Championship Winner",
 );
-if (!winnerMarket) {
-  await preserveCachedMarket("Championship Winner market unavailable");
-}
 
 const teamProbability = new Map(
   simulation.teams.map((team) => [team.name, team.probabilities.champion]),
 );
-const championship = winnerMarket.outcomes
-  .filter((outcome) => outcome.isActive && outcome.prices?.[0]?.decimal)
-  .map((outcome) => {
-    const team = aliases[outcome.name] || outcome.name;
-    const decimalOdds = Number(outcome.prices[0].decimal);
-    const modelProbability = teamProbability.get(team) ?? null;
-    const marketImpliedProbability =
-      Math.round((100 / decimalOdds) * 10) / 10;
-    const expectedReturn =
-      modelProbability === null
-        ? null
-        : Math.round(
-            ((modelProbability / 100) * decimalOdds - 1) * 1000,
-          ) / 10;
-    return {
-      team,
-      decimalOdds,
-      marketImpliedProbability,
-      modelProbability,
-      probabilityEdge:
+const marketFallback = winnerMarket
+  ? null
+  : await cachedMarketFallback("Championship Winner market unavailable");
+const championship =
+  marketFallback?.championship ||
+  winnerMarket.outcomes
+    .filter((outcome) => outcome.isActive && outcome.prices?.[0]?.decimal)
+    .map((outcome) => {
+      const team = aliases[outcome.name] || outcome.name;
+      const decimalOdds = Number(outcome.prices[0].decimal);
+      const modelProbability = teamProbability.get(team) ?? null;
+      const marketImpliedProbability =
+        Math.round((100 / decimalOdds) * 10) / 10;
+      const expectedReturn =
         modelProbability === null
           ? null
-          : Math.round((modelProbability - marketImpliedProbability) * 10) / 10,
-      expectedReturn,
-    };
-  });
+          : Math.round(
+              ((modelProbability / 100) * decimalOdds - 1) * 1000,
+            ) / 10;
+      return {
+        team,
+        decimalOdds,
+        marketImpliedProbability,
+        modelProbability,
+        probabilityEdge:
+          modelProbability === null
+            ? null
+            : Math.round((modelProbability - marketImpliedProbability) * 10) / 10,
+        expectedReturn,
+      };
+    });
 
-const valueWatchlist = championship
-  .filter(
-    (item) =>
-      item.modelProbability >= 5 &&
-      item.probabilityEdge >= 2 &&
-      item.expectedReturn > 10,
-  )
-  .sort(
-    (a, b) =>
-      b.modelProbability - a.modelProbability ||
-      b.expectedReturn - a.expectedReturn,
-  );
+const valueWatchlist =
+  marketFallback?.valueWatchlist ||
+  championship
+    .filter(
+      (item) =>
+        item.modelProbability >= 5 &&
+        item.probabilityEdge >= 2 &&
+        item.expectedReturn > 10,
+    )
+    .sort(
+      (a, b) =>
+        b.modelProbability - a.modelProbability ||
+        b.expectedReturn - a.expectedReturn,
+    );
 
 const matches = upcoming.events
   .map((event) => {
@@ -166,6 +160,13 @@ const output = {
   championship,
   valueWatchlist,
   matches,
+  ...(marketFallback
+    ? {
+        refreshStatus: marketFallback.refreshStatus,
+        lastAttemptAt: marketFallback.lastAttemptAt,
+        warning: marketFallback.warning,
+      }
+    : {}),
 };
 
 await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);

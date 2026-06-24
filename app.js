@@ -24,6 +24,10 @@ const aliases = {
   "Congo DR": "DR Congo",
   USA: "United States",
   Curaçao: "Curacao",
+  Curacao: "Curacao",
+  Holland: "Netherlands",
+  Bosnia: "Bosnia and Herzegovina",
+  "Cote d'Ivoire": "Ivory Coast",
 };
 const canonical = (name) => aliases[name] || name;
 const pct = (value) => `${Math.round(value * 10) / 10}%`;
@@ -161,8 +165,13 @@ function matchRow(match) {
 
 function predictionFor(match) {
   if (!model || model.status !== "baseline_validated") return null;
-  const home = canonical(match.home.name);
-  const away = canonical(match.away.name);
+  return predictionForNames(match.home.name, match.away.name);
+}
+
+function predictionForNames(homeName, awayName) {
+  if (!model || model.status !== "baseline_validated") return null;
+  const home = canonical(homeName);
+  const away = canonical(awayName);
   const direct = model.predictions.find(
     (prediction) =>
       prediction.home === home &&
@@ -193,6 +202,89 @@ function predictionFor(match) {
       away: reversed.expectedGoals.home,
     },
   };
+}
+
+function marketTeams(event) {
+  if (event.home && event.away) return [event.home, event.away];
+  const parts = event.name?.split(/\s+vs\s+/i).map((part) => part.trim());
+  return parts?.length === 2 ? parts : [null, null];
+}
+
+function matchingFixtureForMarket(homeName, awayName) {
+  const home = canonical(homeName);
+  const away = canonical(awayName);
+  return worldCup.fixtures.find((match) => {
+    const fixtureHome = canonical(match.home.name);
+    const fixtureAway = canonical(match.away.name);
+    return (
+      match.status !== "FT" &&
+      ((fixtureHome === home && fixtureAway === away) ||
+        (fixtureHome === away && fixtureAway === home))
+    );
+  });
+}
+
+function marketOutcomeRows() {
+  if (!market?.matches?.length) return [];
+  return market.matches.flatMap((event) => {
+    const [homeName, awayName] = marketTeams(event);
+    if (!homeName || !awayName) return [];
+    const fixture = matchingFixtureForMarket(homeName, awayName);
+    if (!fixture) return [];
+    const prediction = predictionForNames(homeName, awayName);
+    if (!prediction) return [];
+    const prices = event.prices || {};
+    const outcomes = [
+      {
+        key: "home",
+        label: homeName,
+        modelProbability: prediction.probabilities.home,
+        decimalOdds: prices[homeName],
+      },
+      {
+        key: "draw",
+        label: "Draw",
+        modelProbability: prediction.probabilities.draw,
+        decimalOdds: prices.Draw,
+      },
+      {
+        key: "away",
+        label: awayName,
+        modelProbability: prediction.probabilities.away,
+        decimalOdds: prices[awayName],
+      },
+    ];
+    return outcomes
+      .filter((outcome) => Number.isFinite(outcome.decimalOdds))
+      .map((outcome) => {
+        const marketImpliedProbability = Math.round((100 / outcome.decimalOdds) * 10) / 10;
+        const probabilityEdge =
+          Math.round((outcome.modelProbability - marketImpliedProbability) * 10) / 10;
+        const expectedReturn =
+          Math.round(((outcome.modelProbability / 100) * outcome.decimalOdds - 1) * 1000) / 10;
+        const recommendation =
+          outcome.modelProbability >= 18 &&
+          probabilityEdge >= 2 &&
+          expectedReturn >= 8
+            ? "VALUE WATCH"
+            : probabilityEdge > 0 && expectedReturn > 0
+              ? "LEAN ONLY"
+              : probabilityEdge <= -6 || expectedReturn <= -18
+                ? "AVOID"
+                : "NO BET";
+        return {
+          ...outcome,
+          event,
+          fixture,
+          homeName,
+          awayName,
+          marketImpliedProbability,
+          probabilityEdge,
+          expectedReturn,
+          recommendation,
+        };
+      });
+  });
 }
 
 function predictionPanel(match) {
@@ -550,6 +642,62 @@ function renderScorecard() {
   renderWinnerJourney();
 }
 
+function renderBetting() {
+  const rows = marketOutcomeRows();
+  const valueRows = rows
+    .filter((row) => ["VALUE WATCH", "LEAN ONLY"].includes(row.recommendation))
+    .sort(
+      (a, b) =>
+        b.expectedReturn - a.expectedReturn ||
+        b.probabilityEdge - a.probabilityEdge ||
+        b.decimalOdds - a.decimalOdds,
+    );
+  const avoidRows = rows
+    .filter((row) => ["AVOID", "NO BET"].includes(row.recommendation))
+    .sort(
+      (a, b) =>
+        a.expectedReturn - b.expectedReturn ||
+        a.probabilityEdge - b.probabilityEdge,
+    );
+  const best = valueRows[0];
+  const upcomingEvents = new Set(rows.map((row) => row.event.eventId));
+  const freshLabel = market?.refreshStatus
+    ? `STALE / ${market.warning || "using cached odds"}`
+    : `UPDATED ${fmtDate(market.generatedAt).toUpperCase()}`;
+  $("#betting-summary").innerHTML = `
+    <div class="betting-kpi-grid">
+      <div><span>ODDS SNAPSHOT</span><strong>${freshLabel}</strong><small>${market?.source?.name || "Singapore Pools"}</small></div>
+      <div><span>UPCOMING MARKETS</span><strong>${upcomingEvents.size}</strong><small>matched to model fixtures</small></div>
+      <div><span>VALUE WATCHES</span><strong>${valueRows.filter((row) => row.recommendation === "VALUE WATCH").length}</strong><small>positive edge above gate</small></div>
+      <div><span>TOP SIGNAL</span><strong>${best ? best.label : "NO BET"}</strong><small>${best ? `${best.expectedReturn}% model EV · ${best.decimalOdds.toFixed(2)} odds` : "no qualifying edge"}</small></div>
+    </div>
+    <p class="betting-warning">This board ranks pricing gaps, not certainty. A high-odds outcome can still be unlikely; stake nothing you cannot afford to lose.</p>`;
+  $("#betting-board").innerHTML =
+    valueRows.length
+      ? valueRows.slice(0, 12).map(renderBettingRow).join("")
+      : '<div class="market-empty">No positive model-versus-market edge in upcoming Singapore Pools match odds.</div>';
+  $("#betting-avoid").innerHTML =
+    avoidRows.length
+      ? avoidRows.slice(0, 10).map(renderBettingRow).join("")
+      : '<div class="market-empty">No strongly negative model edge found in upcoming match odds.</div>';
+}
+
+function renderBettingRow(row) {
+  const cls =
+    row.recommendation === "VALUE WATCH"
+      ? "value"
+      : row.recommendation === "LEAN ONLY"
+        ? "lean"
+        : "avoid";
+  return `<div class="bet-row ${cls}">
+    <div class="bet-match"><span>M${row.fixture.matchNumber} · ${row.fixture.status}</span><strong>${row.homeName} vs ${row.awayName}</strong><small>${new Date(row.event.startTime).toLocaleString("en-SG", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</small></div>
+    <div><span>SELECTION</span><strong>${row.label}</strong><small>${row.recommendation}</small></div>
+    <div><span>SP ODDS</span><strong>${row.decimalOdds.toFixed(2)}</strong><small>${row.marketImpliedProbability}% implied</small></div>
+    <div><span>MODEL</span><strong>${row.modelProbability}%</strong><small>${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp edge</small></div>
+    <em>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}% EV</em>
+  </div>`;
+}
+
 function renderLatestSignal() {
   const latest = worldCup.fixtures
     .filter((match) => match.status === "FT")
@@ -750,6 +898,7 @@ function renderAll() {
   renderComparison();
   renderModel();
   renderScorecard();
+  renderBetting();
 }
 
 async function fetchJson(path, label, cacheBust = false) {

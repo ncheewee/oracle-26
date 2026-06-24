@@ -35,7 +35,7 @@ jobs:
         run: pnpm run collect
 
       - name: Rebuild predictions when FIFA facts changed
-        id: changed
+        id: fifa
         run: |
           if git diff --quiet -- outputs/worldcup.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -45,15 +45,15 @@ jobs:
             pnpm run audit
             pnpm run model
             SIMULATIONS=100000 pnpm run simulate
-            pnpm run odds
           fi
 
+      - name: Refresh Singapore Pools odds
+        run: pnpm run odds
+
       - name: Validate generated outputs
-        if: steps.changed.outputs.changed == 'true'
         run: pnpm test
 
       - name: Commit refreshed outputs
-        if: steps.changed.outputs.changed == 'true'
         run: |
           git config user.name "oracle-26-bot"
           git config user.email "oracle-26-bot@users.noreply.github.com"

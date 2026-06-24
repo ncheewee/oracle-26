@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=phase5" />
+    <link rel="stylesheet" href="./styles.css?v=phase6" />
   </head>
   <body>
     <div class="noise"></div>
@@ -30,6 +30,7 @@
         <button class="nav-item" data-view="teams"><span>04</span>Team comparison</button>
         <button class="nav-item" data-view="model"><span>05</span>Model lab</button>
         <button class="nav-item" data-view="scorecard"><span>06</span>Scorecard</button>
+        <button class="nav-item" data-view="betting"><span>07</span>Betting lens</button>
       </nav>
       <div class="sidebar-foot">
         <span class="status-dot"></span>
@@ -217,8 +218,34 @@
           </article>
         </div>
       </section>
+
+      <section id="betting" class="view">
+        <div class="notice-strip danger"><i></i><strong>BETTING RISK WARNING</strong><span>This is model-vs-market analysis, not a guarantee or financial advice. The safest bet is no bet; if gambling, set a hard limit.</span></div>
+        <div class="betting-grid">
+          <article class="panel betting-hero">
+            <div class="panel-title"><span>UPCOMING MATCH VALUE BOARD</span><small>SINGAPORE POOLS 1X2 ODDS</small></div>
+            <div id="betting-summary" class="betting-summary loading-block"></div>
+          </article>
+          <article class="panel betting-rules">
+            <div class="panel-title"><span>HOW TO READ THIS</span><small>MODEL EDGE ≠ CERTAINTY</small></div>
+            <div class="betting-copy">
+              <p><strong>Value watch</strong> means the model probability is higher than Singapore Pools' implied probability after a conservative threshold.</p>
+              <p><strong>No bet / avoid</strong> means the market price is unattractive versus the model, even if the team may still win.</p>
+              <p>Sorted by model expected return first, then decimal odds. Odds and availability can change quickly.</p>
+            </div>
+          </article>
+          <article class="panel betting-board-panel">
+            <div class="panel-title"><span>BEST VALUE FIRST</span><small>UPCOMING MATCHES ONLY</small></div>
+            <div id="betting-board" class="betting-board loading-block"></div>
+          </article>
+          <article class="panel betting-avoid-panel">
+            <div class="panel-title"><span>WHAT NOT TO TAKE</span><small>NEGATIVE MODEL EDGE</small></div>
+            <div id="betting-avoid" class="betting-board compact-board loading-block"></div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <script type="module" src="./app.js?v=phase5"></script>
+    <script type="module" src="./app.js?v=phase6"></script>
   </body>
 </html>
