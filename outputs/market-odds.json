@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T10:29:03.968Z",
+  "generatedAt": "2026-06-24T13:29:06.130Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -389,8 +389,8 @@
       "name": "Bosnia vs Qatar",
       "startTime": "2026-06-24T19:00:00Z",
       "prices": {
-        "Bosnia": 1.35,
-        "Draw": 4.5,
+        "Bosnia": 1.33,
+        "Draw": 4.8,
         "Qatar": 6.5
       }
     },
@@ -411,9 +411,9 @@
       "name": "Morocco vs Haiti",
       "startTime": "2026-06-24T22:00:00Z",
       "prices": {
-        "Morocco": 1.13,
-        "Draw": 6,
-        "Haiti": 13
+        "Morocco": 1.15,
+        "Draw": 5.2,
+        "Haiti": 12
       }
     },
     {
@@ -422,8 +422,8 @@
       "name": "Scotland vs Brazil",
       "startTime": "2026-06-24T22:00:00Z",
       "prices": {
-        "Scotland": 11,
-        "Draw": 5.5,
+        "Scotland": 12,
+        "Draw": 5.2,
         "Brazil": 1.18
       }
     },
@@ -433,9 +433,9 @@
       "name": "Czech Republic vs Mexico",
       "startTime": "2026-06-25T01:00:00Z",
       "prices": {
-        "Czech Republic": 3.4,
-        "Draw": 3.4,
-        "Mexico": 1.85
+        "Czech Republic": 3.6,
+        "Draw": 3.5,
+        "Mexico": 1.77
       }
     },
     {
@@ -456,8 +456,8 @@
       "startTime": "2026-06-25T20:00:00Z",
       "prices": {
         "Curacao": 12,
-        "Draw": 5.8,
-        "Ivory Coast": 1.15
+        "Draw": 6,
+        "Ivory Coast": 1.13
       }
     },
     {
@@ -466,7 +466,7 @@
       "name": "Ecuador vs Germany",
       "startTime": "2026-06-25T20:00:00Z",
       "prices": {
-        "Ecuador": 3.8,
+        "Ecuador": 3.9,
         "Draw": 3.8,
         "Germany": 1.67
       }
@@ -489,8 +489,8 @@
       "startTime": "2026-06-25T23:00:00Z",
       "prices": {
         "Tunisia": 17,
-        "Draw": 7,
-        "Holland": 1.09
+        "Draw": 7.5,
+        "Holland": 1.07
       }
     },
     {
@@ -565,9 +565,9 @@
       "name": "Egypt vs Iran",
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
-        "Egypt": 2.25,
+        "Egypt": 2.3,
         "Draw": 2.55,
-        "Iran": 3.4
+        "Iran": 3.3
       }
     },
     {
@@ -577,8 +577,8 @@
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
         "New Zealand": 11,
-        "Draw": 5.2,
-        "Belgium": 1.17
+        "Draw": 5.5,
+        "Belgium": 1.15
       }
     },
     {
@@ -598,7 +598,7 @@
       "name": "Panama vs England",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Panama": 12,
+        "Panama": 11,
         "Draw": 6,
         "England": 1.13
       }
