@@ -822,12 +822,15 @@ function renderBettingRow(row) {
         ? "lean"
         : "avoid";
   return `<div class="bet-row ${cls}">
-    <div class="bet-match"><span>M${row.fixture.matchNumber} · ${row.fixture.status}</span><strong>${row.homeName} vs ${row.awayName}</strong><small>${new Date(row.event.startTime).toLocaleString("en-SG", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</small></div>
-    <div><span>SELECTION</span><strong>${row.label}</strong><small>${row.recommendation}</small></div>
-    <div><span>SIGNAL</span><strong class="signal-${row.signal.label.toLowerCase()}">${row.signal.label}</strong><small>${row.signal.note}</small></div>
-    <div><span>SP ODDS</span><strong>${row.decimalOdds.toFixed(2)}</strong><small>${row.marketImpliedProbability}% implied</small></div>
-    <div><span>MODEL</span><strong>${row.modelProbability}%</strong><small>${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp edge</small></div>
-    <em>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}% EV</em>
+    <div class="bet-card-top"><span>M${row.fixture.matchNumber} · ${new Date(row.event.startTime).toLocaleString("en-SG", { hour: "2-digit", minute: "2-digit" })}</span><small>${row.fixture.status}</small></div>
+    <strong class="bet-pick">${row.label}</strong>
+    <div class="bet-matchline">${row.homeName} vs ${row.awayName}</div>
+    <div class="bet-metrics">
+      <b>${row.decimalOdds.toFixed(2)}</b>
+      <b>${row.modelProbability}%</b>
+      <em>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}%</em>
+    </div>
+    <small class="bet-subline">${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp edge · ${row.marketImpliedProbability}% market</small>
   </div>`;
 }
 
