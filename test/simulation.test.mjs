@@ -24,6 +24,7 @@ test("tournament winner probabilities sum to 100", () => {
   );
   assert.ok(Math.abs(total - 100) <= 1.5);
   assert.equal(simulation.format.thirdPlaceCombinations, 495);
+  assert.match(simulation.format.groupStageOutcomes, /home\/draw\/away/);
   assert.equal(Object.keys(simulation.projectedMatches).length, 31);
   for (const team of simulation.teams) {
     const probabilities = team.probabilities;

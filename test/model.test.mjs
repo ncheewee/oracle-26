@@ -20,3 +20,16 @@ test("all match probability triples sum to approximately 100", () => {
     assert.ok(Math.abs(total - 100) <= 0.2);
   }
 });
+
+test("match model publishes explicit draw probabilities", () => {
+  if (!fs.existsSync("outputs/model.json")) return;
+  const model = JSON.parse(fs.readFileSync("outputs/model.json", "utf8"));
+  assert.ok(model.predictions.length > 0);
+  assert.ok(
+    model.predictions.every(
+      (match) =>
+        Number.isFinite(match.probabilities.draw) &&
+        match.probabilities.draw > 0,
+    ),
+  );
+});

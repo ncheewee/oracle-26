@@ -82,23 +82,85 @@ function expectedGoals(homeName, awayName) {
   ];
 }
 
-function sampleGroupScore(match) {
+function findPrediction(match) {
   const known = model.predictions.find(
     (prediction) =>
       prediction.home === match.home && prediction.away === match.away,
   );
-  const knownReversed = known
-    ? null
-    : model.predictions.find(
-        (prediction) =>
-          prediction.home === match.away && prediction.away === match.home,
-      );
-  const lambdas = known
-    ? [known.expectedGoals.home, known.expectedGoals.away]
-    : knownReversed
-      ? [knownReversed.expectedGoals.away, knownReversed.expectedGoals.home]
+  if (known) {
+    return {
+      probabilities: [
+        known.probabilities.home / 100,
+        known.probabilities.draw / 100,
+        known.probabilities.away / 100,
+      ],
+      expectedGoals: [known.expectedGoals.home, known.expectedGoals.away],
+    };
+  }
+  const reversed = model.predictions.find(
+    (prediction) =>
+      prediction.home === match.away && prediction.away === match.home,
+  );
+  if (!reversed) return null;
+  return {
+    probabilities: [
+      reversed.probabilities.away / 100,
+      reversed.probabilities.draw / 100,
+      reversed.probabilities.home / 100,
+    ],
+    expectedGoals: [reversed.expectedGoals.away, reversed.expectedGoals.home],
+  };
+}
+
+function sampleOutcome(probabilities) {
+  const total = probabilities.reduce((sum, value) => sum + value, 0);
+  const draw = random() * total;
+  if (draw < probabilities[0]) return 0;
+  if (draw < probabilities[0] + probabilities[1]) return 1;
+  return 2;
+}
+
+function sampleScoreForOutcome(homeLambda, awayLambda, outcome) {
+  for (let attempt = 0; attempt < 80; attempt += 1) {
+    const home = poisson(homeLambda);
+    const away = poisson(awayLambda);
+    if (
+      (outcome === 0 && home > away) ||
+      (outcome === 1 && home === away) ||
+      (outcome === 2 && away > home)
+    ) {
+      return [home, away];
+    }
+  }
+  if (outcome === 0) {
+    const away = Math.max(0, poisson(awayLambda));
+    return [away + 1, away];
+  }
+  if (outcome === 2) {
+    const home = Math.max(0, poisson(homeLambda));
+    return [home, home + 1];
+  }
+  const goals = Math.max(0, Math.round((homeLambda + awayLambda) / 2));
+  return [goals, goals];
+}
+
+function sampleGroupScore(match) {
+  const prediction = findPrediction(match);
+  const lambdas = prediction
+    ? prediction.expectedGoals
     : expectedGoals(match.home, match.away);
-  return [poisson(lambdas[0]), poisson(lambdas[1])];
+  const outcome = prediction
+    ? sampleOutcome(prediction.probabilities)
+    : sampleOutcomeFromGoals(lambdas[0], lambdas[1]);
+  return sampleScoreForOutcome(lambdas[0], lambdas[1], outcome);
+}
+
+function sampleOutcomeFromGoals(homeLambda, awayLambda) {
+  const homeGoals = poisson(homeLambda);
+  const awayGoals = poisson(awayLambda);
+  if (homeGoals > awayGoals) return 0;
+  if (homeGoals === awayGoals) return 1;
+  return 2;
 }
 
 function sampleKnockoutWinner(homeName, awayName) {
@@ -386,6 +448,8 @@ const report = {
   format: {
     groups: 12,
     advancing: "Top two from each group plus eight best third-placed teams",
+    groupStageOutcomes:
+      "Remaining group matches sample calibrated home/draw/away probabilities before applying points.",
     thirdPlaceCombinations: Object.keys(allocation).length,
     knockoutMatches: 31,
   },
