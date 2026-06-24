@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T01:27:51.497Z",
+  "generatedAt": "2026-06-24T02:57:09.969Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -11,7 +11,7 @@
     "totalMatches": 104,
     "completedMatches": 47,
     "remainingMatches": 57,
-    "liveMatches": 0
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -1062,9 +1062,9 @@
         "code": "COD",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "HT",
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Guadalajara Stadium",
@@ -3018,15 +3018,15 @@
           "name": "Colombia",
           "code": "COL",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL",
-          "played": 1,
+          "played": 2,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "goalsFor": 3,
           "goalsAgainst": 1,
           "goalDifference": 2,
           "conductScore": -1,
-          "points": 3,
+          "points": 4,
           "qualified": false
         },
         {
@@ -3034,15 +3034,15 @@
           "name": "Congo DR",
           "code": "COD",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
           "goalsFor": 1,
           "goalsAgainst": 1,
           "goalDifference": 0,
           "conductScore": -1,
-          "points": 1,
+          "points": 2,
           "qualified": false
         },
         {
