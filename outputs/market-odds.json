@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T20:55:42.325Z",
+  "generatedAt": "2026-06-24T22:27:21.865Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -384,28 +384,6 @@
   ],
   "matches": [
     {
-      "eventId": "140117",
-      "eventNumber": null,
-      "name": "Morocco vs Haiti",
-      "startTime": "2026-06-24T22:00:00Z",
-      "prices": {
-        "Morocco": 1.15,
-        "Draw": 5.2,
-        "Haiti": 13
-      }
-    },
-    {
-      "eventId": "140119",
-      "eventNumber": null,
-      "name": "Scotland vs Brazil",
-      "startTime": "2026-06-24T22:00:00Z",
-      "prices": {
-        "Scotland": 9.5,
-        "Draw": 5.2,
-        "Brazil": 1.22
-      }
-    },
-    {
       "eventId": "140113",
       "eventNumber": null,
       "name": "Czech Republic vs Mexico",
@@ -422,8 +400,8 @@
       "name": "South Africa vs Korea Republic",
       "startTime": "2026-06-25T01:00:00Z",
       "prices": {
-        "South Africa": 5.5,
-        "Draw": 4,
+        "South Africa": 5.8,
+        "Draw": 3.9,
         "Korea Republic": 1.42
       }
     },
@@ -444,9 +422,9 @@
       "name": "Ecuador vs Germany",
       "startTime": "2026-06-25T20:00:00Z",
       "prices": {
-        "Ecuador": 3.9,
+        "Ecuador": 4,
         "Draw": 3.8,
-        "Germany": 1.67
+        "Germany": 1.6
       }
     },
     {
@@ -521,9 +499,9 @@
       "name": "Cape Verde vs Saudi Arabia",
       "startTime": "2026-06-27T00:00:00Z",
       "prices": {
-        "Cape Verde": 2.1,
+        "Cape Verde": 2.05,
         "Draw": 3.3,
-        "Saudi Arabia": 2.75
+        "Saudi Arabia": 2.8
       }
     },
     {
@@ -543,9 +521,9 @@
       "name": "Egypt vs Iran",
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
-        "Egypt": 2.25,
+        "Egypt": 2.3,
         "Draw": 2.55,
-        "Iran": 3.4
+        "Iran": 3.3
       }
     },
     {
@@ -609,8 +587,8 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.4,
-        "Draw": 2.25,
+        "Algeria": 3.5,
+        "Draw": 2.2,
         "Austria": 2.65
       }
     },
@@ -621,12 +599,12 @@
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
         "Jordan": 19,
-        "Draw": 6.5,
+        "Draw": 6,
         "Argentina": 1.1
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-24T20:55:42.325Z",
+  "lastAttemptAt": "2026-06-24T22:27:21.865Z",
   "warning": "Championship Winner market unavailable"
 }

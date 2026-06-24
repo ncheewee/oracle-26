@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T20:54:08.166Z",
+  "generatedAt": "2026-06-24T22:25:51.425Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,8 +9,8 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 48,
-    "remainingMatches": 56,
+    "completedMatches": 50,
+    "remainingMatches": 54,
     "liveMatches": 2
   },
   "fixtures": [
@@ -1086,7 +1086,7 @@
       },
       "homeScore": 2,
       "awayScore": 1,
-      "status": "90'+4'",
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group B",
       "venue": "BC Place Vancouver",
@@ -1108,7 +1108,7 @@
       },
       "homeScore": 3,
       "awayScore": 1,
-      "status": "90'+1'",
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group B",
       "venue": "Seattle Stadium",
@@ -1128,9 +1128,9 @@
         "code": "BRA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 2,
+      "status": "24'",
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Miami Stadium",
@@ -1150,9 +1150,9 @@
         "code": "HAI",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "23'",
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Atlanta Stadium",
@@ -1608,9 +1608,9 @@
         "flag": null
       },
       "away": {
-        "name": "2B",
-        "code": "2B",
-        "flag": null
+        "name": "Canada",
+        "code": "CAN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1867,9 +1867,9 @@
       "matchNumber": 85,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021527",
       "home": {
-        "name": "1B",
-        "code": "1B",
-        "flag": null
+        "name": "Switzerland",
+        "code": "SUI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
       },
       "away": {
         "name": "3EFGIJ",
@@ -2390,7 +2390,7 @@
           "goalDifference": 4,
           "conductScore": -3,
           "points": 7,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -2406,7 +2406,7 @@
           "goalDifference": 5,
           "conductScore": -5,
           "points": 4,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 3,
@@ -2450,15 +2450,15 @@
           "name": "Brazil",
           "code": "BRA",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA",
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 4,
+          "goalsFor": 6,
           "goalsAgainst": 1,
-          "goalDifference": 3,
+          "goalDifference": 5,
           "conductScore": -3,
-          "points": 4,
+          "points": 7,
           "qualified": false
         },
         {
@@ -2466,13 +2466,13 @@
           "name": "Morocco",
           "code": "MAR",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR",
-          "played": 2,
+          "played": 3,
           "won": 1,
           "drawn": 1,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 2,
-          "goalsAgainst": 1,
-          "goalDifference": 1,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
           "conductScore": -1,
           "points": 4,
           "qualified": false
@@ -2482,13 +2482,13 @@
           "name": "Scotland",
           "code": "SCO",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO",
-          "played": 2,
+          "played": 3,
           "won": 1,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
+          "goalsAgainst": 3,
+          "goalDifference": -2,
           "conductScore": -4,
           "points": 3,
           "qualified": false
@@ -2498,15 +2498,15 @@
           "name": "Haiti",
           "code": "HAI",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI",
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 0,
+          "goalsFor": 1,
           "goalsAgainst": 4,
-          "goalDifference": -4,
+          "goalDifference": -3,
           "conductScore": -4,
-          "points": 0,
+          "points": 3,
           "qualified": false
         }
       ]
