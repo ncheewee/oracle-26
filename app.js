@@ -324,6 +324,137 @@ function signalForBet(row) {
   };
 }
 
+function betRowId(row) {
+  return `${row.event.eventId || row.fixture.id}-${row.key}`;
+}
+
+function bettingRowById(id) {
+  return marketOutcomeRows().find((row) => betRowId(row) === id);
+}
+
+function probabilityForOutcome(prediction, key) {
+  return prediction?.probabilities?.[key] ?? null;
+}
+
+function groupTeamFor(name) {
+  const canonicalName = canonical(name);
+  for (const group of worldCup.standings || []) {
+    const team = group.teams.find((item) => canonical(item.name) === canonicalName);
+    if (team) return { ...team, group: group.group };
+  }
+  return null;
+}
+
+function teamResultLine(match, teamName) {
+  const isHome = canonical(match.home.name) === canonical(teamName);
+  const teamScore = isHome ? match.homeScore : match.awayScore;
+  const opponentScore = isHome ? match.awayScore : match.homeScore;
+  const opponent = isHome ? match.away.name : match.home.name;
+  const result = teamScore > opponentScore ? "W" : teamScore === opponentScore ? "D" : "L";
+  return `${result} ${teamScore}-${opponentScore} vs ${opponent}`;
+}
+
+function recentTeamResults(name, limit = 3) {
+  const canonicalName = canonical(name);
+  return worldCup.fixtures
+    .filter(
+      (match) =>
+        match.status === "FT" &&
+        (canonical(match.home.name) === canonicalName ||
+          canonical(match.away.name) === canonicalName),
+    )
+    .sort((a, b) => b.matchNumber - a.matchNumber)
+    .slice(0, limit)
+    .map((match) => teamResultLine(match, name));
+}
+
+function explainBet(row) {
+  const prediction = predictionForNames(row.homeName, row.awayName);
+  const fixturePrediction = predictionFor(row.fixture);
+  const selectedGroup = row.key === "draw" ? null : groupTeamFor(row.label);
+  const opponentName =
+    row.key === "home"
+      ? row.awayName
+      : row.key === "away"
+        ? row.homeName
+        : `${row.homeName} / ${row.awayName}`;
+  const selectedStrength = row.key === "draw" ? null : contenderState(row.label);
+  const opponentStrength = row.key === "draw" ? null : contenderState(opponentName);
+  const fixtureHome = row.fixture.home.name;
+  const fixtureAway = row.fixture.away.name;
+  const fixtureContext =
+    canonical(fixtureHome) !== canonical(row.homeName) ||
+    canonical(fixtureAway) !== canonical(row.awayName)
+      ? `Odds market is listed as ${row.homeName} vs ${row.awayName}; FIFA fixture context is ${fixtureHome} vs ${fixtureAway}.`
+      : `Market and FIFA fixture both list ${fixtureHome} vs ${fixtureAway}.`;
+  const venueContext = [row.fixture.venue, row.fixture.city].filter(Boolean).join(", ");
+  const selectedProbability = probabilityForOutcome(prediction, row.key);
+  const fixtureProbabilities = fixturePrediction?.probabilities || prediction?.probabilities;
+  const expectedGoalLine = prediction
+    ? `${row.homeName} ${prediction.expectedGoals.home.toFixed(2)} xG · ${row.awayName} ${prediction.expectedGoals.away.toFixed(2)} xG`
+    : "Expected goals unavailable for this pairing.";
+  const scoreline = prediction
+    ? `${prediction.predictedScore.home}-${prediction.predictedScore.away}`
+    : "—";
+  const recentHome = recentTeamResults(row.homeName);
+  const recentAway = recentTeamResults(row.awayName);
+  const selectedRecord = selectedGroup
+    ? `${selectedGroup.points} pts · ${selectedGroup.goalsFor}-${selectedGroup.goalsAgainst} goals · ${selectedGroup.position}${selectedGroup.position === 1 ? "st" : selectedGroup.position === 2 ? "nd" : selectedGroup.position === 3 ? "rd" : "th"} in ${selectedGroup.group}`
+    : "Draw has no team table record; it is evaluated from the combined outcome probability.";
+  const ratingLine =
+    selectedStrength && opponentStrength
+      ? `${row.label} rating ${selectedStrength.rating}; ${opponentName} rating ${opponentStrength.rating}.`
+      : "Draw probability comes from the rating gap plus Poisson scoreline model.";
+
+  return `
+    <div class="bet-explainer-head">
+      <span>${row.fixture.group || row.fixture.stage || "Upcoming match"} · M${row.fixture.matchNumber}</span>
+      <h2 id="bet-explainer-title">${row.label}</h2>
+      <p>${row.homeName} vs ${row.awayName} · ${new Date(row.event.startTime).toLocaleString("en-SG", { weekday: "short", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</p>
+    </div>
+    <div class="bet-explainer-kpis">
+      <div><span>SP odds</span><strong>${row.decimalOdds.toFixed(2)}</strong><small>${row.marketImpliedProbability}% market implied</small></div>
+      <div><span>Model</span><strong class="signal-${row.signal.label.toLowerCase()}">${selectedProbability}%</strong><small>${row.signal.note}</small></div>
+      <div><span>Edge</span><strong>${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp</strong><small>${row.expectedReturn > 0 ? "+" : ""}${row.expectedReturn}% EV</small></div>
+      <div><span>Score lean</span><strong>${scoreline}</strong><small>${expectedGoalLine}</small></div>
+    </div>
+    <div class="bet-explainer-grid">
+      <section>
+        <h3>Why this card exists</h3>
+        <p>The card appears because the model probability for <b>${row.label}</b> is ${selectedProbability}%, while Singapore Pools odds imply ${row.marketImpliedProbability}%.</p>
+        <p>${fixtureContext}</p>
+        <p>${venueContext ? `Venue context: ${venueContext}.` : "Venue context is not available in the verified FIFA snapshot."}</p>
+      </section>
+      <section>
+        <h3>Outcome probabilities</h3>
+        <div class="explainer-bars">
+          <p><span>${row.homeName}</span><b>${prediction?.probabilities.home ?? "—"}%</b></p>
+          <p><span>Draw</span><b>${prediction?.probabilities.draw ?? "—"}%</b></p>
+          <p><span>${row.awayName}</span><b>${prediction?.probabilities.away ?? "—"}%</b></p>
+        </div>
+        ${
+          fixturePrediction && fixturePrediction !== prediction
+            ? `<small>FIFA fixture orientation: ${fixtureHome} ${fixtureProbabilities.home}% · Draw ${fixtureProbabilities.draw}% · ${fixtureAway} ${fixtureProbabilities.away}%.</small>`
+            : ""
+        }
+      </section>
+      <section>
+        <h3>Team evidence</h3>
+        <p>${ratingLine}</p>
+        <p>${selectedRecord}</p>
+        <ul>
+          <li><b>${row.homeName}</b>: ${recentHome.join("; ") || "No completed tournament result yet."}</li>
+          <li><b>${row.awayName}</b>: ${recentAway.join("; ") || "No completed tournament result yet."}</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Guardrail</h3>
+        <p><b>${row.signal.label}</b> means ${row.signal.note}. This is still a model-vs-market read, not advice or certainty.</p>
+        <p>The safest bet is no bet; use this explanation to challenge the model, especially when the pick feels counter-intuitive.</p>
+      </section>
+    </div>`;
+}
+
 function predictionPanel(match) {
   const prediction = predictionFor(match);
   if (!prediction) return "";
@@ -821,7 +952,7 @@ function renderBettingRow(row) {
       : row.recommendation === "LEAN ONLY"
         ? "lean"
         : "avoid";
-  return `<div class="bet-row ${cls}">
+  return `<div class="bet-row ${cls}" role="button" tabindex="0" data-bet-row="${betRowId(row)}" aria-label="Explain ${row.label} betting signal for ${row.homeName} vs ${row.awayName}">
     <div class="bet-card-top"><span>M${row.fixture.matchNumber} · ${new Date(row.event.startTime).toLocaleString("en-SG", { hour: "2-digit", minute: "2-digit" })}</span><small>${row.fixture.status}</small></div>
     <strong class="bet-pick">${row.label}</strong>
     <div class="bet-matchline">${row.homeName} vs ${row.awayName}</div>
@@ -832,6 +963,21 @@ function renderBettingRow(row) {
     </div>
     <small class="bet-subline">${row.probabilityEdge > 0 ? "+" : ""}${row.probabilityEdge}pp edge · ${row.marketImpliedProbability}% market</small>
   </div>`;
+}
+
+function openBetExplainer(id) {
+  const row = bettingRowById(id);
+  if (!row) return;
+  $("#bet-explainer-content").innerHTML = explainBet(row);
+  $("#bet-explainer").classList.remove("hidden");
+  $("#bet-explainer").setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeBetExplainer() {
+  $("#bet-explainer").classList.add("hidden");
+  $("#bet-explainer").setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
 }
 
 function renderLatestSignal() {
@@ -1127,6 +1273,18 @@ $("#betting-sort").addEventListener("change", (event) => {
 $("#betting-filter").addEventListener("change", (event) => {
   bettingFilter = event.target.value;
   renderBetting();
+});
+document.addEventListener("click", (event) => {
+  const row = event.target.closest("[data-bet-row]");
+  if (row) openBetExplainer(row.dataset.betRow);
+  if (event.target.closest("[data-close-bet-explainer]")) closeBetExplainer();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeBetExplainer();
+  if ((event.key === "Enter" || event.key === " ") && event.target.matches("[data-bet-row]")) {
+    event.preventDefault();
+    openBetExplainer(event.target.dataset.betRow);
+  }
 });
 
 const initialView = location.hash.slice(1);
