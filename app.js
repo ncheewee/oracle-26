@@ -16,6 +16,7 @@ let market;
 let probabilityHistory = { snapshots: [] };
 let bettingSort = "balanced";
 let bettingFilter = "value";
+let matchWindowHours = 24;
 
 const aliases = {
   "Korea Republic": "South Korea",
@@ -223,6 +224,22 @@ function matchingFixtureForMarket(homeName, awayName) {
       match.status !== "FT" &&
       ((fixtureHome === home && fixtureAway === away) ||
         (fixtureHome === away && fixtureAway === home))
+    );
+  });
+}
+
+function matchingMarketEventForFixture(match) {
+  if (!market?.matches?.length) return null;
+  const fixtureHome = canonical(match.home.name);
+  const fixtureAway = canonical(match.away.name);
+  return market.matches.find((event) => {
+    const [homeName, awayName] = marketTeams(event);
+    if (!homeName || !awayName) return false;
+    const eventHome = canonical(homeName);
+    const eventAway = canonical(awayName);
+    return (
+      (fixtureHome === eventHome && fixtureAway === eventAway) ||
+      (fixtureHome === eventAway && fixtureAway === eventHome)
     );
   });
 }
@@ -478,6 +495,102 @@ function predictionPanel(match) {
       )
       .join("")}</div>
   </div>`;
+}
+
+function probabilityBarsFromValues(values) {
+  return `<div class="probability-bars">${values
+    .map(
+      ([label, value]) =>
+        `<div><span>${label}</span><i><b style="width:${value}%"></b></i><strong>${value}%</strong></div>`,
+    )
+    .join("")}</div>`;
+}
+
+function fixtureStartTime(match) {
+  return matchingMarketEventForFixture(match)?.startTime || match.startTime || null;
+}
+
+function matchSearchHit(match, query) {
+  if (!query) return true;
+  const haystack = [
+    match.home.name,
+    match.away.name,
+    match.group,
+    match.stage,
+    match.venue,
+    match.city,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  return haystack.includes(query);
+}
+
+function completedMatchStudy(row) {
+  if (row.hit) {
+    return `Model top call landed with ${pct(row.expectation.confidence * 100)} confidence; actual outcome probability was ${pct(row.actualProbability * 100)}.`;
+  }
+  const predictedSide =
+    row.expectation.predictedIndex === 0
+      ? row.match.home.name
+      : row.expectation.predictedIndex === 1
+        ? "draw"
+        : row.match.away.name;
+  const actualSide =
+    row.actualIndex === 0
+      ? row.match.home.name
+      : row.actualIndex === 1
+        ? "draw"
+        : row.match.away.name;
+  if (row.actualProbability < 0.22) {
+    return `Surprise flag: the actual ${actualSide} outcome carried only ${pct(row.actualProbability * 100)} in the model, so this materially challenges the rating/form priors.`;
+  }
+  if (row.actualIndex === 1) {
+    return `Draw miss: the model leaned ${predictedSide}, but the draw probability was ${pct(row.expectation.probabilities[1] * 100)} — worth checking match control vs finishing.`;
+  }
+  if (row.expectation.confidence < 0.45) {
+    return `Thin-edge miss: the model only had ${pct(row.expectation.confidence * 100)} on ${predictedSide}, so this was not a high-conviction failure.`;
+  }
+  return `Model leaned ${predictedSide} at ${pct(row.expectation.confidence * 100)}, but ${actualSide} landed. Check whether goals came against expected territorial/shot quality assumptions.`;
+}
+
+function renderCompletedAuditCard(row) {
+  const values = [
+    [row.match.home.code, Math.round(row.expectation.probabilities[0] * 1000) / 10],
+    ["DRAW", Math.round(row.expectation.probabilities[1] * 1000) / 10],
+    [row.match.away.code, Math.round(row.expectation.probabilities[2] * 1000) / 10],
+  ];
+  return `<article class="match-card completed-audit-card ${row.hit ? "hit" : "miss"}">
+    <div class="match-card-top"><span>M${row.match.matchNumber} · ${row.match.group || row.match.stage || "TOURNAMENT"}</span><b>${row.hit ? "HIT" : "MISS"}</b></div>
+    ${matchRow(row.match)}
+    <div class="audit-outcome-line">
+      <span>MODEL: <b>${row.predictedLabel}</b></span>
+      <span>ACTUAL: <b>${row.actualLabel}</b></span>
+      <span>LIKELIHOOD: <b>${pct(row.actualProbability * 100)}</b></span>
+    </div>
+    ${probabilityBarsFromValues(values)}
+    <p class="surprise-study">${completedMatchStudy(row)}</p>
+    <div class="match-meta">${[row.match.venue, row.match.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
+  </article>`;
+}
+
+function renderUpcomingCard(match) {
+  const startTime = fixtureStartTime(match);
+  const kickoff = startTime
+    ? new Date(startTime).toLocaleString("en-SG", {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : "Kickoff time pending";
+  return `<article class="match-card upcoming-card">
+    <div class="match-card-top"><span>M${match.matchNumber} · ${match.group || match.stage || "TOURNAMENT"}</span><b>${kickoff}</b></div>
+    ${matchRow(match)}
+    ${predictionPanel(match)}
+    <div class="match-meta">${[match.venue, match.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
+  </article>`;
 }
 
 function setView(id) {
@@ -1168,34 +1281,40 @@ function renderMarketLens() {
 
 function renderMatches() {
   const query = $("#match-search").value.toLowerCase();
-  const status = $("#status-filter").value;
-  const matches = worldCup.fixtures.filter((match) => {
-    const haystack = [
-      match.home.name,
-      match.away.name,
-      match.group,
-      match.venue,
-      match.city,
-    ]
-      .join(" ")
-      .toLowerCase();
-    const statusMatch =
-      status === "all" ||
-      (status === "upcoming" && match.status !== "FT") ||
-      match.status === status;
-    return haystack.includes(query) && statusMatch;
-  });
-  $("#match-count").textContent = matches.length;
-  $("#all-matches").innerHTML = matches
-    .map(
-      (match) => `<article class="match-card">
-        <div class="match-card-top"><span>${match.group || match.stage || "TOURNAMENT"}</span><b>${match.status}</b></div>
-        ${matchRow(match)}
-        ${predictionPanel(match)}
-        <div class="match-meta">${[match.venue, match.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
-      </article>`,
-    )
-    .join("");
+  const now = Date.now();
+  const windowMs = matchWindowHours * 3_600_000;
+  const upcoming = worldCup.fixtures
+    .filter((match) => match.status !== "FT" && matchSearchHit(match, query))
+    .map((match) => ({
+      match,
+      startTime: fixtureStartTime(match),
+    }));
+  const timedUpcoming = upcoming
+    .filter(({ startTime }) => {
+      const kickoff = new Date(startTime).getTime();
+      return Number.isFinite(kickoff) && kickoff >= now && kickoff <= now + windowMs;
+    })
+    .sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
+  const untimedUpcoming = upcoming
+    .filter(({ startTime }) => !startTime)
+    .slice(0, 8);
+  const completed = scorecardRows()
+    .filter((row) => matchSearchHit(row.match, query))
+    .sort((a, b) => b.match.matchNumber - a.match.matchNumber);
+  $("#upcoming-window-label").textContent = `NEXT ${matchWindowHours} HOURS`;
+  $("#match-count").textContent = timedUpcoming.length + completed.length;
+  $("#upcoming-matches").innerHTML = timedUpcoming.length
+    ? timedUpcoming.map(({ match }) => renderUpcomingCard(match)).join("")
+    : `<div class="market-empty">No timestamped upcoming matches found in the next ${matchWindowHours} hours from the official odds feed.</div>`;
+  $("#untimed-matches").innerHTML = untimedUpcoming.length
+    ? `<details>
+        <summary>${untimedUpcoming.length} FIFA scheduled match${untimedUpcoming.length === 1 ? "" : "es"} match the search but have no kickoff time in the current FIFA snapshot</summary>
+        <div class="all-matches">${untimedUpcoming.map(({ match }) => renderUpcomingCard(match)).join("")}</div>
+      </details>`
+    : "";
+  $("#completed-matches").innerHTML = completed.length
+    ? completed.map(renderCompletedAuditCard).join("")
+    : '<div class="market-empty">No completed matches match the current search.</div>';
 }
 
 function allTeams() {
@@ -1404,7 +1523,15 @@ $$("[data-jump]").forEach((button) =>
 );
 $("#menu-toggle").addEventListener("click", () => $(".sidebar").classList.toggle("open"));
 $("#match-search").addEventListener("input", renderMatches);
-$("#status-filter").addEventListener("change", renderMatches);
+$$("[data-match-window]").forEach((button) =>
+  button.addEventListener("click", () => {
+    matchWindowHours = Number(button.dataset.matchWindow);
+    $$("[data-match-window]").forEach((item) =>
+      item.classList.toggle("active", item === button),
+    );
+    renderMatches();
+  }),
+);
 $("#team-a").addEventListener("change", renderComparison);
 $("#team-b").addEventListener("change", renderComparison);
 $("#refresh-data").addEventListener("click", checkLatest);
