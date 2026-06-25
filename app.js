@@ -16,7 +16,7 @@ let market;
 let probabilityHistory = { snapshots: [] };
 let bettingSort = "balanced";
 let bettingFilter = "value";
-let matchWindowHours = 24;
+const matchBetSelections = {};
 
 const aliases = {
   "Korea Republic": "South Korea",
@@ -510,6 +510,71 @@ function fixtureStartTime(match) {
   return matchingMarketEventForFixture(match)?.startTime || match.startTime || null;
 }
 
+function modelPickForMatch(match) {
+  const prediction = predictionFor(match);
+  if (!prediction) return null;
+  const outcomes = [
+    {
+      key: "home",
+      label: match.home.name,
+      short: match.home.code,
+      probability: prediction.probabilities.home,
+    },
+    {
+      key: "draw",
+      label: "Draw",
+      short: "DRAW",
+      probability: prediction.probabilities.draw,
+    },
+    {
+      key: "away",
+      label: match.away.name,
+      short: match.away.code,
+      probability: prediction.probabilities.away,
+    },
+  ];
+  return outcomes.sort((a, b) => b.probability - a.probability)[0];
+}
+
+function upcomingMatchRows() {
+  return worldCup.fixtures
+    .filter((match) => match.status !== "FT")
+    .map((match) => {
+      const event = matchingMarketEventForFixture(match);
+      const [marketHome, marketAway] = event ? marketTeams(event) : [match.home.name, match.away.name];
+      const pick = modelPickForMatch(match);
+      const oddsKey =
+        pick?.key === "home"
+          ? marketHome
+          : pick?.key === "away"
+            ? marketAway
+            : "Draw";
+      const pickOdds = event?.prices?.[oddsKey];
+      return {
+        id: `${match.id || match.matchNumber}-${event?.eventId || "fifa"}`,
+        match,
+        event,
+        startTime: event?.startTime || match.startTime || null,
+        marketHome,
+        marketAway,
+        pick,
+        pickOdds,
+      };
+    });
+}
+
+function matchBetNet(row) {
+  const selection = matchBetSelections[row.id] || "none";
+  if (selection === "win" && Number.isFinite(row.pickOdds)) return row.pickOdds - 1;
+  if (selection === "lose") return -1;
+  return 0;
+}
+
+function signedUnits(value) {
+  const rounded = Math.round(value * 100) / 100;
+  return `${rounded > 0 ? "+" : ""}${rounded.toFixed(2)}u`;
+}
+
 function matchSearchHit(match, query) {
   if (!query) return true;
   const haystack = [
@@ -575,7 +640,12 @@ function renderCompletedAuditCard(row) {
 }
 
 function renderUpcomingCard(match) {
-  const startTime = fixtureStartTime(match);
+  const row =
+    typeof match.match === "object"
+      ? match
+      : upcomingMatchRows().find((candidate) => candidate.match.id === match.id) || { match };
+  const fixture = row.match;
+  const startTime = row.startTime || fixtureStartTime(fixture);
   const kickoff = startTime
     ? new Date(startTime).toLocaleString("en-SG", {
         weekday: "short",
@@ -585,11 +655,32 @@ function renderUpcomingCard(match) {
         minute: "2-digit",
       })
     : "Kickoff time pending";
+  const oddsLine = row.event
+    ? `<div class="match-odds-grid">
+        <span>${fixture.home.code}<b>${row.event.prices?.[row.marketHome]?.toFixed?.(2) || "—"}</b></span>
+        <span>DRAW<b>${row.event.prices?.Draw?.toFixed?.(2) || "—"}</b></span>
+        <span>${fixture.away.code}<b>${row.event.prices?.[row.marketAway]?.toFixed?.(2) || "—"}</b></span>
+      </div>`
+    : '<div class="match-odds-grid unavailable">Singapore Pools odds not matched yet</div>';
+  const selection = matchBetSelections[row.id] || "none";
+  const pickLabel = row.pick
+    ? `${row.pick.short} · ${pct(row.pick.probability)} model`
+    : "Model pick unavailable";
+  const pickOdds = Number.isFinite(row.pickOdds) ? row.pickOdds.toFixed(2) : "—";
   return `<article class="match-card upcoming-card">
-    <div class="match-card-top"><span>M${match.matchNumber} · ${match.group || match.stage || "TOURNAMENT"}</span><b>${kickoff}</b></div>
-    ${matchRow(match)}
-    ${predictionPanel(match)}
-    <div class="match-meta">${[match.venue, match.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
+    <div class="match-card-top"><span>M${fixture.matchNumber} · ${fixture.group || fixture.stage || "TOURNAMENT"}</span><b>${kickoff}</b></div>
+    ${matchRow(fixture)}
+    ${predictionPanel(fixture)}
+    <div class="bet-sim-panel">
+      <div><span>MODEL BET</span><strong>${pickLabel}</strong><small>SP odds ${pickOdds}</small></div>
+      ${oddsLine}
+      <div class="bet-sim-actions" data-match-bet="${row.id}">
+        <button class="${selection === "none" ? "active" : ""}" data-result="none">No bet</button>
+        <button class="${selection === "win" ? "active" : ""}" data-result="win">Win</button>
+        <button class="${selection === "lose" ? "active" : ""}" data-result="lose">Lose</button>
+      </div>
+    </div>
+    <div class="match-meta">${[fixture.venue, fixture.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
   </article>`;
 }
 
@@ -1282,34 +1373,51 @@ function renderMarketLens() {
 function renderMatches() {
   const query = $("#match-search").value.toLowerCase();
   const now = Date.now();
-  const windowMs = matchWindowHours * 3_600_000;
-  const upcoming = worldCup.fixtures
-    .filter((match) => match.status !== "FT" && matchSearchHit(match, query))
-    .map((match) => ({
-      match,
-      startTime: fixtureStartTime(match),
-    }));
+  const upcoming = upcomingMatchRows().filter((row) => matchSearchHit(row.match, query));
   const timedUpcoming = upcoming
     .filter(({ startTime }) => {
       const kickoff = new Date(startTime).getTime();
-      return Number.isFinite(kickoff) && kickoff >= now && kickoff <= now + windowMs;
+      return Number.isFinite(kickoff) && kickoff >= now;
     })
     .sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
+  const nextDateKeys = [...new Set(timedUpcoming.map((row) => singaporeDateKey(row.startTime)))]
+    .sort()
+    .slice(0, 3);
+  const dateColumns = nextDateKeys.map((key) => {
+    const rows = timedUpcoming.filter((row) => singaporeDateKey(row.startTime) === key);
+    const net = rows.reduce((sum, row) => sum + matchBetNet(row), 0);
+    const activeBets = rows.filter((row) => (matchBetSelections[row.id] || "none") !== "none")
+      .length;
+    return { key, label: singaporeDateLabel(key), rows, net, activeBets };
+  });
+  const displayedUpcomingIds = new Set(dateColumns.flatMap((column) => column.rows.map((row) => row.id)));
   const untimedUpcoming = upcoming
-    .filter(({ startTime }) => !startTime)
+    .filter(({ startTime, id }) => !startTime && !displayedUpcomingIds.has(id))
     .slice(0, 8);
   const completed = scorecardRows()
     .filter((row) => matchSearchHit(row.match, query))
     .sort((a, b) => b.match.matchNumber - a.match.matchNumber);
-  $("#upcoming-window-label").textContent = `NEXT ${matchWindowHours} HOURS`;
-  $("#match-count").textContent = timedUpcoming.length + completed.length;
+  $("#upcoming-window-label").textContent = "NEXT 3 MATCH DAYS";
+  $("#match-count").textContent =
+    dateColumns.reduce((sum, column) => sum + column.rows.length, 0) + completed.length;
   $("#upcoming-matches").innerHTML = timedUpcoming.length
-    ? timedUpcoming.map(({ match }) => renderUpcomingCard(match)).join("")
-    : `<div class="market-empty">No timestamped upcoming matches found in the next ${matchWindowHours} hours from the official odds feed.</div>`;
+    ? `<div class="upcoming-day-grid-inner">${dateColumns
+        .map(
+          (column) => `<section class="match-day-column">
+            <h3><strong>${column.label}</strong><small>${column.rows.length} match${column.rows.length === 1 ? "" : "es"}</small></h3>
+            <div class="day-sim-total ${column.net > 0 ? "positive" : column.net < 0 ? "negative" : ""}">
+              <span>${column.activeBets} active bet${column.activeBets === 1 ? "" : "s"}</span>
+              <b>${signedUnits(column.net)}</b>
+            </div>
+            <div>${column.rows.map(renderUpcomingCard).join("")}</div>
+          </section>`,
+        )
+        .join("")}</div>`
+    : '<div class="market-empty">No timestamped upcoming matches found in the official Singapore Pools odds feed.</div>';
   $("#untimed-matches").innerHTML = untimedUpcoming.length
     ? `<details>
         <summary>${untimedUpcoming.length} FIFA scheduled match${untimedUpcoming.length === 1 ? "" : "es"} match the search but have no kickoff time in the current FIFA snapshot</summary>
-        <div class="all-matches">${untimedUpcoming.map(({ match }) => renderUpcomingCard(match)).join("")}</div>
+        <div class="all-matches">${untimedUpcoming.map(renderUpcomingCard).join("")}</div>
       </details>`
     : "";
   $("#completed-matches").innerHTML = completed.length
@@ -1523,15 +1631,6 @@ $$("[data-jump]").forEach((button) =>
 );
 $("#menu-toggle").addEventListener("click", () => $(".sidebar").classList.toggle("open"));
 $("#match-search").addEventListener("input", renderMatches);
-$$("[data-match-window]").forEach((button) =>
-  button.addEventListener("click", () => {
-    matchWindowHours = Number(button.dataset.matchWindow);
-    $$("[data-match-window]").forEach((item) =>
-      item.classList.toggle("active", item === button),
-    );
-    renderMatches();
-  }),
-);
 $("#team-a").addEventListener("change", renderComparison);
 $("#team-b").addEventListener("change", renderComparison);
 $("#refresh-data").addEventListener("click", checkLatest);
@@ -1544,6 +1643,13 @@ $("#betting-filter").addEventListener("change", (event) => {
   renderBetting();
 });
 document.addEventListener("click", (event) => {
+  const matchBetButton = event.target.closest("[data-match-bet] button");
+  if (matchBetButton) {
+    const container = matchBetButton.closest("[data-match-bet]");
+    matchBetSelections[container.dataset.matchBet] = matchBetButton.dataset.result;
+    renderMatches();
+    return;
+  }
   const row = event.target.closest("[data-bet-row]");
   if (row) openBetExplainer(row.dataset.betRow);
   if (event.target.closest("[data-close-bet-explainer]")) closeBetExplainer();

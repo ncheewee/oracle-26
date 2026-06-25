@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=phase14" />
+    <link rel="stylesheet" href="./styles.css?v=phase15" />
   </head>
   <body>
     <div class="noise"></div>
@@ -140,16 +140,12 @@
       <section id="matches" class="view">
         <div class="filterbar panel">
           <label>SEARCH<input id="match-search" type="search" placeholder="Team, group, venue…" /></label>
-          <div class="window-selector" aria-label="Upcoming match window">
-            <button class="active" data-match-window="24">24H</button>
-            <button data-match-window="48">48H</button>
-            <button data-match-window="72">72H</button>
-          </div>
           <div class="filter-count"><span>VISIBLE</span><strong id="match-count">—</strong></div>
         </div>
         <article class="panel match-section">
-          <div class="panel-title"><span>UPCOMING MATCHES</span><small id="upcoming-window-label">NEXT 24 HOURS</small></div>
-          <div id="upcoming-matches" class="all-matches loading-block"></div>
+          <div class="panel-title"><span>UPCOMING MATCHES</span><small id="upcoming-window-label">NEXT 3 MATCH DAYS</small></div>
+          <div class="audit-note">Simulation uses 1 unit on the model’s top 1X2 outcome. Win = odds − 1, lose = −1, no bet = 0.</div>
+          <div id="upcoming-matches" class="upcoming-day-grid loading-block"></div>
           <div id="untimed-matches" class="untimed-matches"></div>
         </article>
         <article class="panel match-section">
@@ -298,6 +294,6 @@
       </article>
     </div>
 
-    <script type="module" src="./app.js?v=phase14"></script>
+    <script type="module" src="./app.js?v=phase15"></script>
   </body>
 </html>
