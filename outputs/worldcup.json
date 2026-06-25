@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T00:20:35.876Z",
+  "generatedAt": "2026-06-25T05:13:20.233Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,8 +9,8 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 52,
-    "remainingMatches": 52,
+    "completedMatches": 54,
+    "remainingMatches": 50,
     "liveMatches": 0
   },
   "fixtures": [
@@ -1172,9 +1172,9 @@
         "code": "MEX",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 3,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group A",
       "venue": "Mexico City Stadium",
@@ -1194,9 +1194,9 @@
         "code": "KOR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group A",
       "venue": "Monterrey Stadium",
@@ -1603,9 +1603,9 @@
       "matchNumber": 73,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021518",
       "home": {
-        "name": "2A",
-        "code": "2A",
-        "flag": null
+        "name": "South Africa",
+        "code": "RSA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
       },
       "away": {
         "name": "Canada",
@@ -1625,9 +1625,9 @@
       "matchNumber": 74,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021516",
       "home": {
-        "name": "1C",
-        "code": "1C",
-        "flag": null
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
       },
       "away": {
         "name": "2F",
@@ -1674,9 +1674,9 @@
         "flag": null
       },
       "away": {
-        "name": "2C",
-        "code": "2C",
-        "flag": null
+        "name": "Morocco",
+        "code": "MAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
       },
       "homeScore": null,
       "awayScore": null,
@@ -2312,62 +2312,62 @@
           "name": "Mexico",
           "code": "MEX",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX",
-          "played": 2,
-          "won": 2,
+          "played": 3,
+          "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 3,
+          "goalsFor": 6,
           "goalsAgainst": 0,
-          "goalDifference": 3,
-          "conductScore": -5,
-          "points": 6,
+          "goalDifference": 6,
+          "conductScore": -6,
+          "points": 9,
           "qualified": true
         },
         {
           "position": 2,
-          "name": "Korea Republic",
-          "code": "KOR",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR",
-          "played": 2,
+          "name": "South Africa",
+          "code": "RSA",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA",
+          "played": 3,
           "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "conductScore": -3,
-          "points": 3,
-          "qualified": false
-        },
-        {
-          "position": 3,
-          "name": "Czechia",
-          "code": "CZE",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE",
-          "played": 2,
-          "won": 0,
           "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 3,
           "goalDifference": -1,
-          "conductScore": -1,
-          "points": 1,
+          "conductScore": -13,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 3,
+          "name": "Korea Republic",
+          "code": "KOR",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR",
+          "played": 3,
+          "won": 1,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDifference": -1,
+          "conductScore": -4,
+          "points": 3,
           "qualified": false
         },
         {
           "position": 4,
-          "name": "South Africa",
-          "code": "RSA",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA",
-          "played": 2,
+          "name": "Czechia",
+          "code": "CZE",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE",
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
-          "conductScore": -12,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "goalDifference": -4,
+          "conductScore": -1,
           "points": 1,
           "qualified": false
         }
@@ -2459,7 +2459,7 @@
           "goalDifference": 6,
           "conductScore": -5,
           "points": 7,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -2475,7 +2475,7 @@
           "goalDifference": 3,
           "conductScore": -1,
           "points": 7,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 3,
