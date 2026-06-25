@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T17:35:09.380Z",
+  "generatedAt": "2026-06-25T19:30:41.349Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -385,8 +385,8 @@
       "startTime": "2026-06-25T20:00:00Z",
       "prices": {
         "Ecuador": 5.2,
-        "Draw": 4.8,
-        "Germany": 1.37
+        "Draw": 4.5,
+        "Germany": 1.4
       }
     },
     {
@@ -395,9 +395,9 @@
       "name": "Japan vs Sweden",
       "startTime": "2026-06-25T23:00:00Z",
       "prices": {
-        "Japan": 1.63,
+        "Japan": 1.67,
         "Draw": 3.8,
-        "Sweden": 4.1
+        "Sweden": 4
       }
     },
     {
@@ -417,9 +417,9 @@
       "name": "Paraguay vs Australia",
       "startTime": "2026-06-26T02:00:00Z",
       "prices": {
-        "Paraguay": 2.5,
+        "Paraguay": 2.55,
         "Draw": 2.15,
-        "Australia": 3.9
+        "Australia": 3.8
       }
     },
     {
@@ -440,8 +440,8 @@
       "startTime": "2026-06-26T19:00:00Z",
       "prices": {
         "Norway": 5,
-        "Draw": 4.4,
-        "France": 1.42
+        "Draw": 4.5,
+        "France": 1.4
       }
     },
     {
@@ -561,8 +561,8 @@
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
         "Jordan": 17,
-        "Draw": 6,
-        "Argentina": 1.1
+        "Draw": 5.5,
+        "Argentina": 1.12
       }
     },
     {
@@ -571,9 +571,9 @@
       "name": "South Africa vs Canada",
       "startTime": "2026-06-28T19:00:00Z",
       "prices": {
-        "South Africa": 4.5,
-        "Draw": 3.2,
-        "Canada": 1.67
+        "South Africa": 4.7,
+        "Draw": 3.3,
+        "Canada": 1.63
       }
     }
   ]
