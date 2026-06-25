@@ -268,8 +268,8 @@ input:focus, select:focus { border-color: var(--cyan); }
   border: 1px solid #202a35; background: #080c12; padding: 10px; min-width: 0;
 }
 .match-day-column h3 { display: flex; justify-content: space-between; align-items: end; margin: 0 0 7px; }
-.match-day-column h3 strong { color: var(--cyan); font: 11px DM Mono; text-transform: uppercase; }
-.match-day-column h3 small { color: var(--muted); font: 8px DM Mono; }
+.match-day-column h3 strong { color: var(--cyan); font: 16px DM Mono; text-transform: uppercase; }
+.match-day-column h3 small { color: var(--muted); font: 12px DM Mono; }
 .match-day-column .match-card, .match-day-column .upcoming-ticket { margin-top: 6px; }
 .day-sim-total {
   position: sticky; top: 76px; z-index: 3;
@@ -277,8 +277,8 @@ input:focus, select:focus { border-color: var(--cyan); }
   border: 1px solid #26313d; background: rgba(11,17,24,.96); padding: 8px; margin-bottom: 8px;
   backdrop-filter: blur(10px);
 }
-.day-sim-total span { color: var(--muted); font: 7px DM Mono; letter-spacing: .08em; text-transform: uppercase; }
-.day-sim-total b { color: var(--text); font: 17px DM Mono; }
+.day-sim-total span { color: var(--muted); font: 12px DM Mono; letter-spacing: .08em; text-transform: uppercase; }
+.day-sim-total b { color: var(--text); font: 24px DM Mono; }
 .day-sim-total.positive b { color: var(--lime); }
 .day-sim-total.negative b { color: var(--red); }
 .match-section { padding: 20px; margin-top: 14px; }
@@ -289,17 +289,17 @@ input:focus, select:focus { border-color: var(--cyan); }
   display: grid; gap: 5px;
 }
 .ticket-top {
-  display: grid; grid-template-columns: auto auto auto 1fr; gap: 6px; align-items: center;
-  font: 8px DM Mono; min-width: 0;
+  display: grid; grid-template-columns: auto auto auto 1fr; gap: 8px; align-items: center;
+  font: 14px DM Mono; min-width: 0;
 }
 .ticket-top span { color: var(--cyan); }
-.ticket-top b { color: var(--lime); font-size: 9px; white-space: nowrap; }
-.ticket-top em { color: var(--text); font-style: normal; font-size: 10px; white-space: nowrap; }
-.ticket-top strong { color: var(--gold); justify-self: end; font: 10px DM Mono; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 125px; }
-.ticket-bottom { display: grid; grid-template-columns: 1fr 112px; gap: 6px; align-items: center; }
+.ticket-top b { color: var(--lime); font-size: 14px; white-space: nowrap; }
+.ticket-top em { color: var(--text); font-style: normal; font-size: 16px; white-space: nowrap; }
+.ticket-top strong { color: var(--gold); justify-self: end; font: 15px DM Mono; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 180px; }
+.ticket-bottom { display: grid; grid-template-columns: 1fr 150px; gap: 8px; align-items: center; }
 .ticket-odds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #202a35; border: 1px solid #202a35; min-width: 0; }
-.ticket-odds span { background: #090e14; color: var(--muted); padding: 4px 5px; font: 7px DM Mono; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ticket-odds.unavailable { display: block; padding: 4px 5px; color: var(--muted); font: 7px DM Mono; background: #090e14; }
+.ticket-odds span { background: #090e14; color: var(--muted); padding: 7px 6px; font: 12px DM Mono; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ticket-odds.unavailable { display: block; padding: 7px 6px; color: var(--muted); font: 12px DM Mono; background: #090e14; }
 .compact-match-top { display: grid; grid-template-columns: auto auto 1fr; gap: 7px; align-items: center; color: var(--muted); font: 8px DM Mono; }
 .compact-match-top span { color: var(--cyan); }
 .compact-match-top b { color: var(--lime); font-size: 10px; }
@@ -349,7 +349,7 @@ input:focus, select:focus { border-color: var(--cyan); }
 .bet-sim-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
 .bet-sim-actions button {
   border: 1px solid #2a3541; background: #090d12; color: var(--muted);
-  min-height: 21px; font: 7px DM Mono; cursor: pointer; padding: 0 3px;
+  min-height: 32px; font: 12px DM Mono; cursor: pointer; padding: 0 5px;
 }
 .bet-sim-actions button.active { border-color: var(--cyan); color: #061016; background: var(--cyan); }
 .bet-sim-actions button[data-result="win"].active { border-color: var(--lime); background: var(--lime); }
