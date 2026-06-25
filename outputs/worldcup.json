@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T22:25:51.425Z",
+  "generatedAt": "2026-06-25T00:20:35.876Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 50,
-    "remainingMatches": 54,
-    "liveMatches": 2
+    "completedMatches": 52,
+    "remainingMatches": 52,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -1129,8 +1129,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
       },
       "homeScore": 0,
-      "awayScore": 2,
-      "status": "24'",
+      "awayScore": 3,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Miami Stadium",
@@ -1150,9 +1150,9 @@
         "code": "HAI",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
       },
-      "homeScore": 0,
-      "awayScore": 1,
-      "status": "23'",
+      "homeScore": 4,
+      "awayScore": 2,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Atlanta Stadium",
@@ -2454,10 +2454,10 @@
           "won": 2,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 6,
+          "goalsFor": 7,
           "goalsAgainst": 1,
-          "goalDifference": 5,
-          "conductScore": -3,
+          "goalDifference": 6,
+          "conductScore": -5,
           "points": 7,
           "qualified": false
         },
@@ -2467,14 +2467,14 @@
           "code": "MAR",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR",
           "played": 3,
-          "won": 1,
+          "won": 2,
           "drawn": 1,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "goalDifference": 3,
           "conductScore": -1,
-          "points": 4,
+          "points": 7,
           "qualified": false
         },
         {
@@ -2487,9 +2487,9 @@
           "drawn": 0,
           "lost": 2,
           "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
-          "conductScore": -4,
+          "goalsAgainst": 4,
+          "goalDifference": -3,
+          "conductScore": -5,
           "points": 3,
           "qualified": false
         },
@@ -2499,14 +2499,14 @@
           "code": "HAI",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI",
           "played": 3,
-          "won": 1,
+          "won": 0,
           "drawn": 0,
-          "lost": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 4,
-          "goalDifference": -3,
-          "conductScore": -4,
-          "points": 3,
+          "lost": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 8,
+          "goalDifference": -6,
+          "conductScore": -7,
+          "points": 0,
           "qualified": false
         }
       ]
