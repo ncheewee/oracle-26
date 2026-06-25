@@ -647,40 +647,35 @@ function renderUpcomingCard(match) {
   const fixture = row.match;
   const startTime = row.startTime || fixtureStartTime(fixture);
   const kickoff = startTime
-    ? new Date(startTime).toLocaleString("en-SG", {
-        weekday: "short",
-        day: "2-digit",
-        month: "short",
+    ? new Date(startTime).toLocaleTimeString("en-SG", {
         hour: "2-digit",
         minute: "2-digit",
       })
     : "Kickoff time pending";
   const oddsLine = row.event
-    ? `<div class="match-odds-grid">
-        <span>${fixture.home.code}<b>${row.event.prices?.[row.marketHome]?.toFixed?.(2) || "—"}</b></span>
-        <span>DRAW<b>${row.event.prices?.Draw?.toFixed?.(2) || "—"}</b></span>
-        <span>${fixture.away.code}<b>${row.event.prices?.[row.marketAway]?.toFixed?.(2) || "—"}</b></span>
+    ? `<div class="ticket-odds">
+        <span>${fixture.home.code} ${row.event.prices?.[row.marketHome]?.toFixed?.(2) || "—"}</span>
+        <span>D ${row.event.prices?.Draw?.toFixed?.(2) || "—"}</span>
+        <span>${fixture.away.code} ${row.event.prices?.[row.marketAway]?.toFixed?.(2) || "—"}</span>
       </div>`
-    : '<div class="match-odds-grid unavailable">Singapore Pools odds not matched yet</div>';
+    : '<div class="ticket-odds unavailable">Odds pending</div>';
   const selection = matchBetSelections[row.id] || "none";
-  const pickLabel = row.pick
-    ? `${row.pick.short} · ${pct(row.pick.probability)} model`
-    : "Model pick unavailable";
   const pickOdds = Number.isFinite(row.pickOdds) ? row.pickOdds.toFixed(2) : "—";
-  return `<article class="match-card upcoming-card">
-    <div class="match-card-top"><span>M${fixture.matchNumber} · ${fixture.group || fixture.stage || "TOURNAMENT"}</span><b>${kickoff}</b></div>
-    ${matchRow(fixture)}
-    ${predictionPanel(fixture)}
-    <div class="bet-sim-panel">
-      <div><span>MODEL BET</span><strong>${pickLabel}</strong><small>SP odds ${pickOdds}</small></div>
+  return `<article class="upcoming-ticket">
+    <div class="ticket-top">
+      <span>M${fixture.matchNumber}</span>
+      <b>${kickoff}</b>
+      <em>${fixture.home.code} v ${fixture.away.code}</em>
+      <strong>${row.pick ? row.pick.short : "—"} ${row.pick ? pct(row.pick.probability) : ""} @${pickOdds}</strong>
+    </div>
+    <div class="ticket-bottom">
       ${oddsLine}
       <div class="bet-sim-actions" data-match-bet="${row.id}">
-        <button class="${selection === "none" ? "active" : ""}" data-result="none">No bet</button>
+        <button class="${selection === "none" ? "active" : ""}" data-result="none">No</button>
         <button class="${selection === "win" ? "active" : ""}" data-result="win">Win</button>
         <button class="${selection === "lose" ? "active" : ""}" data-result="lose">Lose</button>
       </div>
     </div>
-    <div class="match-meta">${[fixture.venue, fixture.city].filter(Boolean).join(" · ") || "Venue pending"}</div>
   </article>`;
 }
 
