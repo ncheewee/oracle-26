@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T21:16:04.140Z",
+  "generatedAt": "2026-06-25T23:01:06.196Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,8 +9,8 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 54,
-    "remainingMatches": 50,
+    "completedMatches": 56,
+    "remainingMatches": 48,
     "liveMatches": 2
   },
   "fixtures": [
@@ -1217,8 +1217,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
       },
       "homeScore": 0,
-      "awayScore": 1,
-      "status": "54'",
+      "awayScore": 2,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Philadelphia Stadium",
@@ -1238,9 +1238,9 @@
         "code": "GER",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
       },
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1,
-      "status": "55'",
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group E",
       "venue": "New York/New Jersey Stadium",
@@ -1260,9 +1260,9 @@
         "code": "SWE",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "1'",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Dallas Stadium",
@@ -1282,9 +1282,9 @@
         "code": "NED",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "0'",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Kansas City Stadium",
@@ -1691,9 +1691,9 @@
       "matchNumber": 77,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021514",
       "home": {
-        "name": "2E",
-        "code": "2E",
-        "flag": null
+        "name": "Côte d'Ivoire",
+        "code": "CIV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
       },
       "away": {
         "name": "2I",
@@ -2590,13 +2590,13 @@
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER",
           "played": 3,
           "won": 2,
-          "drawn": 1,
-          "lost": 0,
+          "drawn": 0,
+          "lost": 1,
           "goalsFor": 10,
-          "goalsAgainst": 3,
-          "goalDifference": 7,
+          "goalsAgainst": 4,
+          "goalDifference": 6,
           "conductScore": -1,
-          "points": 7,
+          "points": 6,
           "qualified": true
         },
         {
@@ -2608,12 +2608,12 @@
           "won": 2,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 3,
+          "goalsFor": 4,
           "goalsAgainst": 2,
-          "goalDifference": 1,
+          "goalDifference": 2,
           "conductScore": -4,
           "points": 6,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 3,
@@ -2621,14 +2621,14 @@
           "code": "ECU",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU",
           "played": 3,
-          "won": 0,
-          "drawn": 2,
+          "won": 1,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 1,
+          "goalsFor": 2,
           "goalsAgainst": 2,
-          "goalDifference": -1,
-          "conductScore": -4,
-          "points": 2,
+          "goalDifference": 0,
+          "conductScore": -5,
+          "points": 4,
           "qualified": false
         },
         {
@@ -2641,9 +2641,9 @@
           "drawn": 1,
           "lost": 2,
           "goalsFor": 1,
-          "goalsAgainst": 8,
-          "goalDifference": -7,
-          "conductScore": -5,
+          "goalsAgainst": 9,
+          "goalDifference": -8,
+          "conductScore": -7,
           "points": 1,
           "qualified": false
         }
