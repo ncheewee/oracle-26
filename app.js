@@ -13,6 +13,7 @@ let audit;
 let model;
 let simulation;
 let market;
+let probabilityHistory = { snapshots: [] };
 let bettingSort = "balanced";
 let bettingFilter = "value";
 
@@ -555,6 +556,7 @@ function renderOverview() {
     )
     .join("");
   renderWinnerIntelligence();
+  renderProbabilityHistory();
   renderLatestSignal();
   renderMarketLens();
 }
@@ -581,12 +583,84 @@ function renderGroups() {
     .join("");
 }
 
+const knockoutRounds = {
+  roundOf32: [
+    ["M73"], ["M74"], ["M75"], ["M76"], ["M77"], ["M78"], ["M79"], ["M80"],
+    ["M81"], ["M82"], ["M83"], ["M84"], ["M85"], ["M86"], ["M87"], ["M88"],
+  ],
+  roundOf16: [
+    ["M89", "M74", "M77"],
+    ["M90", "M73", "M75"],
+    ["M91", "M76", "M78"],
+    ["M92", "M79", "M80"],
+    ["M93", "M83", "M84"],
+    ["M94", "M81", "M82"],
+    ["M95", "M86", "M88"],
+    ["M96", "M85", "M87"],
+  ],
+  quarterfinal: [
+    ["M97", "M89", "M90"],
+    ["M98", "M93", "M94"],
+    ["M99", "M91", "M92"],
+    ["M100", "M95", "M96"],
+  ],
+  semifinal: [
+    ["M101", "M97", "M98"],
+    ["M102", "M99", "M100"],
+  ],
+  final: [["M104", "M101", "M102"]],
+};
+
+function teamRating(name) {
+  return model?.contenders.find((team) => team.name === canonical(name))?.rating || 1500;
+}
+
+function knockoutProjection(home, away) {
+  const homeChance = Math.round(
+    (1 / (1 + 10 ** (-(teamRating(home) - teamRating(away)) / 400))) * 1000,
+  ) / 10;
+  const awayChance = Math.round((100 - homeChance) * 10) / 10;
+  return {
+    home,
+    away,
+    homeWinProbability: homeChance,
+    awayWinProbability: awayChance,
+    predictedWinner: homeChance >= awayChance ? home : away,
+    probability: null,
+    coherent: true,
+  };
+}
+
+function coherentBracketPath() {
+  const path = {};
+  for (let number = 73; number <= 88; number += 1) {
+    const id = `M${number}`;
+    const projected = simulation.projectedMatches[id];
+    if (projected) path[id] = { ...projected, coherent: true };
+  }
+  for (const round of [
+    knockoutRounds.roundOf16,
+    knockoutRounds.quarterfinal,
+    knockoutRounds.semifinal,
+    knockoutRounds.final,
+  ]) {
+    for (const [id, homeSource, awaySource] of round) {
+      const home = path[homeSource]?.predictedWinner;
+      const away = path[awaySource]?.predictedWinner;
+      if (!home || !away) continue;
+      path[id] = knockoutProjection(home, away);
+    }
+  }
+  return path;
+}
+
 function renderBracket() {
   const flagMap = new Map(
     worldCup.standings.flatMap((group) =>
       group.teams.map((team) => [team.name, team.flag]),
     ),
   );
+  const coherentPath = coherentBracketPath();
   const stages = [
     ["ROUND OF 32", 73, 88],
     ["ROUND OF 16", 89, 96],
@@ -598,7 +672,7 @@ function renderBracket() {
     .map(([label, start, end]) => {
       const cards = [];
       for (let number = start; number <= end; number += 1) {
-        const projected = simulation.projectedMatches[`M${number}`];
+        const projected = coherentPath[`M${number}`] || simulation.projectedMatches[`M${number}`];
         const actual = worldCup.fixtures.find(
           (fixture) => fixture.matchNumber === number,
         );
@@ -612,8 +686,11 @@ function renderBracket() {
         const awayMeta = completed
           ? actual.awayScore
           : `${projected.awayWinProbability}%`;
+        const pathLabel = projected.probability
+          ? `${projected.probability}% PATH`
+          : "COHERENT PATH";
         cards.push(`<div class="bracket-match ${completed ? "completed" : "predicted"}">
-          <div class="bracket-id"><span>M${number}</span><b>${completed ? "FINAL SCORE" : `${projected.probability}% PATH`}</b></div>
+          <div class="bracket-id"><span>M${number}</span><b>${completed ? "FINAL SCORE" : pathLabel}</b></div>
           <div class="${!completed && projected.predictedWinner === home ? "winner" : ""}">${flag({ flag: flagMap.get(home) })}<strong>${home}</strong><em>${homeMeta}</em></div>
           <div class="${!completed && projected.predictedWinner === away ? "winner" : ""}">${flag({ flag: flagMap.get(away) })}<strong>${away}</strong><em>${awayMeta}</em></div>
         </div>`);
@@ -621,6 +698,55 @@ function renderBracket() {
       return `<section class="bracket-stage"><h3>${label}</h3>${cards.join("")}</section>`;
     })
     .join("");
+}
+
+function renderProbabilityHistory() {
+  const snapshots = probabilityHistory?.snapshots || [];
+  const chart = $("#probability-history-chart");
+  if (!snapshots.length) {
+    chart.innerHTML = '<div class="market-empty">Probability history starts after the next verified refresh.</div>';
+    $("#probability-history-label").textContent = "WAITING FOR REFRESH";
+    return;
+  }
+  const winnerName = simulation.winner?.name;
+  const series = snapshots
+    .map((snapshot) => ({
+      generatedAt: snapshot.generatedAt,
+      probability:
+        snapshot.teams?.find((team) => team.name === winnerName)?.champion ??
+        (snapshot.winner?.name === winnerName ? snapshot.winner.champion : null),
+    }))
+    .filter((point) => Number.isFinite(point.probability));
+  if (!series.length) {
+    chart.innerHTML = '<div class="market-empty">No history points for current predicted winner yet.</div>';
+    return;
+  }
+  const width = 520;
+  const height = 150;
+  const pad = 18;
+  const min = Math.max(0, Math.min(...series.map((point) => point.probability)) - 2);
+  const max = Math.min(100, Math.max(...series.map((point) => point.probability)) + 2);
+  const span = Math.max(1, max - min);
+  const points = series.map((point, index) => {
+    const x = series.length === 1 ? width / 2 : pad + (index / (series.length - 1)) * (width - pad * 2);
+    const y = height - pad - ((point.probability - min) / span) * (height - pad * 2);
+    return { ...point, x, y };
+  });
+  const path = points.map((point, index) => `${index ? "L" : "M"}${point.x},${point.y}`).join(" ");
+  const latest = points.at(-1);
+  const first = points[0];
+  const delta = Math.round((latest.probability - first.probability) * 10) / 10;
+  $("#probability-history-label").textContent = `${points.length} SNAPSHOT${points.length === 1 ? "" : "S"}`;
+  chart.innerHTML = `
+    <div class="probability-history-meta">
+      <div><span>${winnerName}</span><strong>${latest.probability}%</strong><small>${delta >= 0 ? "+" : ""}${delta}pp since first snapshot</small></div>
+      <div><span>LATEST</span><strong>${fmtDate(latest.generatedAt)}</strong><small>simulation generated</small></div>
+    </div>
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${winnerName} title probability over time">
+      <path class="history-gridline" d="M${pad},${height - pad}H${width - pad}"></path>
+      <path class="history-line" d="${path}"></path>
+      ${points.map((point) => `<circle cx="${point.x}" cy="${point.y}" r="4"><title>${fmtDate(point.generatedAt)} · ${point.probability}%</title></circle>`).join("")}
+    </svg>`;
 }
 
 function renderWinnerIntelligence() {
@@ -1196,6 +1322,14 @@ async function fetchJson(path, label, cacheBust = false) {
   return response.json();
 }
 
+async function fetchOptionalJson(path, fallback, cacheBust = false) {
+  try {
+    return await fetchJson(path, "Optional feed", cacheBust);
+  } catch {
+    return fallback;
+  }
+}
+
 async function checkLatest() {
   const button = $("#refresh-data");
   const status = $("#refresh-status");
@@ -1205,7 +1339,7 @@ async function checkLatest() {
   status.textContent =
     "Checking the latest deployed verified snapshot. Live scraping runs in the data pipeline, not inside this static page.";
   try {
-    [worldCup, audit, model, simulation, market] = await Promise.all([
+    [worldCup, audit, model, simulation, market, probabilityHistory] = await Promise.all([
       fetchJson("./outputs/worldcup.json", "World Cup feed", true),
       fetchJson("./outputs/data-availability.json", "Audit feed", true),
       fetchJson("./outputs/model.json", "Model feed", true),
@@ -1215,6 +1349,7 @@ async function checkLatest() {
         true,
       ),
       fetchJson("./outputs/market-odds.json", "Market odds", true),
+      fetchOptionalJson("./outputs/prediction-history.json", { snapshots: [] }, true),
     ]);
     renderAll();
     status.textContent =
@@ -1231,7 +1366,7 @@ async function checkLatest() {
 
 async function boot() {
   try {
-    [worldCup, audit, model, simulation, market] = await Promise.all([
+    [worldCup, audit, model, simulation, market, probabilityHistory] = await Promise.all([
       fetchJson("./outputs/worldcup.json", "World Cup feed"),
       fetchJson("./outputs/data-availability.json", "Audit feed"),
       fetchJson("./outputs/model.json", "Model feed"),
@@ -1240,6 +1375,7 @@ async function boot() {
         "Tournament simulation",
       ),
       fetchJson("./outputs/market-odds.json", "Market odds"),
+      fetchOptionalJson("./outputs/prediction-history.json", { snapshots: [] }),
     ]);
 
     const teams = allTeams();

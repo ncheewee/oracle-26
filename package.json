@@ -8,8 +8,9 @@
     "collect": "node scripts/collect-worldcup.mjs",
     "model": "node scripts/train-model.mjs",
     "simulate": "node scripts/simulate-tournament.mjs",
+    "history": "node scripts/update-prediction-history.mjs",
     "odds": "node scripts/collect-market-odds.mjs",
-    "refresh": "pnpm run audit && pnpm run collect && pnpm run model && pnpm run simulate && pnpm run odds",
+    "refresh": "pnpm run audit && pnpm run collect && pnpm run model && pnpm run simulate && pnpm run history && pnpm run odds",
     "serve": "python3 -m http.server 4173",
     "test": "node --test"
   },

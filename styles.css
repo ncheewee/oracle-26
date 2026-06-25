@@ -127,6 +127,20 @@ h1 { text-transform: uppercase; letter-spacing: -.04em; font-size: clamp(26px, 3
 .leader-row strong { font-size: 11px; }
 .leader-row span { color: var(--muted); font: 8px DM Mono; display: block; margin-top: 3px; }
 .leader-row b { font: 15px DM Mono; color: var(--cyan); }
+.probability-history-chart { display: grid; gap: 14px; margin-top: 12px; }
+.probability-history-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #202a35; }
+.probability-history-meta > div { background: #090e14; padding: 14px; min-height: 92px; }
+.probability-history-meta span, .probability-history-meta strong, .probability-history-meta small { display: block; }
+.probability-history-meta span { color: var(--muted); font: 9px DM Mono; letter-spacing: .1em; text-transform: uppercase; }
+.probability-history-meta strong { color: var(--lime); font: 22px DM Mono; margin: 10px 0 5px; }
+.probability-history-meta small { color: #8794a2; font-size: 10px; line-height: 1.45; }
+.probability-history-chart svg {
+  width: 100%; min-height: 170px; border: 1px solid #25313c;
+  background: radial-gradient(circle at 50% 0%, rgba(59,255,236,.08), transparent 55%), #090e14;
+}
+.history-gridline { stroke: #25313c; stroke-width: 1; fill: none; }
+.history-line { stroke: var(--lime); stroke-width: 3; fill: none; filter: drop-shadow(0 0 7px rgba(166,255,99,.45)); }
+.probability-history-chart circle { fill: var(--cyan); stroke: #061016; stroke-width: 2; }
 .match-list { margin-top: 5px; }
 .match-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid #18202a; }
 .match-team { display: flex; align-items: center; gap: 8px; font-size: 10px; min-width: 0; }
@@ -532,6 +546,7 @@ input:focus, select:focus { border-color: var(--cyan); }
   .market-row > div:nth-child(3) { display: none; }
   .scorecard-metrics, .journey-hero, .journey-columns { grid-template-columns: 1fr; }
   .betting-kpi-grid { grid-template-columns: 1fr; }
+  .probability-history-meta { grid-template-columns: 1fr; }
   .betting-controls { grid-template-columns: 1fr; }
   .betting-day-grid { grid-template-columns: 1fr; }
   .betting-day h3 { position: static; }

@@ -1,0 +1,148 @@
+{
+  "generatedAt": "2026-06-25T06:01:34.969Z",
+  "source": "outputs/tournament-simulation.json",
+  "snapshots": [
+    {
+      "generatedAt": "2026-06-24T07:16:06.489Z",
+      "simulations": 50000,
+      "winner": {
+        "name": "Argentina",
+        "champion": 20.4,
+        "final": 30
+      },
+      "teams": [
+        {
+          "name": "Argentina",
+          "champion": 20.4,
+          "final": 30
+        },
+        {
+          "name": "Morocco",
+          "champion": 8.1,
+          "final": 14.3
+        },
+        {
+          "name": "Spain",
+          "champion": 7.5,
+          "final": 14
+        },
+        {
+          "name": "England",
+          "champion": 7.2,
+          "final": 12.7
+        },
+        {
+          "name": "Japan",
+          "champion": 5.7,
+          "final": 10.7
+        },
+        {
+          "name": "Germany",
+          "champion": 4.6,
+          "final": 10.1
+        },
+        {
+          "name": "France",
+          "champion": 4.3,
+          "final": 9
+        },
+        {
+          "name": "Portugal",
+          "champion": 3.5,
+          "final": 7.5
+        },
+        {
+          "name": "Norway",
+          "champion": 3.2,
+          "final": 6.8
+        },
+        {
+          "name": "Colombia",
+          "champion": 3.1,
+          "final": 6.8
+        },
+        {
+          "name": "Mexico",
+          "champion": 3.1,
+          "final": 6.6
+        },
+        {
+          "name": "Netherlands",
+          "champion": 2.8,
+          "final": 6.2
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-06-25T05:14:36.666Z",
+      "simulations": 100000,
+      "winner": {
+        "name": "Argentina",
+        "champion": 20.8,
+        "final": 30.7
+      },
+      "teams": [
+        {
+          "name": "Argentina",
+          "champion": 20.8,
+          "final": 30.7
+        },
+        {
+          "name": "Morocco",
+          "champion": 8.3,
+          "final": 15.4
+        },
+        {
+          "name": "Spain",
+          "champion": 7.5,
+          "final": 13.7
+        },
+        {
+          "name": "England",
+          "champion": 7.4,
+          "final": 12.9
+        },
+        {
+          "name": "Japan",
+          "champion": 5.5,
+          "final": 10.4
+        },
+        {
+          "name": "Germany",
+          "champion": 4.5,
+          "final": 9.7
+        },
+        {
+          "name": "France",
+          "champion": 3.9,
+          "final": 8.6
+        },
+        {
+          "name": "Portugal",
+          "champion": 3.5,
+          "final": 7.7
+        },
+        {
+          "name": "Mexico",
+          "champion": 3.2,
+          "final": 6.7
+        },
+        {
+          "name": "Norway",
+          "champion": 3.2,
+          "final": 6.7
+        },
+        {
+          "name": "Colombia",
+          "champion": 3.1,
+          "final": 6.6
+        },
+        {
+          "name": "Netherlands",
+          "champion": 2.7,
+          "final": 5.9
+        }
+      ]
+    }
+  ]
+}

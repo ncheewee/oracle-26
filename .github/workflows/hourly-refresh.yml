@@ -45,6 +45,7 @@ jobs:
             pnpm run audit
             pnpm run model
             SIMULATIONS=100000 pnpm run simulate
+            pnpm run history
           fi
 
       - name: Refresh Singapore Pools odds
@@ -57,6 +58,6 @@ jobs:
         run: |
           git config user.name "oracle-26-bot"
           git config user.email "oracle-26-bot@users.noreply.github.com"
-          git add outputs/data-availability.json outputs/data-availability.md outputs/worldcup.json outputs/model.json outputs/tournament-simulation.json outputs/market-odds.json
+          git add outputs/data-availability.json outputs/data-availability.md outputs/worldcup.json outputs/model.json outputs/tournament-simulation.json outputs/prediction-history.json outputs/market-odds.json
           git diff --cached --quiet || git commit -m "data: hourly FIFA refresh"
           git push
