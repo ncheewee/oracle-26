@@ -639,6 +639,78 @@ function renderCompletedAuditCard(row) {
   </article>`;
 }
 
+function verifiedMatchDateIso(match) {
+  return (
+    match.startTime ||
+    match.kickoffTime ||
+    match.kickoff ||
+    match.matchDate ||
+    match.date ||
+    match.completedAt ||
+    null
+  );
+}
+
+function completedDateKey(row) {
+  const iso = verifiedMatchDateIso(row.match);
+  if (!iso) return "undated";
+  const time = new Date(iso).getTime();
+  return Number.isFinite(time) ? singaporeDateKey(iso) : "undated";
+}
+
+function completedDateLabel(key) {
+  return key === "undated"
+    ? "Date not captured in verified feed"
+    : singaporeDateLabel(key);
+}
+
+function completedDateGroups(rows) {
+  const keys = [...new Set(rows.map(completedDateKey))].sort((a, b) => {
+    if (a === "undated") return 1;
+    if (b === "undated") return -1;
+    return b.localeCompare(a);
+  });
+  return keys.map((key) => ({
+    key,
+    label: completedDateLabel(key),
+    rows: rows
+      .filter((row) => completedDateKey(row) === key)
+      .sort((a, b) => b.match.matchNumber - a.match.matchNumber),
+  }));
+}
+
+function renderScorecardDateGroups(rows) {
+  return completedDateGroups(rows)
+    .map(
+      (group) => `<section class="scorecard-date-group">
+        <h3><strong>${group.label}</strong><small>${group.rows.length} match${group.rows.length === 1 ? "" : "es"}</small></h3>
+        <div>${group.rows
+          .map(
+            (row) => `<div class="audit-row ${row.hit ? "hit" : "miss"}">
+              <span>M${row.match.matchNumber}</span>
+              <strong>${row.match.home.name} ${row.match.homeScore}–${row.match.awayScore} ${row.match.away.name}</strong>
+              <b>${row.predictedLabel}</b>
+              <em>${row.hit ? "HIT" : "MISS"}</em>
+              <small>${pct(row.actualProbability * 100)} actual likelihood</small>
+            </div>`,
+          )
+          .join("")}</div>
+      </section>`,
+    )
+    .join("");
+}
+
+function renderCompletedMatchDateGroups(rows) {
+  return completedDateGroups(rows)
+    .map(
+      (group) => `<section class="completed-date-group">
+        <h3><strong>${group.label}</strong><small>${group.rows.length} match${group.rows.length === 1 ? "" : "es"}</small></h3>
+        <div class="completed-matches">${group.rows.map(renderCompletedAuditCard).join("")}</div>
+      </section>`,
+    )
+    .join("");
+}
+
 function renderUpcomingCard(match) {
   const row =
     typeof match.match === "object"
@@ -1125,19 +1197,7 @@ function renderScorecard() {
         .join("")}</div>
     </div>
     <p class="audit-note">This is a live retrospective scorecard from the current calibrated model state. It is useful for model behaviour and calibration, but not a claim that every completed match had a frozen pre-match forecast saved before kickoff.</p>`;
-  $("#scorecard-table").innerHTML = rows
-    .slice(-16)
-    .reverse()
-    .map(
-      (row) => `<div class="audit-row ${row.hit ? "hit" : "miss"}">
-        <span>M${row.match.matchNumber}</span>
-        <strong>${row.match.home.name} ${row.match.homeScore}–${row.match.awayScore} ${row.match.away.name}</strong>
-        <b>${row.predictedLabel}</b>
-        <em>${row.hit ? "HIT" : "MISS"}</em>
-        <small>${pct(row.actualProbability * 100)} actual likelihood</small>
-      </div>`,
-    )
-    .join("");
+  $("#scorecard-table").innerHTML = renderScorecardDateGroups(rows);
   renderWinnerJourney();
 }
 
@@ -1416,7 +1476,7 @@ function renderMatches() {
       </details>`
     : "";
   $("#completed-matches").innerHTML = completed.length
-    ? completed.map(renderCompletedAuditCard).join("")
+    ? renderCompletedMatchDateGroups(completed)
     : '<div class="market-empty">No completed matches match the current search.</div>';
 }
 

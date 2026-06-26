@@ -319,6 +319,18 @@ input:focus, select:focus { border-color: var(--cyan); }
   padding: 12px 0; border-top: 1px solid #202a35;
 }
 .completed-matches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 14px; }
+.completed-date-group { margin-top: 16px; }
+.completed-date-group:first-child { margin-top: 0; }
+.completed-date-group h3, .scorecard-date-group h3 {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0 0 10px; padding: 10px 12px; border: 1px solid #25313d; background: #090e14;
+}
+.completed-date-group h3 strong, .scorecard-date-group h3 strong {
+  color: var(--cyan); font: 13px DM Mono; letter-spacing: .06em; text-transform: uppercase;
+}
+.completed-date-group h3 small, .scorecard-date-group h3 small {
+  color: var(--muted); font: 10px DM Mono; letter-spacing: .06em; text-transform: uppercase;
+}
 .completed-audit-card { position: relative; overflow: hidden; }
 .completed-audit-card.hit { border-left: 3px solid var(--lime); }
 .completed-audit-card.miss { border-left: 3px solid var(--red); }
@@ -446,7 +458,8 @@ input:focus, select:focus { border-color: var(--cyan); }
 .journey-columns h3 { margin: 0 0 12px; color: var(--cyan); font: 12px DM Mono; text-transform: uppercase; letter-spacing: .08em; }
 .journey-columns p { margin: 0; padding: 12px 0; border-top: 1px solid #17202a; color: #b7c0ca; font-size: 12px; line-height: 1.6; }
 .journey-columns p:first-of-type { border-top: 0; }
-.scorecard-table { display: grid; gap: 7px; margin-top: 18px; }
+.scorecard-table { display: grid; gap: 14px; margin-top: 18px; }
+.scorecard-date-group > div { display: grid; gap: 7px; }
 .audit-row {
   display: grid; grid-template-columns: 52px 1fr 70px 58px 135px; gap: 10px; align-items: center;
   border: 1px solid #202a35; background: #090e14; padding: 12px 14px; font-size: 12px;
