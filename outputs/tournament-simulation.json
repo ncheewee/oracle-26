@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T02:20:35.085Z",
+  "generatedAt": "2026-06-26T02:30:29.763Z",
   "status": "tournament_simulation_validated",
   "simulations": 100000,
   "seed": 20260623,
@@ -262,7 +262,7 @@
         "qualified": 84,
         "roundOf16": 39,
         "quarterfinal": 21.1,
-        "semifinal": 11.3,
+        "semifinal": 11.2,
         "final": 5.3,
         "champion": 2.3,
         "groupWinner": 0.1
@@ -290,7 +290,7 @@
       "rating": 1831,
       "probabilities": {
         "qualified": 70.2,
-        "roundOf16": 33.2,
+        "roundOf16": 33.1,
         "quarterfinal": 18.2,
         "semifinal": 9.3,
         "final": 4.4,
@@ -307,7 +307,7 @@
         "qualified": 69.4,
         "roundOf16": 38.1,
         "quarterfinal": 20.3,
-        "semifinal": 9.2,
+        "semifinal": 9.1,
         "final": 4.1,
         "champion": 1.8,
         "groupWinner": 33
@@ -383,7 +383,7 @@
         "roundOf16": 48.4,
         "quarterfinal": 23.6,
         "semifinal": 8.9,
-        "final": 3.4,
+        "final": 3.5,
         "champion": 1.3,
         "groupWinner": 47.8
       }
@@ -665,7 +665,7 @@
       "rating": 1697,
       "probabilities": {
         "qualified": 17.1,
-        "roundOf16": 6.6,
+        "roundOf16": 6.5,
         "quarterfinal": 1.7,
         "semifinal": 0.5,
         "final": 0.2,
@@ -805,7 +805,7 @@
       "matchId": "M77",
       "home": "France",
       "away": "Sweden",
-      "probability": 70.9,
+      "probability": 71,
       "homeWinProbability": 70.9,
       "awayWinProbability": 29.1,
       "predictedWinner": "France"
@@ -842,8 +842,8 @@
       "home": "USA",
       "away": "Bosnia and Herzegovina",
       "probability": 98.5,
-      "homeWinProbability": 65.9,
-      "awayWinProbability": 34.1,
+      "homeWinProbability": 65.8,
+      "awayWinProbability": 34.2,
       "predictedWinner": "USA"
     },
     "M82": {
@@ -914,8 +914,8 @@
       "home": "Germany",
       "away": "France",
       "probability": 33.7,
-      "homeWinProbability": 50.8,
-      "awayWinProbability": 49.2,
+      "homeWinProbability": 50.9,
+      "awayWinProbability": 49.1,
       "predictedWinner": "Germany"
     },
     "M90": {
@@ -1003,7 +1003,7 @@
       "matchId": "M99",
       "home": "Japan",
       "away": "England",
-      "probability": 10.6,
+      "probability": 10.5,
       "homeWinProbability": 48.4,
       "awayWinProbability": 51.6,
       "predictedWinner": "England"
@@ -1012,7 +1012,7 @@
       "matchId": "M100",
       "home": "Argentina",
       "away": "Switzerland",
-      "probability": 14.6,
+      "probability": 14.7,
       "homeWinProbability": 75.4,
       "awayWinProbability": 24.6,
       "predictedWinner": "Argentina"

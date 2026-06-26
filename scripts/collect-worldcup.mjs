@@ -22,6 +22,32 @@ async function collectFixtures(page) {
 
   return page.locator('a[href*="/match-centre/match/"]').evaluateAll((nodes) =>
     nodes.map((node, index) => {
+      const dateText =
+        node
+          .closest(".col-xl-12")
+          ?.textContent?.match(
+            /(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+\d{1,2}\s+[A-Za-z]+\s+\d{4}/,
+          )?.[0] || null;
+      const monthNumber = {
+        January: "01",
+        February: "02",
+        March: "03",
+        April: "04",
+        May: "05",
+        June: "06",
+        July: "07",
+        August: "08",
+        September: "09",
+        October: "10",
+        November: "11",
+        December: "12",
+      };
+      const dateParts = dateText?.match(
+        /^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/,
+      );
+      const matchDate = dateParts
+        ? `${dateParts[3]}-${monthNumber[dateParts[2]]}-${dateParts[1].padStart(2, "0")}`
+        : null;
       const teams = [...node.querySelectorAll('[class*="match-row_team__"]')];
       const getTeam = (team) => ({
         name:
@@ -56,6 +82,8 @@ async function collectFixtures(page) {
           node
             .querySelector('[class*="match-row_statusLabel__"]')
             ?.textContent?.trim() || "Scheduled",
+        dateLabel: dateText,
+        matchDate,
         stage: labels[0] || null,
         group: labels[1] || null,
         venue: venueLabels[0] || null,
