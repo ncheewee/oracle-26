@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T21:02:08.836Z",
+  "generatedAt": "2026-06-26T22:23:52.355Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -365,9 +365,9 @@
       "name": "Cape Verde vs Saudi Arabia",
       "startTime": "2026-06-27T00:00:00Z",
       "prices": {
-        "Cape Verde": 1.97,
+        "Cape Verde": 2.25,
         "Draw": 3.4,
-        "Saudi Arabia": 2.95
+        "Saudi Arabia": 2.5
       }
     },
     {
@@ -376,9 +376,9 @@
       "name": "Uruguay vs Spain",
       "startTime": "2026-06-27T00:00:00Z",
       "prices": {
-        "Uruguay": 5.5,
-        "Draw": 3.6,
-        "Spain": 1.5
+        "Uruguay": 5.8,
+        "Draw": 3.7,
+        "Spain": 1.45
       }
     },
     {
@@ -387,9 +387,9 @@
       "name": "Egypt vs Iran",
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
-        "Egypt": 1.95,
+        "Egypt": 2,
         "Draw": 2.7,
-        "Iran": 4
+        "Iran": 3.8
       }
     },
     {
@@ -420,9 +420,9 @@
       "name": "Panama vs England",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Panama": 11,
-        "Draw": 7.5,
-        "England": 1.1
+        "Panama": 10,
+        "Draw": 6.5,
+        "England": 1.13
       }
     },
     {
@@ -431,9 +431,9 @@
       "name": "Colombia vs Portugal",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Colombia": 4.1,
+        "Colombia": 4,
         "Draw": 3.3,
-        "Portugal": 1.72
+        "Portugal": 1.75
       }
     },
     {
@@ -443,8 +443,8 @@
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
         "Congo DR": 1.67,
-        "Draw": 3.5,
-        "Uzbekistan": 4
+        "Draw": 3.4,
+        "Uzbekistan": 4.1
       }
     },
     {
@@ -453,8 +453,8 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.4,
-        "Draw": 2.1,
+        "Algeria": 3.5,
+        "Draw": 2.05,
         "Austria": 2.75
       }
     },
@@ -515,6 +515,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-26T21:02:08.836Z",
+  "lastAttemptAt": "2026-06-26T22:23:52.355Z",
   "warning": "Championship Winner market unavailable"
 }

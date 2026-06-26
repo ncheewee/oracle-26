@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T21:00:33.347Z",
+  "generatedAt": "2026-06-26T22:22:19.195Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 61,
-    "remainingMatches": 43,
-    "liveMatches": 1
+    "completedMatches": 62,
+    "remainingMatches": 42,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -1494,7 +1494,7 @@
       },
       "homeScore": 5,
       "awayScore": 0,
-      "status": "90'+2'",
+      "status": "FT",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1848,9 +1848,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
       },
       "away": {
-        "name": "2I",
-        "code": "2I",
-        "flag": null
+        "name": "Norway",
+        "code": "NOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1867,9 +1867,9 @@
       "matchNumber": 78,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021523",
       "home": {
-        "name": "1I",
-        "code": "1I",
-        "flag": null
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
       "away": {
         "name": "3CDFGH",
@@ -3081,7 +3081,7 @@
           "goalDifference": 8,
           "conductScore": -1,
           "points": 9,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -3097,7 +3097,7 @@
           "goalDifference": 1,
           "conductScore": -1,
           "points": 6,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 3,
