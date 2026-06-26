@@ -69,6 +69,10 @@ h1 { text-transform: uppercase; letter-spacing: -.04em; font-size: clamp(26px, 3
 .topbar-meta strong { font: 10px DM Mono; }
 .live-pill { font: 9px DM Mono; display: flex; align-items: center; gap: 8px; color: var(--lime); }
 .live-pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 8px var(--lime); }
+.live-pill.lagging { color: var(--gold); }
+.live-pill.lagging i { background: var(--gold); box-shadow: 0 0 8px var(--gold); }
+.live-pill.stale { color: var(--red); }
+.live-pill.stale i { background: var(--red); box-shadow: 0 0 8px var(--red); }
 .refresh-button {
   border: 1px solid #36525b; background: linear-gradient(145deg, #111c23, #0a1016);
   color: var(--cyan); padding: 0 16px; margin-left: 12px; min-height: 42px;
@@ -217,6 +221,13 @@ h1 { text-transform: uppercase; letter-spacing: -.04em; font-size: clamp(26px, 3
 .freshness-metrics strong { margin-top: 7px; font: 11px DM Mono; }
 .source-link { display: inline-block; margin-top: 18px; color: var(--cyan); font: 10px DM Mono; text-decoration: none; }
 .refresh-status { color: var(--muted); font-size: 10px; line-height: 1.5; margin-top: 16px; }
+.stale-warning {
+  border: 1px solid rgba(239,200,109,.45); background: rgba(239,200,109,.08);
+  color: #ffdc85; padding: 12px; margin-bottom: 14px; font: 11px DM Mono; line-height: 1.5;
+}
+.stale-warning.critical {
+  border-color: rgba(255,77,53,.5); background: rgba(255,77,53,.08); color: #ff9b8e;
+}
 .market-row {
   display: grid; grid-template-columns: 1.45fr repeat(3, .65fr) auto; gap: 10px;
   align-items: center; padding: 16px 0; border-bottom: 1px solid #1d2630;

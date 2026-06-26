@@ -35,6 +35,8 @@ const aliases = {
 };
 const canonical = (name) => aliases[name] || name;
 const pct = (value) => `${Math.round(value * 10) / 10}%`;
+const snapshotAgeHours = () =>
+  Math.max(0, (Date.now() - new Date(worldCup.generatedAt).getTime()) / 3_600_000);
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
@@ -1375,10 +1377,13 @@ function renderLatestSignal() {
   const latest = worldCup.fixtures
     .filter((match) => match.status === "FT")
     .sort((a, b) => b.matchNumber - a.matchNumber)[0];
-  const ageHours = Math.max(
-    0,
-    (Date.now() - new Date(worldCup.generatedAt).getTime()) / 3_600_000,
-  );
+  const ageHours = snapshotAgeHours();
+  const staleWarning =
+    ageHours > 1.25
+      ? `<div class="stale-warning ${ageHours >= 2 ? "critical" : ""}">
+          Verified snapshot is ${Math.round(ageHours * 10) / 10}h old. GitHub scheduled refresh may be delayed; use CHECK LATEST or trigger the workflow if this persists.
+        </div>`
+      : "";
   if (!latest) {
     $("#freshness-label").textContent = "NO COMPLETED MATCHES";
     $("#latest-signal-content").textContent =
@@ -1386,8 +1391,9 @@ function renderLatestSignal() {
     return;
   }
   $("#freshness-label").textContent =
-    ageHours < 1 ? "UPDATED <1H AGO" : `UPDATED ${Math.floor(ageHours)}H AGO`;
+    ageHours < 1 ? "UPDATED <1H AGO" : `UPDATED ${Math.round(ageHours * 10) / 10}H AGO`;
   $("#latest-signal-content").innerHTML = `
+    ${staleWarning}
     <div class="latest-scoreline"><span>${latest.home.name}</span><strong>${latest.homeScore} — ${latest.awayScore}</strong><span>${latest.away.name}</span></div>
     <div class="freshness-metrics">
       <div><span>SNAPSHOT</span><strong>${fmtDate(worldCup.generatedAt)}</strong></div>
@@ -1585,8 +1591,21 @@ function renderModel() {
 }
 
 function renderAll() {
+  const ageHours = snapshotAgeHours();
+  const livePill = $("#live-pill");
+  livePill.classList.toggle("lagging", ageHours > 1.25 && ageHours < 2);
+  livePill.classList.toggle("stale", ageHours >= 2);
+  $("#live-pill-label").textContent =
+    ageHours >= 2
+      ? "STALE DATA"
+      : ageHours > 1.25
+        ? "REFRESH LAG"
+        : "LIVE DATA";
   $("#last-updated").textContent = fmtDate(worldCup.generatedAt).toUpperCase();
-  $("#pipeline-status").textContent = `${audit.summary.verified} fields verified`;
+  $("#pipeline-status").textContent =
+    ageHours > 1.25
+      ? `${audit.summary.verified} fields verified · ${Math.round(ageHours * 10) / 10}h old`
+      : `${audit.summary.verified} fields verified`;
   renderOverview();
   renderGroups();
   renderBracket();
