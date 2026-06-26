@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T19:13:52.917Z",
+  "generatedAt": "2026-06-26T21:02:08.836Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -365,9 +365,9 @@
       "name": "Cape Verde vs Saudi Arabia",
       "startTime": "2026-06-27T00:00:00Z",
       "prices": {
-        "Cape Verde": 2,
+        "Cape Verde": 1.97,
         "Draw": 3.4,
-        "Saudi Arabia": 2.9
+        "Saudi Arabia": 2.95
       }
     },
     {
@@ -376,9 +376,9 @@
       "name": "Uruguay vs Spain",
       "startTime": "2026-06-27T00:00:00Z",
       "prices": {
-        "Uruguay": 5.8,
+        "Uruguay": 5.5,
         "Draw": 3.6,
-        "Spain": 1.48
+        "Spain": 1.5
       }
     },
     {
@@ -387,8 +387,8 @@
       "name": "Egypt vs Iran",
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
-        "Egypt": 1.97,
-        "Draw": 2.65,
+        "Egypt": 1.95,
+        "Draw": 2.7,
         "Iran": 4
       }
     },
@@ -399,8 +399,8 @@
       "startTime": "2026-06-27T03:00:00Z",
       "prices": {
         "New Zealand": 9,
-        "Draw": 5.5,
-        "Belgium": 1.17
+        "Draw": 6.5,
+        "Belgium": 1.15
       }
     },
     {
@@ -420,8 +420,8 @@
       "name": "Panama vs England",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Panama": 12,
-        "Draw": 7,
+        "Panama": 11,
+        "Draw": 7.5,
         "England": 1.1
       }
     },
@@ -443,8 +443,8 @@
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
         "Congo DR": 1.67,
-        "Draw": 3.4,
-        "Uzbekistan": 4.1
+        "Draw": 3.5,
+        "Uzbekistan": 4
       }
     },
     {
@@ -453,8 +453,8 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.3,
-        "Draw": 2.15,
+        "Algeria": 3.4,
+        "Draw": 2.1,
         "Austria": 2.75
       }
     },
@@ -465,8 +465,8 @@
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
         "Jordan": 17,
-        "Draw": 7.5,
-        "Argentina": 1.07
+        "Draw": 8,
+        "Argentina": 1.05
       }
     },
     {
@@ -508,13 +508,13 @@
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
-        "USA": 1.27,
+        "USA": 1.28,
         "Draw": 4.3,
-        "Bosnia": 9
+        "Bosnia": 8.5
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-26T19:13:52.916Z",
+  "lastAttemptAt": "2026-06-26T21:02:08.836Z",
   "warning": "Championship Winner market unavailable"
 }

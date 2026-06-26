@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T19:12:18.564Z",
+  "generatedAt": "2026-06-26T21:00:33.347Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 60,
-    "remainingMatches": 44,
-    "liveMatches": 2
+    "completedMatches": 61,
+    "remainingMatches": 43,
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -1468,9 +1468,9 @@
         "code": "FRA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
-      "homeScore": 0,
-      "awayScore": 1,
-      "status": "11'",
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "FT",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1492,9 +1492,9 @@
         "code": "IRQ",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
       },
-      "homeScore": 1,
+      "homeScore": 5,
       "awayScore": 0,
-      "status": "9'",
+      "status": "90'+2'",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -3076,10 +3076,10 @@
           "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 1,
-          "goalDifference": 6,
-          "conductScore": 0,
+          "goalsFor": 10,
+          "goalsAgainst": 2,
+          "goalDifference": 8,
+          "conductScore": -1,
           "points": 9,
           "qualified": false
         },
@@ -3092,9 +3092,9 @@
           "won": 2,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 7,
-          "goalsAgainst": 4,
-          "goalDifference": 3,
+          "goalsFor": 8,
+          "goalsAgainst": 7,
+          "goalDifference": 1,
           "conductScore": -1,
           "points": 6,
           "qualified": false
@@ -3108,10 +3108,10 @@
           "won": 1,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 4,
+          "goalsFor": 8,
           "goalsAgainst": 6,
-          "goalDifference": -2,
-          "conductScore": 0,
+          "goalDifference": 2,
+          "conductScore": -2,
           "points": 3,
           "qualified": false
         },
@@ -3125,9 +3125,9 @@
           "drawn": 0,
           "lost": 3,
           "goalsFor": 1,
-          "goalsAgainst": 8,
-          "goalDifference": -7,
-          "conductScore": -2,
+          "goalsAgainst": 12,
+          "goalDifference": -11,
+          "conductScore": -8,
           "points": 0,
           "qualified": false
         }
