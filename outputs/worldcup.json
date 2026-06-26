@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T00:20:27.510Z",
+  "generatedAt": "2026-06-26T02:19:21.992Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,8 +9,8 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 56,
-    "remainingMatches": 48,
+    "completedMatches": 58,
+    "remainingMatches": 46,
     "liveMatches": 2
   },
   "fixtures": [
@@ -1261,8 +1261,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
       },
       "homeScore": 1,
-      "awayScore": 0,
-      "status": "60'",
+      "awayScore": 1,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Dallas Stadium",
@@ -1283,8 +1283,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
       },
       "homeScore": 1,
-      "awayScore": 2,
-      "status": "61'",
+      "awayScore": 3,
+      "status": "FT",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Kansas City Stadium",
@@ -1304,9 +1304,9 @@
         "code": "USA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "19'",
       "stage": "First Stage",
       "group": "Group D",
       "venue": "Los Angeles Stadium",
@@ -1326,9 +1326,9 @@
         "code": "AUS",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "19'",
       "stage": "First Stage",
       "group": "Group D",
       "venue": "San Francisco Bay Area Stadium",
@@ -1630,9 +1630,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
       },
       "away": {
-        "name": "2F",
-        "code": "2F",
-        "flag": null
+        "name": "Japan",
+        "code": "JPN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1669,9 +1669,9 @@
       "matchNumber": 76,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021522",
       "home": {
-        "name": "1F",
-        "code": "1F",
-        "flag": null
+        "name": "Netherlands",
+        "code": "NED",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
       },
       "away": {
         "name": "Morocco",
@@ -1806,9 +1806,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
       },
       "away": {
-        "name": "3BEFIJ",
-        "code": "3BEFIJ",
-        "flag": null
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
       },
       "homeScore": null,
       "awayScore": null,
@@ -2422,7 +2422,7 @@
           "goalDifference": -1,
           "conductScore": -10,
           "points": 4,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 4,
@@ -2519,15 +2519,15 @@
           "name": "USA",
           "code": "USA",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA",
-          "played": 2,
+          "played": 3,
           "won": 2,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 6,
-          "goalsAgainst": 1,
+          "goalsFor": 7,
+          "goalsAgainst": 2,
           "goalDifference": 5,
           "conductScore": -4,
-          "points": 6,
+          "points": 7,
           "qualified": true
         },
         {
@@ -2535,15 +2535,15 @@
           "name": "Australia",
           "code": "AUS",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS",
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 2,
           "goalDifference": 0,
           "conductScore": -4,
-          "points": 3,
+          "points": 4,
           "qualified": false
         },
         {
@@ -2551,15 +2551,15 @@
           "name": "Paraguay",
           "code": "PAR",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR",
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 4,
           "goalDifference": -2,
           "conductScore": -11,
-          "points": 3,
+          "points": 4,
           "qualified": false
         },
         {
@@ -2567,15 +2567,15 @@
           "name": "Türkiye",
           "code": "TUR",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR",
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
           "goalDifference": -3,
           "conductScore": -3,
-          "points": 0,
+          "points": 1,
           "qualified": false
         }
       ]
@@ -2661,12 +2661,12 @@
           "won": 2,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 9,
+          "goalsFor": 10,
           "goalsAgainst": 4,
-          "goalDifference": 5,
+          "goalDifference": 6,
           "conductScore": -3,
           "points": 7,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -2674,15 +2674,15 @@
           "code": "JPN",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN",
           "played": 3,
-          "won": 2,
-          "drawn": 1,
+          "won": 1,
+          "drawn": 2,
           "lost": 0,
           "goalsFor": 7,
-          "goalsAgainst": 2,
-          "goalDifference": 5,
-          "conductScore": 0,
-          "points": 7,
-          "qualified": false
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "conductScore": -1,
+          "points": 5,
+          "qualified": true
         },
         {
           "position": 3,
@@ -2691,13 +2691,13 @@
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE",
           "played": 3,
           "won": 1,
-          "drawn": 0,
-          "lost": 2,
-          "goalsFor": 6,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 7,
           "goalsAgainst": 7,
-          "goalDifference": -1,
-          "conductScore": -4,
-          "points": 3,
+          "goalDifference": 0,
+          "conductScore": -5,
+          "points": 4,
           "qualified": false
         },
         {
@@ -2710,8 +2710,8 @@
           "drawn": 0,
           "lost": 3,
           "goalsFor": 2,
-          "goalsAgainst": 11,
-          "goalDifference": -9,
+          "goalsAgainst": 12,
+          "goalDifference": -10,
           "conductScore": -1,
           "points": 0,
           "qualified": false
