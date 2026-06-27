@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T01:48:19.178Z",
+  "generatedAt": "2026-06-27T05:02:30.894Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 62,
-    "remainingMatches": 42,
-    "liveMatches": 2
+    "completedMatches": 65,
+    "remainingMatches": 39,
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -1518,7 +1518,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "status": "84'",
+      "status": "FT",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1542,7 +1542,7 @@
       },
       "homeScore": 0,
       "awayScore": 1,
-      "status": "83'",
+      "status": "FT",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1566,7 +1566,7 @@
       },
       "homeScore": 1,
       "awayScore": 1,
-      "status": "89'",
+      "status": "90'+8'",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1589,8 +1589,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
       },
       "homeScore": 1,
-      "awayScore": 4,
-      "status": "90'",
+      "awayScore": 5,
+      "status": "FT",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1939,9 +1939,9 @@
       "matchNumber": 81,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021525",
       "home": {
-        "name": "1G",
-        "code": "1G",
-        "flag": null
+        "name": "Belgium",
+        "code": "BEL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
       },
       "away": {
         "name": "3AEHIJ",
@@ -2943,7 +2943,7 @@
           "goalDifference": 3,
           "conductScore": -7,
           "points": 5,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -3012,7 +3012,7 @@
           "goalDifference": 5,
           "conductScore": -2,
           "points": 7,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -3028,7 +3028,7 @@
           "goalDifference": 0,
           "conductScore": -4,
           "points": 3,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 3,
@@ -3042,7 +3042,7 @@
           "goalsFor": 3,
           "goalsAgainst": 4,
           "goalDifference": -1,
-          "conductScore": -4,
+          "conductScore": -9,
           "points": 2,
           "qualified": false
         },
@@ -3058,7 +3058,7 @@
           "goalsFor": 1,
           "goalsAgainst": 5,
           "goalDifference": -4,
-          "conductScore": -5,
+          "conductScore": -6,
           "points": 2,
           "qualified": false
         }
