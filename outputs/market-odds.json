@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T14:05:41.136Z",
+  "generatedAt": "2026-06-27T15:38:31.240Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-06-27T14:05:41.136Z"
+    "capturedAt": "2026-06-27T15:38:31.240Z"
   },
   "championship": [
     {
@@ -330,8 +330,8 @@
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
         "Croatia": 1.8,
-        "Draw": 2.75,
-        "Ghana": 4.7
+        "Draw": 2.8,
+        "Ghana": 4.5
       }
     },
     {
@@ -340,9 +340,9 @@
       "name": "Panama vs England",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Panama": 19,
-        "Draw": 7.5,
-        "England": 1.03
+        "Panama": 17,
+        "Draw": 7,
+        "England": 1.07
       }
     },
     {
@@ -351,9 +351,9 @@
       "name": "Colombia vs Portugal",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Colombia": 3.8,
-        "Draw": 3.2,
-        "Portugal": 1.8
+        "Colombia": 3.7,
+        "Draw": 3.1,
+        "Portugal": 1.85
       }
     },
     {
@@ -362,8 +362,8 @@
       "name": "Congo DR vs Uzbekistan",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Congo DR": 1.45,
-        "Draw": 3.9,
+        "Congo DR": 1.48,
+        "Draw": 3.8,
         "Uzbekistan": 5.2
       }
     },
@@ -373,9 +373,9 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 4.2,
+        "Algeria": 4.1,
         "Draw": 1.82,
-        "Austria": 2.95
+        "Austria": 3
       }
     },
     {
@@ -418,7 +418,7 @@
       "startTime": "2026-06-29T20:30:00Z",
       "prices": {
         "Germany": 1.23,
-        "Draw": 4.8,
+        "Draw": 5,
         "Paraguay": 8.5
       }
     },
@@ -439,8 +439,8 @@
       "name": "Ivory Coast vs Norway",
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
-        "Ivory Coast": 3.7,
-        "Draw": 3.3,
+        "Ivory Coast": 3.6,
+        "Draw": 3.4,
         "Norway": 1.8
       }
     },
