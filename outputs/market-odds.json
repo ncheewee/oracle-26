@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T19:08:30.274Z",
+  "generatedAt": "2026-06-27T20:21:15.604Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-06-27T19:08:30.274Z"
+    "capturedAt": "2026-06-27T20:21:15.604Z"
   },
   "championship": [
     {
@@ -329,8 +329,8 @@
       "name": "Croatia vs Ghana",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Croatia": 1.7,
-        "Draw": 2.9,
+        "Croatia": 1.65,
+        "Draw": 3,
         "Ghana": 5.2
       }
     },
@@ -341,7 +341,7 @@
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
         "Panama": 17,
-        "Draw": 7.5,
+        "Draw": 8,
         "England": 1.05
       }
     },
@@ -363,8 +363,8 @@
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
         "Congo DR": 1.48,
-        "Draw": 3.8,
-        "Uzbekistan": 5.2
+        "Draw": 3.7,
+        "Uzbekistan": 5.5
       }
     },
     {
@@ -439,9 +439,9 @@
       "name": "Ivory Coast vs Norway",
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
-        "Ivory Coast": 3.6,
+        "Ivory Coast": 3.4,
         "Draw": 3.3,
-        "Norway": 1.85
+        "Norway": 1.9
       }
     },
     {
@@ -450,9 +450,9 @@
       "name": "France vs Sweden",
       "startTime": "2026-06-30T21:00:00Z",
       "prices": {
-        "France": 1.18,
+        "France": 1.2,
         "Draw": 5.2,
-        "Sweden": 10
+        "Sweden": 9.5
       }
     },
     {
