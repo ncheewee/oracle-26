@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T21:36:42.540Z",
+  "generatedAt": "2026-06-27T22:43:59.894Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -19,97 +19,97 @@
       "team": "Spain",
       "decimalOdds": 5.5,
       "marketImpliedProbability": 18.2,
-      "modelProbability": 6.8,
-      "probabilityEdge": -11.4,
-      "expectedReturn": -62.6
+      "modelProbability": 7.7,
+      "probabilityEdge": -10.5,
+      "expectedReturn": -57.6
     },
     {
       "team": "France",
       "decimalOdds": 4,
       "marketImpliedProbability": 25,
-      "modelProbability": 4.6,
-      "probabilityEdge": -20.4,
-      "expectedReturn": -81.6
+      "modelProbability": 4.7,
+      "probabilityEdge": -20.3,
+      "expectedReturn": -81.2
     },
     {
       "team": "England",
       "decimalOdds": 7,
       "marketImpliedProbability": 14.3,
-      "modelProbability": 6.6,
-      "probabilityEdge": -7.7,
-      "expectedReturn": -53.8
+      "modelProbability": 7.2,
+      "probabilityEdge": -7.1,
+      "expectedReturn": -49.6
     },
     {
       "team": "Brazil",
       "decimalOdds": 9.5,
       "marketImpliedProbability": 10.5,
-      "modelProbability": 2.4,
-      "probabilityEdge": -8.1,
-      "expectedReturn": -77.2
+      "modelProbability": 2.1,
+      "probabilityEdge": -8.4,
+      "expectedReturn": -80
     },
     {
       "team": "Argentina",
       "decimalOdds": 5,
       "marketImpliedProbability": 20,
-      "modelProbability": 21.4,
-      "probabilityEdge": 1.4,
-      "expectedReturn": 7
+      "modelProbability": 21.1,
+      "probabilityEdge": 1.1,
+      "expectedReturn": 5.5
     },
     {
       "team": "Portugal",
       "decimalOdds": 6.5,
       "marketImpliedProbability": 15.4,
-      "modelProbability": 3,
-      "probabilityEdge": -12.4,
-      "expectedReturn": -80.5
+      "modelProbability": 3.4,
+      "probabilityEdge": -12,
+      "expectedReturn": -77.9
     },
     {
       "team": "Germany",
       "decimalOdds": 9.5,
       "marketImpliedProbability": 10.5,
-      "modelProbability": 4.8,
-      "probabilityEdge": -5.7,
-      "expectedReturn": -54.4
+      "modelProbability": 4.6,
+      "probabilityEdge": -5.9,
+      "expectedReturn": -56.3
     },
     {
       "team": "Netherlands",
       "decimalOdds": 6.5,
       "marketImpliedProbability": 15.4,
-      "modelProbability": 2.6,
-      "probabilityEdge": -12.8,
-      "expectedReturn": -83.1
+      "modelProbability": 2.7,
+      "probabilityEdge": -12.7,
+      "expectedReturn": -82.4
     },
     {
       "team": "Norway",
       "decimalOdds": 25,
       "marketImpliedProbability": 4,
-      "modelProbability": 2.9,
-      "probabilityEdge": -1.1,
-      "expectedReturn": -27.5
+      "modelProbability": 2.6,
+      "probabilityEdge": -1.4,
+      "expectedReturn": -35
     },
     {
       "team": "Belgium",
       "decimalOdds": 35,
       "marketImpliedProbability": 2.9,
-      "modelProbability": 3.8,
-      "probabilityEdge": 0.9,
-      "expectedReturn": 33
+      "modelProbability": 4.1,
+      "probabilityEdge": 1.2,
+      "expectedReturn": 43.5
     },
     {
       "team": "Colombia",
       "decimalOdds": 35,
       "marketImpliedProbability": 2.9,
-      "modelProbability": 2.8,
-      "probabilityEdge": -0.1,
-      "expectedReturn": -2
+      "modelProbability": 3,
+      "probabilityEdge": 0.1,
+      "expectedReturn": 5
     },
     {
       "team": "Japan",
       "decimalOdds": 35,
       "marketImpliedProbability": 2.9,
-      "modelProbability": 5.8,
-      "probabilityEdge": 2.9,
-      "expectedReturn": 103
+      "modelProbability": 5.5,
+      "probabilityEdge": 2.6,
+      "expectedReturn": 92.5
     },
     {
       "team": "Morocco",
@@ -123,49 +123,49 @@
       "team": "USA",
       "decimalOdds": 20,
       "marketImpliedProbability": 5,
-      "modelProbability": 1.1,
-      "probabilityEdge": -3.9,
-      "expectedReturn": -78
+      "modelProbability": 1.2,
+      "probabilityEdge": -3.8,
+      "expectedReturn": -76
     },
     {
       "team": "Switzerland",
       "decimalOdds": 50,
       "marketImpliedProbability": 2,
-      "modelProbability": 1.5,
-      "probabilityEdge": -0.5,
-      "expectedReturn": -25
+      "modelProbability": 1.4,
+      "probabilityEdge": -0.6,
+      "expectedReturn": -30
     },
     {
       "team": "Mexico",
       "decimalOdds": 25,
       "marketImpliedProbability": 4,
-      "modelProbability": 3.1,
-      "probabilityEdge": -0.9,
-      "expectedReturn": -22.5
+      "modelProbability": 2.7,
+      "probabilityEdge": -1.3,
+      "expectedReturn": -32.5
     },
     {
       "team": "Croatia",
       "decimalOdds": 75,
       "marketImpliedProbability": 1.3,
-      "modelProbability": 0.9,
-      "probabilityEdge": -0.4,
-      "expectedReturn": -32.5
+      "modelProbability": 0.8,
+      "probabilityEdge": -0.5,
+      "expectedReturn": -40
     },
     {
       "team": "Ecuador",
       "decimalOdds": 100,
       "marketImpliedProbability": 1,
-      "modelProbability": 1.6,
-      "probabilityEdge": 0.6,
-      "expectedReturn": 60
+      "modelProbability": 1.4,
+      "probabilityEdge": 0.4,
+      "expectedReturn": 40
     },
     {
       "team": "Senegal",
       "decimalOdds": 100,
       "marketImpliedProbability": 1,
-      "modelProbability": 1.7,
-      "probabilityEdge": 0.7,
-      "expectedReturn": 70
+      "modelProbability": 1.4,
+      "probabilityEdge": 0.4,
+      "expectedReturn": 40
     },
     {
       "team": "Sweden",
@@ -187,9 +187,9 @@
       "team": "Austria",
       "decimalOdds": 125,
       "marketImpliedProbability": 0.8,
-      "modelProbability": 1.8,
-      "probabilityEdge": 1,
-      "expectedReturn": 125
+      "modelProbability": 1.9,
+      "probabilityEdge": 1.1,
+      "expectedReturn": 137.5
     },
     {
       "team": "Paraguay",
@@ -219,9 +219,9 @@
       "team": "Côte d'Ivoire",
       "decimalOdds": 125,
       "marketImpliedProbability": 0.8,
-      "modelProbability": 1.6,
-      "probabilityEdge": 0.8,
-      "expectedReturn": 100
+      "modelProbability": 1.4,
+      "probabilityEdge": 0.6,
+      "expectedReturn": 75
     },
     {
       "team": "Egypt",
@@ -235,9 +235,9 @@
       "team": "Ghana",
       "decimalOdds": 300,
       "marketImpliedProbability": 0.3,
-      "modelProbability": 0.2,
-      "probabilityEdge": -0.1,
-      "expectedReturn": -40
+      "modelProbability": 0.1,
+      "probabilityEdge": -0.2,
+      "expectedReturn": -70
     },
     {
       "team": "Algeria",
@@ -259,9 +259,9 @@
       "team": "Australia",
       "decimalOdds": 100,
       "marketImpliedProbability": 1,
-      "modelProbability": 1.3,
-      "probabilityEdge": 0.3,
-      "expectedReturn": 30
+      "modelProbability": 1.2,
+      "probabilityEdge": 0.2,
+      "expectedReturn": 20
     },
     {
       "team": "Iran",
@@ -275,9 +275,9 @@
       "team": "Congo DR",
       "decimalOdds": 300,
       "marketImpliedProbability": 0.3,
-      "modelProbability": 0.3,
-      "probabilityEdge": 0,
-      "expectedReturn": -10
+      "modelProbability": 0.2,
+      "probabilityEdge": -0.1,
+      "expectedReturn": -40
     },
     {
       "team": "South Africa",
@@ -317,9 +317,9 @@
       "team": "Japan",
       "decimalOdds": 35,
       "marketImpliedProbability": 2.9,
-      "modelProbability": 5.8,
-      "probabilityEdge": 2.9,
-      "expectedReturn": 103
+      "modelProbability": 5.5,
+      "probabilityEdge": 2.6,
+      "expectedReturn": 92.5
     }
   ],
   "matches": [
@@ -329,9 +329,9 @@
       "name": "Colombia vs Portugal",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Colombia": 3.7,
-        "Draw": 3.1,
-        "Portugal": 1.9
+        "Colombia": 4,
+        "Draw": 3.2,
+        "Portugal": 1.75
       }
     },
     {
@@ -341,8 +341,8 @@
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
         "Congo DR": 1.45,
-        "Draw": 3.7,
-        "Uzbekistan": 5.8
+        "Draw": 3.8,
+        "Uzbekistan": 5.5
       }
     },
     {
@@ -351,9 +351,9 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.9,
+        "Algeria": 3.8,
         "Draw": 1.77,
-        "Austria": 3.3
+        "Austria": 3.4
       }
     },
     {
@@ -362,8 +362,8 @@
       "name": "Jordan vs Argentina",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Jordan": 19,
-        "Draw": 9.5,
+        "Jordan": 21,
+        "Draw": 9,
         "Argentina": 1.01
       }
     },
@@ -373,7 +373,7 @@
       "name": "South Africa vs Canada",
       "startTime": "2026-06-28T19:00:00Z",
       "prices": {
-        "South Africa": 4.8,
+        "South Africa": 4.7,
         "Draw": 3.3,
         "Canada": 1.63
       }
@@ -468,6 +468,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-27T21:36:42.539Z",
+  "lastAttemptAt": "2026-06-27T22:43:59.894Z",
   "warning": "Championship Winner market unavailable"
 }
