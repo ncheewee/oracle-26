@@ -12,6 +12,8 @@ test("equal-payout dutch price is not accumulator multiplication", () => {
   ]);
   assert.equal(basket.effectiveOdds, 2.4);
   assert.equal(basket.coverageProbability, 25.2);
+  assert.equal(basket.breakEvenProbability, 41.7);
+  assert.equal(basket.expectedGrossReturn, 0.6);
   assert.equal(basket.expectedReturn, -39.5);
   assert.deepEqual(
     basket.legs.map((leg) => leg.stakeShare),
@@ -19,7 +21,7 @@ test("equal-payout dutch price is not accumulator multiplication", () => {
   );
 });
 
-test("worthwhile baskets require positive legs and meaningful coverage", () => {
+test("worthwhile baskets require positive joint EV and meaningful coverage", () => {
   const baskets = findWorthwhileOutrightBaskets([
     { team: "Argentina", decimalOdds: 6, modelProbability: 20.5 },
     { team: "Morocco", decimalOdds: 30, modelProbability: 9 },

@@ -1260,13 +1260,13 @@ function outrightSelection(team) {
 }
 
 function combinationSignal(basket) {
-  if (basket.expectedReturn >= 15 && basket.coverageProbability >= 20) {
-    return { label: "MODEL VALUE", className: "green" };
-  }
   if (basket.expectedReturn > 0) {
-    return { label: "SPECULATIVE", className: "amber" };
+    return { label: "POSITIVE EV", className: "green" };
   }
-  return { label: "NOT SUPPORTED", className: "red" };
+  if (basket.expectedReturn === 0) {
+    return { label: "BREAK-EVEN", className: "amber" };
+  }
+  return { label: "NEGATIVE EV", className: "red" };
 }
 
 function renderCombinationCard(basket, { ideaCheck = false } = {}) {
@@ -1283,14 +1283,16 @@ function renderCombinationCard(basket, { ideaCheck = false } = {}) {
     <h3>${names}</h3>
     <div class="combo-legs">${legLine}</div>
     <div class="combo-metrics">
-      <div><span>COMBO PRICE</span><b>${basket.effectiveOdds.toFixed(2)}×</b></div>
-      <div><span>MODEL COVERAGE</span><b>${basket.coverageProbability}%</b></div>
-      <div><span>FAIR PRICE</span><b>${basket.fairOdds.toFixed(2)}×</b></div>
-      <div><span>MODEL EV</span><b>${basket.expectedReturn > 0 ? "+" : ""}${basket.expectedReturn}%</b></div>
+      <div><span>COMBO ODDS</span><b>${basket.effectiveOdds.toFixed(2)}×</b></div>
+      <div><span>MODEL PROBABILITY</span><b>${basket.coverageProbability}%</b></div>
+      <div><span>BREAK-EVEN P</span><b>${basket.breakEvenProbability}%</b></div>
+      <div><span>EXPECTED GROSS</span><b>${basket.expectedGrossReturn.toFixed(2)}×</b></div>
+      <div><span>NET EV</span><b>${basket.expectedReturn > 0 ? "+" : ""}${basket.expectedReturn}%</b></div>
     </div>
+    <div class="combo-formula">${basket.effectiveOdds.toFixed(2)} × ${(basket.coverageProbability / 100).toFixed(3)} = ${basket.expectedGrossReturn.toFixed(2)}× expected gross return</div>
     <p>${basket.expectedReturn > 0
-      ? `A 100-unit split targets the same ${basket.effectiveOdds.toFixed(2)}× gross return if either team wins. Both legs clear the model's individual value gate.`
-      : `The market price is shorter than the model's ${basket.fairOdds.toFixed(2)}× fair price. Adding the weaker-value leg dilutes the basket despite broader coverage.`}</p>
+      ? `The model probability is above the ${basket.breakEvenProbability}% required for these odds, producing positive expected return. This remains an estimate, not certainty.`
+      : `Positive EV requires more than ${basket.breakEvenProbability}% probability. At 75%, these odds would produce ${(basket.effectiveOdds * 0.75).toFixed(2)}× expected gross return and +${Math.round((basket.effectiveOdds * 0.75 - 1) * 100)}% net EV—but the current model estimates only ${basket.coverageProbability}%.`}</p>
   </article>`;
 }
 
@@ -1316,7 +1318,7 @@ function renderWorthwhileCombinations() {
     <div class="combo-grid">
       ${worthwhile.length
         ? worthwhile.map((basket) => renderCombinationCard(basket)).join("")
-        : '<div class="market-empty">No two-team outright basket currently clears the coverage and positive-value gates.</div>'}
+        : '<div class="market-empty">No two-team outright basket currently has both meaningful model coverage and positive expected return.</div>'}
     </div>`;
 }
 

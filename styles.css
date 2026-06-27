@@ -515,11 +515,12 @@ input:focus, select:focus { border-color: var(--cyan); }
 .combo-legs { display: flex; flex-wrap: wrap; gap: 6px; }
 .combo-legs span { border: 1px solid #202b36; background: #111822; padding: 6px 8px; color: #8995a2; font: 10px DM Mono; }
 .combo-legs b { color: var(--text); }
-.combo-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #202a35; margin: 12px 0; }
+.combo-metrics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: #202a35; margin: 12px 0; }
 .combo-metrics > div { background: #090e14; padding: 10px; min-width: 0; }
 .combo-metrics span, .combo-metrics b { display: block; }
 .combo-metrics span { color: var(--muted); font: 8px DM Mono; letter-spacing: .06em; }
 .combo-metrics b { color: var(--cyan); font: 16px DM Mono; margin-top: 7px; }
+.combo-formula { margin: -2px 0 11px; color: var(--gold); font: 10px DM Mono; line-height: 1.5; }
 .combo-card p { margin: 0; color: #8f9aa6; font-size: 11px; line-height: 1.55; }
 .combo-idea .combo-card { background: linear-gradient(145deg, rgba(255,77,53,.06), #080c11 58%); }
 .betting-controls {
