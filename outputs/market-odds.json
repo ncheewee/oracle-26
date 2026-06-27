@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T08:22:07.446Z",
+  "generatedAt": "2026-06-27T10:32:41.988Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-06-27T08:22:07.446Z"
+    "capturedAt": "2026-06-27T10:32:41.988Z"
   },
   "championship": [
     {
@@ -329,8 +329,8 @@
       "name": "Croatia vs Ghana",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Croatia": 1.87,
-        "Draw": 2.95,
+        "Croatia": 1.95,
+        "Draw": 2.75,
         "Ghana": 4
       }
     },
@@ -340,9 +340,9 @@
       "name": "Panama vs England",
       "startTime": "2026-06-27T21:00:00Z",
       "prices": {
-        "Panama": 11,
-        "Draw": 6.5,
-        "England": 1.13
+        "Panama": 17,
+        "Draw": 7.5,
+        "England": 1.05
       }
     },
     {
@@ -351,7 +351,7 @@
       "name": "Colombia vs Portugal",
       "startTime": "2026-06-27T23:30:00Z",
       "prices": {
-        "Colombia": 3.7,
+        "Colombia": 3.6,
         "Draw": 3.4,
         "Portugal": 1.8
       }
@@ -373,9 +373,9 @@
       "name": "Algeria vs Austria",
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
-        "Algeria": 3.9,
-        "Draw": 1.92,
-        "Austria": 2.8
+        "Algeria": 4.2,
+        "Draw": 1.8,
+        "Austria": 2.85
       }
     },
     {
@@ -385,8 +385,8 @@
       "startTime": "2026-06-28T02:00:00Z",
       "prices": {
         "Jordan": 19,
-        "Draw": 8.5,
-        "Argentina": 1.03
+        "Draw": 10,
+        "Argentina": 1.001
       }
     },
     {
@@ -417,8 +417,8 @@
       "name": "Germany vs Paraguay",
       "startTime": "2026-06-29T20:30:00Z",
       "prices": {
-        "Germany": 1.27,
-        "Draw": 4.7,
+        "Germany": 1.25,
+        "Draw": 5,
         "Paraguay": 8
       }
     },
@@ -429,8 +429,8 @@
       "startTime": "2026-06-30T01:00:00Z",
       "prices": {
         "Holland": 1.97,
-        "Draw": 2.95,
-        "Morocco": 3.5
+        "Draw": 3.05,
+        "Morocco": 3.4
       }
     },
     {
@@ -439,8 +439,8 @@
       "name": "Ivory Coast vs Norway",
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
-        "Ivory Coast": 3.4,
-        "Draw": 3.3,
+        "Ivory Coast": 3.5,
+        "Draw": 3.2,
         "Norway": 1.9
       }
     },
@@ -450,9 +450,9 @@
       "name": "France vs Sweden",
       "startTime": "2026-06-30T21:00:00Z",
       "prices": {
-        "France": 1.22,
-        "Draw": 4.8,
-        "Sweden": 9.5
+        "France": 1.18,
+        "Draw": 5.2,
+        "Sweden": 10
       }
     },
     {
@@ -472,9 +472,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.1,
+        "Australia": 3.05,
         "Draw": 2.8,
-        "Egypt": 2.25
+        "Egypt": 2.3
       }
     },
     {
