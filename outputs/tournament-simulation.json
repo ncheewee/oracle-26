@@ -120,6 +120,21 @@
     },
     {
       "rank": 6,
+      "name": "France",
+      "canonicalName": "France",
+      "rating": 2031,
+      "probabilities": {
+        "qualified": 100,
+        "roundOf16": 70.7,
+        "quarterfinal": 39.3,
+        "semifinal": 19.4,
+        "final": 10.1,
+        "champion": 4.7,
+        "groupWinner": 100
+      }
+    },
+    {
+      "rank": 7,
       "name": "Germany",
       "canonicalName": "Germany",
       "rating": 1944,
@@ -134,10 +149,10 @@
       }
     },
     {
-      "rank": 7,
-      "name": "France",
-      "canonicalName": "France",
-      "rating": 2031,
+      "rank": 8,
+      "name": "Belgium",
+      "canonicalName": "Belgium",
+      "rating": 1876,
       "probabilities": {
         "qualified": 100,
         "roundOf16": 70.7,
@@ -149,7 +164,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Portugal",
       "canonicalName": "Portugal",
       "rating": 1935,
@@ -299,7 +314,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 17,
       "name": "IR Iran",
       "canonicalName": "Iran",
       "rating": 1863,
@@ -368,7 +383,37 @@
         "roundOf16": 41.4,
         "quarterfinal": 21.1,
         "semifinal": 8.6,
-        "final": 3.4,
+        "final": 3.5,
+        "champion": 1.5,
+        "groupWinner": 0
+      }
+    },
+    {
+      "rank": 20,
+      "name": "Switzerland",
+      "canonicalName": "Switzerland",
+      "rating": 1844,
+      "probabilities": {
+        "qualified": 100,
+        "roundOf16": 49.6,
+        "quarterfinal": 24.5,
+        "semifinal": 8.6,
+        "final": 3.5,
+        "champion": 1.5,
+        "groupWinner": 100
+      }
+    },
+    {
+      "rank": 21,
+      "name": "Senegal",
+      "canonicalName": "Senegal",
+      "rating": 1836,
+      "probabilities": {
+        "qualified": 95,
+        "roundOf16": 40.4,
+        "quarterfinal": 20.5,
+        "semifinal": 8.5,
+        "final": 3.5,
         "champion": 1.4,
         "groupWinner": 0
       }
@@ -524,7 +569,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 32,
       "name": "Ghana",
       "canonicalName": "Ghana",
       "rating": 1660,
@@ -570,9 +615,9 @@
     },
     {
       "rank": 36,
-      "name": "Bosnia and Herzegovina",
-      "canonicalName": "Bosnia and Herzegovina",
-      "rating": 1577,
+      "name": "Uzbekistan",
+      "canonicalName": "Uzbekistan",
+      "rating": 1779,
       "probabilities": {
         "qualified": 100,
         "roundOf16": 34.1,
@@ -585,9 +630,9 @@
     },
     {
       "rank": 37,
-      "name": "Uzbekistan",
-      "canonicalName": "Uzbekistan",
-      "rating": 1779,
+      "name": "Türkiye",
+      "canonicalName": "Turkey",
+      "rating": 1775,
       "probabilities": {
         "qualified": 0.1,
         "roundOf16": 0,
@@ -848,7 +893,7 @@
     },
     "M82": {
       "matchId": "M82",
-      "home": "Egypt",
+      "home": "Belgium",
       "away": "Korea Republic",
       "probability": 25.4,
       "homeWinProbability": 48.1,

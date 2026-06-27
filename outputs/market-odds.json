@@ -10,6 +10,10 @@
     "helpline": "1800-6-668-668",
     "url": "https://www.ncpg.org.sg/"
   },
+  "outright": {
+    "status": "cached",
+    "capturedAt": "2026-06-25T19:30:41.349Z"
+  },
   "championship": [
     {
       "team": "Spain",
@@ -127,17 +131,17 @@
       "team": "Uruguay",
       "decimalOdds": 100,
       "marketImpliedProbability": 1,
-      "modelProbability": 0.2,
-      "probabilityEdge": -0.8,
-      "expectedReturn": -80
+      "modelProbability": 0,
+      "probabilityEdge": -1,
+      "expectedReturn": -100
     },
     {
       "team": "Switzerland",
       "decimalOdds": 40,
       "marketImpliedProbability": 2.5,
-      "modelProbability": 1.4,
-      "probabilityEdge": -1.1,
-      "expectedReturn": -44
+      "modelProbability": 1.5,
+      "probabilityEdge": -1,
+      "expectedReturn": -40
     },
     {
       "team": "Mexico",
@@ -151,9 +155,9 @@
       "team": "Croatia",
       "decimalOdds": 70,
       "marketImpliedProbability": 1.4,
-      "modelProbability": 0.8,
-      "probabilityEdge": -0.6,
-      "expectedReturn": -44
+      "modelProbability": 0.7,
+      "probabilityEdge": -0.7,
+      "expectedReturn": -51
     },
     {
       "team": "Ecuador",

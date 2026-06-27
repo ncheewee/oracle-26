@@ -22,7 +22,7 @@ async function cachedMarketFallback(reason) {
     const cached = JSON.parse(await fs.readFile(outputPath, "utf8"));
     return {
       championship: cached.championship || [],
-      valueWatchlist: cached.valueWatchlist || [],
+      capturedAt: cached.outright?.capturedAt || cached.generatedAt,
       refreshStatus: "market_unavailable_using_cached_snapshot",
       lastAttemptAt: new Date().toISOString(),
       warning: reason,
@@ -74,37 +74,40 @@ const teamProbability = new Map(
 const marketFallback = winnerMarket
   ? null
   : await cachedMarketFallback("Championship Winner market unavailable");
-const championship =
+const rawChampionship =
   marketFallback?.championship ||
   winnerMarket.outcomes
     .filter((outcome) => outcome.isActive && outcome.prices?.[0]?.decimal)
     .map((outcome) => {
       const team = aliases[outcome.name] || outcome.name;
       const decimalOdds = Number(outcome.prices[0].decimal);
-      const modelProbability = teamProbability.get(team) ?? null;
-      const marketImpliedProbability =
-        Math.round((100 / decimalOdds) * 10) / 10;
-      const expectedReturn =
-        modelProbability === null
-          ? null
-          : Math.round(
-              ((modelProbability / 100) * decimalOdds - 1) * 1000,
-            ) / 10;
       return {
         team,
         decimalOdds,
-        marketImpliedProbability,
-        modelProbability,
-        probabilityEdge:
-          modelProbability === null
-            ? null
-            : Math.round((modelProbability - marketImpliedProbability) * 10) / 10,
-        expectedReturn,
       };
     });
+const championship = rawChampionship.map((item) => {
+  const decimalOdds = Number(item.decimalOdds);
+  const modelProbability = teamProbability.get(item.team) ?? null;
+  const marketImpliedProbability = Math.round((100 / decimalOdds) * 10) / 10;
+  const expectedReturn =
+    modelProbability === null
+      ? null
+      : Math.round(((modelProbability / 100) * decimalOdds - 1) * 1000) / 10;
+  return {
+    team: item.team,
+    decimalOdds,
+    marketImpliedProbability,
+    modelProbability,
+    probabilityEdge:
+      modelProbability === null
+        ? null
+        : Math.round((modelProbability - marketImpliedProbability) * 10) / 10,
+    expectedReturn,
+  };
+});
 
 const valueWatchlist =
-  marketFallback?.valueWatchlist ||
   championship
     .filter(
       (item) =>
@@ -156,6 +159,10 @@ const output = {
       "Odds are shown for market comparison, not as a guarantee or instruction to bet.",
     helpline: "1800-6-668-668",
     url: "https://www.ncpg.org.sg/",
+  },
+  outright: {
+    status: marketFallback ? "cached" : "verified",
+    capturedAt: marketFallback?.capturedAt || new Date().toISOString(),
   },
   championship,
   valueWatchlist,

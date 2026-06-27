@@ -1,3 +1,8 @@
+import {
+  evaluateDutchBasket,
+  findWorthwhileOutrightBaskets,
+} from "./lib/betting-combinations.mjs";
+
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const fmtDate = (iso) =>
@@ -1245,6 +1250,74 @@ function renderBetting() {
     avoidRows.length
       ? avoidRows.slice(0, 10).map(renderBettingRow).join("")
       : '<div class="market-empty">No strongly negative model edge found in upcoming match odds.</div>';
+  renderWorthwhileCombinations();
+}
+
+function outrightSelection(team) {
+  return market?.championship?.find(
+    (selection) => canonical(selection.team) === canonical(team),
+  );
+}
+
+function combinationSignal(basket) {
+  if (basket.expectedReturn >= 15 && basket.coverageProbability >= 20) {
+    return { label: "MODEL VALUE", className: "green" };
+  }
+  if (basket.expectedReturn > 0) {
+    return { label: "SPECULATIVE", className: "amber" };
+  }
+  return { label: "NOT SUPPORTED", className: "red" };
+}
+
+function renderCombinationCard(basket, { ideaCheck = false } = {}) {
+  const signal = combinationSignal(basket);
+  const names = basket.legs.map((leg) => leg.team).join(" + ");
+  const legLine = basket.legs
+    .map(
+      (leg) =>
+        `<span><b>${leg.team}</b> @ ${leg.decimalOdds.toFixed(2)} · ${leg.stakeShare}% stake</span>`,
+    )
+    .join("");
+  return `<article class="combo-card combo-${signal.className}">
+    <div class="combo-card-head"><span>${ideaCheck ? "YOUR IDEA · CHECKED" : "EQUAL-PAYOUT DUTCH"}</span><strong>${signal.label}</strong></div>
+    <h3>${names}</h3>
+    <div class="combo-legs">${legLine}</div>
+    <div class="combo-metrics">
+      <div><span>COMBO PRICE</span><b>${basket.effectiveOdds.toFixed(2)}×</b></div>
+      <div><span>MODEL COVERAGE</span><b>${basket.coverageProbability}%</b></div>
+      <div><span>FAIR PRICE</span><b>${basket.fairOdds.toFixed(2)}×</b></div>
+      <div><span>MODEL EV</span><b>${basket.expectedReturn > 0 ? "+" : ""}${basket.expectedReturn}%</b></div>
+    </div>
+    <p>${basket.expectedReturn > 0
+      ? `A 100-unit split targets the same ${basket.effectiveOdds.toFixed(2)}× gross return if either team wins. Both legs clear the model's individual value gate.`
+      : `The market price is shorter than the model's ${basket.fairOdds.toFixed(2)}× fair price. Adding the weaker-value leg dilutes the basket despite broader coverage.`}</p>
+  </article>`;
+}
+
+function renderWorthwhileCombinations() {
+  const target = $("#betting-combinations");
+  if (!target) return;
+  const championship = market?.championship || [];
+  const worthwhile = findWorthwhileOutrightBaskets(championship);
+  const france = outrightSelection("France");
+  const argentina = outrightSelection("Argentina");
+  const idea =
+    france && argentina ? evaluateDutchBasket([france, argentina]) : null;
+  const outrightFreshness = market?.outright?.capturedAt || market?.generatedAt;
+  const status = market?.outright?.status === "cached" ? "CACHED PRICE" : "LIVE PRICE";
+
+  target.innerHTML = `
+    <div class="combo-method">
+      <strong>NOT AN ACCUMULATOR</strong>
+      <span>Only one team can be champion. “Combo odds” below are the effective price from splitting one stake to produce an equal payout if either team wins.</span>
+      <small>${status} · ${fmtDate(outrightFreshness).toUpperCase()} · Recheck before placing any bet.</small>
+    </div>
+    ${idea ? `<div class="combo-idea">${renderCombinationCard(idea, { ideaCheck: true })}</div>` : ""}
+    <div class="combo-grid">
+      ${worthwhile.length
+        ? worthwhile.map((basket) => renderCombinationCard(basket)).join("")
+        : '<div class="market-empty">No two-team outright basket currently clears the coverage and positive-value gates.</div>'}
+    </div>`;
 }
 
 function singaporeDateKey(iso) {
@@ -1404,8 +1477,9 @@ function renderLatestSignal() {
 }
 
 function renderMarketLens() {
+  const outrightCapturedAt = market?.outright?.capturedAt || market?.generatedAt;
   const warning = market.refreshStatus
-    ? `<div class="market-warning">Odds refresh warning: ${market.warning}. Showing last official Singapore Pools snapshot from ${fmtDate(market.generatedAt)}.</div>`
+    ? `<div class="market-warning">Odds refresh warning: ${market.warning}. Showing last verified Singapore Pools outright prices from ${fmtDate(outrightCapturedAt)}.</div>`
     : "";
   if (!market?.valueWatchlist?.length) {
     $("#market-watchlist").innerHTML =

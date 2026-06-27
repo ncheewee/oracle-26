@@ -483,7 +483,7 @@ input:focus, select:focus { border-color: var(--cyan); }
 .audit-row small { color: var(--muted); text-align: right; font-size: 10px; }
 .betting-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; }
 .betting-grid .panel { padding: 22px; }
-.betting-board-panel, .betting-avoid-panel { grid-column: 1 / -1; }
+.betting-board-panel, .betting-avoid-panel, .betting-combinations-panel { grid-column: 1 / -1; }
 .betting-kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #202a35; margin-top: 18px; }
 .betting-kpi-grid > div { background: #090e14; min-height: 122px; padding: 18px 14px; }
 .betting-kpi-grid span, .betting-kpi-grid strong, .betting-kpi-grid small { display: block; }
@@ -494,6 +494,34 @@ input:focus, select:focus { border-color: var(--cyan); }
 .betting-copy { display: grid; gap: 12px; margin-top: 18px; }
 .betting-copy p { margin: 0; border: 1px solid #26313d; background: #090e14; padding: 14px; color: #aab5c0; font-size: 12px; line-height: 1.6; }
 .betting-copy strong { color: var(--gold); }
+.betting-combinations { display: grid; gap: 12px; margin-top: 18px; }
+.combo-method {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center;
+  border: 1px solid #26313d; background: #090e14; padding: 13px 15px;
+}
+.combo-method strong { color: var(--gold); font: 11px DM Mono; letter-spacing: .08em; }
+.combo-method span { color: #aab5c0; font-size: 12px; line-height: 1.5; }
+.combo-method small { color: var(--muted); font: 9px DM Mono; text-align: right; }
+.combo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.combo-card { border: 1px solid #26313d; background: linear-gradient(145deg, #0b1118, #080c11); padding: 15px; }
+.combo-card.combo-green { border-color: rgba(166,255,99,.35); }
+.combo-card.combo-amber { border-color: rgba(255,201,71,.35); }
+.combo-card.combo-red { border-color: rgba(255,77,53,.42); }
+.combo-card-head { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font: 9px DM Mono; letter-spacing: .08em; }
+.combo-card-head strong { color: var(--lime); }
+.combo-red .combo-card-head strong, .combo-red .combo-metrics div:last-child b { color: var(--red); }
+.combo-amber .combo-card-head strong { color: var(--gold); }
+.combo-card h3 { margin: 10px 0 9px; color: var(--text); font-size: 20px; letter-spacing: -.035em; }
+.combo-legs { display: flex; flex-wrap: wrap; gap: 6px; }
+.combo-legs span { border: 1px solid #202b36; background: #111822; padding: 6px 8px; color: #8995a2; font: 10px DM Mono; }
+.combo-legs b { color: var(--text); }
+.combo-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #202a35; margin: 12px 0; }
+.combo-metrics > div { background: #090e14; padding: 10px; min-width: 0; }
+.combo-metrics span, .combo-metrics b { display: block; }
+.combo-metrics span { color: var(--muted); font: 8px DM Mono; letter-spacing: .06em; }
+.combo-metrics b { color: var(--cyan); font: 16px DM Mono; margin-top: 7px; }
+.combo-card p { margin: 0; color: #8f9aa6; font-size: 11px; line-height: 1.55; }
+.combo-idea .combo-card { background: linear-gradient(145deg, rgba(255,77,53,.06), #080c11 58%); }
 .betting-controls {
   display: grid; grid-template-columns: 220px 220px 90px; gap: 12px; align-items: end;
   margin-top: 18px; padding: 14px; border: 1px solid #26313d; background: #090e14;
@@ -662,9 +690,13 @@ input:focus, select:focus { border-color: var(--cyan); }
   .betting-kpi-grid { grid-template-columns: 1fr; }
   .probability-history-meta { grid-template-columns: 1fr; }
   .betting-controls { grid-template-columns: 1fr; }
+  .combo-method { grid-template-columns: 1fr; }
+  .combo-method small { text-align: left; }
+  .combo-grid { grid-template-columns: 1fr; }
   .betting-day-grid { grid-template-columns: 1fr; }
   .betting-day h3 { position: static; }
   .betting-day > div { grid-template-columns: 1fr; }
+  .combo-metrics { grid-template-columns: repeat(2, 1fr); }
   .journey-fixtures { grid-template-columns: 1fr; }
   .audit-row { grid-template-columns: 45px 1fr 55px; }
   .bet-row, .compact-board .bet-row { grid-template-columns: 1fr; }

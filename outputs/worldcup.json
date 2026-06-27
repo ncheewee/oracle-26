@@ -1564,9 +1564,9 @@
         "code": "IRN",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "89'",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1588,9 +1588,9 @@
         "code": "BEL",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "90'",
       "dateLabel": "Saturday 27 June 2026",
       "matchDate": "2026-06-27",
       "stage": "First Stage",
@@ -1800,9 +1800,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
       },
       "away": {
-        "name": "3ABCDF",
-        "code": "3ABCDF",
-        "flag": null
+        "name": "Paraguay",
+        "code": "PAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1872,9 +1872,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
       "away": {
-        "name": "3CDFGH",
-        "code": "3CDFGH",
-        "flag": null
+        "name": "Sweden",
+        "code": "SWE",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1987,9 +1987,9 @@
       "matchNumber": 83,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021519",
       "home": {
-        "name": "1H",
-        "code": "1H",
-        "flag": null
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
       },
       "away": {
         "name": "2J",
@@ -2088,9 +2088,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
       },
       "away": {
-        "name": "2H",
-        "code": "2H",
-        "flag": null
+        "name": "Cabo Verde",
+        "code": "CPV",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
       },
       "homeScore": null,
       "awayScore": null,
@@ -2768,7 +2768,7 @@
           "goalDifference": -2,
           "conductScore": -12,
           "points": 4,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 4,
@@ -2906,7 +2906,7 @@
           "goalDifference": 0,
           "conductScore": -5,
           "points": 4,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 4,
@@ -2931,50 +2931,50 @@
       "teams": [
         {
           "position": 1,
-          "name": "Egypt",
-          "code": "EGY",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY",
-          "played": 2,
+          "name": "Belgium",
+          "code": "BEL",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL",
+          "played": 3,
           "won": 1,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "goalsFor": 4,
+          "goalsFor": 5,
           "goalsAgainst": 2,
-          "goalDifference": 2,
-          "conductScore": -3,
-          "points": 4,
+          "goalDifference": 3,
+          "conductScore": -7,
+          "points": 5,
           "qualified": false
         },
         {
           "position": 2,
-          "name": "IR Iran",
-          "code": "IRN",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN",
-          "played": 2,
-          "won": 0,
+          "name": "Egypt",
+          "code": "EGY",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY",
+          "played": 3,
+          "won": 1,
           "drawn": 2,
           "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "conductScore": -2,
-          "points": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDifference": 2,
+          "conductScore": -5,
+          "points": 5,
           "qualified": false
         },
         {
           "position": 3,
-          "name": "Belgium",
-          "code": "BEL",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL",
-          "played": 2,
+          "name": "IR Iran",
+          "code": "IRN",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN",
+          "played": 3,
           "won": 0,
-          "drawn": 2,
+          "drawn": 3,
           "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
           "goalDifference": 0,
-          "conductScore": -7,
-          "points": 2,
+          "conductScore": -5,
+          "points": 3,
           "qualified": false
         },
         {
@@ -2982,14 +2982,14 @@
           "name": "New Zealand",
           "code": "NZL",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
-          "goalsFor": 3,
-          "goalsAgainst": 5,
-          "goalDifference": -2,
-          "conductScore": -2,
+          "lost": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "goalDifference": -5,
+          "conductScore": -4,
           "points": 1,
           "qualified": false
         }
