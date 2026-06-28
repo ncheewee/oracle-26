@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T06:55:27.543Z",
+  "generatedAt": "2026-06-28T06:58:15.100Z",
   "asOf": "2026-06-28",
   "status": "baseline_validated",
   "model": {
@@ -426,62 +426,6 @@
   ],
   "predictions": [
     {
-      "fixtureId": "400021497",
-      "matchNumber": 71,
-      "date": "2026-06-28",
-      "home": "Algeria",
-      "away": "Austria",
-      "probabilities": {
-        "home": 40.2,
-        "draw": 23.4,
-        "away": 36.4
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.23,
-        "away": 1.26
-      },
-      "confidence": 40.2,
-      "factors": {
-        "ratingDifference": 26,
-        "homeRating": 1831,
-        "awayRating": 1805,
-        "homeMatches": 304,
-        "awayMatches": 257
-      }
-    },
-    {
-      "fixtureId": "400021495",
-      "matchNumber": 72,
-      "date": "2026-06-28",
-      "home": "Jordan",
-      "away": "Argentina",
-      "probabilities": {
-        "home": 5.5,
-        "draw": 11.4,
-        "away": 83.1
-      },
-      "predictedScore": {
-        "home": 0,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 0.72,
-        "away": 1.98
-      },
-      "confidence": 83.1,
-      "factors": {
-        "ratingDifference": -359,
-        "homeRating": 1720,
-        "awayRating": 2079,
-        "homeMatches": 384,
-        "awayMatches": 343
-      }
-    },
-    {
       "fixtureId": "400021518",
       "matchNumber": 73,
       "date": "2026-06-29",
@@ -678,6 +622,62 @@
       }
     },
     {
+      "fixtureId": "400021512",
+      "matchNumber": 80,
+      "date": "2026-07-02",
+      "home": "England",
+      "away": "DR Congo",
+      "probabilities": {
+        "home": 69.5,
+        "draw": 16.8,
+        "away": 13.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 0
+      },
+      "expectedGoals": {
+        "home": 1.19,
+        "away": 0.84
+      },
+      "confidence": 69.5,
+      "factors": {
+        "ratingDifference": 279,
+        "homeRating": 1999,
+        "awayRating": 1720,
+        "homeMatches": 319,
+        "awayMatches": 267
+      }
+    },
+    {
+      "fixtureId": "400021525",
+      "matchNumber": 81,
+      "date": "2026-07-02",
+      "home": "Belgium",
+      "away": "Senegal",
+      "probabilities": {
+        "home": 46.1,
+        "draw": 21.9,
+        "away": 32
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.48,
+        "away": 1.24
+      },
+      "confidence": 46.1,
+      "factors": {
+        "ratingDifference": 40,
+        "homeRating": 1876,
+        "awayRating": 1836,
+        "homeMatches": 288,
+        "awayMatches": 309
+      }
+    },
+    {
       "fixtureId": "400021524",
       "matchNumber": 82,
       "date": "2026-07-02",
@@ -703,6 +703,90 @@
         "awayRating": 1577,
         "homeMatches": 425,
         "awayMatches": 251
+      }
+    },
+    {
+      "fixtureId": "400021519",
+      "matchNumber": 83,
+      "date": "2026-07-03",
+      "home": "Spain",
+      "away": "Austria",
+      "probabilities": {
+        "home": 64.9,
+        "draw": 15.4,
+        "away": 19.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.35,
+        "away": 1.28
+      },
+      "confidence": 64.9,
+      "factors": {
+        "ratingDifference": 252,
+        "homeRating": 2056,
+        "awayRating": 1805,
+        "homeMatches": 344,
+        "awayMatches": 257
+      }
+    },
+    {
+      "fixtureId": "400021526",
+      "matchNumber": 84,
+      "date": "2026-07-03",
+      "home": "Portugal",
+      "away": "Croatia",
+      "probabilities": {
+        "home": 52.3,
+        "draw": 19.4,
+        "away": 28.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.73,
+        "away": 1.34
+      },
+      "confidence": 52.3,
+      "factors": {
+        "ratingDifference": 72,
+        "homeRating": 1935,
+        "awayRating": 1862,
+        "homeMatches": 334,
+        "awayMatches": 306
+      }
+    },
+    {
+      "fixtureId": "400021527",
+      "matchNumber": 85,
+      "date": "2026-07-03",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "probabilities": {
+        "home": 35.4,
+        "draw": 23.1,
+        "away": 41.5
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.21,
+        "away": 1.51
+      },
+      "confidence": 41.5,
+      "factors": {
+        "ratingDifference": 13,
+        "homeRating": 1844,
+        "awayRating": 1831,
+        "homeMatches": 288,
+        "awayMatches": 304
       }
     },
     {
@@ -759,6 +843,34 @@
         "awayRating": 1656,
         "homeMatches": 343,
         "awayMatches": 185
+      }
+    },
+    {
+      "fixtureId": "400021517",
+      "matchNumber": 88,
+      "date": "2026-07-04",
+      "home": "Colombia",
+      "away": "Ghana",
+      "probabilities": {
+        "home": 73.1,
+        "draw": 14.2,
+        "away": 12.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.61,
+        "away": 1.12
+      },
+      "confidence": 73.1,
+      "factors": {
+        "ratingDifference": 306,
+        "homeRating": 1966,
+        "awayRating": 1660,
+        "homeMatches": 324,
+        "awayMatches": 309
       }
     }
   ]

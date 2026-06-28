@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T23:47:17.540Z",
+  "generatedAt": "2026-06-28T06:57:07.115Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 68,
-    "remainingMatches": 36,
-    "liveMatches": 2
+    "completedMatches": 72,
+    "remainingMatches": 32,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -1662,7 +1662,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "status": "16'",
+      "status": "FT",
       "dateLabel": "Sunday 28 June 2026",
       "matchDate": "2026-06-28",
       "stage": "First Stage",
@@ -1684,9 +1684,9 @@
         "code": "UZB",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
       },
-      "homeScore": 0,
+      "homeScore": 3,
       "awayScore": 1,
-      "status": "16'",
+      "status": "FT",
       "dateLabel": "Sunday 28 June 2026",
       "matchDate": "2026-06-28",
       "stage": "First Stage",
@@ -1708,9 +1708,9 @@
         "code": "AUT",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 3,
+      "awayScore": 3,
+      "status": "FT",
       "dateLabel": "Sunday 28 June 2026",
       "matchDate": "2026-06-28",
       "stage": "First Stage",
@@ -1732,9 +1732,9 @@
         "code": "ARG",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "FT",
       "dateLabel": "Sunday 28 June 2026",
       "matchDate": "2026-06-28",
       "stage": "First Stage",
@@ -1920,9 +1920,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
       },
       "away": {
-        "name": "3EHIJK",
-        "code": "3EHIJK",
-        "flag": null
+        "name": "Congo DR",
+        "code": "COD",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1944,9 +1944,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
       },
       "away": {
-        "name": "3AEHIJ",
-        "code": "3AEHIJ",
-        "flag": null
+        "name": "Senegal",
+        "code": "SEN",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
       },
       "homeScore": null,
       "awayScore": null,
@@ -1992,9 +1992,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
       },
       "away": {
-        "name": "2J",
-        "code": "2J",
-        "flag": null
+        "name": "Austria",
+        "code": "AUT",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
       },
       "homeScore": null,
       "awayScore": null,
@@ -2011,9 +2011,9 @@
       "matchNumber": 84,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021526",
       "home": {
-        "name": "2K",
-        "code": "2K",
-        "flag": null
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
       },
       "away": {
         "name": "Croatia",
@@ -2040,9 +2040,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
       },
       "away": {
-        "name": "3EFGIJ",
-        "code": "3EFGIJ",
-        "flag": null
+        "name": "Algeria",
+        "code": "ALG",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
       },
       "homeScore": null,
       "awayScore": null,
@@ -2107,9 +2107,9 @@
       "matchNumber": 88,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021517",
       "home": {
-        "name": "1K",
-        "code": "1K",
-        "flag": null
+        "name": "Colombia",
+        "code": "COL",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
       },
       "away": {
         "name": "Ghana",
@@ -3113,7 +3113,7 @@
           "goalDifference": 2,
           "conductScore": -2,
           "points": 3,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 4,
@@ -3141,15 +3141,15 @@
           "name": "Argentina",
           "code": "ARG",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG",
-          "played": 2,
-          "won": 2,
+          "played": 3,
+          "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 0,
-          "goalDifference": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "goalDifference": 7,
           "conductScore": -2,
-          "points": 6,
+          "points": 9,
           "qualified": true
         },
         {
@@ -3157,46 +3157,46 @@
           "name": "Austria",
           "code": "AUT",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT",
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 3,
-          "goalsAgainst": 3,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
           "goalDifference": 0,
-          "conductScore": -3,
-          "points": 3,
-          "qualified": false
+          "conductScore": -4,
+          "points": 4,
+          "qualified": true
         },
         {
           "position": 3,
           "name": "Algeria",
           "code": "ALG",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG",
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 4,
+          "goalsFor": 5,
+          "goalsAgainst": 7,
           "goalDifference": -2,
           "conductScore": -1,
-          "points": 3,
-          "qualified": false
+          "points": 4,
+          "qualified": true
         },
         {
           "position": 4,
           "name": "Jordan",
           "code": "JOR",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
-          "goalsFor": 2,
-          "goalsAgainst": 5,
-          "goalDifference": -3,
-          "conductScore": -1,
+          "lost": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "goalDifference": -5,
+          "conductScore": -4,
           "points": 0,
           "qualified": false
         }
@@ -3217,9 +3217,9 @@
           "goalsFor": 4,
           "goalsAgainst": 1,
           "goalDifference": 3,
-          "conductScore": -3,
+          "conductScore": -4,
           "points": 7,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 2,
@@ -3235,38 +3235,38 @@
           "goalDifference": 5,
           "conductScore": -4,
           "points": 5,
-          "qualified": false
+          "qualified": true
         },
         {
           "position": 3,
-          "name": "Uzbekistan",
-          "code": "UZB",
-          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB",
-          "played": 3,
-          "won": 1,
-          "drawn": 0,
-          "lost": 2,
-          "goalsFor": 2,
-          "goalsAgainst": 8,
-          "goalDifference": -6,
-          "conductScore": -2,
-          "points": 3,
-          "qualified": false
-        },
-        {
-          "position": 4,
           "name": "Congo DR",
           "code": "COD",
           "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD",
           "played": 3,
-          "won": 0,
+          "won": 1,
           "drawn": 1,
-          "lost": 2,
-          "goalsFor": 1,
+          "lost": 1,
+          "goalsFor": 4,
           "goalsAgainst": 3,
-          "goalDifference": -2,
-          "conductScore": -2,
-          "points": 1,
+          "goalDifference": 1,
+          "conductScore": -5,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 4,
+          "name": "Uzbekistan",
+          "code": "UZB",
+          "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB",
+          "played": 3,
+          "won": 0,
+          "drawn": 0,
+          "lost": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 11,
+          "goalDifference": -9,
+          "conductScore": -4,
+          "points": 0,
           "qualified": false
         }
       ]
