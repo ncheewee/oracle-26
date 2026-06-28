@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T17:50:16.940Z",
+  "generatedAt": "2026-06-28T20:23:50.556Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -11,7 +11,7 @@
     "url": "https://www.ncpg.org.sg/"
   },
   "outright": {
-    "status": "verified",
+    "status": "cached",
     "capturedAt": "2026-06-28T17:50:16.940Z"
   },
   "championship": [
@@ -292,17 +292,6 @@
   ],
   "matches": [
     {
-      "eventId": "140174",
-      "eventNumber": null,
-      "name": "South Africa vs Canada",
-      "startTime": "2026-06-28T19:00:00Z",
-      "prices": {
-        "South Africa": 5,
-        "Draw": 3,
-        "Canada": 1.67
-      }
-    },
-    {
       "eventId": "140179",
       "eventNumber": null,
       "name": "Brazil vs Japan",
@@ -310,7 +299,7 @@
       "prices": {
         "Brazil": 1.6,
         "Draw": 3.7,
-        "Japan": 4.3
+        "Japan": 4.2
       }
     },
     {
@@ -330,9 +319,9 @@
       "name": "Holland vs Morocco",
       "startTime": "2026-06-30T01:00:00Z",
       "prices": {
-        "Holland": 1.82,
+        "Holland": 1.85,
         "Draw": 3.2,
-        "Morocco": 3.7
+        "Morocco": 3.6
       }
     },
     {
@@ -375,8 +364,8 @@
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
         "England": 1.23,
-        "Draw": 4.7,
-        "Congo DR": 12
+        "Draw": 4.8,
+        "Congo DR": 11
       }
     },
     {
@@ -429,9 +418,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.85,
-        "Draw": 3.2,
-        "Algeria": 3.7
+        "Switzerland": 1.92,
+        "Draw": 3.1,
+        "Algeria": 3.6
       }
     },
     {
@@ -440,9 +429,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.05,
-        "Draw": 2.8,
-        "Egypt": 2.3
+        "Australia": 3,
+        "Draw": 2.75,
+        "Egypt": 2.35
       }
     },
     {
@@ -451,9 +440,9 @@
       "name": "Argentina vs Cape Verde",
       "startTime": "2026-07-03T22:00:00Z",
       "prices": {
-        "Argentina": 1.09,
-        "Draw": 7,
-        "Cape Verde": 17
+        "Argentina": 1.07,
+        "Draw": 8,
+        "Cape Verde": 15
       }
     },
     {
@@ -467,5 +456,8 @@
         "Ghana": 6
       }
     }
-  ]
+  ],
+  "refreshStatus": "market_unavailable_using_cached_snapshot",
+  "lastAttemptAt": "2026-06-28T20:23:50.555Z",
+  "warning": "Championship Winner market unavailable"
 }

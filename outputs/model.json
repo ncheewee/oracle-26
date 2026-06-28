@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T17:49:51.835Z",
+  "generatedAt": "2026-06-28T20:23:23.277Z",
   "asOf": "2026-06-28",
   "status": "baseline_validated",
   "model": {
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021518",
-      "matchNumber": 73,
-      "date": "2026-06-29",
-      "home": "South Africa",
-      "away": "Canada",
-      "probabilities": {
-        "home": 19.2,
-        "draw": 17.1,
-        "away": 63.6
-      },
-      "predictedScore": {
-        "home": 0,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 0.91,
-        "away": 1.25
-      },
-      "confidence": 63.6,
-      "factors": {
-        "ratingDifference": -186,
-        "homeRating": 1644,
-        "awayRating": 1830,
-        "homeMatches": 375,
-        "awayMatches": 258
-      }
-    },
     {
       "fixtureId": "400021516",
       "matchNumber": 74,
