@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T16:24:26.643Z",
+  "generatedAt": "2026-06-28T17:50:16.940Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-06-28T16:24:26.643Z"
+    "capturedAt": "2026-06-28T17:50:16.940Z"
   },
   "championship": [
     {
@@ -297,9 +297,9 @@
       "name": "South Africa vs Canada",
       "startTime": "2026-06-28T19:00:00Z",
       "prices": {
-        "South Africa": 5.2,
-        "Draw": 3.1,
-        "Canada": 1.6
+        "South Africa": 5,
+        "Draw": 3,
+        "Canada": 1.67
       }
     },
     {
@@ -319,9 +319,9 @@
       "name": "Germany vs Paraguay",
       "startTime": "2026-06-29T20:30:00Z",
       "prices": {
-        "Germany": 1.22,
+        "Germany": 1.2,
         "Draw": 5.5,
-        "Paraguay": 9.5
+        "Paraguay": 10
       }
     },
     {
@@ -330,8 +330,8 @@
       "name": "Holland vs Morocco",
       "startTime": "2026-06-30T01:00:00Z",
       "prices": {
-        "Holland": 1.92,
-        "Draw": 2.95,
+        "Holland": 1.82,
+        "Draw": 3.2,
         "Morocco": 3.7
       }
     },
@@ -343,7 +343,7 @@
       "prices": {
         "Ivory Coast": 3.6,
         "Draw": 3.2,
-        "Norway": 1.85
+        "Norway": 1.87
       }
     },
     {
@@ -363,9 +363,9 @@
       "name": "Mexico vs Ecuador",
       "startTime": "2026-07-01T01:00:00Z",
       "prices": {
-        "Mexico": 1.95,
-        "Draw": 2.8,
-        "Ecuador": 3.9
+        "Mexico": 1.97,
+        "Draw": 2.85,
+        "Ecuador": 3.7
       }
     },
     {
@@ -377,6 +377,17 @@
         "England": 1.23,
         "Draw": 4.7,
         "Congo DR": 12
+      }
+    },
+    {
+      "eventId": "140221",
+      "eventNumber": null,
+      "name": "Belgium vs Senegal",
+      "startTime": "2026-07-01T20:00:00Z",
+      "prices": {
+        "Belgium": 2.03,
+        "Draw": 3,
+        "Senegal": 3.4
       }
     },
     {
@@ -442,7 +453,7 @@
       "prices": {
         "Argentina": 1.09,
         "Draw": 7,
-        "Cape Verde": 15
+        "Cape Verde": 17
       }
     },
     {
@@ -452,7 +463,7 @@
       "startTime": "2026-07-04T01:30:00Z",
       "prices": {
         "Colombia": 1.5,
-        "Draw": 3.4,
+        "Draw": 3.5,
         "Ghana": 6
       }
     }
