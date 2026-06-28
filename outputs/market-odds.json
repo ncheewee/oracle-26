@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T14:57:38.295Z",
+  "generatedAt": "2026-06-28T16:24:26.643Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-06-28T14:57:38.295Z"
+    "capturedAt": "2026-06-28T16:24:26.643Z"
   },
   "championship": [
     {
@@ -297,9 +297,9 @@
       "name": "South Africa vs Canada",
       "startTime": "2026-06-28T19:00:00Z",
       "prices": {
-        "South Africa": 5.5,
+        "South Africa": 5.2,
         "Draw": 3.1,
-        "Canada": 1.58
+        "Canada": 1.6
       }
     },
     {
@@ -309,8 +309,8 @@
       "startTime": "2026-06-29T17:00:00Z",
       "prices": {
         "Brazil": 1.6,
-        "Draw": 3.8,
-        "Japan": 4.2
+        "Draw": 3.7,
+        "Japan": 4.3
       }
     },
     {
@@ -353,7 +353,7 @@
       "startTime": "2026-06-30T21:00:00Z",
       "prices": {
         "France": 1.18,
-        "Draw": 5.5,
+        "Draw": 5.8,
         "Sweden": 10
       }
     },
@@ -363,9 +363,9 @@
       "name": "Mexico vs Ecuador",
       "startTime": "2026-07-01T01:00:00Z",
       "prices": {
-        "Mexico": 1.97,
-        "Draw": 2.85,
-        "Ecuador": 3.7
+        "Mexico": 1.95,
+        "Draw": 2.8,
+        "Ecuador": 3.9
       }
     },
     {
@@ -374,9 +374,9 @@
       "name": "England vs Congo DR",
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
-        "England": 1.25,
+        "England": 1.23,
         "Draw": 4.7,
-        "Congo DR": 11
+        "Congo DR": 12
       }
     },
     {
@@ -430,7 +430,7 @@
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
         "Australia": 3.05,
-        "Draw": 2.75,
+        "Draw": 2.8,
         "Egypt": 2.3
       }
     },
@@ -452,7 +452,7 @@
       "startTime": "2026-07-04T01:30:00Z",
       "prices": {
         "Colombia": 1.5,
-        "Draw": 3.5,
+        "Draw": 3.4,
         "Ghana": 6
       }
     }
