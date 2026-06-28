@@ -296,26 +296,31 @@ const tournamentTeams = worldCup.standings.flatMap((group) =>
   group.teams.map((team) => canonical(team.name)),
 );
 const teamSet = new Set(tournamentTeams);
-const remainingRows = rows
+const remainingRows = worldCup.fixtures
   .filter(
-    (row) =>
-      row.date >= AS_OF &&
-      row.home_score === "NA" &&
-      teamSet.has(canonical(row.home_team)) &&
-      teamSet.has(canonical(row.away_team)),
+    (match) =>
+      match.status === "Scheduled" &&
+      match.homeScore === null &&
+      match.awayScore === null &&
+      teamSet.has(canonical(match.home?.name)) &&
+      teamSet.has(canonical(match.away?.name)),
   )
-  .map((row) => ({
-    date: row.date,
-    home: canonical(row.home_team),
-    away: canonical(row.away_team),
-    neutral: row.neutral === "TRUE",
-    tournament: row.tournament,
+  .map((match) => ({
+    date: match.matchDate || AS_OF,
+    home: canonical(match.home.name),
+    away: canonical(match.away.name),
+    neutral: true,
+    tournament: "FIFA World Cup",
+    matchNumber: match.matchNumber,
+    fixtureId: match.id,
   }));
 
 const predictions = remainingRows.map((match) => {
   const raw = rawPrediction(states, match);
   const probabilities = applyTemperature(raw.probabilities, temperature);
   return {
+    fixtureId: match.fixtureId,
+    matchNumber: match.matchNumber,
     date: match.date,
     home: match.home,
     away: match.away,
