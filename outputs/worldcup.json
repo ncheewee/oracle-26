@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T21:11:20.649Z",
+  "generatedAt": "2026-06-30T22:45:31.367Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -1876,9 +1876,9 @@
         "code": "SWE",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
       },
-      "homeScore": 0,
+      "homeScore": 3,
       "awayScore": 0,
-      "status": "10'",
+      "status": "86'",
       "dateLabel": "Wednesday 01 July 2026",
       "matchDate": "2026-07-01",
       "stage": "Round of 32",
@@ -3342,9 +3342,7 @@
     }
   ],
   "standingsSnapshot": {
-    "status": "cached",
-    "capturedAt": "2026-06-30T19:14:49.548Z",
-    "lastAttemptAt": "2026-06-30T21:11:20.648Z",
-    "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
+    "status": "verified",
+    "capturedAt": "2026-06-30T22:45:31.366Z"
   }
 }
