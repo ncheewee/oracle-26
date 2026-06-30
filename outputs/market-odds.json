@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T17:22:23.610Z",
+  "generatedAt": "2026-06-30T19:16:23.801Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -257,9 +257,9 @@
       "name": "France vs Sweden",
       "startTime": "2026-06-30T21:00:00Z",
       "prices": {
-        "France": 1.2,
-        "Draw": 5.5,
-        "Sweden": 9
+        "France": 1.18,
+        "Draw": 5.8,
+        "Sweden": 9.5
       }
     },
     {
@@ -357,7 +357,7 @@
       "startTime": "2026-07-03T22:00:00Z",
       "prices": {
         "Argentina": 1.15,
-        "Draw": 6,
+        "Draw": 5.8,
         "Cape Verde": 13
       }
     },
@@ -378,13 +378,13 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.2,
-        "Draw": 3.3,
+        "Canada": 4.4,
+        "Draw": 3.2,
         "Morocco": 1.72
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-30T17:22:23.610Z",
+  "lastAttemptAt": "2026-06-30T19:16:23.800Z",
   "warning": "Championship Winner market unavailable"
 }
