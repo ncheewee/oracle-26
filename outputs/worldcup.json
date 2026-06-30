@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T01:59:15.864Z",
+  "generatedAt": "2026-06-30T05:54:38.958Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 75,
-    "remainingMatches": 29,
-    "liveMatches": 1
+    "completedMatches": 76,
+    "remainingMatches": 28,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -1828,9 +1828,9 @@
         "code": "MAR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
       },
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "HT",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FT",
       "dateLabel": "Tuesday 30 June 2026",
       "matchDate": "2026-06-30",
       "stage": "Round of 32",
@@ -2136,9 +2136,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
       },
       "away": {
-        "name": "W75",
-        "code": "W75",
-        "flag": null
+        "name": "Morocco",
+        "code": "MAR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
       },
       "homeScore": null,
       "awayScore": null,
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-06-28T20:22:16.335Z",
-    "lastAttemptAt": "2026-06-30T01:59:15.863Z",
+    "lastAttemptAt": "2026-06-30T05:54:38.957Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }
