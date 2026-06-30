@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T01:44:54.317Z",
+  "generatedAt": "2026-06-30T01:56:52.333Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -298,8 +298,8 @@
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
         "Ivory Coast": 3.5,
-        "Draw": 3.05,
-        "Norway": 1.97
+        "Draw": 3.2,
+        "Norway": 1.9
       }
     },
     {
@@ -319,9 +319,9 @@
       "name": "Mexico vs Ecuador",
       "startTime": "2026-07-01T01:00:00Z",
       "prices": {
-        "Mexico": 1.95,
+        "Mexico": 1.97,
         "Draw": 2.75,
-        "Ecuador": 4
+        "Ecuador": 3.9
       }
     },
     {
@@ -425,6 +425,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-30T01:44:54.316Z",
+  "lastAttemptAt": "2026-06-30T01:56:52.332Z",
   "warning": "Championship Winner market unavailable"
 }
