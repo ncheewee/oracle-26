@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T01:56:52.333Z",
+  "generatedAt": "2026-06-30T02:00:49.115Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -298,8 +298,8 @@
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
         "Ivory Coast": 3.5,
-        "Draw": 3.2,
-        "Norway": 1.9
+        "Draw": 3.3,
+        "Norway": 1.85
       }
     },
     {
@@ -425,6 +425,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-30T01:56:52.332Z",
+  "lastAttemptAt": "2026-06-30T02:00:49.115Z",
   "warning": "Championship Winner market unavailable"
 }
