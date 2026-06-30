@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T12:24:30.654Z",
+  "generatedAt": "2026-06-30T15:10:17.605Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-06-30T12:24:30.654Z"
+    "capturedAt": "2026-06-30T15:10:17.605Z"
   },
   "championship": [
     {
@@ -257,9 +257,9 @@
       "name": "Ivory Coast vs Norway",
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
-        "Ivory Coast": 4,
+        "Ivory Coast": 3.8,
         "Draw": 3.1,
-        "Norway": 1.8
+        "Norway": 1.82
       }
     },
     {
@@ -268,9 +268,9 @@
       "name": "France vs Sweden",
       "startTime": "2026-06-30T21:00:00Z",
       "prices": {
-        "France": 1.2,
-        "Draw": 5.5,
-        "Sweden": 9
+        "France": 1.18,
+        "Draw": 5.8,
+        "Sweden": 9.5
       }
     },
     {
@@ -290,8 +290,8 @@
       "name": "England vs Congo DR",
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
-        "England": 1.25,
-        "Draw": 4.7,
+        "England": 1.27,
+        "Draw": 4.5,
         "Congo DR": 11
       }
     },
@@ -312,8 +312,8 @@
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
-        "USA": 1.27,
-        "Draw": 4.3,
+        "USA": 1.25,
+        "Draw": 4.4,
         "Bosnia": 9
       }
     },
@@ -356,8 +356,8 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.05,
-        "Draw": 2.7,
+        "Australia": 3,
+        "Draw": 2.75,
         "Egypt": 2.35
       }
     },
@@ -367,7 +367,7 @@
       "name": "Argentina vs Cape Verde",
       "startTime": "2026-07-03T22:00:00Z",
       "prices": {
-        "Argentina": 1.13,
+        "Argentina": 1.15,
         "Draw": 6,
         "Cape Verde": 13
       }
@@ -389,9 +389,9 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.5,
+        "Canada": 4.4,
         "Draw": 3.2,
-        "Morocco": 1.7
+        "Morocco": 1.72
       }
     }
   ]
