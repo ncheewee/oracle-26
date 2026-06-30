@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T22:47:05.512Z",
+  "generatedAt": "2026-06-30T23:57:06.123Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -258,8 +258,8 @@
       "startTime": "2026-07-01T01:00:00Z",
       "prices": {
         "Mexico": 1.77,
-        "Draw": 3.05,
-        "Ecuador": 4.2
+        "Draw": 2.95,
+        "Ecuador": 4.3
       }
     },
     {
@@ -323,9 +323,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 2,
-        "Draw": 3,
-        "Algeria": 3.5
+        "Switzerland": 1.92,
+        "Draw": 3.05,
+        "Algeria": 3.6
       }
     },
     {
@@ -367,13 +367,13 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.2,
+        "Canada": 4.4,
         "Draw": 3.2,
-        "Morocco": 1.75
+        "Morocco": 1.7
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-30T22:47:05.511Z",
+  "lastAttemptAt": "2026-06-30T23:57:06.123Z",
   "warning": "Championship Winner market unavailable"
 }

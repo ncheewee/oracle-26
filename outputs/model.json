@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T22:46:38.893Z",
+  "generatedAt": "2026-06-30T23:56:39.685Z",
   "asOf": "2026-06-30",
   "status": "baseline_validated",
   "model": {
@@ -731,6 +731,34 @@
         "awayRating": 1944,
         "homeMatches": 258,
         "awayMatches": 309
+      }
+    },
+    {
+      "fixtureId": "400021533",
+      "matchNumber": 90,
+      "date": "2026-07-05",
+      "home": "Paraguay",
+      "away": "France",
+      "probabilities": {
+        "home": 15.4,
+        "draw": 14.3,
+        "away": 70.2
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.1,
+        "away": 1.63
+      },
+      "confidence": 70.2,
+      "factors": {
+        "ratingDifference": -238,
+        "homeRating": 1793,
+        "awayRating": 2031,
+        "homeMatches": 307,
+        "awayMatches": 351
       }
     },
     {
