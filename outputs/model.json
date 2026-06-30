@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T15:09:53.229Z",
+  "generatedAt": "2026-06-30T17:21:59.791Z",
   "asOf": "2026-06-30",
   "status": "baseline_validated",
   "model": {
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021514",
-      "matchNumber": 77,
-      "date": "2026-07-01",
-      "home": "Ivory Coast",
-      "away": "Norway",
-      "probabilities": {
-        "home": 31.5,
-        "draw": 20.9,
-        "away": 47.7
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.28,
-        "away": 1.38
-      },
-      "confidence": 47.7,
-      "factors": {
-        "ratingDifference": -71,
-        "homeRating": 1787,
-        "awayRating": 1857,
-        "homeMatches": 303,
-        "awayMatches": 282
-      }
-    },
     {
       "fixtureId": "400021523",
       "matchNumber": 78,
