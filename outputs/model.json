@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:15:59.116Z",
+  "generatedAt": "2026-06-30T21:12:28.614Z",
   "asOf": "2026-06-30",
   "status": "baseline_validated",
   "model": {
@@ -426,34 +426,6 @@
   ],
   "predictions": [
     {
-      "fixtureId": "400021523",
-      "matchNumber": 78,
-      "date": "2026-07-01",
-      "home": "France",
-      "away": "Sweden",
-      "probabilities": {
-        "home": 75.4,
-        "draw": 12.5,
-        "away": 12.1
-      },
-      "predictedScore": {
-        "home": 2,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 2.08,
-        "away": 1.43
-      },
-      "confidence": 75.4,
-      "factors": {
-        "ratingDifference": 318,
-        "homeRating": 2031,
-        "awayRating": 1713,
-        "homeMatches": 351,
-        "awayMatches": 343
-      }
-    },
-    {
       "fixtureId": "400021520",
       "matchNumber": 79,
       "date": "2026-07-01",
@@ -759,6 +731,34 @@
         "awayRating": 1944,
         "homeMatches": 258,
         "awayMatches": 309
+      }
+    },
+    {
+      "fixtureId": "400021532",
+      "matchNumber": 91,
+      "date": "2026-07-06",
+      "home": "Brazil",
+      "away": "Norway",
+      "probabilities": {
+        "home": 49.8,
+        "draw": 17.6,
+        "away": 32.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.38,
+        "away": 1.64
+      },
+      "confidence": 49.8,
+      "factors": {
+        "ratingDifference": 127,
+        "homeRating": 1984,
+        "awayRating": 1857,
+        "homeMatches": 373,
+        "awayMatches": 282
       }
     }
   ]

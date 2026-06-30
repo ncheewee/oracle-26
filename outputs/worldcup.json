@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:14:49.548Z",
+  "generatedAt": "2026-06-30T21:11:20.649Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -11,7 +11,7 @@
     "totalMatches": 104,
     "completedMatches": 77,
     "remainingMatches": 27,
-    "liveMatches": 0
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -1876,9 +1876,9 @@
         "code": "SWE",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "10'",
       "dateLabel": "Wednesday 01 July 2026",
       "matchDate": "2026-07-01",
       "stage": "Round of 32",
@@ -2184,9 +2184,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
       },
       "away": {
-        "name": "W78",
-        "code": "W78",
-        "flag": null
+        "name": "Norway",
+        "code": "NOR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
       },
       "homeScore": null,
       "awayScore": null,
@@ -3342,7 +3342,9 @@
     }
   ],
   "standingsSnapshot": {
-    "status": "verified",
-    "capturedAt": "2026-06-30T19:14:49.548Z"
+    "status": "cached",
+    "capturedAt": "2026-06-30T19:14:49.548Z",
+    "lastAttemptAt": "2026-06-30T21:11:20.648Z",
+    "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }

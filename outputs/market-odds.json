@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:16:23.801Z",
+  "generatedAt": "2026-06-30T21:12:53.465Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -252,25 +252,14 @@
   ],
   "matches": [
     {
-      "eventId": "140209",
-      "eventNumber": null,
-      "name": "France vs Sweden",
-      "startTime": "2026-06-30T21:00:00Z",
-      "prices": {
-        "France": 1.18,
-        "Draw": 5.8,
-        "Sweden": 9.5
-      }
-    },
-    {
       "eventId": "140217",
       "eventNumber": null,
       "name": "Mexico vs Ecuador",
       "startTime": "2026-07-01T01:00:00Z",
       "prices": {
-        "Mexico": 1.82,
+        "Mexico": 1.8,
         "Draw": 2.95,
-        "Ecuador": 4.1
+        "Ecuador": 4.2
       }
     },
     {
@@ -280,7 +269,7 @@
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
         "England": 1.27,
-        "Draw": 4.5,
+        "Draw": 4.4,
         "Congo DR": 11
       }
     },
@@ -301,9 +290,9 @@
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
-        "USA": 1.25,
+        "USA": 1.27,
         "Draw": 4.4,
-        "Bosnia": 9
+        "Bosnia": 8.5
       }
     },
     {
@@ -345,9 +334,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3,
-        "Draw": 2.75,
-        "Egypt": 2.35
+        "Australia": 3.1,
+        "Draw": 2.7,
+        "Egypt": 2.3
       }
     },
     {
@@ -378,13 +367,13 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.4,
+        "Canada": 4.1,
         "Draw": 3.2,
-        "Morocco": 1.72
+        "Morocco": 1.77
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-30T19:16:23.800Z",
+  "lastAttemptAt": "2026-06-30T21:12:53.464Z",
   "warning": "Championship Winner market unavailable"
 }
