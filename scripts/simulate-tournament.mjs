@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import { groupStageProgress } from "../lib/worldcup-data.mjs";
 
 const root = process.cwd();
 const worldCup = JSON.parse(
@@ -174,21 +175,22 @@ function sampleKnockoutWinner(homeName, awayName) {
   return random() < homeChance ? homeName : awayName;
 }
 
-const remainingGroupMatches = worldCup.fixtures
-  .filter((match) => match.matchNumber <= 72 && match.status !== "FT")
+const groupStage = groupStageProgress(worldCup.fixtures);
+if (groupStage.fixtures.length !== 72) {
+  throw new Error(`Expected 72 group-stage fixtures, got ${groupStage.fixtures.length}`);
+}
+
+const remainingGroupMatches = groupStage.remaining
   .map((match) => ({
     home: canonical(match.home.name),
     away: canonical(match.away.name),
     group: match.group,
   }));
 
-if (
-  remainingGroupMatches.length !==
-  72 - worldCup.tournament.completedMatches
-) {
+if (groupStage.completed.length + remainingGroupMatches.length !== 72) {
   throw new Error(
-    `Expected ${72 - worldCup.tournament.completedMatches} remaining group matches, ` +
-      `got ${remainingGroupMatches.length}`,
+    `Group-stage accounting mismatch: ${groupStage.completed.length} completed + ` +
+      `${remainingGroupMatches.length} remaining`,
   );
 }
 

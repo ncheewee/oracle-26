@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-28T20:23:23.277Z",
-  "asOf": "2026-06-28",
+  "generatedAt": "2026-06-30T01:42:43.519Z",
+  "asOf": "2026-06-30",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -425,90 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021516",
-      "matchNumber": 74,
-      "date": "2026-06-30",
-      "home": "Brazil",
-      "away": "Japan",
-      "probabilities": {
-        "home": 35,
-        "draw": 22.8,
-        "away": 42.2
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.12,
-        "away": 1.51
-      },
-      "confidence": 42.2,
-      "factors": {
-        "ratingDifference": 22,
-        "homeRating": 1984,
-        "awayRating": 1962,
-        "homeMatches": 373,
-        "awayMatches": 398
-      }
-    },
-    {
-      "fixtureId": "400021513",
-      "matchNumber": 75,
-      "date": "2026-06-30",
-      "home": "Germany",
-      "away": "Paraguay",
-      "probabilities": {
-        "home": 65.1,
-        "draw": 15.7,
-        "away": 19.3
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.79,
-        "away": 1.1
-      },
-      "confidence": 65.1,
-      "factors": {
-        "ratingDifference": 150,
-        "homeRating": 1944,
-        "awayRating": 1793,
-        "homeMatches": 354,
-        "awayMatches": 307
-      }
-    },
-    {
-      "fixtureId": "400021522",
-      "matchNumber": 76,
-      "date": "2026-06-30",
-      "home": "Netherlands",
-      "away": "Morocco",
-      "probabilities": {
-        "home": 31.3,
-        "draw": 24.2,
-        "away": 44.5
-      },
-      "predictedScore": {
-        "home": 0,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 0.98,
-        "away": 1.43
-      },
-      "confidence": 44.5,
-      "factors": {
-        "ratingDifference": 1,
-        "homeRating": 1945,
-        "awayRating": 1944,
-        "homeMatches": 322,
-        "awayMatches": 309
-      }
-    },
     {
       "fixtureId": "400021514",
       "matchNumber": 77,

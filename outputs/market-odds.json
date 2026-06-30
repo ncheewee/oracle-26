@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T20:23:50.556Z",
+  "generatedAt": "2026-06-30T01:44:54.317Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -292,47 +292,14 @@
   ],
   "matches": [
     {
-      "eventId": "140179",
-      "eventNumber": null,
-      "name": "Brazil vs Japan",
-      "startTime": "2026-06-29T17:00:00Z",
-      "prices": {
-        "Brazil": 1.6,
-        "Draw": 3.7,
-        "Japan": 4.2
-      }
-    },
-    {
-      "eventId": "140205",
-      "eventNumber": null,
-      "name": "Germany vs Paraguay",
-      "startTime": "2026-06-29T20:30:00Z",
-      "prices": {
-        "Germany": 1.2,
-        "Draw": 5.5,
-        "Paraguay": 10
-      }
-    },
-    {
-      "eventId": "140180",
-      "eventNumber": null,
-      "name": "Holland vs Morocco",
-      "startTime": "2026-06-30T01:00:00Z",
-      "prices": {
-        "Holland": 1.85,
-        "Draw": 3.2,
-        "Morocco": 3.6
-      }
-    },
-    {
       "eventId": "140207",
       "eventNumber": null,
       "name": "Ivory Coast vs Norway",
       "startTime": "2026-06-30T17:00:00Z",
       "prices": {
-        "Ivory Coast": 3.6,
-        "Draw": 3.2,
-        "Norway": 1.87
+        "Ivory Coast": 3.5,
+        "Draw": 3.05,
+        "Norway": 1.97
       }
     },
     {
@@ -342,8 +309,8 @@
       "startTime": "2026-06-30T21:00:00Z",
       "prices": {
         "France": 1.18,
-        "Draw": 5.8,
-        "Sweden": 10
+        "Draw": 6,
+        "Sweden": 8.5
       }
     },
     {
@@ -352,9 +319,9 @@
       "name": "Mexico vs Ecuador",
       "startTime": "2026-07-01T01:00:00Z",
       "prices": {
-        "Mexico": 1.97,
-        "Draw": 2.85,
-        "Ecuador": 3.7
+        "Mexico": 1.95,
+        "Draw": 2.75,
+        "Ecuador": 4
       }
     },
     {
@@ -363,8 +330,8 @@
       "name": "England vs Congo DR",
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
-        "England": 1.23,
-        "Draw": 4.8,
+        "England": 1.25,
+        "Draw": 4.7,
         "Congo DR": 11
       }
     },
@@ -374,9 +341,9 @@
       "name": "Belgium vs Senegal",
       "startTime": "2026-07-01T20:00:00Z",
       "prices": {
-        "Belgium": 2.03,
-        "Draw": 3,
-        "Senegal": 3.4
+        "Belgium": 2.05,
+        "Draw": 3.1,
+        "Senegal": 3.2
       }
     },
     {
@@ -387,7 +354,7 @@
       "prices": {
         "USA": 1.25,
         "Draw": 4.4,
-        "Bosnia": 9.5
+        "Bosnia": 9
       }
     },
     {
@@ -396,9 +363,9 @@
       "name": "Spain vs Austria",
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
-        "Spain": 1.27,
-        "Draw": 4.5,
-        "Austria": 11
+        "Spain": 1.28,
+        "Draw": 4.4,
+        "Austria": 10
       }
     },
     {
@@ -407,9 +374,9 @@
       "name": "Portugal vs Croatia",
       "startTime": "2026-07-02T23:00:00Z",
       "prices": {
-        "Portugal": 1.67,
+        "Portugal": 1.65,
         "Draw": 3.4,
-        "Croatia": 4.2
+        "Croatia": 4.4
       }
     },
     {
@@ -418,9 +385,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.92,
-        "Draw": 3.1,
-        "Algeria": 3.6
+        "Switzerland": 2,
+        "Draw": 3.05,
+        "Algeria": 3.4
       }
     },
     {
@@ -430,8 +397,8 @@
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
         "Australia": 3,
-        "Draw": 2.75,
-        "Egypt": 2.35
+        "Draw": 2.7,
+        "Egypt": 2.4
       }
     },
     {
@@ -440,9 +407,9 @@
       "name": "Argentina vs Cape Verde",
       "startTime": "2026-07-03T22:00:00Z",
       "prices": {
-        "Argentina": 1.07,
-        "Draw": 8,
-        "Cape Verde": 15
+        "Argentina": 1.1,
+        "Draw": 7,
+        "Cape Verde": 13
       }
     },
     {
@@ -451,13 +418,13 @@
       "name": "Colombia vs Ghana",
       "startTime": "2026-07-04T01:30:00Z",
       "prices": {
-        "Colombia": 1.5,
+        "Colombia": 1.45,
         "Draw": 3.5,
-        "Ghana": 6
+        "Ghana": 6.5
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-28T20:23:50.555Z",
+  "lastAttemptAt": "2026-06-30T01:44:54.316Z",
   "warning": "Championship Winner market unavailable"
 }
