@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:39:04.738Z",
+  "generatedAt": "2026-07-01T18:32:31.191Z",
   "asOf": "2026-07-01",
   "status": "baseline_validated",
   "model": {
@@ -731,6 +731,34 @@
         "awayRating": 1857,
         "homeMatches": 373,
         "awayMatches": 282
+      }
+    },
+    {
+      "fixtureId": "400021531",
+      "matchNumber": 92,
+      "date": "2026-07-06",
+      "home": "Mexico",
+      "away": "England",
+      "probabilities": {
+        "home": 27.3,
+        "draw": 21.9,
+        "away": 50.8
+      },
+      "predictedScore": {
+        "home": 0,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 0.95,
+        "away": 1.17
+      },
+      "confidence": 50.8,
+      "factors": {
+        "ratingDifference": -89,
+        "homeRating": 1910,
+        "awayRating": 1999,
+        "homeMatches": 475,
+        "awayMatches": 319
       }
     }
   ]

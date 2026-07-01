@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:39:29.073Z",
+  "generatedAt": "2026-07-01T18:32:56.634Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -225,9 +225,9 @@
       "name": "Belgium vs Senegal",
       "startTime": "2026-07-01T20:01:00Z",
       "prices": {
-        "Belgium": 1.87,
-        "Draw": 3.1,
-        "Senegal": 3.7
+        "Belgium": 1.95,
+        "Draw": 3,
+        "Senegal": 3.6
       }
     },
     {
@@ -325,8 +325,8 @@
       "startTime": "2026-07-04T21:00:00Z",
       "prices": {
         "Paraguay": 13,
-        "Draw": 6,
-        "France": 1.13
+        "Draw": 5.5,
+        "France": 1.15
       }
     },
     {
@@ -335,13 +335,13 @@
       "name": "Brazil vs Norway",
       "startTime": "2026-07-05T20:00:00Z",
       "prices": {
-        "Brazil": 1.82,
-        "Draw": 3.2,
+        "Brazil": 1.8,
+        "Draw": 3.3,
         "Norway": 3.8
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-01T16:39:29.072Z",
+  "lastAttemptAt": "2026-07-01T18:32:56.633Z",
   "warning": "Championship Winner market unavailable"
 }
