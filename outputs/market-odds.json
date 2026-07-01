@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T11:49:51.697Z",
+  "generatedAt": "2026-07-01T13:59:55.512Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-01T11:49:51.697Z"
+    "capturedAt": "2026-07-01T13:59:55.512Z"
   },
   "championship": [
     {
@@ -227,7 +227,7 @@
       "prices": {
         "England": 1.27,
         "Draw": 3.9,
-        "Congo DR": 12
+        "Congo DR": 11
       }
     },
     {
@@ -248,8 +248,8 @@
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
         "USA": 1.27,
-        "Draw": 4.5,
-        "Bosnia": 8
+        "Draw": 4.4,
+        "Bosnia": 8.5
       }
     },
     {
@@ -271,7 +271,7 @@
       "prices": {
         "Portugal": 1.65,
         "Draw": 3.4,
-        "Croatia": 4.4
+        "Croatia": 4.3
       }
     },
     {
@@ -325,8 +325,8 @@
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
         "Canada": 4.7,
-        "Draw": 3.1,
-        "Morocco": 1.7
+        "Draw": 3.2,
+        "Morocco": 1.67
       }
     },
     {
@@ -336,8 +336,8 @@
       "startTime": "2026-07-04T21:00:00Z",
       "prices": {
         "Paraguay": 13,
-        "Draw": 5.5,
-        "France": 1.15
+        "Draw": 6,
+        "France": 1.13
       }
     },
     {
@@ -346,8 +346,8 @@
       "name": "Brazil vs Norway",
       "startTime": "2026-07-05T20:00:00Z",
       "prices": {
-        "Brazil": 1.8,
-        "Draw": 3.3,
+        "Brazil": 1.82,
+        "Draw": 3.2,
         "Norway": 3.8
       }
     }
