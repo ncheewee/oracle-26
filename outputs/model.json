@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-30T23:56:39.685Z",
-  "asOf": "2026-06-30",
+  "generatedAt": "2026-07-01T04:52:15.100Z",
+  "asOf": "2026-07-01",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021520",
-      "matchNumber": 79,
-      "date": "2026-07-01",
-      "home": "Mexico",
-      "away": "Ecuador",
-      "probabilities": {
-        "home": 42.8,
-        "draw": 26.6,
-        "away": 30.6
-      },
-      "predictedScore": {
-        "home": 0,
-        "away": 0
-      },
-      "expectedGoals": {
-        "home": 0.89,
-        "away": 0.78
-      },
-      "confidence": 42.8,
-      "factors": {
-        "ratingDifference": 46,
-        "homeRating": 1910,
-        "awayRating": 1864,
-        "homeMatches": 475,
-        "awayMatches": 317
-      }
-    },
     {
       "fixtureId": "400021512",
       "matchNumber": 80,

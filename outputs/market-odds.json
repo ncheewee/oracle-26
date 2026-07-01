@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T23:57:06.123Z",
+  "generatedAt": "2026-07-01T04:52:41.566Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -252,25 +252,14 @@
   ],
   "matches": [
     {
-      "eventId": "140217",
-      "eventNumber": null,
-      "name": "Mexico vs Ecuador",
-      "startTime": "2026-07-01T01:00:00Z",
-      "prices": {
-        "Mexico": 1.77,
-        "Draw": 2.95,
-        "Ecuador": 4.3
-      }
-    },
-    {
       "eventId": "140219",
       "eventNumber": null,
       "name": "England vs Congo DR",
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
         "England": 1.27,
-        "Draw": 4.4,
-        "Congo DR": 11
+        "Draw": 4.2,
+        "Congo DR": 9.5
       }
     },
     {
@@ -279,9 +268,9 @@
       "name": "Belgium vs Senegal",
       "startTime": "2026-07-01T20:01:00Z",
       "prices": {
-        "Belgium": 2,
-        "Draw": 3.1,
-        "Senegal": 3.3
+        "Belgium": 1.97,
+        "Draw": 3.05,
+        "Senegal": 3.4
       }
     },
     {
@@ -324,8 +313,8 @@
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
         "Switzerland": 1.92,
-        "Draw": 3.05,
-        "Algeria": 3.6
+        "Draw": 3,
+        "Algeria": 3.7
       }
     },
     {
@@ -335,8 +324,8 @@
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
         "Australia": 3,
-        "Draw": 2.75,
-        "Egypt": 2.35
+        "Draw": 2.7,
+        "Egypt": 2.4
       }
     },
     {
@@ -347,7 +336,7 @@
       "prices": {
         "Argentina": 1.15,
         "Draw": 5.8,
-        "Cape Verde": 13
+        "Cape Verde": 12
       }
     },
     {
@@ -374,6 +363,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-06-30T23:57:06.123Z",
+  "lastAttemptAt": "2026-07-01T04:52:41.565Z",
   "warning": "Championship Winner market unavailable"
 }
