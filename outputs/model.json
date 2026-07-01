@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T18:32:31.191Z",
+  "generatedAt": "2026-07-01T20:30:14.474Z",
   "asOf": "2026-07-01",
   "status": "baseline_validated",
   "model": {
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021525",
-      "matchNumber": 81,
-      "date": "2026-07-02",
-      "home": "Belgium",
-      "away": "Senegal",
-      "probabilities": {
-        "home": 46.1,
-        "draw": 21.9,
-        "away": 32
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.48,
-        "away": 1.24
-      },
-      "confidence": 46.1,
-      "factors": {
-        "ratingDifference": 40,
-        "homeRating": 1876,
-        "awayRating": 1836,
-        "homeMatches": 288,
-        "awayMatches": 309
-      }
-    },
     {
       "fixtureId": "400021524",
       "matchNumber": 82,

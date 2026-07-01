@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T18:32:56.634Z",
+  "generatedAt": "2026-07-01T20:30:39.825Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -220,25 +220,14 @@
   ],
   "matches": [
     {
-      "eventId": "140221",
-      "eventNumber": null,
-      "name": "Belgium vs Senegal",
-      "startTime": "2026-07-01T20:01:00Z",
-      "prices": {
-        "Belgium": 1.95,
-        "Draw": 3,
-        "Senegal": 3.6
-      }
-    },
-    {
       "eventId": "140183",
       "eventNumber": null,
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
         "USA": 1.25,
-        "Draw": 4.5,
-        "Bosnia": 9
+        "Draw": 4.8,
+        "Bosnia": 8.5
       }
     },
     {
@@ -248,8 +237,8 @@
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
         "Spain": 1.28,
-        "Draw": 4.7,
-        "Austria": 9
+        "Draw": 4.5,
+        "Austria": 9.5
       }
     },
     {
@@ -280,9 +269,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.05,
+        "Australia": 3.1,
         "Draw": 2.7,
-        "Egypt": 2.35
+        "Egypt": 2.3
       }
     },
     {
@@ -313,7 +302,7 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.5,
+        "Canada": 4.7,
         "Draw": 3.1,
         "Morocco": 1.7
       }
@@ -335,13 +324,13 @@
       "name": "Brazil vs Norway",
       "startTime": "2026-07-05T20:00:00Z",
       "prices": {
-        "Brazil": 1.8,
+        "Brazil": 1.82,
         "Draw": 3.3,
-        "Norway": 3.8
+        "Norway": 3.7
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-01T18:32:56.633Z",
+  "lastAttemptAt": "2026-07-01T20:30:39.824Z",
   "warning": "Championship Winner market unavailable"
 }
