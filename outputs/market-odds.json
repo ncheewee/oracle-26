@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T04:52:41.566Z",
+  "generatedAt": "2026-07-01T08:46:47.529Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -11,8 +11,8 @@
     "url": "https://www.ncpg.org.sg/"
   },
   "outright": {
-    "status": "cached",
-    "capturedAt": "2026-06-30T15:10:17.605Z"
+    "status": "verified",
+    "capturedAt": "2026-07-01T08:46:47.530Z"
   },
   "championship": [
     {
@@ -65,11 +65,11 @@
     },
     {
       "team": "Norway",
-      "decimalOdds": 30,
-      "marketImpliedProbability": 3.3,
+      "decimalOdds": 25,
+      "marketImpliedProbability": 4,
       "modelProbability": 2.7,
-      "probabilityEdge": -0.6,
-      "expectedReturn": -19
+      "probabilityEdge": -1.3,
+      "expectedReturn": -32.5
     },
     {
       "team": "Belgium",
@@ -89,11 +89,11 @@
     },
     {
       "team": "Morocco",
-      "decimalOdds": 17,
-      "marketImpliedProbability": 5.9,
+      "decimalOdds": 25,
+      "marketImpliedProbability": 4,
       "modelProbability": 8.9,
-      "probabilityEdge": 3,
-      "expectedReturn": 51.3
+      "probabilityEdge": 4.9,
+      "expectedReturn": 122.5
     },
     {
       "team": "USA",
@@ -113,11 +113,11 @@
     },
     {
       "team": "Mexico",
-      "decimalOdds": 30,
-      "marketImpliedProbability": 3.3,
+      "decimalOdds": 25,
+      "marketImpliedProbability": 4,
       "modelProbability": 2.7,
-      "probabilityEdge": -0.6,
-      "expectedReturn": -19
+      "probabilityEdge": -1.3,
+      "expectedReturn": -32.5
     },
     {
       "team": "Croatia",
@@ -128,28 +128,12 @@
       "expectedReturn": -20
     },
     {
-      "team": "Ecuador",
-      "decimalOdds": 100,
-      "marketImpliedProbability": 1,
-      "modelProbability": 1.4,
-      "probabilityEdge": 0.4,
-      "expectedReturn": 40
-    },
-    {
       "team": "Senegal",
       "decimalOdds": 100,
       "marketImpliedProbability": 1,
       "modelProbability": 1.8,
       "probabilityEdge": 0.8,
       "expectedReturn": 80
-    },
-    {
-      "team": "Sweden",
-      "decimalOdds": 200,
-      "marketImpliedProbability": 0.5,
-      "modelProbability": 0.2,
-      "probabilityEdge": -0.3,
-      "expectedReturn": -60
     },
     {
       "team": "Canada",
@@ -182,14 +166,6 @@
       "modelProbability": 0.1,
       "probabilityEdge": -0.2,
       "expectedReturn": -60
-    },
-    {
-      "team": "Côte d'Ivoire",
-      "decimalOdds": 150,
-      "marketImpliedProbability": 0.7,
-      "modelProbability": 1.4,
-      "probabilityEdge": 0.7,
-      "expectedReturn": 110
     },
     {
       "team": "Egypt",
@@ -230,24 +206,16 @@
       "modelProbability": 0.6,
       "probabilityEdge": 0.3,
       "expectedReturn": 80
-    },
-    {
-      "team": "Cape Verde",
-      "decimalOdds": 400,
-      "marketImpliedProbability": 0.3,
-      "modelProbability": null,
-      "probabilityEdge": null,
-      "expectedReturn": null
     }
   ],
   "valueWatchlist": [
     {
       "team": "Morocco",
-      "decimalOdds": 17,
-      "marketImpliedProbability": 5.9,
+      "decimalOdds": 25,
+      "marketImpliedProbability": 4,
       "modelProbability": 8.9,
-      "probabilityEdge": 3,
-      "expectedReturn": 51.3
+      "probabilityEdge": 4.9,
+      "expectedReturn": 122.5
     }
   ],
   "matches": [
@@ -257,9 +225,9 @@
       "name": "England vs Congo DR",
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
-        "England": 1.27,
-        "Draw": 4.2,
-        "Congo DR": 9.5
+        "England": 1.25,
+        "Draw": 4,
+        "Congo DR": 12
       }
     },
     {
@@ -268,9 +236,9 @@
       "name": "Belgium vs Senegal",
       "startTime": "2026-07-01T20:01:00Z",
       "prices": {
-        "Belgium": 1.97,
-        "Draw": 3.05,
-        "Senegal": 3.4
+        "Belgium": 1.9,
+        "Draw": 3,
+        "Senegal": 3.8
       }
     },
     {
@@ -279,9 +247,9 @@
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
-        "USA": 1.27,
+        "USA": 1.28,
         "Draw": 4.4,
-        "Bosnia": 8.5
+        "Bosnia": 8
       }
     },
     {
@@ -301,9 +269,9 @@
       "name": "Portugal vs Croatia",
       "startTime": "2026-07-02T23:00:00Z",
       "prices": {
-        "Portugal": 1.67,
+        "Portugal": 1.65,
         "Draw": 3.4,
-        "Croatia": 4.2
+        "Croatia": 4.4
       }
     },
     {
@@ -336,7 +304,7 @@
       "prices": {
         "Argentina": 1.15,
         "Draw": 5.8,
-        "Cape Verde": 12
+        "Cape Verde": 13
       }
     },
     {
@@ -356,13 +324,32 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.4,
+        "Canada": 4.8,
+        "Draw": 3.3,
+        "Morocco": 1.63
+      }
+    },
+    {
+      "eventId": "140250",
+      "eventNumber": null,
+      "name": "Paraguay vs France",
+      "startTime": "2026-07-04T21:00:00Z",
+      "prices": {
+        "Paraguay": 13,
+        "Draw": 5.5,
+        "France": 1.15
+      }
+    },
+    {
+      "eventId": "140252",
+      "eventNumber": null,
+      "name": "Brazil vs Norway",
+      "startTime": "2026-07-05T20:00:00Z",
+      "prices": {
+        "Brazil": 1.8,
         "Draw": 3.2,
-        "Morocco": 1.7
+        "Norway": 3.9
       }
     }
-  ],
-  "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-01T04:52:41.565Z",
-  "warning": "Championship Winner market unavailable"
+  ]
 }
