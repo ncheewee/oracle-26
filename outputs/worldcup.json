@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T13:58:22.951Z",
+  "generatedAt": "2026-07-01T16:37:58.242Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -11,7 +11,7 @@
     "totalMatches": 104,
     "completedMatches": 79,
     "remainingMatches": 25,
-    "liveMatches": 0
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -1924,9 +1924,9 @@
         "code": "COD",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "37'",
       "dateLabel": "Thursday 02 July 2026",
       "matchDate": "2026-07-02",
       "stage": "Round of 32",
@@ -3343,6 +3343,6 @@
   ],
   "standingsSnapshot": {
     "status": "verified",
-    "capturedAt": "2026-07-01T13:58:22.950Z"
+    "capturedAt": "2026-07-01T16:37:58.242Z"
   }
 }

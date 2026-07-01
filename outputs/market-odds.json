@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T13:59:55.512Z",
+  "generatedAt": "2026-07-01T16:39:29.073Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -11,7 +11,7 @@
     "url": "https://www.ncpg.org.sg/"
   },
   "outright": {
-    "status": "verified",
+    "status": "cached",
     "capturedAt": "2026-07-01T13:59:55.512Z"
   },
   "championship": [
@@ -220,24 +220,13 @@
   ],
   "matches": [
     {
-      "eventId": "140219",
-      "eventNumber": null,
-      "name": "England vs Congo DR",
-      "startTime": "2026-07-01T16:00:00Z",
-      "prices": {
-        "England": 1.27,
-        "Draw": 3.9,
-        "Congo DR": 11
-      }
-    },
-    {
       "eventId": "140221",
       "eventNumber": null,
       "name": "Belgium vs Senegal",
       "startTime": "2026-07-01T20:01:00Z",
       "prices": {
-        "Belgium": 1.95,
-        "Draw": 2.85,
+        "Belgium": 1.87,
+        "Draw": 3.1,
         "Senegal": 3.7
       }
     },
@@ -247,9 +236,9 @@
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
-        "USA": 1.27,
-        "Draw": 4.4,
-        "Bosnia": 8.5
+        "USA": 1.25,
+        "Draw": 4.5,
+        "Bosnia": 9
       }
     },
     {
@@ -280,8 +269,8 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.92,
-        "Draw": 3,
+        "Switzerland": 1.87,
+        "Draw": 3.05,
         "Algeria": 3.7
       }
     },
@@ -324,9 +313,9 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.7,
-        "Draw": 3.2,
-        "Morocco": 1.67
+        "Canada": 4.5,
+        "Draw": 3.1,
+        "Morocco": 1.7
       }
     },
     {
@@ -351,5 +340,8 @@
         "Norway": 3.8
       }
     }
-  ]
+  ],
+  "refreshStatus": "market_unavailable_using_cached_snapshot",
+  "lastAttemptAt": "2026-07-01T16:39:29.072Z",
+  "warning": "Championship Winner market unavailable"
 }

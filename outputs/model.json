@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T13:59:30.894Z",
+  "generatedAt": "2026-07-01T16:39:04.738Z",
   "asOf": "2026-07-01",
   "status": "baseline_validated",
   "model": {
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021512",
-      "matchNumber": 80,
-      "date": "2026-07-02",
-      "home": "England",
-      "away": "DR Congo",
-      "probabilities": {
-        "home": 69.5,
-        "draw": 16.8,
-        "away": 13.7
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 0
-      },
-      "expectedGoals": {
-        "home": 1.19,
-        "away": 0.84
-      },
-      "confidence": 69.5,
-      "factors": {
-        "ratingDifference": 279,
-        "homeRating": 1999,
-        "awayRating": 1720,
-        "homeMatches": 319,
-        "awayMatches": 267
-      }
-    },
     {
       "fixtureId": "400021525",
       "matchNumber": 81,
