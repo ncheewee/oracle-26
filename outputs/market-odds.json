@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T08:46:47.529Z",
+  "generatedAt": "2026-07-01T11:49:51.697Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-01T08:46:47.530Z"
+    "capturedAt": "2026-07-01T11:49:51.697Z"
   },
   "championship": [
     {
@@ -225,8 +225,8 @@
       "name": "England vs Congo DR",
       "startTime": "2026-07-01T16:00:00Z",
       "prices": {
-        "England": 1.25,
-        "Draw": 4,
+        "England": 1.27,
+        "Draw": 3.9,
         "Congo DR": 12
       }
     },
@@ -236,9 +236,9 @@
       "name": "Belgium vs Senegal",
       "startTime": "2026-07-01T20:01:00Z",
       "prices": {
-        "Belgium": 1.9,
-        "Draw": 3,
-        "Senegal": 3.8
+        "Belgium": 1.95,
+        "Draw": 2.85,
+        "Senegal": 3.7
       }
     },
     {
@@ -247,8 +247,8 @@
       "name": "USA vs Bosnia",
       "startTime": "2026-07-02T00:00:00Z",
       "prices": {
-        "USA": 1.28,
-        "Draw": 4.4,
+        "USA": 1.27,
+        "Draw": 4.5,
         "Bosnia": 8
       }
     },
@@ -258,8 +258,8 @@
       "name": "Spain vs Austria",
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
-        "Spain": 1.3,
-        "Draw": 4.4,
+        "Spain": 1.28,
+        "Draw": 4.7,
         "Austria": 9
       }
     },
@@ -291,9 +291,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3,
+        "Australia": 3.05,
         "Draw": 2.7,
-        "Egypt": 2.4
+        "Egypt": 2.35
       }
     },
     {
@@ -324,9 +324,9 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.8,
-        "Draw": 3.3,
-        "Morocco": 1.63
+        "Canada": 4.7,
+        "Draw": 3.1,
+        "Morocco": 1.7
       }
     },
     {
@@ -347,8 +347,8 @@
       "startTime": "2026-07-05T20:00:00Z",
       "prices": {
         "Brazil": 1.8,
-        "Draw": 3.2,
-        "Norway": 3.9
+        "Draw": 3.3,
+        "Norway": 3.8
       }
     }
   ]
