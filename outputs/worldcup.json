@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T20:29:07.108Z",
+  "generatedAt": "2026-07-01T22:07:30.513Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -1948,9 +1948,9 @@
         "code": "SEN",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
       },
-      "homeScore": 0,
-      "awayScore": 1,
-      "status": "27'",
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "92'",
       "dateLabel": "Thursday 02 July 2026",
       "matchDate": "2026-07-02",
       "stage": "Round of 32",
@@ -3343,6 +3343,6 @@
   ],
   "standingsSnapshot": {
     "status": "verified",
-    "capturedAt": "2026-07-01T20:29:07.107Z"
+    "capturedAt": "2026-07-01T22:07:30.513Z"
   }
 }
