@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T21:23:28.754Z",
+  "generatedAt": "2026-07-02T22:37:01.563Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -210,8 +210,8 @@
       "startTime": "2026-07-02T23:00:00Z",
       "prices": {
         "Portugal": 1.65,
-        "Draw": 2.95,
-        "Croatia": 5.8
+        "Draw": 3.05,
+        "Croatia": 5.2
       }
     },
     {
@@ -221,8 +221,8 @@
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
         "Switzerland": 1.82,
-        "Draw": 3.2,
-        "Algeria": 4.1
+        "Draw": 3.3,
+        "Algeria": 4
       }
     },
     {
@@ -254,8 +254,8 @@
       "startTime": "2026-07-04T01:30:00Z",
       "prices": {
         "Colombia": 1.37,
-        "Draw": 3.8,
-        "Ghana": 7.5
+        "Draw": 3.7,
+        "Ghana": 8
       }
     },
     {
@@ -315,6 +315,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-02T21:23:28.753Z",
+  "lastAttemptAt": "2026-07-02T22:37:01.562Z",
   "warning": "Championship Winner market unavailable"
 }
