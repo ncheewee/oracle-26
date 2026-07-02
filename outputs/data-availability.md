@@ -1,15 +1,15 @@
 # ORACLE 26 data availability
 
-Generated: 2026-07-02T22:35:27.660Z
+Generated: 2026-07-02T23:44:16.438Z
 
 This report records observed evidence, not assumptions. Missing fields must
 render as **Unavailable** in the product.
 
 ## Summary
 
-- Verified: 33
+- Verified: 34
 - Derivable: 7
-- Unavailable: 4
+- Unavailable: 3
 - Blocked: 3
 - FIFA fixture links observed: 104
 - Match pages sampled: 5
@@ -24,7 +24,7 @@ render as **Unavailable** in the product.
 | stage | verified | FIFA rendered fixtures | Observed label: First Stage |
 | group | verified | FIFA rendered fixtures | Observed label: Group |
 | venue | verified | FIFA rendered fixtures | Observed label: Stadium |
-| standings | unavailable | FIFA rendered standings | Checked standings table labels |
+| standings | verified | FIFA rendered standings | Checked standings table labels |
 | official_ranking | verified | FIFA ranking | Last official update: 11 June 2026 |
 | lineups | verified | FIFA rendered match centre | Observed in 5/5 sampled matches |
 | events | verified | FIFA rendered match centre | Observed in 5/5 sampled matches |

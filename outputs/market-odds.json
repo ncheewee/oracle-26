@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T22:37:01.563Z",
+  "generatedAt": "2026-07-02T23:45:52.077Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -204,25 +204,14 @@
   ],
   "matches": [
     {
-      "eventId": "140225",
-      "eventNumber": null,
-      "name": "Portugal vs Croatia",
-      "startTime": "2026-07-02T23:00:00Z",
-      "prices": {
-        "Portugal": 1.65,
-        "Draw": 3.05,
-        "Croatia": 5.2
-      }
-    },
-    {
       "eventId": "140227",
       "eventNumber": null,
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.82,
-        "Draw": 3.3,
-        "Algeria": 4
+        "Switzerland": 1.77,
+        "Draw": 3.1,
+        "Algeria": 4.1
       }
     },
     {
@@ -253,8 +242,8 @@
       "name": "Colombia vs Ghana",
       "startTime": "2026-07-04T01:30:00Z",
       "prices": {
-        "Colombia": 1.37,
-        "Draw": 3.7,
+        "Colombia": 1.35,
+        "Draw": 3.8,
         "Ghana": 8
       }
     },
@@ -265,8 +254,8 @@
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
         "Canada": 5,
-        "Draw": 3.2,
-        "Morocco": 1.6
+        "Draw": 3.4,
+        "Morocco": 1.58
       }
     },
     {
@@ -308,13 +297,13 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.4,
+        "USA": 2.35,
         "Draw": 3.1,
-        "Belgium": 2.55
+        "Belgium": 2.6
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-02T22:37:01.562Z",
+  "lastAttemptAt": "2026-07-02T23:45:52.076Z",
   "warning": "Championship Winner market unavailable"
 }
