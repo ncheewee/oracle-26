@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T16:25:42.250Z",
+  "generatedAt": "2026-07-02T18:19:45.554Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-02T16:25:42.251Z"
+    "capturedAt": "2026-07-02T18:19:45.554Z"
   },
   "championship": [
     {
@@ -209,9 +209,9 @@
       "name": "Spain vs Austria",
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
-        "Spain": 1.15,
+        "Spain": 1.17,
         "Draw": 5.5,
-        "Austria": 13
+        "Austria": 11
       }
     },
     {
@@ -231,9 +231,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.67,
+        "Switzerland": 1.75,
         "Draw": 3.2,
-        "Algeria": 4.5
+        "Algeria": 4.3
       }
     },
     {
@@ -242,8 +242,8 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.3,
-        "Draw": 2.75,
+        "Australia": 3.4,
+        "Draw": 2.7,
         "Egypt": 2.15
       }
     },
@@ -264,9 +264,9 @@
       "name": "Colombia vs Ghana",
       "startTime": "2026-07-04T01:30:00Z",
       "prices": {
-        "Colombia": 1.45,
-        "Draw": 3.5,
-        "Ghana": 6.5
+        "Colombia": 1.42,
+        "Draw": 3.6,
+        "Ghana": 7
       }
     },
     {
