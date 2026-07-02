@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-01T23:43:54.546Z",
-  "asOf": "2026-07-01",
+  "generatedAt": "2026-07-02T01:54:53.967Z",
+  "asOf": "2026-07-02",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021524",
-      "matchNumber": 82,
-      "date": "2026-07-02",
-      "home": "United States",
-      "away": "Bosnia and Herzegovina",
-      "probabilities": {
-        "home": 70.8,
-        "draw": 13.8,
-        "away": 15.4
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.73,
-        "away": 1.35
-      },
-      "confidence": 70.8,
-      "factors": {
-        "ratingDifference": 282,
-        "homeRating": 1859,
-        "awayRating": 1577,
-        "homeMatches": 425,
-        "awayMatches": 251
-      }
-    },
     {
       "fixtureId": "400021519",
       "matchNumber": 83,
