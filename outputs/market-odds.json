@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T01:55:20.081Z",
+  "generatedAt": "2026-07-02T06:10:08.103Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -11,41 +11,41 @@
     "url": "https://www.ncpg.org.sg/"
   },
   "outright": {
-    "status": "cached",
-    "capturedAt": "2026-07-01T13:59:55.512Z"
+    "status": "verified",
+    "capturedAt": "2026-07-02T06:10:08.103Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 6.5,
-      "marketImpliedProbability": 15.4,
+      "decimalOdds": 7,
+      "marketImpliedProbability": 14.3,
       "modelProbability": 7.7,
-      "probabilityEdge": -7.7,
-      "expectedReturn": -50
+      "probabilityEdge": -6.6,
+      "expectedReturn": -46.1
     },
     {
       "team": "France",
-      "decimalOdds": 3,
-      "marketImpliedProbability": 33.3,
+      "decimalOdds": 2.8,
+      "marketImpliedProbability": 35.7,
       "modelProbability": 4.7,
-      "probabilityEdge": -28.6,
-      "expectedReturn": -85.9
+      "probabilityEdge": -31,
+      "expectedReturn": -86.8
     },
     {
       "team": "England",
-      "decimalOdds": 6.5,
-      "marketImpliedProbability": 15.4,
+      "decimalOdds": 7,
+      "marketImpliedProbability": 14.3,
       "modelProbability": 7.3,
-      "probabilityEdge": -8.1,
-      "expectedReturn": -52.6
+      "probabilityEdge": -7,
+      "expectedReturn": -48.9
     },
     {
       "team": "Brazil",
-      "decimalOdds": 9,
-      "marketImpliedProbability": 11.1,
+      "decimalOdds": 10,
+      "marketImpliedProbability": 10,
       "modelProbability": 2.1,
-      "probabilityEdge": -9,
-      "expectedReturn": -81.1
+      "probabilityEdge": -7.9,
+      "expectedReturn": -79
     },
     {
       "team": "Argentina",
@@ -65,11 +65,11 @@
     },
     {
       "team": "Norway",
-      "decimalOdds": 25,
-      "marketImpliedProbability": 4,
+      "decimalOdds": 30,
+      "marketImpliedProbability": 3.3,
       "modelProbability": 2.7,
-      "probabilityEdge": -1.3,
-      "expectedReturn": -32.5
+      "probabilityEdge": -0.6,
+      "expectedReturn": -19
     },
     {
       "team": "Belgium",
@@ -128,28 +128,20 @@
       "expectedReturn": -20
     },
     {
-      "team": "Senegal",
-      "decimalOdds": 100,
-      "marketImpliedProbability": 1,
-      "modelProbability": 1.8,
-      "probabilityEdge": 0.8,
-      "expectedReturn": 80
-    },
-    {
       "team": "Canada",
-      "decimalOdds": 100,
-      "marketImpliedProbability": 1,
+      "decimalOdds": 150,
+      "marketImpliedProbability": 0.7,
       "modelProbability": 2.5,
-      "probabilityEdge": 1.5,
-      "expectedReturn": 150
+      "probabilityEdge": 1.8,
+      "expectedReturn": 275
     },
     {
       "team": "Austria",
-      "decimalOdds": 150,
-      "marketImpliedProbability": 0.7,
+      "decimalOdds": 200,
+      "marketImpliedProbability": 0.5,
       "modelProbability": 2.4,
-      "probabilityEdge": 1.7,
-      "expectedReturn": 260
+      "probabilityEdge": 1.9,
+      "expectedReturn": 380
     },
     {
       "team": "Paraguay",
@@ -158,14 +150,6 @@
       "modelProbability": 0.3,
       "probabilityEdge": -0.2,
       "expectedReturn": -40
-    },
-    {
-      "team": "Bosnia and Herzegovina",
-      "decimalOdds": 400,
-      "marketImpliedProbability": 0.3,
-      "modelProbability": 0.1,
-      "probabilityEdge": -0.2,
-      "expectedReturn": -60
     },
     {
       "team": "Egypt",
@@ -200,12 +184,12 @@
       "expectedReturn": 140
     },
     {
-      "team": "Congo DR",
+      "team": "Cape Verde",
       "decimalOdds": 300,
       "marketImpliedProbability": 0.3,
-      "modelProbability": 0.6,
-      "probabilityEdge": 0.3,
-      "expectedReturn": 80
+      "modelProbability": null,
+      "probabilityEdge": null,
+      "expectedReturn": null
     }
   ],
   "valueWatchlist": [
@@ -227,7 +211,7 @@
       "prices": {
         "Spain": 1.27,
         "Draw": 4.5,
-        "Austria": 9
+        "Austria": 8.5
       }
     },
     {
@@ -236,9 +220,9 @@
       "name": "Portugal vs Croatia",
       "startTime": "2026-07-02T23:00:00Z",
       "prices": {
-        "Portugal": 1.7,
+        "Portugal": 1.63,
         "Draw": 3.3,
-        "Croatia": 4.4
+        "Croatia": 4.8
       }
     },
     {
@@ -247,9 +231,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.92,
-        "Draw": 3.1,
-        "Algeria": 3.6
+        "Switzerland": 1.87,
+        "Draw": 3.05,
+        "Algeria": 3.8
       }
     },
     {
@@ -258,9 +242,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3,
+        "Australia": 3.1,
         "Draw": 2.7,
-        "Egypt": 2.4
+        "Egypt": 2.3
       }
     },
     {
@@ -291,9 +275,9 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.7,
-        "Draw": 3.1,
-        "Morocco": 1.7
+        "Canada": 4.8,
+        "Draw": 3.2,
+        "Morocco": 1.65
       }
     },
     {
@@ -313,13 +297,32 @@
       "name": "Brazil vs Norway",
       "startTime": "2026-07-05T20:00:00Z",
       "prices": {
-        "Brazil": 1.8,
+        "Brazil": 1.77,
         "Draw": 3.3,
-        "Norway": 3.8
+        "Norway": 3.9
+      }
+    },
+    {
+      "eventId": "140263",
+      "eventNumber": null,
+      "name": "Mexico vs England",
+      "startTime": "2026-07-06T00:00:00Z",
+      "prices": {
+        "Mexico": 2.85,
+        "Draw": 2.9,
+        "England": 2.35
+      }
+    },
+    {
+      "eventId": "140265",
+      "eventNumber": null,
+      "name": "USA vs Belgium",
+      "startTime": "2026-07-07T00:00:00Z",
+      "prices": {
+        "USA": 2.35,
+        "Draw": 3.2,
+        "Belgium": 2.55
       }
     }
-  ],
-  "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-02T01:55:20.080Z",
-  "warning": "Championship Winner market unavailable"
+  ]
 }
