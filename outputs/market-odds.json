@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T09:41:43.297Z",
+  "generatedAt": "2026-07-02T12:00:25.122Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-02T09:41:43.298Z"
+    "capturedAt": "2026-07-02T12:00:25.122Z"
   },
   "championship": [
     {
@@ -209,9 +209,9 @@
       "name": "Spain vs Austria",
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
-        "Spain": 1.25,
-        "Draw": 4.5,
-        "Austria": 10
+        "Spain": 1.18,
+        "Draw": 5,
+        "Austria": 12
       }
     },
     {
@@ -231,9 +231,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.8,
-        "Draw": 3,
-        "Algeria": 4
+        "Switzerland": 1.72,
+        "Draw": 3.2,
+        "Algeria": 4.2
       }
     },
     {
@@ -242,8 +242,8 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.4,
-        "Draw": 2.65,
+        "Australia": 3.3,
+        "Draw": 2.7,
         "Egypt": 2.2
       }
     },
@@ -275,9 +275,9 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.7,
+        "Canada": 5,
         "Draw": 3.2,
-        "Morocco": 1.67
+        "Morocco": 1.6
       }
     },
     {
@@ -308,9 +308,9 @@
       "name": "Mexico vs England",
       "startTime": "2026-07-06T00:00:00Z",
       "prices": {
-        "Mexico": 2.85,
-        "Draw": 2.95,
-        "England": 2.3
+        "Mexico": 2.9,
+        "Draw": 3,
+        "England": 2.2
       }
     },
     {
@@ -319,9 +319,9 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.3,
+        "USA": 2.35,
         "Draw": 3.2,
-        "Belgium": 2.6
+        "Belgium": 2.55
       }
     }
   ]
