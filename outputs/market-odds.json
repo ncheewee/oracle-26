@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T12:00:25.122Z",
+  "generatedAt": "2026-07-02T14:28:36.213Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-02T12:00:25.122Z"
+    "capturedAt": "2026-07-02T14:28:36.213Z"
   },
   "championship": [
     {
@@ -209,9 +209,9 @@
       "name": "Spain vs Austria",
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
-        "Spain": 1.18,
-        "Draw": 5,
-        "Austria": 12
+        "Spain": 1.13,
+        "Draw": 5.8,
+        "Austria": 13
       }
     },
     {
@@ -220,9 +220,9 @@
       "name": "Portugal vs Croatia",
       "startTime": "2026-07-02T23:00:00Z",
       "prices": {
-        "Portugal": 1.7,
-        "Draw": 2.75,
-        "Croatia": 5.8
+        "Portugal": 1.67,
+        "Draw": 2.95,
+        "Croatia": 5.5
       }
     },
     {
@@ -231,9 +231,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.72,
-        "Draw": 3.2,
-        "Algeria": 4.2
+        "Switzerland": 1.75,
+        "Draw": 3.05,
+        "Algeria": 4.3
       }
     },
     {
@@ -254,8 +254,8 @@
       "startTime": "2026-07-03T22:00:00Z",
       "prices": {
         "Argentina": 1.09,
-        "Draw": 7.5,
-        "Cape Verde": 13
+        "Draw": 8,
+        "Cape Verde": 12
       }
     },
     {
@@ -287,8 +287,8 @@
       "startTime": "2026-07-04T21:00:00Z",
       "prices": {
         "Paraguay": 13,
-        "Draw": 5.8,
-        "France": 1.13
+        "Draw": 5.5,
+        "France": 1.15
       }
     },
     {
@@ -297,8 +297,8 @@
       "name": "Brazil vs Norway",
       "startTime": "2026-07-05T20:00:00Z",
       "prices": {
-        "Brazil": 1.77,
-        "Draw": 3.3,
+        "Brazil": 1.75,
+        "Draw": 3.4,
         "Norway": 3.9
       }
     },
@@ -308,8 +308,8 @@
       "name": "Mexico vs England",
       "startTime": "2026-07-06T00:00:00Z",
       "prices": {
-        "Mexico": 2.9,
-        "Draw": 3,
+        "Mexico": 2.95,
+        "Draw": 2.95,
         "England": 2.2
       }
     },
@@ -319,8 +319,8 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.35,
-        "Draw": 3.2,
+        "USA": 2.4,
+        "Draw": 3.1,
         "Belgium": 2.55
       }
     }
