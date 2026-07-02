@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T06:08:32.796Z",
+  "generatedAt": "2026-07-02T09:40:09.107Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -3343,6 +3343,6 @@
   ],
   "standingsSnapshot": {
     "status": "verified",
-    "capturedAt": "2026-07-02T06:08:32.796Z"
+    "capturedAt": "2026-07-02T09:40:09.106Z"
   }
 }

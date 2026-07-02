@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T06:10:08.103Z",
+  "generatedAt": "2026-07-02T09:41:43.297Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-02T06:10:08.103Z"
+    "capturedAt": "2026-07-02T09:41:43.298Z"
   },
   "championship": [
     {
@@ -185,8 +185,8 @@
     },
     {
       "team": "Cape Verde",
-      "decimalOdds": 300,
-      "marketImpliedProbability": 0.3,
+      "decimalOdds": 150,
+      "marketImpliedProbability": 0.7,
       "modelProbability": null,
       "probabilityEdge": null,
       "expectedReturn": null
@@ -209,9 +209,9 @@
       "name": "Spain vs Austria",
       "startTime": "2026-07-02T19:00:00Z",
       "prices": {
-        "Spain": 1.27,
+        "Spain": 1.25,
         "Draw": 4.5,
-        "Austria": 8.5
+        "Austria": 10
       }
     },
     {
@@ -220,9 +220,9 @@
       "name": "Portugal vs Croatia",
       "startTime": "2026-07-02T23:00:00Z",
       "prices": {
-        "Portugal": 1.63,
-        "Draw": 3.3,
-        "Croatia": 4.8
+        "Portugal": 1.7,
+        "Draw": 2.75,
+        "Croatia": 5.8
       }
     },
     {
@@ -231,9 +231,9 @@
       "name": "Switzerland vs Algeria",
       "startTime": "2026-07-03T03:00:00Z",
       "prices": {
-        "Switzerland": 1.87,
-        "Draw": 3.05,
-        "Algeria": 3.8
+        "Switzerland": 1.8,
+        "Draw": 3,
+        "Algeria": 4
       }
     },
     {
@@ -242,9 +242,9 @@
       "name": "Australia vs Egypt",
       "startTime": "2026-07-03T18:00:00Z",
       "prices": {
-        "Australia": 3.1,
-        "Draw": 2.7,
-        "Egypt": 2.3
+        "Australia": 3.4,
+        "Draw": 2.65,
+        "Egypt": 2.2
       }
     },
     {
@@ -253,8 +253,8 @@
       "name": "Argentina vs Cape Verde",
       "startTime": "2026-07-03T22:00:00Z",
       "prices": {
-        "Argentina": 1.13,
-        "Draw": 5.8,
+        "Argentina": 1.09,
+        "Draw": 7.5,
         "Cape Verde": 13
       }
     },
@@ -275,9 +275,9 @@
       "name": "Canada vs Morocco",
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
-        "Canada": 4.8,
+        "Canada": 4.7,
         "Draw": 3.2,
-        "Morocco": 1.65
+        "Morocco": 1.67
       }
     },
     {
@@ -309,8 +309,8 @@
       "startTime": "2026-07-06T00:00:00Z",
       "prices": {
         "Mexico": 2.85,
-        "Draw": 2.9,
-        "England": 2.35
+        "Draw": 2.95,
+        "England": 2.3
       }
     },
     {
@@ -319,9 +319,9 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.35,
+        "USA": 2.3,
         "Draw": 3.2,
-        "Belgium": 2.55
+        "Belgium": 2.6
       }
     }
   ]
