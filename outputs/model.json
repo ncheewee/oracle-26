@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-02T23:45:25.196Z",
-  "asOf": "2026-07-02",
+  "generatedAt": "2026-07-03T01:23:49.195Z",
+  "asOf": "2026-07-03",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -647,6 +647,34 @@
         "awayRating": 1999,
         "homeMatches": 475,
         "awayMatches": 319
+      }
+    },
+    {
+      "fixtureId": "400021529",
+      "matchNumber": 93,
+      "date": "2026-07-07",
+      "home": "Portugal",
+      "away": "Spain",
+      "probabilities": {
+        "home": 26,
+        "draw": 18.1,
+        "away": 55.9
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.28,
+        "away": 1.52
+      },
+      "confidence": 55.9,
+      "factors": {
+        "ratingDifference": -122,
+        "homeRating": 1935,
+        "awayRating": 2056,
+        "homeMatches": 334,
+        "awayMatches": 344
       }
     },
     {
