@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T18:23:37.080Z",
+  "generatedAt": "2026-07-03T20:02:42.475Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -2068,9 +2068,9 @@
         "code": "EGY",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
       },
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
-      "status": "23'",
+      "status": "PET",
       "dateLabel": "Saturday 04 July 2026",
       "matchDate": "2026-07-04",
       "stage": "Round of 32",
@@ -3342,7 +3342,9 @@
     }
   ],
   "standingsSnapshot": {
-    "status": "verified",
-    "capturedAt": "2026-07-03T18:23:37.080Z"
+    "status": "cached",
+    "capturedAt": "2026-07-03T18:23:37.080Z",
+    "lastAttemptAt": "2026-07-03T20:02:42.474Z",
+    "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T18:25:12.194Z",
+  "generatedAt": "2026-07-03T20:04:15.582Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -293,6 +293,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-03T18:25:12.193Z",
+  "lastAttemptAt": "2026-07-03T20:04:15.581Z",
   "warning": "Championship Winner market unavailable"
 }
