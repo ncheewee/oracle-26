@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T21:23:21.861Z",
+  "generatedAt": "2026-07-03T22:33:46.316Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -204,17 +204,6 @@
   ],
   "matches": [
     {
-      "eventId": "140211",
-      "eventNumber": null,
-      "name": "Argentina vs Cape Verde",
-      "startTime": "2026-07-03T22:00:00Z",
-      "prices": {
-        "Argentina": 1.12,
-        "Draw": 6,
-        "Cape Verde": 15
-      }
-    },
-    {
       "eventId": "140229",
       "eventNumber": null,
       "name": "Colombia vs Ghana",
@@ -232,8 +221,8 @@
       "startTime": "2026-07-04T17:00:00Z",
       "prices": {
         "Canada": 4.4,
-        "Draw": 3.2,
-        "Morocco": 1.7
+        "Draw": 3.3,
+        "Morocco": 1.67
       }
     },
     {
@@ -243,8 +232,8 @@
       "startTime": "2026-07-04T21:00:00Z",
       "prices": {
         "Paraguay": 15,
-        "Draw": 6.5,
-        "France": 1.1
+        "Draw": 6,
+        "France": 1.12
       }
     },
     {
@@ -264,9 +253,9 @@
       "name": "Mexico vs England",
       "startTime": "2026-07-06T00:00:00Z",
       "prices": {
-        "Mexico": 2.95,
-        "Draw": 2.95,
-        "England": 2.25
+        "Mexico": 2.8,
+        "Draw": 3,
+        "England": 2.3
       }
     },
     {
@@ -275,9 +264,9 @@
       "name": "Portugal vs Spain",
       "startTime": "2026-07-06T19:00:00Z",
       "prices": {
-        "Portugal": 3.9,
+        "Portugal": 3.8,
         "Draw": 3.3,
-        "Spain": 1.77
+        "Spain": 1.8
       }
     },
     {
@@ -286,13 +275,13 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.55,
+        "USA": 2.5,
         "Draw": 3.1,
-        "Belgium": 2.4
+        "Belgium": 2.45
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-03T21:23:21.860Z",
+  "lastAttemptAt": "2026-07-03T22:33:46.315Z",
   "warning": "Championship Winner market unavailable"
 }

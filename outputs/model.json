@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T21:22:55.718Z",
+  "generatedAt": "2026-07-03T22:33:20.202Z",
   "asOf": "2026-07-03",
   "status": "baseline_validated",
   "model": {
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021521",
-      "matchNumber": 87,
-      "date": "2026-07-04",
-      "home": "Argentina",
-      "away": "Cape Verde",
-      "probabilities": {
-        "home": 81.7,
-        "draw": 13.1,
-        "away": 5.2
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 0
-      },
-      "expectedGoals": {
-        "home": 1.63,
-        "away": 0.67
-      },
-      "confidence": 81.7,
-      "factors": {
-        "ratingDifference": 424,
-        "homeRating": 2079,
-        "awayRating": 1656,
-        "homeMatches": 343,
-        "awayMatches": 185
-      }
-    },
     {
       "fixtureId": "400021517",
       "matchNumber": 88,
