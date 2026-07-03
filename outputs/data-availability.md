@@ -1,15 +1,15 @@
 # ORACLE 26 data availability
 
-Generated: 2026-07-03T20:02:43.485Z
+Generated: 2026-07-03T21:21:37.460Z
 
 This report records observed evidence, not assumptions. Missing fields must
 render as **Unavailable** in the product.
 
 ## Summary
 
-- Verified: 33
+- Verified: 32
 - Derivable: 7
-- Unavailable: 4
+- Unavailable: 5
 - Blocked: 3
 - FIFA fixture links observed: 104
 - Match pages sampled: 5
@@ -52,7 +52,7 @@ render as **Unavailable** in the product.
 | squad | verified | FIFA team pages | 2 team links observed on sampled match page |
 | fifa_reuse_permission | blocked | FIFA Terms of Service | Terms restrict content reuse; legal review or written permission remains advisable |
 | historical_event_training_data | verified | StatsBomb Open Data | 11 World Cup competition-season records found |
-| weather | verified | Open-Meteo | HTTP 200; venue coordinates must be mapped |
+| weather | unavailable | Open-Meteo | HTTP error; venue coordinates must be mapped |
 | backup_fixtures | blocked | football-data.org | HTTP 403; API token may be required |
 | injuries | unavailable | Current audited sources | Not consistently structured across all teams and matches |
 | player_availability | unavailable | Current audited sources | Not consistently structured across all teams and matches |
