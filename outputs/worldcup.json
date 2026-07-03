@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T01:22:41.943Z",
+  "generatedAt": "2026-07-03T18:23:37.080Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 84,
-    "remainingMatches": 20,
-    "liveMatches": 0
+    "completedMatches": 85,
+    "remainingMatches": 19,
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -2044,9 +2044,9 @@
         "code": "ALG",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "FT",
       "dateLabel": "Friday 03 July 2026",
       "matchDate": "2026-07-03",
       "stage": "Round of 32",
@@ -2068,9 +2068,9 @@
         "code": "EGY",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "23'",
       "dateLabel": "Saturday 04 July 2026",
       "matchDate": "2026-07-04",
       "stage": "Round of 32",
@@ -2299,9 +2299,9 @@
       "matchNumber": 96,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021535",
       "home": {
-        "name": "W85",
-        "code": "W85",
-        "flag": null
+        "name": "Switzerland",
+        "code": "SUI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
       },
       "away": {
         "name": "W87",
@@ -3343,6 +3343,6 @@
   ],
   "standingsSnapshot": {
     "status": "verified",
-    "capturedAt": "2026-07-03T01:22:41.942Z"
+    "capturedAt": "2026-07-03T18:23:37.080Z"
   }
 }

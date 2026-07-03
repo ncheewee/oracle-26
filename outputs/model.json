@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T01:23:49.195Z",
+  "generatedAt": "2026-07-03T18:24:45.206Z",
   "asOf": "2026-07-03",
   "status": "baseline_validated",
   "model": {
@@ -425,62 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021527",
-      "matchNumber": 85,
-      "date": "2026-07-03",
-      "home": "Switzerland",
-      "away": "Algeria",
-      "probabilities": {
-        "home": 35.4,
-        "draw": 23.1,
-        "away": 41.5
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.21,
-        "away": 1.51
-      },
-      "confidence": 41.5,
-      "factors": {
-        "ratingDifference": 13,
-        "homeRating": 1844,
-        "awayRating": 1831,
-        "homeMatches": 288,
-        "awayMatches": 304
-      }
-    },
-    {
-      "fixtureId": "400021515",
-      "matchNumber": 86,
-      "date": "2026-07-04",
-      "home": "Australia",
-      "away": "Egypt",
-      "probabilities": {
-        "home": 44.6,
-        "draw": 22.7,
-        "away": 32.7
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.09,
-        "away": 1.12
-      },
-      "confidence": 44.6,
-      "factors": {
-        "ratingDifference": 69,
-        "homeRating": 1862,
-        "awayRating": 1793,
-        "homeMatches": 298,
-        "awayMatches": 355
-      }
-    },
     {
       "fixtureId": "400021521",
       "matchNumber": 87,
