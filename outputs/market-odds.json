@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T17:42:06.192Z",
+  "generatedAt": "2026-07-04T18:48:15.674Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -253,9 +253,9 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.45,
-        "Draw": 3.1,
-        "Belgium": 2.45
+        "USA": 2.5,
+        "Draw": 3.05,
+        "Belgium": 2.5
       }
     },
     {
@@ -282,6 +282,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-04T17:42:06.191Z",
+  "lastAttemptAt": "2026-07-04T18:48:15.673Z",
   "warning": "Championship Winner market unavailable"
 }
