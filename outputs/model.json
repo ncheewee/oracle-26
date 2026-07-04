@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T01:23:57.973Z",
+  "generatedAt": "2026-07-04T17:41:41.455Z",
   "asOf": "2026-07-04",
   "status": "baseline_validated",
   "model": {
@@ -426,62 +426,6 @@
   ],
   "predictions": [
     {
-      "fixtureId": "400021517",
-      "matchNumber": 88,
-      "date": "2026-07-04",
-      "home": "Colombia",
-      "away": "Ghana",
-      "probabilities": {
-        "home": 73.1,
-        "draw": 14.2,
-        "away": 12.7
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.61,
-        "away": 1.12
-      },
-      "confidence": 73.1,
-      "factors": {
-        "ratingDifference": 306,
-        "homeRating": 1966,
-        "awayRating": 1660,
-        "homeMatches": 324,
-        "awayMatches": 309
-      }
-    },
-    {
-      "fixtureId": "400021530",
-      "matchNumber": 89,
-      "date": "2026-07-05",
-      "home": "Canada",
-      "away": "Morocco",
-      "probabilities": {
-        "home": 23.3,
-        "draw": 21.3,
-        "away": 55.3
-      },
-      "predictedScore": {
-        "home": 0,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 0.8,
-        "away": 1.14
-      },
-      "confidence": 55.3,
-      "factors": {
-        "ratingDifference": -114,
-        "homeRating": 1830,
-        "awayRating": 1944,
-        "homeMatches": 258,
-        "awayMatches": 309
-      }
-    },
-    {
       "fixtureId": "400021533",
       "matchNumber": 90,
       "date": "2026-07-05",
@@ -647,6 +591,34 @@
         "awayRating": 1793,
         "homeMatches": 343,
         "awayMatches": 355
+      }
+    },
+    {
+      "fixtureId": "400021535",
+      "matchNumber": 96,
+      "date": "2026-07-08",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "probabilities": {
+        "home": 28.6,
+        "draw": 18,
+        "away": 53.4
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.43,
+        "away": 1.49
+      },
+      "confidence": 53.4,
+      "factors": {
+        "ratingDifference": -122,
+        "homeRating": 1844,
+        "awayRating": 1966,
+        "homeMatches": 288,
+        "awayMatches": 324
       }
     }
   ]

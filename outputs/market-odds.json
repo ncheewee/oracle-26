@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T01:24:23.802Z",
+  "generatedAt": "2026-07-04T17:42:06.192Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -204,36 +204,14 @@
   ],
   "matches": [
     {
-      "eventId": "140229",
-      "eventNumber": null,
-      "name": "Colombia vs Ghana",
-      "startTime": "2026-07-04T01:30:00Z",
-      "prices": {
-        "Colombia": 1.4,
-        "Draw": 3.7,
-        "Ghana": 7
-      }
-    },
-    {
-      "eventId": "140235",
-      "eventNumber": null,
-      "name": "Canada vs Morocco",
-      "startTime": "2026-07-04T17:00:00Z",
-      "prices": {
-        "Canada": 4.1,
-        "Draw": 3.3,
-        "Morocco": 1.72
-      }
-    },
-    {
       "eventId": "140250",
       "eventNumber": null,
       "name": "Paraguay vs France",
       "startTime": "2026-07-04T21:00:00Z",
       "prices": {
-        "Paraguay": 15,
-        "Draw": 6.5,
-        "France": 1.1
+        "Paraguay": 12,
+        "Draw": 5.8,
+        "France": 1.15
       }
     },
     {
@@ -253,9 +231,9 @@
       "name": "Mexico vs England",
       "startTime": "2026-07-06T00:00:00Z",
       "prices": {
-        "Mexico": 2.8,
-        "Draw": 3,
-        "England": 2.3
+        "Mexico": 2.85,
+        "Draw": 2.95,
+        "England": 2.25
       }
     },
     {
@@ -264,9 +242,9 @@
       "name": "Portugal vs Spain",
       "startTime": "2026-07-06T19:00:00Z",
       "prices": {
-        "Portugal": 3.8,
-        "Draw": 3.3,
-        "Spain": 1.8
+        "Portugal": 3.5,
+        "Draw": 3.2,
+        "Spain": 1.87
       }
     },
     {
@@ -275,13 +253,35 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.55,
-        "Draw": 3.05,
+        "USA": 2.45,
+        "Draw": 3.1,
         "Belgium": 2.45
+      }
+    },
+    {
+      "eventId": "140300",
+      "eventNumber": null,
+      "name": "Argentina vs Egypt",
+      "startTime": "2026-07-07T16:00:00Z",
+      "prices": {
+        "Argentina": 1.25,
+        "Draw": 4.4,
+        "Egypt": 10
+      }
+    },
+    {
+      "eventId": "140302",
+      "eventNumber": null,
+      "name": "Switzerland vs Colombia",
+      "startTime": "2026-07-07T20:00:00Z",
+      "prices": {
+        "Switzerland": 3.3,
+        "Draw": 3,
+        "Colombia": 2.05
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-04T01:24:23.802Z",
+  "lastAttemptAt": "2026-07-04T17:42:06.191Z",
   "warning": "Championship Winner market unavailable"
 }
