@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T22:16:32.427Z",
+  "generatedAt": "2026-07-05T20:44:11.501Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,8 +9,8 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 89,
-    "remainingMatches": 15,
+    "completedMatches": 90,
+    "remainingMatches": 14,
     "liveMatches": 1
   },
   "fixtures": [
@@ -2165,8 +2165,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
       "homeScore": 0,
-      "awayScore": 0,
-      "status": "52'",
+      "awayScore": 1,
+      "status": "FT",
       "dateLabel": "Sunday 05 July 2026",
       "matchDate": "2026-07-05",
       "stage": "Round of 16",
@@ -2188,9 +2188,9 @@
         "code": "NOR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "43'",
       "dateLabel": "Monday 06 July 2026",
       "matchDate": "2026-07-06",
       "stage": "Round of 16",
@@ -2323,9 +2323,9 @@
       "matchNumber": 97,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021536",
       "home": {
-        "name": "W89",
-        "code": "W89",
-        "flag": null
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
       "away": {
         "name": "Morocco",
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-07-04T01:22:39.149Z",
-    "lastAttemptAt": "2026-07-04T22:16:32.426Z",
+    "lastAttemptAt": "2026-07-05T20:44:11.500Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }

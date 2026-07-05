@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-04T22:17:40.550Z",
-  "asOf": "2026-07-04",
+  "generatedAt": "2026-07-05T20:45:20.981Z",
+  "asOf": "2026-07-05",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -426,34 +426,6 @@
   ],
   "predictions": [
     {
-      "fixtureId": "400021532",
-      "matchNumber": 91,
-      "date": "2026-07-06",
-      "home": "Brazil",
-      "away": "Norway",
-      "probabilities": {
-        "home": 49.8,
-        "draw": 17.6,
-        "away": 32.7
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.38,
-        "away": 1.64
-      },
-      "confidence": 49.8,
-      "factors": {
-        "ratingDifference": 127,
-        "homeRating": 1984,
-        "awayRating": 1857,
-        "homeMatches": 373,
-        "awayMatches": 282
-      }
-    },
-    {
       "fixtureId": "400021531",
       "matchNumber": 92,
       "date": "2026-07-06",
@@ -591,6 +563,34 @@
         "awayRating": 1966,
         "homeMatches": 288,
         "awayMatches": 324
+      }
+    },
+    {
+      "fixtureId": "400021536",
+      "matchNumber": 97,
+      "date": "2026-07-10",
+      "home": "France",
+      "away": "Morocco",
+      "probabilities": {
+        "home": 40.4,
+        "draw": 20.7,
+        "away": 38.9
+      },
+      "predictedScore": {
+        "home": 0,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 0.94,
+        "away": 1.44
+      },
+      "confidence": 40.4,
+      "factors": {
+        "ratingDifference": 87,
+        "homeRating": 2031,
+        "awayRating": 1944,
+        "homeMatches": 351,
+        "awayMatches": 309
       }
     }
   ]
