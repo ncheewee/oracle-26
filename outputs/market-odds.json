@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T20:45:46.384Z",
+  "generatedAt": "2026-07-05T21:47:26.754Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -242,9 +242,9 @@
       "name": "Argentina vs Egypt",
       "startTime": "2026-07-07T16:00:00Z",
       "prices": {
-        "Argentina": 1.27,
+        "Argentina": 1.25,
         "Draw": 4.4,
-        "Egypt": 9
+        "Egypt": 9.5
       }
     },
     {
@@ -271,6 +271,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-05T20:45:46.383Z",
+  "lastAttemptAt": "2026-07-05T21:47:26.754Z",
   "warning": "Championship Winner market unavailable"
 }
