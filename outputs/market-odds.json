@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T22:47:05.035Z",
+  "generatedAt": "2026-07-05T23:53:44.356Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -207,11 +207,11 @@
       "eventId": "140263",
       "eventNumber": null,
       "name": "Mexico vs England",
-      "startTime": "2026-07-06T00:00:00Z",
+      "startTime": "2026-07-06T01:00:00Z",
       "prices": {
-        "Mexico": 2.8,
-        "Draw": 2.65,
-        "England": 2.55
+        "Mexico": 3,
+        "Draw": 2.8,
+        "England": 2.25
       }
     },
     {
@@ -271,6 +271,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-05T22:47:05.035Z",
+  "lastAttemptAt": "2026-07-05T23:53:44.355Z",
   "warning": "Championship Winner market unavailable"
 }
