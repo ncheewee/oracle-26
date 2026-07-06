@@ -3,7 +3,7 @@ name: Hourly FIFA refresh
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7,22,37,52 * * * *"
+    - cron: "12 * * * *"
 
 permissions:
   contents: write
@@ -34,6 +34,9 @@ jobs:
       - name: Scrape latest FIFA fixtures and standings
         run: pnpm run collect
 
+      - name: Ignore FIFA timestamp-only changes
+        run: node scripts/retain-material-output-changes.mjs outputs/worldcup.json
+
       - name: Rebuild predictions when FIFA facts changed
         id: fifa
         run: |
@@ -53,6 +56,9 @@ jobs:
 
       - name: Validate generated outputs
         run: pnpm test
+
+      - name: Ignore timestamp-only output changes
+        run: node scripts/retain-material-output-changes.mjs
 
       - name: Commit refreshed outputs
         run: |
