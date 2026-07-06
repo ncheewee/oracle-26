@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-05T23:53:17.327Z",
-  "asOf": "2026-07-05",
+  "generatedAt": "2026-07-06T02:27:30.128Z",
+  "asOf": "2026-07-06",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -425,34 +425,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021531",
-      "matchNumber": 92,
-      "date": "2026-07-06",
-      "home": "Mexico",
-      "away": "England",
-      "probabilities": {
-        "home": 27.3,
-        "draw": 21.9,
-        "away": 50.8
-      },
-      "predictedScore": {
-        "home": 0,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 0.95,
-        "away": 1.17
-      },
-      "confidence": 50.8,
-      "factors": {
-        "ratingDifference": -89,
-        "homeRating": 1910,
-        "awayRating": 1999,
-        "homeMatches": 475,
-        "awayMatches": 319
-      }
-    },
     {
       "fixtureId": "400021529",
       "matchNumber": 93,
