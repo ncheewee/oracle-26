@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T21:00:57.918Z",
+  "generatedAt": "2026-07-06T22:26:38.403Z",
   "asOf": "2026-07-06",
   "status": "baseline_validated",
   "model": {
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 92
+    "liveTournamentResults": 93
   },
   "performance": {
     "matches": 4568,
@@ -58,10 +58,10 @@
     },
     {
       "name": "Spain",
-      "rating": 2074,
-      "attack": 2.39,
-      "defence": 0.53,
-      "matches": 348,
+      "rating": 2088,
+      "attack": 2.28,
+      "defence": 0.49,
+      "matches": 349,
       "rank": 3
     },
     {
@@ -105,19 +105,19 @@
       "rank": 8
     },
     {
-      "name": "Portugal",
-      "rating": 1969,
-      "attack": 2.19,
-      "defence": 0.81,
-      "matches": 338,
-      "rank": 9
-    },
-    {
       "name": "Mexico",
       "rating": 1954,
       "attack": 1.71,
       "defence": 0.64,
       "matches": 480,
+      "rank": 9
+    },
+    {
+      "name": "Portugal",
+      "rating": 1954,
+      "attack": 2.02,
+      "defence": 0.83,
+      "matches": 339,
       "rank": 10
     },
     {

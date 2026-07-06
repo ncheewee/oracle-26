@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T21:01:23.461Z",
+  "generatedAt": "2026-07-06T22:27:03.612Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -19,81 +19,81 @@
       "team": "Spain",
       "decimalOdds": 6.5,
       "marketImpliedProbability": 15.4,
-      "modelProbability": 13,
-      "probabilityEdge": -2.4,
-      "expectedReturn": -15.5
+      "modelProbability": 21.9,
+      "probabilityEdge": 6.5,
+      "expectedReturn": 42.3
     },
     {
       "team": "France",
       "decimalOdds": 2.3,
       "marketImpliedProbability": 43.5,
-      "modelProbability": 13.6,
-      "probabilityEdge": -29.9,
-      "expectedReturn": -68.7
+      "modelProbability": 12.7,
+      "probabilityEdge": -30.8,
+      "expectedReturn": -70.8
     },
     {
       "team": "England",
       "decimalOdds": 6.5,
       "marketImpliedProbability": 15.4,
-      "modelProbability": 14.6,
-      "probabilityEdge": -0.8,
-      "expectedReturn": -5.1
+      "modelProbability": 14,
+      "probabilityEdge": -1.4,
+      "expectedReturn": -9
     },
     {
       "team": "Argentina",
       "decimalOdds": 5,
       "marketImpliedProbability": 20,
-      "modelProbability": 19.5,
-      "probabilityEdge": -0.5,
-      "expectedReturn": -2.5
+      "modelProbability": 18.8,
+      "probabilityEdge": -1.2,
+      "expectedReturn": -6
     },
     {
       "team": "Portugal",
       "decimalOdds": 10,
       "marketImpliedProbability": 10,
-      "modelProbability": 4.2,
-      "probabilityEdge": -5.8,
-      "expectedReturn": -58
+      "modelProbability": 0,
+      "probabilityEdge": -10,
+      "expectedReturn": -100
     },
     {
       "team": "Norway",
       "decimalOdds": 10,
       "marketImpliedProbability": 10,
-      "modelProbability": 6.3,
-      "probabilityEdge": -3.7,
-      "expectedReturn": -37
+      "modelProbability": 6.1,
+      "probabilityEdge": -3.9,
+      "expectedReturn": -39
     },
     {
       "team": "Belgium",
       "decimalOdds": 30,
       "marketImpliedProbability": 3.3,
-      "modelProbability": 4.5,
-      "probabilityEdge": 1.2,
-      "expectedReturn": 35
+      "modelProbability": 3.9,
+      "probabilityEdge": 0.6,
+      "expectedReturn": 17
     },
     {
       "team": "Colombia",
       "decimalOdds": 25,
       "marketImpliedProbability": 4,
-      "modelProbability": 4.7,
-      "probabilityEdge": 0.7,
-      "expectedReturn": 17.5
+      "modelProbability": 4.5,
+      "probabilityEdge": 0.5,
+      "expectedReturn": 12.5
     },
     {
       "team": "Morocco",
       "decimalOdds": 20,
       "marketImpliedProbability": 5,
-      "modelProbability": 13.9,
-      "probabilityEdge": 8.9,
-      "expectedReturn": 178
+      "modelProbability": 12.8,
+      "probabilityEdge": 7.8,
+      "expectedReturn": 156
     },
     {
       "team": "USA",
       "decimalOdds": 25,
       "marketImpliedProbability": 4,
-      "modelProbability": 1.6,
-      "probabilityEdge": -2.4,
-      "expectedReturn": -60
+      "modelProbability": 1.3,
+      "probabilityEdge": -2.7,
+      "expectedReturn": -67.5
     },
     {
       "team": "Switzerland",
@@ -107,19 +107,27 @@
       "team": "Egypt",
       "decimalOdds": 200,
       "marketImpliedProbability": 0.5,
-      "modelProbability": 1.4,
-      "probabilityEdge": 0.9,
-      "expectedReturn": 180
+      "modelProbability": 1.3,
+      "probabilityEdge": 0.8,
+      "expectedReturn": 160
     }
   ],
   "valueWatchlist": [
     {
+      "team": "Spain",
+      "decimalOdds": 6.5,
+      "marketImpliedProbability": 15.4,
+      "modelProbability": 21.9,
+      "probabilityEdge": 6.5,
+      "expectedReturn": 42.3
+    },
+    {
       "team": "Morocco",
       "decimalOdds": 20,
       "marketImpliedProbability": 5,
-      "modelProbability": 13.9,
-      "probabilityEdge": 8.9,
-      "expectedReturn": 178
+      "modelProbability": 12.8,
+      "probabilityEdge": 7.8,
+      "expectedReturn": 156
     }
   ],
   "matches": [
@@ -142,7 +150,7 @@
       "prices": {
         "Argentina": 1.22,
         "Draw": 4.7,
-        "Egypt": 11
+        "Egypt": 10
       }
     },
     {
@@ -175,11 +183,11 @@
       "prices": {
         "Norway": 3.4,
         "Draw": 3.3,
-        "England": 1.87
+        "England": 1.9
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-06T21:01:23.461Z",
+  "lastAttemptAt": "2026-07-06T22:27:03.612Z",
   "warning": "Championship Winner market unavailable"
 }
