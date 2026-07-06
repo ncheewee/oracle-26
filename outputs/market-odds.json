@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T06:38:37.109Z",
+  "generatedAt": "2026-07-06T11:44:31.562Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-06T06:38:37.109Z"
+    "capturedAt": "2026-07-06T11:44:31.562Z"
   },
   "championship": [
     {
@@ -129,9 +129,9 @@
       "name": "Portugal vs Spain",
       "startTime": "2026-07-06T19:00:00Z",
       "prices": {
-        "Portugal": 3.7,
-        "Draw": 3.1,
-        "Spain": 1.85
+        "Portugal": 4,
+        "Draw": 2.75,
+        "Spain": 1.92
       }
     },
     {
@@ -140,9 +140,9 @@
       "name": "USA vs Belgium",
       "startTime": "2026-07-07T00:00:00Z",
       "prices": {
-        "USA": 2.4,
-        "Draw": 3,
-        "Belgium": 2.6
+        "USA": 2.15,
+        "Draw": 3.05,
+        "Belgium": 2.95
       }
     },
     {
@@ -151,9 +151,9 @@
       "name": "Argentina vs Egypt",
       "startTime": "2026-07-07T16:00:00Z",
       "prices": {
-        "Argentina": 1.27,
-        "Draw": 4.3,
-        "Egypt": 9.5
+        "Argentina": 1.22,
+        "Draw": 4.7,
+        "Egypt": 11
       }
     },
     {
@@ -163,7 +163,7 @@
       "startTime": "2026-07-07T20:00:00Z",
       "prices": {
         "Switzerland": 3.2,
-        "Draw": 2.85,
+        "Draw": 2.9,
         "Colombia": 2.15
       }
     },
@@ -173,9 +173,9 @@
       "name": "France vs Morocco",
       "startTime": "2026-07-09T20:00:00Z",
       "prices": {
-        "France": 1.53,
+        "France": 1.5,
         "Draw": 3.6,
-        "Morocco": 5.2
+        "Morocco": 5.5
       }
     },
     {
@@ -184,9 +184,9 @@
       "name": "Norway vs England",
       "startTime": "2026-07-11T21:00:00Z",
       "prices": {
-        "Norway": 3.5,
-        "Draw": 3.2,
-        "England": 1.9
+        "Norway": 3.4,
+        "Draw": 3.3,
+        "England": 1.87
       }
     }
   ]
