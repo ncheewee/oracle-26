@@ -292,6 +292,35 @@ const gates = {
 const passed = Object.values(gates).every(Boolean);
 
 const worldCup = JSON.parse(await fs.readFile(worldCupPath, "utf8"));
+const trainedMatchKeys = new Set(
+  matches.map((match) => `${match.date}|${match.home}|${match.away}`),
+);
+const liveTournamentResults = worldCup.fixtures
+  .filter(
+    (match) =>
+      match.status === "FT" &&
+      Number.isFinite(match.homeScore) &&
+      Number.isFinite(match.awayScore) &&
+      match.home?.name &&
+      match.away?.name,
+  )
+  .map((match) => ({
+    date: match.matchDate || AS_OF,
+    home: canonical(match.home.name),
+    away: canonical(match.away.name),
+    homeScore: match.homeScore,
+    awayScore: match.awayScore,
+    tournament: "FIFA World Cup",
+    neutral: true,
+  }))
+  .filter(
+    (match) =>
+      !trainedMatchKeys.has(`${match.date}|${match.home}|${match.away}`),
+  )
+  .sort((a, b) => a.date.localeCompare(b.date));
+
+for (const match of liveTournamentResults) update(states, match);
+
 const tournamentTeams = worldCup.standings.flatMap((group) =>
   group.teams.map((team) => canonical(team.name)),
 );
@@ -375,6 +404,7 @@ const report = {
     license: "CC0-1.0",
     rows: rows.length,
     caveat: "Community-compiled dataset cross-referenced from multiple football sources.",
+    liveTournamentResults: liveTournamentResults.length,
   },
   performance: {
     matches: performance.matches,

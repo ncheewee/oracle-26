@@ -269,47 +269,56 @@ function thirdPlaceKey(groups) {
   return thirds.slice(0, 8).sort((a, b) => a.group.localeCompare(b.group));
 }
 
-const roundOf32 = [
-  ["M73", "2A", "2B"],
-  ["M74", "1E", "third"],
-  ["M75", "1F", "2C"],
-  ["M76", "1C", "2F"],
-  ["M77", "1I", "third"],
-  ["M78", "2E", "2I"],
-  ["M79", "1A", "third"],
-  ["M80", "1L", "third"],
-  ["M81", "1D", "third"],
-  ["M82", "1G", "third"],
-  ["M83", "2K", "2L"],
-  ["M84", "1H", "2J"],
-  ["M85", "1B", "third"],
-  ["M86", "1J", "2H"],
-  ["M87", "1K", "third"],
-  ["M88", "2D", "2G"],
+const knockoutRoundNumbers = [
+  Array.from({ length: 16 }, (_, index) => index + 73),
+  Array.from({ length: 8 }, (_, index) => index + 89),
+  Array.from({ length: 4 }, (_, index) => index + 97),
+  [101, 102],
+  [104],
 ];
-const laterRounds = [
-  [
-    ["M89", "M74", "M77"],
-    ["M90", "M73", "M75"],
-    ["M91", "M76", "M78"],
-    ["M92", "M79", "M80"],
-    ["M93", "M83", "M84"],
-    ["M94", "M81", "M82"],
-    ["M95", "M86", "M88"],
-    ["M96", "M85", "M87"],
-  ],
-  [
-    ["M97", "M89", "M90"],
-    ["M98", "M93", "M94"],
-    ["M99", "M91", "M92"],
-    ["M100", "M95", "M96"],
-  ],
-  [
-    ["M101", "M97", "M98"],
-    ["M102", "M99", "M100"],
-  ],
-  [["M104", "M101", "M102"]],
-];
+const knockoutRounds = knockoutRoundNumbers.map((numbers) =>
+  numbers.map((number) => {
+    const fixture = worldCup.fixtures.find(
+      (match) => match.matchNumber === number,
+    );
+    if (!fixture) throw new Error(`Missing FIFA knockout fixture M${number}`);
+    return fixture;
+  }),
+);
+const stageFields = ["roundOf16", "quarterfinal", "semifinal", "final", "champion"];
+
+function placeholderSource(name) {
+  const match = String(name || "").match(
+    /^W(?:inner)?\s*(?:Match)?\s*(\d+)$/i,
+  );
+  return match ? `M${match[1]}` : null;
+}
+
+function resolveParticipant(participant, winners) {
+  const name = canonical(participant?.name);
+  if (strength.has(name)) return name;
+  const source = placeholderSource(participant?.name);
+  if (source && winners[source]) return winners[source];
+  throw new Error(`Could not resolve knockout participant ${participant?.name}`);
+}
+
+function completedWinner(match, nextRound) {
+  if (match.status !== "FT") return null;
+  const home = canonical(match.home.name);
+  const away = canonical(match.away.name);
+  if (match.homeScore > match.awayScore) return home;
+  if (match.awayScore > match.homeScore) return away;
+
+  const downstreamTeams = (nextRound || []).flatMap((fixture) => [
+    canonical(fixture.home?.name),
+    canonical(fixture.away?.name),
+  ]);
+  const inferred = [home, away].find((team) => downstreamTeams.includes(team));
+  if (inferred) return inferred;
+  throw new Error(
+    `Could not infer shootout winner for completed draw M${match.matchNumber}`,
+  );
+}
 
 const counters = new Map(
   allTeams.map((name) => [
@@ -341,44 +350,25 @@ function recordMatchup(matchId, home, away) {
 }
 
 for (let iteration = 0; iteration < SIMULATIONS; iteration += 1) {
-  const groups = completeGroups();
-  const thirds = thirdPlaceKey(groups);
-  const key = thirds.map((team) => team.group).join("");
-  const thirdAllocation = allocation[key];
-  if (!thirdAllocation) throw new Error(`Missing Annex C allocation for ${key}`);
-
-  const slots = {};
-  for (const [letter, teams] of groups) {
-    slots[`1${letter}`] = teams[0].name;
-    slots[`2${letter}`] = teams[1].name;
-    slots[`3${letter}`] = teams[2].name;
-    increment(teams[0].name, "groupWinner");
-    increment(teams[0].name, "qualified");
-    increment(teams[1].name, "qualified");
-  }
-  for (const team of thirds) increment(team.name, "qualified");
-
   const winners = {};
-  for (const [matchId, homeSlot, awaySlot] of roundOf32) {
-    const home = slots[homeSlot];
-    const thirdSlot = thirdAllocation[homeSlot];
-    const away = awaySlot === "third" ? slots[thirdSlot] : slots[awaySlot];
-    const matchup = recordMatchup(matchId, home, away);
-    matchup.count += 1;
-    winners[matchId] = sampleKnockoutWinner(home, away);
-    if (winners[matchId] === home) matchup.homeWins += 1;
-    else matchup.awayWins += 1;
-    increment(winners[matchId], "roundOf16");
+  for (const group of worldCup.standings) {
+    const winner = canonical(group.teams.find((team) => team.position === 1)?.name);
+    if (winner) increment(winner, "groupWinner");
+  }
+  for (const match of knockoutRounds[0]) {
+    increment(canonical(match.home.name), "qualified");
+    increment(canonical(match.away.name), "qualified");
   }
 
-  const stageFields = ["quarterfinal", "semifinal", "final", "champion"];
-  for (let stage = 0; stage < laterRounds.length; stage += 1) {
-    for (const [matchId, homeSource, awaySource] of laterRounds[stage]) {
-      const home = winners[homeSource];
-      const away = winners[awaySource];
+  for (let stage = 0; stage < knockoutRounds.length; stage += 1) {
+    const nextRound = knockoutRounds[stage + 1] || [];
+    for (const match of knockoutRounds[stage]) {
+      const matchId = `M${match.matchNumber}`;
+      const home = resolveParticipant(match.home, winners);
+      const away = resolveParticipant(match.away, winners);
       const matchup = recordMatchup(matchId, home, away);
       matchup.count += 1;
-      winners[matchId] = sampleKnockoutWinner(home, away);
+      winners[matchId] = completedWinner(match, nextRound) || sampleKnockoutWinner(home, away);
       if (winners[matchId] === home) matchup.homeWins += 1;
       else matchup.awayWins += 1;
       increment(winners[matchId], stageFields[stage]);
@@ -451,9 +441,10 @@ const report = {
     groups: 12,
     advancing: "Top two from each group plus eight best third-placed teams",
     groupStageOutcomes:
-      "Remaining group matches sample calibrated home/draw/away probabilities before applying points.",
+      "Verified group standings and completed knockout results are locked; only unresolved matches are sampled.",
     thirdPlaceCombinations: Object.keys(allocation).length,
     knockoutMatches: 31,
+    conditionedOnCompletedKnockoutResults: true,
   },
   source: {
     allocation: "FIFA World Cup 2026 Regulations Annex C",

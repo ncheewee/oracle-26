@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T02:27:30.128Z",
+  "generatedAt": "2026-07-06T03:51:25.161Z",
   "asOf": "2026-07-06",
   "status": "baseline_validated",
   "model": {
@@ -15,7 +15,8 @@
     "repository": "https://github.com/martj42/international_results",
     "license": "CC0-1.0",
     "rows": 49477,
-    "caveat": "Community-compiled dataset cross-referenced from multiple football sources."
+    "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
+    "liveTournamentResults": 92
   },
   "performance": {
     "matches": 4568,
@@ -32,395 +33,395 @@
   },
   "provisionalFavorite": {
     "name": "Argentina",
-    "rating": 2079,
-    "attack": 2.4,
-    "defence": 0.34,
-    "matches": 343,
+    "rating": 2112,
+    "attack": 2.5,
+    "defence": 0.47,
+    "matches": 347,
     "rank": 1
   },
   "contenders": [
     {
       "name": "Argentina",
-      "rating": 2079,
-      "attack": 2.4,
-      "defence": 0.34,
-      "matches": 343,
+      "rating": 2112,
+      "attack": 2.5,
+      "defence": 0.47,
+      "matches": 347,
       "rank": 1
     },
     {
-      "name": "Spain",
-      "rating": 2056,
-      "attack": 2.51,
-      "defence": 0.72,
-      "matches": 344,
+      "name": "France",
+      "rating": 2090,
+      "attack": 2.45,
+      "defence": 0.81,
+      "matches": 356,
       "rank": 2
     },
     {
-      "name": "France",
-      "rating": 2031,
-      "attack": 2.31,
-      "defence": 1.02,
-      "matches": 351,
+      "name": "Spain",
+      "rating": 2074,
+      "attack": 2.39,
+      "defence": 0.53,
+      "matches": 348,
       "rank": 3
     },
     {
       "name": "England",
-      "rating": 1999,
-      "attack": 2.26,
-      "defence": 0.58,
-      "matches": 319,
+      "rating": 2037,
+      "attack": 2.24,
+      "defence": 0.72,
+      "matches": 324,
       "rank": 4
     },
     {
       "name": "Brazil",
-      "rating": 1984,
-      "attack": 2.06,
-      "defence": 0.98,
-      "matches": 373,
+      "rating": 1995,
+      "attack": 2.04,
+      "defence": 0.94,
+      "matches": 378,
       "rank": 5
     },
     {
       "name": "Colombia",
-      "rating": 1966,
-      "attack": 2.05,
-      "defence": 0.99,
-      "matches": 324,
+      "rating": 1993,
+      "attack": 1.82,
+      "defence": 0.78,
+      "matches": 328,
       "rank": 6
     },
     {
-      "name": "Japan",
-      "rating": 1962,
-      "attack": 2.33,
-      "defence": 0.61,
-      "matches": 398,
+      "name": "Morocco",
+      "rating": 1988,
+      "attack": 2.04,
+      "defence": 0.51,
+      "matches": 314,
       "rank": 7
     },
     {
       "name": "Netherlands",
-      "rating": 1945,
-      "attack": 2.51,
-      "defence": 1.01,
-      "matches": 322,
+      "rating": 1973,
+      "attack": 2.56,
+      "defence": 1.07,
+      "matches": 326,
       "rank": 8
     },
     {
-      "name": "Morocco",
-      "rating": 1944,
-      "attack": 2.03,
-      "defence": 0.38,
-      "matches": 309,
+      "name": "Portugal",
+      "rating": 1969,
+      "attack": 2.19,
+      "defence": 0.81,
+      "matches": 338,
       "rank": 9
     },
     {
-      "name": "Germany",
-      "rating": 1944,
-      "attack": 2.78,
-      "defence": 1.01,
-      "matches": 354,
+      "name": "Mexico",
+      "rating": 1954,
+      "attack": 1.71,
+      "defence": 0.64,
+      "matches": 480,
       "rank": 10
     },
     {
-      "name": "Portugal",
-      "rating": 1935,
-      "attack": 2.27,
-      "defence": 0.93,
-      "matches": 334,
+      "name": "Japan",
+      "rating": 1941,
+      "attack": 2.23,
+      "defence": 0.78,
+      "matches": 402,
       "rank": 11
     },
     {
-      "name": "Mexico",
-      "rating": 1910,
-      "attack": 1.57,
-      "defence": 0.61,
-      "matches": 475,
+      "name": "Germany",
+      "rating": 1931,
+      "attack": 2.72,
+      "defence": 1.08,
+      "matches": 358,
       "rank": 12
     },
     {
-      "name": "Belgium",
-      "rating": 1876,
-      "attack": 2.39,
-      "defence": 0.81,
-      "matches": 288,
+      "name": "Norway",
+      "rating": 1921,
+      "attack": 2.6,
+      "defence": 1.2,
+      "matches": 287,
       "rank": 13
     },
     {
-      "name": "Ecuador",
-      "rating": 1864,
-      "attack": 1,
-      "defence": 0.5,
-      "matches": 317,
+      "name": "Belgium",
+      "rating": 1909,
+      "attack": 2.38,
+      "defence": 0.87,
+      "matches": 292,
       "rank": 14
     },
     {
-      "name": "Iran",
-      "rating": 1863,
-      "attack": 1.85,
-      "defence": 0.76,
-      "matches": 354,
+      "name": "United States",
+      "rating": 1895,
+      "attack": 2.09,
+      "defence": 1.3,
+      "matches": 429,
       "rank": 15
     },
     {
-      "name": "Australia",
-      "rating": 1862,
-      "attack": 1.52,
-      "defence": 0.87,
-      "matches": 298,
+      "name": "Switzerland",
+      "rating": 1892,
+      "attack": 2.13,
+      "defence": 0.99,
+      "matches": 292,
       "rank": 16
     },
     {
       "name": "Croatia",
-      "rating": 1862,
-      "attack": 1.94,
-      "defence": 1.32,
-      "matches": 306,
+      "rating": 1855,
+      "attack": 1.82,
+      "defence": 1.42,
+      "matches": 310,
       "rank": 17
     },
     {
-      "name": "United States",
-      "rating": 1859,
-      "attack": 1.96,
-      "defence": 1.41,
-      "matches": 425,
+      "name": "Iran",
+      "rating": 1852,
+      "attack": 1.67,
+      "defence": 0.8,
+      "matches": 357,
       "rank": 18
     },
     {
-      "name": "Uruguay",
-      "rating": 1859,
-      "attack": 1.1,
-      "defence": 0.94,
-      "matches": 321,
+      "name": "Australia",
+      "rating": 1849,
+      "attack": 1.3,
+      "defence": 0.84,
+      "matches": 302,
       "rank": 19
     },
     {
-      "name": "Norway",
-      "rating": 1857,
-      "attack": 2.73,
-      "defence": 0.92,
-      "matches": 282,
+      "name": "Ecuador",
+      "rating": 1834,
+      "attack": 0.87,
+      "defence": 0.65,
+      "matches": 321,
       "rank": 20
     },
     {
-      "name": "South Korea",
-      "rating": 1849,
-      "attack": 1.69,
-      "defence": 0.95,
-      "matches": 401,
+      "name": "Uruguay",
+      "rating": 1829,
+      "attack": 1.07,
+      "defence": 1.02,
+      "matches": 324,
       "rank": 21
     },
     {
-      "name": "Switzerland",
-      "rating": 1844,
-      "attack": 2.08,
-      "defence": 1.08,
-      "matches": 288,
+      "name": "Egypt",
+      "rating": 1824,
+      "attack": 1.44,
+      "defence": 0.84,
+      "matches": 359,
       "rank": 22
     },
     {
       "name": "Senegal",
-      "rating": 1836,
-      "attack": 1.9,
-      "defence": 0.91,
-      "matches": 309,
+      "rating": 1817,
+      "attack": 2.08,
+      "defence": 1.26,
+      "matches": 313,
       "rank": 23
     },
     {
-      "name": "Algeria",
-      "rating": 1831,
-      "attack": 2.09,
-      "defence": 0.7,
-      "matches": 304,
+      "name": "South Korea",
+      "rating": 1812,
+      "attack": 1.47,
+      "defence": 0.96,
+      "matches": 404,
       "rank": 24
     },
     {
       "name": "Canada",
-      "rating": 1830,
+      "rating": 1808,
       "attack": 1.68,
-      "defence": 0.64,
-      "matches": 258,
+      "defence": 0.84,
+      "matches": 263,
       "rank": 25
     },
     {
-      "name": "Austria",
-      "rating": 1805,
-      "attack": 2.29,
-      "defence": 0.73,
-      "matches": 257,
+      "name": "Algeria",
+      "rating": 1804,
+      "attack": 1.87,
+      "defence": 1.11,
+      "matches": 308,
       "rank": 26
     },
     {
-      "name": "Paraguay",
-      "rating": 1793,
-      "attack": 1.19,
+      "name": "Austria",
+      "rating": 1803,
+      "attack": 2.06,
       "defence": 1.15,
-      "matches": 307,
+      "matches": 261,
       "rank": 27
     },
     {
-      "name": "Egypt",
-      "rating": 1793,
-      "attack": 1.43,
-      "defence": 0.78,
-      "matches": 355,
+      "name": "Ivory Coast",
+      "rating": 1796,
+      "attack": 1.64,
+      "defence": 0.79,
+      "matches": 307,
       "rank": 28
     },
     {
-      "name": "Ivory Coast",
-      "rating": 1787,
-      "attack": 1.78,
-      "defence": 0.7,
-      "matches": 303,
+      "name": "Paraguay",
+      "rating": 1790,
+      "attack": 0.99,
+      "defence": 1.14,
+      "matches": 312,
       "rank": 29
     },
     {
-      "name": "Uzbekistan",
-      "rating": 1779,
-      "attack": 1.3,
-      "defence": 1.02,
-      "matches": 293,
+      "name": "Turkey",
+      "rating": 1764,
+      "attack": 1.64,
+      "defence": 1.3,
+      "matches": 316,
       "rank": 30
     },
     {
-      "name": "Turkey",
-      "rating": 1775,
-      "attack": 1.78,
-      "defence": 1.2,
-      "matches": 313,
+      "name": "DR Congo",
+      "rating": 1746,
+      "attack": 1.23,
+      "defence": 0.8,
+      "matches": 271,
       "rank": 31
     },
     {
-      "name": "Panama",
-      "rating": 1755,
-      "attack": 1.59,
-      "defence": 1.4,
-      "matches": 363,
+      "name": "Scotland",
+      "rating": 1735,
+      "attack": 1.36,
+      "defence": 1.19,
+      "matches": 246,
       "rank": 32
     },
     {
-      "name": "Scotland",
-      "rating": 1745,
-      "attack": 1.63,
-      "defence": 1.13,
-      "matches": 243,
+      "name": "Sweden",
+      "rating": 1733,
+      "attack": 1.9,
+      "defence": 2.04,
+      "matches": 347,
       "rank": 33
     },
     {
-      "name": "Jordan",
-      "rating": 1720,
-      "attack": 1.51,
-      "defence": 1.64,
-      "matches": 384,
+      "name": "Uzbekistan",
+      "rating": 1707,
+      "attack": 1.17,
+      "defence": 1.57,
+      "matches": 296,
       "rank": 34
     },
     {
-      "name": "DR Congo",
-      "rating": 1720,
-      "attack": 1.21,
-      "defence": 0.63,
-      "matches": 267,
+      "name": "Panama",
+      "rating": 1705,
+      "attack": 1.26,
+      "defence": 1.39,
+      "matches": 366,
       "rank": 35
     },
     {
-      "name": "Sweden",
-      "rating": 1713,
-      "attack": 2.01,
-      "defence": 1.87,
-      "matches": 343,
+      "name": "Saudi Arabia",
+      "rating": 1685,
+      "attack": 0.87,
+      "defence": 1.4,
+      "matches": 421,
       "rank": 36
     },
     {
-      "name": "Iraq",
-      "rating": 1702,
-      "attack": 1.08,
-      "defence": 1.18,
-      "matches": 385,
+      "name": "Ghana",
+      "rating": 1684,
+      "attack": 1.06,
+      "defence": 1.13,
+      "matches": 313,
       "rank": 37
     },
     {
-      "name": "New Zealand",
-      "rating": 1697,
-      "attack": 1.62,
-      "defence": 1.5,
-      "matches": 179,
+      "name": "Cape Verde",
+      "rating": 1679,
+      "attack": 1.24,
+      "defence": 1.17,
+      "matches": 189,
       "rank": 38
     },
     {
-      "name": "Czech Republic",
-      "rating": 1691,
-      "attack": 1.98,
-      "defence": 1.18,
-      "matches": 294,
+      "name": "Jordan",
+      "rating": 1679,
+      "attack": 1.41,
+      "defence": 1.85,
+      "matches": 387,
       "rank": 39
     },
     {
-      "name": "Saudi Arabia",
-      "rating": 1686,
-      "attack": 1.02,
-      "defence": 1.34,
-      "matches": 418,
+      "name": "Czech Republic",
+      "rating": 1663,
+      "attack": 1.7,
+      "defence": 1.35,
+      "matches": 297,
       "rank": 40
     },
     {
-      "name": "Tunisia",
-      "rating": 1672,
-      "attack": 1.18,
-      "defence": 1.61,
-      "matches": 342,
+      "name": "New Zealand",
+      "rating": 1663,
+      "attack": 1.56,
+      "defence": 1.9,
+      "matches": 182,
       "rank": 41
     },
     {
-      "name": "Ghana",
-      "rating": 1660,
-      "attack": 1.27,
-      "defence": 1.26,
-      "matches": 309,
+      "name": "South Africa",
+      "rating": 1656,
+      "attack": 1.08,
+      "defence": 0.94,
+      "matches": 379,
       "rank": 42
     },
     {
-      "name": "Haiti",
-      "rating": 1657,
-      "attack": 1.71,
-      "defence": 1.27,
-      "matches": 259,
+      "name": "Iraq",
+      "rating": 1643,
+      "attack": 0.92,
+      "defence": 1.78,
+      "matches": 388,
       "rank": 43
     },
     {
-      "name": "Cape Verde",
-      "rating": 1656,
-      "attack": 1.31,
-      "defence": 1.11,
-      "matches": 185,
+      "name": "Haiti",
+      "rating": 1625,
+      "attack": 1.5,
+      "defence": 1.57,
+      "matches": 262,
       "rank": 44
     },
     {
-      "name": "South Africa",
-      "rating": 1644,
-      "attack": 1.29,
-      "defence": 0.93,
-      "matches": 375,
+      "name": "Tunisia",
+      "rating": 1616,
+      "attack": 1.07,
+      "defence": 2.09,
+      "matches": 345,
       "rank": 45
     },
     {
-      "name": "Curacao",
-      "rating": 1604,
-      "attack": 1.69,
-      "defence": 1.63,
-      "matches": 152,
+      "name": "Bosnia and Herzegovina",
+      "rating": 1595,
+      "attack": 1.28,
+      "defence": 1.65,
+      "matches": 255,
       "rank": 46
     },
     {
-      "name": "Qatar",
-      "rating": 1586,
-      "attack": 0.97,
-      "defence": 1.83,
-      "matches": 419,
+      "name": "Curacao",
+      "rating": 1590,
+      "attack": 1.4,
+      "defence": 1.89,
+      "matches": 155,
       "rank": 47
     },
     {
-      "name": "Bosnia and Herzegovina",
-      "rating": 1577,
-      "attack": 1.3,
-      "defence": 1.53,
-      "matches": 251,
+      "name": "Qatar",
+      "rating": 1548,
+      "attack": 0.91,
+      "defence": 2.15,
+      "matches": 422,
       "rank": 48
     }
   ],
@@ -432,25 +433,25 @@
       "home": "Portugal",
       "away": "Spain",
       "probabilities": {
-        "home": 26,
-        "draw": 18.1,
-        "away": 55.9
+        "home": 25.6,
+        "draw": 19.7,
+        "away": 54.7
       },
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.28,
-        "away": 1.52
+        "home": 1.07,
+        "away": 1.39
       },
-      "confidence": 55.9,
+      "confidence": 54.7,
       "factors": {
-        "ratingDifference": -122,
-        "homeRating": 1935,
-        "awayRating": 2056,
-        "homeMatches": 334,
-        "awayMatches": 344
+        "ratingDifference": -105,
+        "homeRating": 1969,
+        "awayRating": 2074,
+        "homeMatches": 338,
+        "awayMatches": 348
       }
     },
     {
@@ -460,25 +461,25 @@
       "home": "United States",
       "away": "Belgium",
       "probabilities": {
-        "home": 30.1,
-        "draw": 21.4,
-        "away": 48.5
+        "home": 32.4,
+        "draw": 21.8,
+        "away": 45.8
       },
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.26,
-        "away": 1.83
+        "home": 1.35,
+        "away": 1.76
       },
-      "confidence": 48.5,
+      "confidence": 45.8,
       "factors": {
-        "ratingDifference": -17,
-        "homeRating": 1859,
-        "awayRating": 1876,
-        "homeMatches": 425,
-        "awayMatches": 288
+        "ratingDifference": -14,
+        "homeRating": 1895,
+        "awayRating": 1909,
+        "homeMatches": 429,
+        "awayMatches": 292
       }
     },
     {
@@ -488,25 +489,25 @@
       "home": "Argentina",
       "away": "Egypt",
       "probabilities": {
-        "home": 74.2,
-        "draw": 15.5,
-        "away": 10.3
+        "home": 73.8,
+        "draw": 15,
+        "away": 11.2
       },
       "predictedScore": {
         "home": 1,
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.36,
-        "away": 0.69
+        "home": 1.44,
+        "away": 0.82
       },
-      "confidence": 74.2,
+      "confidence": 73.8,
       "factors": {
-        "ratingDifference": 286,
-        "homeRating": 2079,
-        "awayRating": 1793,
-        "homeMatches": 343,
-        "awayMatches": 355
+        "ratingDifference": 288,
+        "homeRating": 2112,
+        "awayRating": 1824,
+        "homeMatches": 347,
+        "awayMatches": 359
       }
     },
     {
@@ -516,25 +517,25 @@
       "home": "Switzerland",
       "away": "Colombia",
       "probabilities": {
-        "home": 28.6,
-        "draw": 18,
-        "away": 53.4
+        "home": 29.9,
+        "draw": 19.7,
+        "away": 50.5
       },
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.43,
-        "away": 1.49
+        "home": 1.29,
+        "away": 1.34
       },
-      "confidence": 53.4,
+      "confidence": 50.5,
       "factors": {
-        "ratingDifference": -122,
-        "homeRating": 1844,
-        "awayRating": 1966,
-        "homeMatches": 288,
-        "awayMatches": 324
+        "ratingDifference": -101,
+        "homeRating": 1892,
+        "awayRating": 1993,
+        "homeMatches": 292,
+        "awayMatches": 328
       }
     },
     {
@@ -544,25 +545,53 @@
       "home": "France",
       "away": "Morocco",
       "probabilities": {
-        "home": 40.4,
-        "draw": 20.7,
-        "away": 38.9
+        "home": 47,
+        "draw": 20.4,
+        "away": 32.6
       },
       "predictedScore": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 0.94,
-        "away": 1.44
+        "home": 1.12,
+        "away": 1.28
       },
-      "confidence": 40.4,
+      "confidence": 47,
       "factors": {
-        "ratingDifference": 87,
-        "homeRating": 2031,
-        "awayRating": 1944,
-        "homeMatches": 351,
-        "awayMatches": 309
+        "ratingDifference": 102,
+        "homeRating": 2090,
+        "awayRating": 1988,
+        "homeMatches": 356,
+        "awayMatches": 314
+      }
+    },
+    {
+      "fixtureId": "400021539",
+      "matchNumber": 99,
+      "date": "2026-07-12",
+      "home": "Norway",
+      "away": "England",
+      "probabilities": {
+        "home": 26.5,
+        "draw": 17.8,
+        "away": 55.7
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.37,
+        "away": 1.64
+      },
+      "confidence": 55.7,
+      "factors": {
+        "ratingDifference": -116,
+        "homeRating": 1921,
+        "awayRating": 2037,
+        "homeMatches": 287,
+        "awayMatches": 324
       }
     }
   ]

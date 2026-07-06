@@ -20,6 +20,8 @@ test("validated model output contains no fabricated title probability", () => {
   const model = JSON.parse(fs.readFileSync("outputs/model.json", "utf8"));
   assert.equal("winProbability" in model.provisionalFavorite, false);
   assert.ok(["baseline_validated", "validation_failed"].includes(model.status));
+  assert.ok(Number.isInteger(model.source.liveTournamentResults));
+  assert.ok(model.source.liveTournamentResults > 0);
 });
 
 test("all match probability triples sum to approximately 100", () => {
