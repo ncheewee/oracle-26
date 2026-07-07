@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T05:06:46.512Z",
+  "generatedAt": "2026-07-07T17:27:49.433Z",
   "asOf": "2026-07-07",
   "status": "baseline_validated",
   "model": {
@@ -426,34 +426,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021528",
-      "matchNumber": 95,
-      "date": "2026-07-08",
-      "home": "Argentina",
-      "away": "Egypt",
-      "probabilities": {
-        "home": 73.8,
-        "draw": 15,
-        "away": 11.2
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 0
-      },
-      "expectedGoals": {
-        "home": 1.44,
-        "away": 0.82
-      },
-      "confidence": 73.8,
-      "factors": {
-        "ratingDifference": 288,
-        "homeRating": 2112,
-        "awayRating": 1824,
-        "homeMatches": 347,
-        "awayMatches": 359
-      }
-    },
     {
       "fixtureId": "400021535",
       "matchNumber": 96,
