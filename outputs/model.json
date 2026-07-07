@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T17:27:49.433Z",
+  "generatedAt": "2026-07-07T20:12:09.528Z",
   "asOf": "2026-07-07",
   "status": "baseline_validated",
   "model": {
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 94
+    "liveTournamentResults": 95
   },
   "performance": {
     "matches": 4568,
@@ -33,19 +33,19 @@
   },
   "provisionalFavorite": {
     "name": "Argentina",
-    "rating": 2112,
-    "attack": 2.5,
-    "defence": 0.47,
-    "matches": 347,
+    "rating": 2118,
+    "attack": 2.53,
+    "defence": 0.58,
+    "matches": 348,
     "rank": 1
   },
   "contenders": [
     {
       "name": "Argentina",
-      "rating": 2112,
-      "attack": 2.5,
-      "defence": 0.47,
-      "matches": 347,
+      "rating": 2118,
+      "attack": 2.53,
+      "defence": 0.58,
+      "matches": 348,
       "rank": 1
     },
     {
@@ -210,10 +210,10 @@
     },
     {
       "name": "Egypt",
-      "rating": 1824,
-      "attack": 1.44,
-      "defence": 0.84,
-      "matches": 359,
+      "rating": 1817,
+      "attack": 1.48,
+      "defence": 1,
+      "matches": 360,
       "rank": 22
     },
     {
@@ -426,34 +426,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021535",
-      "matchNumber": 96,
-      "date": "2026-07-08",
-      "home": "Switzerland",
-      "away": "Colombia",
-      "probabilities": {
-        "home": 29.9,
-        "draw": 19.7,
-        "away": 50.5
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.29,
-        "away": 1.34
-      },
-      "confidence": 50.5,
-      "factors": {
-        "ratingDifference": -101,
-        "homeRating": 1892,
-        "awayRating": 1993,
-        "homeMatches": 292,
-        "awayMatches": 328
-      }
-    },
     {
       "fixtureId": "400021536",
       "matchNumber": 97,
