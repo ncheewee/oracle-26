@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T21:41:21.327Z",
+  "generatedAt": "2026-07-07T23:14:06.601Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 95,
-    "remainingMatches": 9,
-    "liveMatches": 1
+    "completedMatches": 96,
+    "remainingMatches": 8,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -2310,7 +2310,7 @@
       },
       "homeScore": 0,
       "awayScore": 0,
-      "status": "81'",
+      "status": "FT",
       "dateLabel": "Wednesday 08 July 2026",
       "matchDate": "2026-07-08",
       "stage": "Round of 16",
@@ -2400,9 +2400,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
       },
       "away": {
-        "name": "W96",
-        "code": "W96",
-        "flag": null
+        "name": "Switzerland",
+        "code": "SUI",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
       },
       "homeScore": null,
       "awayScore": null,
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-07-07T08:36:40.809Z",
-    "lastAttemptAt": "2026-07-07T21:41:21.327Z",
+    "lastAttemptAt": "2026-07-07T23:14:06.600Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }

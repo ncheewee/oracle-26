@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T20:12:09.528Z",
+  "generatedAt": "2026-07-07T23:15:14.607Z",
   "asOf": "2026-07-07",
   "status": "baseline_validated",
   "model": {
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 95
+    "liveTournamentResults": 96
   },
   "performance": {
     "matches": 4568,
@@ -81,19 +81,19 @@
       "rank": 5
     },
     {
-      "name": "Colombia",
-      "rating": 1993,
-      "attack": 1.82,
-      "defence": 0.78,
-      "matches": 328,
-      "rank": 6
-    },
-    {
       "name": "Morocco",
       "rating": 1988,
       "attack": 2.04,
       "defence": 0.51,
       "matches": 314,
+      "rank": 6
+    },
+    {
+      "name": "Colombia",
+      "rating": 1987,
+      "attack": 1.68,
+      "defence": 0.72,
+      "matches": 329,
       "rank": 7
     },
     {
@@ -154,10 +154,10 @@
     },
     {
       "name": "Switzerland",
-      "rating": 1892,
-      "attack": 2.13,
-      "defence": 0.99,
-      "matches": 292,
+      "rating": 1898,
+      "attack": 1.97,
+      "defence": 0.91,
+      "matches": 293,
       "rank": 15
     },
     {
@@ -508,6 +508,34 @@
         "awayRating": 2037,
         "homeMatches": 287,
         "awayMatches": 324
+      }
+    },
+    {
+      "fixtureId": "400021537",
+      "matchNumber": 100,
+      "date": "2026-07-12",
+      "home": "Argentina",
+      "away": "Switzerland",
+      "probabilities": {
+        "home": 68.1,
+        "draw": 14.9,
+        "away": 16.9
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.52,
+        "away": 1.07
+      },
+      "confidence": 68.1,
+      "factors": {
+        "ratingDifference": 220,
+        "homeRating": 2118,
+        "awayRating": 1898,
+        "homeMatches": 348,
+        "awayMatches": 293
       }
     }
   ]
