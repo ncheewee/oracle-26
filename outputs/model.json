@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-06T22:26:38.403Z",
-  "asOf": "2026-07-06",
+  "generatedAt": "2026-07-07T00:20:45.035Z",
+  "asOf": "2026-07-07",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -426,34 +426,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021534",
-      "matchNumber": 94,
-      "date": "2026-07-07",
-      "home": "United States",
-      "away": "Belgium",
-      "probabilities": {
-        "home": 32.4,
-        "draw": 21.8,
-        "away": 45.8
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.35,
-        "away": 1.76
-      },
-      "confidence": 45.8,
-      "factors": {
-        "ratingDifference": -14,
-        "homeRating": 1895,
-        "awayRating": 1909,
-        "homeMatches": 429,
-        "awayMatches": 292
-      }
-    },
     {
       "fixtureId": "400021528",
       "matchNumber": 95,
