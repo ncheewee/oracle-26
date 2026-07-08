@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T18:42:16.148Z",
+  "generatedAt": "2026-07-08T20:37:31.042Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-08T18:42:16.148Z"
+    "capturedAt": "2026-07-08T20:37:31.042Z"
   },
   "championship": [
     {
@@ -105,7 +105,7 @@
       "name": "France vs Morocco",
       "startTime": "2026-07-09T20:00:00Z",
       "prices": {
-        "France": 1.45,
+        "France": 1.42,
         "Draw": 3.8,
         "Morocco": 6
       }
@@ -139,8 +139,8 @@
       "startTime": "2026-07-12T01:00:00Z",
       "prices": {
         "Argentina": 1.53,
-        "Draw": 3.3,
-        "Switzerland": 5.8
+        "Draw": 3.4,
+        "Switzerland": 5.2
       }
     }
   ]
