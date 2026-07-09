@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T20:02:56.230Z",
+  "generatedAt": "2026-07-09T23:36:01.427Z",
   "asOf": "2026-07-09",
   "status": "baseline_validated",
   "model": {
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 96
+    "liveTournamentResults": 97
   },
   "performance": {
     "matches": 4568,
@@ -50,10 +50,10 @@
     },
     {
       "name": "France",
-      "rating": 2090,
-      "attack": 2.45,
-      "defence": 0.81,
-      "matches": 356,
+      "rating": 2111,
+      "attack": 2.41,
+      "defence": 0.75,
+      "matches": 357,
       "rank": 2
     },
     {
@@ -81,20 +81,12 @@
       "rank": 5
     },
     {
-      "name": "Morocco",
-      "rating": 1988,
-      "attack": 2.04,
-      "defence": 0.51,
-      "matches": 314,
-      "rank": 6
-    },
-    {
       "name": "Colombia",
       "rating": 1987,
       "attack": 1.68,
       "defence": 0.72,
       "matches": 329,
-      "rank": 7
+      "rank": 6
     },
     {
       "name": "Netherlands",
@@ -102,6 +94,14 @@
       "attack": 2.56,
       "defence": 1.07,
       "matches": 326,
+      "rank": 7
+    },
+    {
+      "name": "Morocco",
+      "rating": 1968,
+      "attack": 1.89,
+      "defence": 0.62,
+      "matches": 315,
       "rank": 8
     },
     {
