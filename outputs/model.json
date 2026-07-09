@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-07T23:15:14.607Z",
-  "asOf": "2026-07-07",
+  "generatedAt": "2026-07-09T20:02:56.230Z",
+  "asOf": "2026-07-09",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -426,34 +426,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021536",
-      "matchNumber": 97,
-      "date": "2026-07-10",
-      "home": "France",
-      "away": "Morocco",
-      "probabilities": {
-        "home": 47,
-        "draw": 20.4,
-        "away": 32.6
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.12,
-        "away": 1.28
-      },
-      "confidence": 47,
-      "factors": {
-        "ratingDifference": 102,
-        "homeRating": 2090,
-        "awayRating": 1988,
-        "homeMatches": 356,
-        "awayMatches": 314
-      }
-    },
     {
       "fixtureId": "400021538",
       "matchNumber": 98,
