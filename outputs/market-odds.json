@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T08:41:12.050Z",
+  "generatedAt": "2026-07-09T12:21:08.381Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-09T08:41:12.050Z"
+    "capturedAt": "2026-07-09T12:21:08.381Z"
   },
   "championship": [
     {
@@ -49,19 +49,19 @@
     },
     {
       "team": "Norway",
-      "decimalOdds": 13,
-      "marketImpliedProbability": 7.7,
+      "decimalOdds": 10,
+      "marketImpliedProbability": 10,
       "modelProbability": 5.9,
-      "probabilityEdge": -1.8,
-      "expectedReturn": -23.3
+      "probabilityEdge": -4.1,
+      "expectedReturn": -41
     },
     {
       "team": "Belgium",
-      "decimalOdds": 30,
-      "marketImpliedProbability": 3.3,
+      "decimalOdds": 35,
+      "marketImpliedProbability": 2.9,
       "modelProbability": 7.3,
-      "probabilityEdge": 4,
-      "expectedReturn": 119
+      "probabilityEdge": 4.4,
+      "expectedReturn": 155.5
     },
     {
       "team": "Morocco",
@@ -73,11 +73,11 @@
     },
     {
       "team": "Switzerland",
-      "decimalOdds": 30,
-      "marketImpliedProbability": 3.3,
+      "decimalOdds": 35,
+      "marketImpliedProbability": 2.9,
       "modelProbability": 5.2,
-      "probabilityEdge": 1.9,
-      "expectedReturn": 56
+      "probabilityEdge": 2.3,
+      "expectedReturn": 82
     }
   ],
   "valueWatchlist": [
@@ -91,11 +91,19 @@
     },
     {
       "team": "Belgium",
-      "decimalOdds": 30,
-      "marketImpliedProbability": 3.3,
+      "decimalOdds": 35,
+      "marketImpliedProbability": 2.9,
       "modelProbability": 7.3,
-      "probabilityEdge": 4,
-      "expectedReturn": 119
+      "probabilityEdge": 4.4,
+      "expectedReturn": 155.5
+    },
+    {
+      "team": "Switzerland",
+      "decimalOdds": 35,
+      "marketImpliedProbability": 2.9,
+      "modelProbability": 5.2,
+      "probabilityEdge": 2.3,
+      "expectedReturn": 82
     }
   ],
   "matches": [
@@ -128,8 +136,8 @@
       "startTime": "2026-07-11T21:00:00Z",
       "prices": {
         "Norway": 2.9,
-        "Draw": 3.7,
-        "England": 1.92
+        "Draw": 3.6,
+        "England": 1.97
       }
     },
     {
@@ -140,7 +148,7 @@
       "prices": {
         "Argentina": 1.42,
         "Draw": 3.8,
-        "Switzerland": 6
+        "Switzerland": 5.8
       }
     }
   ]
