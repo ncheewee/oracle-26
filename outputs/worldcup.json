@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T20:01:47.100Z",
+  "generatedAt": "2026-07-09T21:40:42.854Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -2332,9 +2332,9 @@
         "code": "MAR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
       },
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0,
-      "status": "0'",
+      "status": "76'",
       "dateLabel": "Friday 10 July 2026",
       "matchDate": "2026-07-10",
       "stage": "Quarter-final",
@@ -3343,6 +3343,6 @@
   ],
   "standingsSnapshot": {
     "status": "verified",
-    "capturedAt": "2026-07-09T20:01:47.099Z"
+    "capturedAt": "2026-07-09T21:40:42.854Z"
   }
 }
