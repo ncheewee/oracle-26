@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T23:36:27.478Z",
+  "generatedAt": "2026-07-10T04:10:59.266Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,16 +12,16 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-09T23:36:27.478Z"
+    "capturedAt": "2026-07-10T04:10:59.266Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 4,
-      "marketImpliedProbability": 25,
+      "decimalOdds": 4.3,
+      "marketImpliedProbability": 23.3,
       "modelProbability": 19.5,
-      "probabilityEdge": -5.5,
-      "expectedReturn": -22
+      "probabilityEdge": -3.8,
+      "expectedReturn": -16.1
     },
     {
       "team": "France",
@@ -41,11 +41,11 @@
     },
     {
       "team": "Argentina",
-      "decimalOdds": 4.5,
-      "marketImpliedProbability": 22.2,
+      "decimalOdds": 4.3,
+      "marketImpliedProbability": 23.3,
       "modelProbability": 22.8,
-      "probabilityEdge": 0.6,
-      "expectedReturn": 2.6
+      "probabilityEdge": -0.5,
+      "expectedReturn": -2
     },
     {
       "team": "Norway",
@@ -108,9 +108,9 @@
       "name": "Norway vs England",
       "startTime": "2026-07-11T21:00:00Z",
       "prices": {
-        "Norway": 2.8,
+        "Norway": 2.95,
         "Draw": 3.7,
-        "England": 1.97
+        "England": 1.92
       }
     },
     {
