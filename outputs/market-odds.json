@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T04:10:59.266Z",
+  "generatedAt": "2026-07-10T07:51:43.933Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,16 +12,16 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-10T04:10:59.266Z"
+    "capturedAt": "2026-07-10T07:51:43.933Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 4.3,
-      "marketImpliedProbability": 23.3,
+      "decimalOdds": 4.5,
+      "marketImpliedProbability": 22.2,
       "modelProbability": 19.5,
-      "probabilityEdge": -3.8,
-      "expectedReturn": -16.1
+      "probabilityEdge": -2.7,
+      "expectedReturn": -12.2
     },
     {
       "team": "France",
@@ -33,27 +33,27 @@
     },
     {
       "team": "England",
-      "decimalOdds": 5.5,
-      "marketImpliedProbability": 18.2,
+      "decimalOdds": 6,
+      "marketImpliedProbability": 16.7,
       "modelProbability": 13.2,
-      "probabilityEdge": -5,
-      "expectedReturn": -27.4
+      "probabilityEdge": -3.5,
+      "expectedReturn": -20.8
     },
     {
       "team": "Argentina",
-      "decimalOdds": 4.3,
-      "marketImpliedProbability": 23.3,
+      "decimalOdds": 4.5,
+      "marketImpliedProbability": 22.2,
       "modelProbability": 22.8,
-      "probabilityEdge": -0.5,
-      "expectedReturn": -2
+      "probabilityEdge": 0.6,
+      "expectedReturn": 2.6
     },
     {
       "team": "Norway",
-      "decimalOdds": 10,
-      "marketImpliedProbability": 10,
+      "decimalOdds": 8,
+      "marketImpliedProbability": 12.5,
       "modelProbability": 5.7,
-      "probabilityEdge": -4.3,
-      "expectedReturn": -43
+      "probabilityEdge": -6.8,
+      "expectedReturn": -54.4
     },
     {
       "team": "Belgium",
@@ -97,9 +97,9 @@
       "name": "Spain vs Belgium",
       "startTime": "2026-07-10T19:00:00Z",
       "prices": {
-        "Spain": 1.58,
-        "Draw": 3.5,
-        "Belgium": 5
+        "Spain": 1.5,
+        "Draw": 3.6,
+        "Belgium": 5.5
       }
     },
     {
@@ -119,9 +119,9 @@
       "name": "Argentina vs Switzerland",
       "startTime": "2026-07-12T01:00:00Z",
       "prices": {
-        "Argentina": 1.42,
+        "Argentina": 1.45,
         "Draw": 3.8,
-        "Switzerland": 6
+        "Switzerland": 5.8
       }
     }
   ]
