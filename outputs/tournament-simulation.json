@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T23:36:04.313Z",
+  "generatedAt": "2026-07-10T22:16:00.385Z",
   "status": "tournament_simulation_validated",
   "simulations": 100000,
   "seed": 20260623,
@@ -30,22 +30,37 @@
   },
   "winner": {
     "rank": 1,
-    "name": "France",
-    "canonicalName": "France",
-    "rating": 2111,
+    "name": "Spain",
+    "canonicalName": "Spain",
+    "rating": 2101,
     "probabilities": {
       "qualified": 100,
       "roundOf16": 100,
       "quarterfinal": 100,
       "semifinal": 100,
-      "final": 49.8,
-      "champion": 26.2,
+      "final": 53.9,
+      "champion": 30.6,
       "groupWinner": 100
     }
   },
   "teams": [
     {
       "rank": 1,
+      "name": "Spain",
+      "canonicalName": "Spain",
+      "rating": 2101,
+      "probabilities": {
+        "qualified": 100,
+        "roundOf16": 100,
+        "quarterfinal": 100,
+        "semifinal": 100,
+        "final": 53.9,
+        "champion": 30.6,
+        "groupWinner": 100
+      }
+    },
+    {
+      "rank": 2,
       "name": "France",
       "canonicalName": "France",
       "rating": 2111,
@@ -54,13 +69,13 @@
         "roundOf16": 100,
         "quarterfinal": 100,
         "semifinal": 100,
-        "final": 49.8,
-        "champion": 26.2,
+        "final": 46.1,
+        "champion": 24.1,
         "groupWinner": 100
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "Argentina",
       "canonicalName": "Argentina",
       "rating": 2118,
@@ -68,24 +83,9 @@
         "qualified": 100,
         "roundOf16": 100,
         "quarterfinal": 100,
-        "semifinal": 67.7,
-        "final": 42,
-        "champion": 22.8,
-        "groupWinner": 100
-      }
-    },
-    {
-      "rank": 3,
-      "name": "Spain",
-      "canonicalName": "Spain",
-      "rating": 2088,
-      "probabilities": {
-        "qualified": 100,
-        "roundOf16": 100,
-        "quarterfinal": 100,
-        "semifinal": 62.2,
-        "final": 34,
-        "champion": 19.5,
+        "semifinal": 67.6,
+        "final": 41.7,
+        "champion": 22,
         "groupWinner": 100
       }
     },
@@ -98,29 +98,14 @@
         "qualified": 100,
         "roundOf16": 100,
         "quarterfinal": 100,
-        "semifinal": 59.7,
-        "final": 28.5,
-        "champion": 13.2,
+        "semifinal": 60,
+        "final": 28.8,
+        "champion": 12.9,
         "groupWinner": 100
       }
     },
     {
       "rank": 5,
-      "name": "Belgium",
-      "canonicalName": "Belgium",
-      "rating": 1944,
-      "probabilities": {
-        "qualified": 100,
-        "roundOf16": 100,
-        "quarterfinal": 100,
-        "semifinal": 37.8,
-        "final": 16.2,
-        "champion": 7.3,
-        "groupWinner": 100
-      }
-    },
-    {
-      "rank": 6,
       "name": "Norway",
       "canonicalName": "Norway",
       "rating": 1921,
@@ -128,14 +113,14 @@
         "qualified": 100,
         "roundOf16": 100,
         "quarterfinal": 100,
-        "semifinal": 40.3,
+        "semifinal": 40,
         "final": 15.5,
-        "champion": 5.7,
+        "champion": 5.5,
         "groupWinner": 0
       }
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Switzerland",
       "canonicalName": "Switzerland",
       "rating": 1898,
@@ -143,14 +128,14 @@
         "qualified": 100,
         "roundOf16": 100,
         "quarterfinal": 100,
-        "semifinal": 32.3,
+        "semifinal": 32.4,
         "final": 14.1,
-        "champion": 5.3,
+        "champion": 4.9,
         "groupWinner": 100
       }
     },
     {
-      "rank": 8,
+      "rank": 7,
       "name": "Brazil",
       "canonicalName": "Brazil",
       "rating": 1995,
@@ -165,7 +150,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Colombia",
       "canonicalName": "Colombia",
       "rating": 1987,
@@ -180,7 +165,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "Netherlands",
       "canonicalName": "Netherlands",
       "rating": 1973,
@@ -195,7 +180,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 10,
       "name": "Morocco",
       "canonicalName": "Morocco",
       "rating": 1968,
@@ -210,7 +195,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 11,
       "name": "Mexico",
       "canonicalName": "Mexico",
       "rating": 1954,
@@ -225,7 +210,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 12,
       "name": "Portugal",
       "canonicalName": "Portugal",
       "rating": 1954,
@@ -240,7 +225,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 13,
       "name": "Japan",
       "canonicalName": "Japan",
       "rating": 1941,
@@ -255,7 +240,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 14,
       "name": "Germany",
       "canonicalName": "Germany",
       "rating": 1931,
@@ -263,6 +248,21 @@
         "qualified": 100,
         "roundOf16": 0,
         "quarterfinal": 0,
+        "semifinal": 0,
+        "final": 0,
+        "champion": 0,
+        "groupWinner": 100
+      }
+    },
+    {
+      "rank": 15,
+      "name": "Belgium",
+      "canonicalName": "Belgium",
+      "rating": 1931,
+      "probabilities": {
+        "qualified": 100,
+        "roundOf16": 100,
+        "quarterfinal": 100,
         "semifinal": 0,
         "final": 0,
         "champion": 0,
@@ -996,8 +996,8 @@
       "home": "Spain",
       "away": "Belgium",
       "probability": 100,
-      "homeWinProbability": 62.2,
-      "awayWinProbability": 37.8,
+      "homeWinProbability": 100,
+      "awayWinProbability": 0,
       "predictedWinner": "Spain"
     },
     "M99": {
@@ -1005,8 +1005,8 @@
       "home": "Norway",
       "away": "England",
       "probability": 100,
-      "homeWinProbability": 40.3,
-      "awayWinProbability": 59.7,
+      "homeWinProbability": 40,
+      "awayWinProbability": 60,
       "predictedWinner": "England"
     },
     "M100": {
@@ -1014,17 +1014,17 @@
       "home": "Argentina",
       "away": "Switzerland",
       "probability": 100,
-      "homeWinProbability": 67.7,
-      "awayWinProbability": 32.3,
+      "homeWinProbability": 67.6,
+      "awayWinProbability": 32.4,
       "predictedWinner": "Argentina"
     },
     "M101": {
       "matchId": "M101",
       "home": "France",
       "away": "Spain",
-      "probability": 62.2,
-      "homeWinProbability": 45.3,
-      "awayWinProbability": 54.7,
+      "probability": 100,
+      "homeWinProbability": 46.1,
+      "awayWinProbability": 53.9,
       "predictedWinner": "Spain"
     },
     "M102": {
@@ -1032,17 +1032,17 @@
       "home": "England",
       "away": "Argentina",
       "probability": 40.6,
-      "homeWinProbability": 41.8,
-      "awayWinProbability": 58.2,
+      "homeWinProbability": 42,
+      "awayWinProbability": 58,
       "predictedWinner": "Argentina"
     },
     "M104": {
       "matchId": "M104",
-      "home": "France",
+      "home": "Spain",
       "away": "Argentina",
-      "probability": 21,
-      "homeWinProbability": 44.9,
-      "awayWinProbability": 55.1,
+      "probability": 22.5,
+      "homeWinProbability": 48.9,
+      "awayWinProbability": 51.1,
       "predictedWinner": "Argentina"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T20:41:27.498Z",
+  "generatedAt": "2026-07-10T22:14:48.935Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 97,
-    "remainingMatches": 7,
-    "liveMatches": 1
+    "completedMatches": 98,
+    "remainingMatches": 6,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -2356,9 +2356,9 @@
         "code": "BEL",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
       },
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1,
-      "status": "78'",
+      "status": "FT",
       "dateLabel": "Saturday 11 July 2026",
       "matchDate": "2026-07-11",
       "stage": "Quarter-final",
@@ -2424,9 +2424,9 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
       "away": {
-        "name": "W98",
-        "code": "W98",
-        "flag": null
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
       },
       "homeScore": null,
       "awayScore": null,
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-07-10T18:42:59.692Z",
-    "lastAttemptAt": "2026-07-10T20:41:27.498Z",
+    "lastAttemptAt": "2026-07-10T22:14:48.935Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }
