@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T13:51:49.308Z",
+  "generatedAt": "2026-07-11T15:12:58.852Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,24 +12,24 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-11T13:51:49.308Z"
+    "capturedAt": "2026-07-11T15:12:58.852Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 4.2,
-      "marketImpliedProbability": 23.8,
+      "decimalOdds": 4.25,
+      "marketImpliedProbability": 23.5,
       "modelProbability": 30.6,
-      "probabilityEdge": 6.8,
-      "expectedReturn": 28.5
+      "probabilityEdge": 7.1,
+      "expectedReturn": 30.1
     },
     {
       "team": "France",
-      "decimalOdds": 2.35,
-      "marketImpliedProbability": 42.6,
+      "decimalOdds": 2.5,
+      "marketImpliedProbability": 40,
       "modelProbability": 24.1,
-      "probabilityEdge": -18.5,
-      "expectedReturn": -43.4
+      "probabilityEdge": -15.9,
+      "expectedReturn": -39.7
     },
     {
       "team": "England",
@@ -49,29 +49,29 @@
     },
     {
       "team": "Norway",
-      "decimalOdds": 8,
-      "marketImpliedProbability": 12.5,
+      "decimalOdds": 7,
+      "marketImpliedProbability": 14.3,
       "modelProbability": 5.5,
-      "probabilityEdge": -7,
-      "expectedReturn": -56
+      "probabilityEdge": -8.8,
+      "expectedReturn": -61.5
     },
     {
       "team": "Switzerland",
-      "decimalOdds": 40,
-      "marketImpliedProbability": 2.5,
+      "decimalOdds": 30,
+      "marketImpliedProbability": 3.3,
       "modelProbability": 4.9,
-      "probabilityEdge": 2.4,
-      "expectedReturn": 96
+      "probabilityEdge": 1.6,
+      "expectedReturn": 47
     }
   ],
   "valueWatchlist": [
     {
       "team": "Spain",
-      "decimalOdds": 4.2,
-      "marketImpliedProbability": 23.8,
+      "decimalOdds": 4.25,
+      "marketImpliedProbability": 23.5,
       "modelProbability": 30.6,
-      "probabilityEdge": 6.8,
-      "expectedReturn": 28.5
+      "probabilityEdge": 7.1,
+      "expectedReturn": 30.1
     }
   ],
   "matches": [
@@ -81,9 +81,9 @@
       "name": "Norway vs England",
       "startTime": "2026-07-11T21:00:00Z",
       "prices": {
-        "Norway": 3.1,
-        "Draw": 3.05,
-        "England": 2.1
+        "Norway": 2.95,
+        "Draw": 3.5,
+        "England": 1.97
       }
     },
     {
@@ -92,9 +92,9 @@
       "name": "Argentina vs Switzerland",
       "startTime": "2026-07-12T01:00:00Z",
       "prices": {
-        "Argentina": 1.42,
-        "Draw": 3.8,
-        "Switzerland": 6.5
+        "Argentina": 1.45,
+        "Draw": 3.6,
+        "Switzerland": 5.8
       }
     },
     {
@@ -103,9 +103,9 @@
       "name": "France vs Spain",
       "startTime": "2026-07-14T19:00:00Z",
       "prices": {
-        "France": 2.2,
+        "France": 2.15,
         "Draw": 3.2,
-        "Spain": 2.7
+        "Spain": 2.8
       }
     }
   ]
