@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T21:04:48.773Z",
+  "generatedAt": "2026-07-11T23:08:49.415Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -81,9 +81,9 @@
       "name": "Argentina vs Switzerland",
       "startTime": "2026-07-12T01:00:00Z",
       "prices": {
-        "Argentina": 1.48,
+        "Argentina": 1.5,
         "Draw": 3.5,
-        "Switzerland": 6
+        "Switzerland": 5.8
       }
     },
     {
@@ -99,6 +99,6 @@
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-11T21:04:48.773Z",
+  "lastAttemptAt": "2026-07-11T23:08:49.414Z",
   "warning": "Championship Winner market unavailable"
 }
