@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T19:24:32.657Z",
+  "generatedAt": "2026-07-11T21:04:48.773Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -11,7 +11,7 @@
     "url": "https://www.ncpg.org.sg/"
   },
   "outright": {
-    "status": "verified",
+    "status": "cached",
     "capturedAt": "2026-07-11T19:24:32.657Z"
   },
   "championship": [
@@ -76,17 +76,6 @@
   ],
   "matches": [
     {
-      "eventId": "140308",
-      "eventNumber": null,
-      "name": "Norway vs England",
-      "startTime": "2026-07-11T21:00:00Z",
-      "prices": {
-        "Norway": 3.05,
-        "Draw": 3.7,
-        "England": 1.87
-      }
-    },
-    {
       "eventId": "140317",
       "eventNumber": null,
       "name": "Argentina vs Switzerland",
@@ -103,10 +92,13 @@
       "name": "France vs Spain",
       "startTime": "2026-07-14T19:00:00Z",
       "prices": {
-        "France": 2.15,
+        "France": 2.1,
         "Draw": 3.2,
-        "Spain": 2.8
+        "Spain": 2.9
       }
     }
-  ]
+  ],
+  "refreshStatus": "market_unavailable_using_cached_snapshot",
+  "lastAttemptAt": "2026-07-11T21:04:48.773Z",
+  "warning": "Championship Winner market unavailable"
 }

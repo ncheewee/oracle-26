@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-10T22:15:57.504Z",
-  "asOf": "2026-07-10",
+  "generatedAt": "2026-07-11T21:04:22.769Z",
+  "asOf": "2026-07-11",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -426,34 +426,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021539",
-      "matchNumber": 99,
-      "date": "2026-07-12",
-      "home": "Norway",
-      "away": "England",
-      "probabilities": {
-        "home": 26.5,
-        "draw": 17.8,
-        "away": 55.7
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.37,
-        "away": 1.64
-      },
-      "confidence": 55.7,
-      "factors": {
-        "ratingDifference": -116,
-        "homeRating": 1921,
-        "awayRating": 2037,
-        "homeMatches": 287,
-        "awayMatches": 324
-      }
-    },
     {
       "fixtureId": "400021537",
       "matchNumber": 100,
