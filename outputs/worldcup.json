@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T21:03:14.678Z",
+  "generatedAt": "2026-07-11T22:04:45.833Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -2380,9 +2380,9 @@
         "code": "ENG",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
       },
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "1'",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "HT",
       "dateLabel": "Sunday 12 July 2026",
       "matchDate": "2026-07-12",
       "stage": "Quarter-final",
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-07-11T19:22:57.880Z",
-    "lastAttemptAt": "2026-07-11T21:03:14.677Z",
+    "lastAttemptAt": "2026-07-11T22:04:45.832Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }
