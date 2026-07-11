@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T12:02:44.438Z",
+  "generatedAt": "2026-07-11T13:51:49.308Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-11T12:02:44.438Z"
+    "capturedAt": "2026-07-11T13:51:49.308Z"
   },
   "championship": [
     {
@@ -81,9 +81,9 @@
       "name": "Norway vs England",
       "startTime": "2026-07-11T21:00:00Z",
       "prices": {
-        "Norway": 3.2,
-        "Draw": 3.3,
-        "England": 1.95
+        "Norway": 3.1,
+        "Draw": 3.05,
+        "England": 2.1
       }
     },
     {
@@ -94,7 +94,7 @@
       "prices": {
         "Argentina": 1.42,
         "Draw": 3.8,
-        "Switzerland": 6
+        "Switzerland": 6.5
       }
     },
     {
@@ -103,9 +103,9 @@
       "name": "France vs Spain",
       "startTime": "2026-07-14T19:00:00Z",
       "prices": {
-        "France": 2.1,
-        "Draw": 3.3,
-        "Spain": 2.85
+        "France": 2.2,
+        "Draw": 3.2,
+        "Spain": 2.7
       }
     }
   ]
