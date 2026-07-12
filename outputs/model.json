@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T00:08:57.492Z",
+  "generatedAt": "2026-07-12T03:53:17.151Z",
   "asOf": "2026-07-12",
   "status": "baseline_validated",
   "model": {
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 99
+    "liveTournamentResults": 100
   },
   "performance": {
     "matches": 4568,
@@ -33,19 +33,19 @@
   },
   "provisionalFavorite": {
     "name": "Argentina",
-    "rating": 2118,
-    "attack": 2.53,
-    "defence": 0.58,
-    "matches": 348,
+    "rating": 2131,
+    "attack": 2.57,
+    "defence": 0.61,
+    "matches": 349,
     "rank": 1
   },
   "contenders": [
     {
       "name": "Argentina",
-      "rating": 2118,
-      "attack": 2.53,
-      "defence": 0.58,
-      "matches": 348,
+      "rating": 2131,
+      "attack": 2.57,
+      "defence": 0.61,
+      "matches": 349,
       "rank": 1
     },
     {
@@ -154,10 +154,10 @@
     },
     {
       "name": "Switzerland",
-      "rating": 1898,
-      "attack": 1.97,
-      "defence": 0.91,
-      "matches": 293,
+      "rating": 1885,
+      "attack": 1.9,
+      "defence": 1.07,
+      "matches": 294,
       "rank": 15
     },
     {
@@ -427,34 +427,6 @@
   ],
   "predictions": [
     {
-      "fixtureId": "400021537",
-      "matchNumber": 100,
-      "date": "2026-07-12",
-      "home": "Argentina",
-      "away": "Switzerland",
-      "probabilities": {
-        "home": 68.1,
-        "draw": 14.9,
-        "away": 16.9
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.52,
-        "away": 1.07
-      },
-      "confidence": 68.1,
-      "factors": {
-        "ratingDifference": 220,
-        "homeRating": 2118,
-        "awayRating": 1898,
-        "homeMatches": 348,
-        "awayMatches": 293
-      }
-    },
-    {
       "fixtureId": "400021541",
       "matchNumber": 101,
       "date": "2026-07-15",
@@ -480,6 +452,34 @@
         "awayRating": 2101,
         "homeMatches": 357,
         "awayMatches": 350
+      }
+    },
+    {
+      "fixtureId": "400021540",
+      "matchNumber": 102,
+      "date": "2026-07-16",
+      "home": "England",
+      "away": "Argentina",
+      "probabilities": {
+        "home": 29,
+        "draw": 20.7,
+        "away": 50.3
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.17,
+        "away": 1.38
+      },
+      "confidence": 50.3,
+      "factors": {
+        "ratingDifference": -80,
+        "homeRating": 2051,
+        "awayRating": 2131,
+        "homeMatches": 325,
+        "awayMatches": 349
       }
     }
   ]
