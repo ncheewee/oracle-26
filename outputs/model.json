@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-11T21:04:22.769Z",
-  "asOf": "2026-07-11",
+  "generatedAt": "2026-07-12T00:08:57.492Z",
+  "asOf": "2026-07-12",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 98
+    "liveTournamentResults": 99
   },
   "performance": {
     "matches": 4568,
@@ -66,10 +66,10 @@
     },
     {
       "name": "England",
-      "rating": 2037,
-      "attack": 2.24,
-      "defence": 0.72,
-      "matches": 324,
+      "rating": 2051,
+      "attack": 2.23,
+      "defence": 0.74,
+      "matches": 325,
       "rank": 4
     },
     {
@@ -146,10 +146,10 @@
     },
     {
       "name": "Norway",
-      "rating": 1921,
-      "attack": 2.6,
-      "defence": 1.2,
-      "matches": 287,
+      "rating": 1907,
+      "attack": 2.48,
+      "defence": 1.26,
+      "matches": 288,
       "rank": 14
     },
     {

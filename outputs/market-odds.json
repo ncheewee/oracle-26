@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T23:08:49.415Z",
+  "generatedAt": "2026-07-12T00:09:19.437Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -19,49 +19,49 @@
       "team": "Spain",
       "decimalOdds": 4.25,
       "marketImpliedProbability": 23.5,
-      "modelProbability": 30.6,
-      "probabilityEdge": 7.1,
-      "expectedReturn": 30.1
+      "modelProbability": 29.7,
+      "probabilityEdge": 6.2,
+      "expectedReturn": 26.2
     },
     {
       "team": "France",
       "decimalOdds": 2.5,
       "marketImpliedProbability": 40,
-      "modelProbability": 24.1,
-      "probabilityEdge": -15.9,
-      "expectedReturn": -39.7
+      "modelProbability": 23.8,
+      "probabilityEdge": -16.2,
+      "expectedReturn": -40.5
     },
     {
       "team": "England",
       "decimalOdds": 5,
       "marketImpliedProbability": 20,
-      "modelProbability": 12.9,
-      "probabilityEdge": -7.1,
-      "expectedReturn": -35.5
+      "modelProbability": 21.5,
+      "probabilityEdge": 1.5,
+      "expectedReturn": 7.5
     },
     {
       "team": "Argentina",
       "decimalOdds": 4.5,
       "marketImpliedProbability": 22.2,
-      "modelProbability": 22,
-      "probabilityEdge": -0.2,
-      "expectedReturn": -1
+      "modelProbability": 20.5,
+      "probabilityEdge": -1.7,
+      "expectedReturn": -7.8
     },
     {
       "team": "Norway",
       "decimalOdds": 7,
       "marketImpliedProbability": 14.3,
-      "modelProbability": 5.5,
-      "probabilityEdge": -8.8,
-      "expectedReturn": -61.5
+      "modelProbability": 0,
+      "probabilityEdge": -14.3,
+      "expectedReturn": -100
     },
     {
       "team": "Switzerland",
       "decimalOdds": 30,
       "marketImpliedProbability": 3.3,
-      "modelProbability": 4.9,
-      "probabilityEdge": 1.6,
-      "expectedReturn": 47
+      "modelProbability": 4.4,
+      "probabilityEdge": 1.1,
+      "expectedReturn": 32
     }
   ],
   "valueWatchlist": [
@@ -69,9 +69,9 @@
       "team": "Spain",
       "decimalOdds": 4.25,
       "marketImpliedProbability": 23.5,
-      "modelProbability": 30.6,
-      "probabilityEdge": 7.1,
-      "expectedReturn": 30.1
+      "modelProbability": 29.7,
+      "probabilityEdge": 6.2,
+      "expectedReturn": 26.2
     }
   ],
   "matches": [
@@ -81,9 +81,9 @@
       "name": "Argentina vs Switzerland",
       "startTime": "2026-07-12T01:00:00Z",
       "prices": {
-        "Argentina": 1.5,
-        "Draw": 3.5,
-        "Switzerland": 5.8
+        "Argentina": 1.42,
+        "Draw": 3.7,
+        "Switzerland": 6.5
       }
     },
     {
@@ -92,13 +92,13 @@
       "name": "France vs Spain",
       "startTime": "2026-07-14T19:00:00Z",
       "prices": {
-        "France": 2.1,
+        "France": 2.15,
         "Draw": 3.2,
-        "Spain": 2.9
+        "Spain": 2.8
       }
     }
   ],
   "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-11T23:08:49.414Z",
+  "lastAttemptAt": "2026-07-12T00:09:19.437Z",
   "warning": "Championship Winner market unavailable"
 }
