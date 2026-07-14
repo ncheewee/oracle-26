@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T15:43:55.899Z",
+  "generatedAt": "2026-07-14T19:41:35.914Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -11,7 +11,7 @@
     "totalMatches": 104,
     "completedMatches": 100,
     "remainingMatches": 4,
-    "liveMatches": 0
+    "liveMatches": 1
   },
   "fixtures": [
     {
@@ -2428,9 +2428,9 @@
         "code": "ESP",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
       },
-      "homeScore": null,
-      "awayScore": null,
-      "status": "Scheduled",
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "41'",
       "dateLabel": "Wednesday 15 July 2026",
       "matchDate": "2026-07-15",
       "stage": "Semi-final",
@@ -2481,7 +2481,7 @@
       "status": "Scheduled",
       "dateLabel": "Sunday 19 July 2026",
       "matchDate": "2026-07-19",
-      "stage": "Play-off for third place",
+      "stage": "Bronze final",
       "group": null,
       "venue": "Miami Stadium",
       "city": "Miami"
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-07-14T14:09:50.019Z",
-    "lastAttemptAt": "2026-07-14T15:43:55.898Z",
+    "lastAttemptAt": "2026-07-14T19:41:35.913Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }

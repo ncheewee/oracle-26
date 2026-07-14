@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-12T03:53:17.151Z",
-  "asOf": "2026-07-12",
+  "generatedAt": "2026-07-14T19:42:43.790Z",
+  "asOf": "2026-07-14",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -426,34 +426,6 @@
     }
   ],
   "predictions": [
-    {
-      "fixtureId": "400021541",
-      "matchNumber": 101,
-      "date": "2026-07-15",
-      "home": "France",
-      "away": "Spain",
-      "probabilities": {
-        "home": 36.1,
-        "draw": 24.3,
-        "away": 39.6
-      },
-      "predictedScore": {
-        "home": 1,
-        "away": 1
-      },
-      "expectedGoals": {
-        "home": 1.13,
-        "away": 1.3
-      },
-      "confidence": 39.6,
-      "factors": {
-        "ratingDifference": 10,
-        "homeRating": 2111,
-        "awayRating": 2101,
-        "homeMatches": 357,
-        "awayMatches": 350
-      }
-    },
     {
       "fixtureId": "400021540",
       "matchNumber": 102,
