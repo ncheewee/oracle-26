@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T19:41:35.914Z",
+  "generatedAt": "2026-07-14T21:12:57.897Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -9,9 +9,9 @@
   "tournament": {
     "name": "World Cup 2026",
     "totalMatches": 104,
-    "completedMatches": 100,
-    "remainingMatches": 4,
-    "liveMatches": 1
+    "completedMatches": 101,
+    "remainingMatches": 3,
+    "liveMatches": 0
   },
   "fixtures": [
     {
@@ -2429,8 +2429,8 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
       },
       "homeScore": 0,
-      "awayScore": 1,
-      "status": "41'",
+      "awayScore": 2,
+      "status": "FT",
       "dateLabel": "Wednesday 15 July 2026",
       "matchDate": "2026-07-15",
       "stage": "Semi-final",
@@ -2467,9 +2467,9 @@
       "matchNumber": 103,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289291/400021542",
       "home": {
-        "name": "RU101",
-        "code": "RU101",
-        "flag": null
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
       },
       "away": {
         "name": "RU102",
@@ -2491,9 +2491,9 @@
       "matchNumber": 104,
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543",
       "home": {
-        "name": "W101",
-        "code": "W101",
-        "flag": null
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
       },
       "away": {
         "name": "W102",
@@ -3344,7 +3344,7 @@
   "standingsSnapshot": {
     "status": "cached",
     "capturedAt": "2026-07-14T14:09:50.019Z",
-    "lastAttemptAt": "2026-07-14T19:41:35.913Z",
+    "lastAttemptAt": "2026-07-14T21:12:57.896Z",
     "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
   }
 }

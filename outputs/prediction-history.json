@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T03:53:20.351Z",
+  "generatedAt": "2026-07-14T21:14:10.358Z",
   "source": "outputs/tournament-simulation.json",
   "snapshots": [
     {
@@ -7272,6 +7272,77 @@
           "name": "England",
           "champion": 18.7,
           "final": 41.7
+        },
+        {
+          "name": "Brazil",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Colombia",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Netherlands",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Morocco",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Mexico",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Portugal",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Japan",
+          "champion": 0,
+          "final": 0
+        },
+        {
+          "name": "Germany",
+          "champion": 0,
+          "final": 0
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-07-14T21:14:09.998Z",
+      "simulations": 100000,
+      "winner": {
+        "name": "Spain",
+        "champion": 54.7,
+        "final": 100
+      },
+      "teams": [
+        {
+          "name": "Spain",
+          "champion": 54.7,
+          "final": 100
+        },
+        {
+          "name": "Argentina",
+          "champion": 28.3,
+          "final": 58.2
+        },
+        {
+          "name": "England",
+          "champion": 17,
+          "final": 41.8
+        },
+        {
+          "name": "France",
+          "champion": 0,
+          "final": 0
         },
         {
           "name": "Brazil",
