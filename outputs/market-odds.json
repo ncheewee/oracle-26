@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T21:14:30.818Z",
+  "generatedAt": "2026-07-14T22:13:10.004Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -11,59 +11,43 @@
     "url": "https://www.ncpg.org.sg/"
   },
   "outright": {
-    "status": "cached",
-    "capturedAt": "2026-07-14T17:34:16.889Z"
+    "status": "verified",
+    "capturedAt": "2026-07-14T22:13:10.004Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 4.2,
-      "marketImpliedProbability": 23.8,
+      "decimalOdds": 1.6,
+      "marketImpliedProbability": 62.5,
       "modelProbability": 54.7,
-      "probabilityEdge": 30.9,
-      "expectedReturn": 129.7
-    },
-    {
-      "team": "France",
-      "decimalOdds": 2.2,
-      "marketImpliedProbability": 45.5,
-      "modelProbability": 0,
-      "probabilityEdge": -45.5,
-      "expectedReturn": -100
+      "probabilityEdge": -7.8,
+      "expectedReturn": -12.5
     },
     {
       "team": "England",
-      "decimalOdds": 4.3,
-      "marketImpliedProbability": 23.3,
+      "decimalOdds": 3.8,
+      "marketImpliedProbability": 26.3,
       "modelProbability": 17,
-      "probabilityEdge": -6.3,
-      "expectedReturn": -26.9
+      "probabilityEdge": -9.3,
+      "expectedReturn": -35.4
     },
     {
       "team": "Argentina",
-      "decimalOdds": 4.5,
-      "marketImpliedProbability": 22.2,
+      "decimalOdds": 4,
+      "marketImpliedProbability": 25,
       "modelProbability": 28.3,
-      "probabilityEdge": 6.1,
-      "expectedReturn": 27.4
+      "probabilityEdge": 3.3,
+      "expectedReturn": 13.2
     }
   ],
   "valueWatchlist": [
     {
-      "team": "Spain",
-      "decimalOdds": 4.2,
-      "marketImpliedProbability": 23.8,
-      "modelProbability": 54.7,
-      "probabilityEdge": 30.9,
-      "expectedReturn": 129.7
-    },
-    {
       "team": "Argentina",
-      "decimalOdds": 4.5,
-      "marketImpliedProbability": 22.2,
+      "decimalOdds": 4,
+      "marketImpliedProbability": 25,
       "modelProbability": 28.3,
-      "probabilityEdge": 6.1,
-      "expectedReturn": 27.4
+      "probabilityEdge": 3.3,
+      "expectedReturn": 13.2
     }
   ],
   "matches": [
@@ -73,13 +57,10 @@
       "name": "England vs Argentina",
       "startTime": "2026-07-15T19:00:00Z",
       "prices": {
-        "England": 2.55,
-        "Draw": 2.65,
+        "England": 2.5,
+        "Draw": 2.7,
         "Argentina": 2.8
       }
     }
-  ],
-  "refreshStatus": "market_unavailable_using_cached_snapshot",
-  "lastAttemptAt": "2026-07-14T21:14:30.817Z",
-  "warning": "Championship Winner market unavailable"
+  ]
 }
