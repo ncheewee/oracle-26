@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T22:13:10.004Z",
+  "generatedAt": "2026-07-14T23:12:04.277Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,7 +12,7 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-14T22:13:10.004Z"
+    "capturedAt": "2026-07-14T23:12:04.277Z"
   },
   "championship": [
     {
@@ -57,9 +57,9 @@
       "name": "England vs Argentina",
       "startTime": "2026-07-15T19:00:00Z",
       "prices": {
-        "England": 2.5,
+        "England": 2.45,
         "Draw": 2.7,
-        "Argentina": 2.8
+        "Argentina": 2.9
       }
     }
   ]
