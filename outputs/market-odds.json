@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T17:37:57.884Z",
+  "generatedAt": "2026-07-16T06:31:28.317Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,54 +12,48 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-15T17:37:57.885Z"
+    "capturedAt": "2026-07-16T06:31:28.317Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 1.65,
-      "marketImpliedProbability": 60.6,
-      "modelProbability": 54.7,
-      "probabilityEdge": -5.9,
-      "expectedReturn": -9.7
-    },
-    {
-      "team": "England",
-      "decimalOdds": 3.6,
-      "marketImpliedProbability": 27.8,
-      "modelProbability": 17,
-      "probabilityEdge": -10.8,
-      "expectedReturn": -38.8
+      "decimalOdds": 1.55,
+      "marketImpliedProbability": 64.5,
+      "modelProbability": 51.4,
+      "probabilityEdge": -13.1,
+      "expectedReturn": -20.3
     },
     {
       "team": "Argentina",
-      "decimalOdds": 4,
-      "marketImpliedProbability": 25,
-      "modelProbability": 28.3,
-      "probabilityEdge": 3.3,
-      "expectedReturn": 13.2
+      "decimalOdds": 2.2,
+      "marketImpliedProbability": 45.5,
+      "modelProbability": 48.6,
+      "probabilityEdge": 3.1,
+      "expectedReturn": 6.9
     }
   ],
-  "valueWatchlist": [
-    {
-      "team": "Argentina",
-      "decimalOdds": 4,
-      "marketImpliedProbability": 25,
-      "modelProbability": 28.3,
-      "probabilityEdge": 3.3,
-      "expectedReturn": 13.2
-    }
-  ],
+  "valueWatchlist": [],
   "matches": [
     {
-      "eventId": "140364",
+      "eventId": "140425",
       "eventNumber": null,
-      "name": "England vs Argentina",
-      "startTime": "2026-07-15T19:00:00Z",
+      "name": "France vs England",
+      "startTime": "2026-07-18T21:00:00Z",
       "prices": {
-        "England": 2.4,
-        "Draw": 2.85,
-        "Argentina": 2.75
+        "France": 1.87,
+        "Draw": 3.4,
+        "England": 3.2
+      }
+    },
+    {
+      "eventId": "140427",
+      "eventNumber": null,
+      "name": "Spain vs Argentina",
+      "startTime": "2026-07-19T19:00:00Z",
+      "prices": {
+        "Spain": 2.25,
+        "Draw": 2.95,
+        "Argentina": 2.85
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-14T21:14:07.278Z",
-  "asOf": "2026-07-14",
+  "generatedAt": "2026-07-16T06:31:02.901Z",
+  "asOf": "2026-07-16",
   "status": "baseline_validated",
   "model": {
     "name": "Elo-Poisson Ensemble v1",
@@ -16,7 +16,7 @@
     "license": "CC0-1.0",
     "rows": 49477,
     "caveat": "Community-compiled dataset cross-referenced from multiple football sources.",
-    "liveTournamentResults": 101
+    "liveTournamentResults": 102
   },
   "performance": {
     "matches": 4568,
@@ -32,28 +32,28 @@
     "calibration": true
   },
   "provisionalFavorite": {
-    "name": "Spain",
-    "rating": 2131,
-    "attack": 2.24,
-    "defence": 0.49,
-    "matches": 351,
+    "name": "Argentina",
+    "rating": 2147,
+    "attack": 2.53,
+    "defence": 0.64,
+    "matches": 350,
     "rank": 1
   },
   "contenders": [
+    {
+      "name": "Argentina",
+      "rating": 2147,
+      "attack": 2.53,
+      "defence": 0.64,
+      "matches": 350,
+      "rank": 1
+    },
     {
       "name": "Spain",
       "rating": 2131,
       "attack": 2.24,
       "defence": 0.49,
       "matches": 351,
-      "rank": 1
-    },
-    {
-      "name": "Argentina",
-      "rating": 2131,
-      "attack": 2.57,
-      "defence": 0.61,
-      "matches": 349,
       "rank": 2
     },
     {
@@ -66,10 +66,10 @@
     },
     {
       "name": "England",
-      "rating": 2051,
-      "attack": 2.23,
-      "defence": 0.74,
-      "matches": 325,
+      "rating": 2035,
+      "attack": 2.13,
+      "defence": 0.84,
+      "matches": 326,
       "rank": 4
     },
     {
@@ -427,31 +427,59 @@
   ],
   "predictions": [
     {
-      "fixtureId": "400021540",
-      "matchNumber": 102,
-      "date": "2026-07-16",
-      "home": "England",
-      "away": "Argentina",
+      "fixtureId": "400021542",
+      "matchNumber": 103,
+      "date": "2026-07-19",
+      "home": "France",
+      "away": "England",
       "probabilities": {
-        "home": 29,
-        "draw": 20.7,
-        "away": 50.3
+        "home": 43.8,
+        "draw": 21.8,
+        "away": 34.4
       },
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.17,
-        "away": 1.38
+        "home": 1.37,
+        "away": 1.34
       },
-      "confidence": 50.3,
+      "confidence": 43.8,
       "factors": {
-        "ratingDifference": -80,
-        "homeRating": 2051,
-        "awayRating": 2131,
-        "homeMatches": 325,
-        "awayMatches": 349
+        "ratingDifference": 46,
+        "homeRating": 2081,
+        "awayRating": 2035,
+        "homeMatches": 358,
+        "awayMatches": 326
+      }
+    },
+    {
+      "fixtureId": "400021543",
+      "matchNumber": 104,
+      "date": "2026-07-20",
+      "home": "Spain",
+      "away": "Argentina",
+      "probabilities": {
+        "home": 37.6,
+        "draw": 24.5,
+        "away": 37.8
+      },
+      "predictedScore": {
+        "home": 1,
+        "away": 1
+      },
+      "expectedGoals": {
+        "home": 1.2,
+        "away": 1.11
+      },
+      "confidence": 37.8,
+      "factors": {
+        "ratingDifference": -16,
+        "homeRating": 2131,
+        "awayRating": 2147,
+        "homeMatches": 351,
+        "awayMatches": 350
       }
     }
   ]
