@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T14:19:53.712Z",
+  "generatedAt": "2026-07-16T16:40:54.511Z",
   "source": {
     "name": "Singapore Pools",
     "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
@@ -12,24 +12,24 @@
   },
   "outright": {
     "status": "verified",
-    "capturedAt": "2026-07-16T14:19:53.712Z"
+    "capturedAt": "2026-07-16T16:40:54.511Z"
   },
   "championship": [
     {
       "team": "Spain",
-      "decimalOdds": 1.55,
-      "marketImpliedProbability": 64.5,
+      "decimalOdds": 1.6,
+      "marketImpliedProbability": 62.5,
       "modelProbability": 51.4,
-      "probabilityEdge": -13.1,
-      "expectedReturn": -20.3
+      "probabilityEdge": -11.1,
+      "expectedReturn": -17.8
     },
     {
       "team": "Argentina",
-      "decimalOdds": 2.2,
-      "marketImpliedProbability": 45.5,
+      "decimalOdds": 2.1,
+      "marketImpliedProbability": 47.6,
       "modelProbability": 48.6,
-      "probabilityEdge": 3.1,
-      "expectedReturn": 6.9
+      "probabilityEdge": 1,
+      "expectedReturn": 2.1
     }
   ],
   "valueWatchlist": [],
@@ -42,7 +42,7 @@
       "prices": {
         "France": 1.77,
         "Draw": 3.6,
-        "England": 3.5
+        "England": 3.4
       }
     },
     {
@@ -52,8 +52,8 @@
       "startTime": "2026-07-19T19:00:00Z",
       "prices": {
         "Spain": 2.2,
-        "Draw": 2.95,
-        "Argentina": 2.9
+        "Draw": 3,
+        "Argentina": 2.85
       }
     }
   ]
