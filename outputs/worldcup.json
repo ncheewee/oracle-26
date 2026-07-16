@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T16:39:26.310Z",
+  "generatedAt": "2026-07-16T23:09:17.937Z",
   "source": {
     "name": "FIFA",
     "tournamentUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
@@ -3342,9 +3342,7 @@
     }
   ],
   "standingsSnapshot": {
-    "status": "cached",
-    "capturedAt": "2026-07-16T14:18:20.435Z",
-    "lastAttemptAt": "2026-07-16T16:39:26.310Z",
-    "warning": "FIFA standings unavailable after 3 attempts: locator.waitFor: Timeout 10000ms exceeded. Call log: - waiting for locator('table').first()"
+    "status": "verified",
+    "capturedAt": "2026-07-16T23:09:17.937Z"
   }
 }
