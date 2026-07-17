@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T11:39:24.849Z",
+  "generatedAt": "2026-07-17T15:35:53.539Z",
   "summary": {
     "verified": 33,
     "derivable": 7,
@@ -43,7 +43,7 @@
       "source": "FIFA rendered fixtures",
       "detail": "Observed label: Match Fixtures",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "results",
@@ -51,7 +51,7 @@
       "source": "FIFA rendered fixtures",
       "detail": "Observed label: FT",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "kickoff",
@@ -59,7 +59,7 @@
       "source": "FIFA rendered fixtures",
       "detail": "Observed label: Match Time",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "stage",
@@ -67,7 +67,7 @@
       "source": "FIFA rendered fixtures",
       "detail": "Observed label: First Stage",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "group",
@@ -75,7 +75,7 @@
       "source": "FIFA rendered fixtures",
       "detail": "Observed label: Group",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "venue",
@@ -83,7 +83,7 @@
       "source": "FIFA rendered fixtures",
       "detail": "Observed label: Stadium",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "standings",
@@ -91,7 +91,7 @@
       "source": "FIFA rendered standings",
       "detail": "Checked standings table labels",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "official_ranking",
@@ -99,7 +99,7 @@
       "source": "FIFA ranking",
       "detail": "Last official update: 11 June 2026",
       "url": "https://inside.fifa.com/fifa-world-ranking/men",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "lineups",
@@ -107,7 +107,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "events",
@@ -115,7 +115,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "possession",
@@ -123,7 +123,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "goals",
@@ -131,7 +131,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "attempts",
@@ -139,7 +139,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "shots_on_target",
@@ -147,7 +147,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "final_third_entries",
@@ -155,7 +155,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "offers_to_receive",
@@ -163,7 +163,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "line_breaks",
@@ -171,7 +171,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "cards",
@@ -179,7 +179,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "fouls",
@@ -187,7 +187,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "offsides",
@@ -195,7 +195,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "passes",
@@ -203,7 +203,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "crosses",
@@ -211,7 +211,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "corners",
@@ -219,7 +219,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "free_kicks",
@@ -227,7 +227,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "forced_turnovers",
@@ -235,7 +235,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "pressing",
@@ -243,7 +243,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "player_distance",
@@ -251,7 +251,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "player_speed",
@@ -259,7 +259,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "player_sprints",
@@ -267,7 +267,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "recent_form",
@@ -275,7 +275,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "head_to_head",
@@ -283,7 +283,7 @@
       "source": "FIFA rendered match centre",
       "detail": "Observed in 5/5 sampled matches",
       "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021443",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "squad",
@@ -291,7 +291,7 @@
       "source": "FIFA team pages",
       "detail": "2 team links observed on sampled match page",
       "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/canada",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "fifa_reuse_permission",
@@ -299,7 +299,7 @@
       "source": "FIFA Terms of Service",
       "detail": "Terms restrict content reuse; legal review or written permission remains advisable",
       "url": "https://www.fifa.com/terms-of-service",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "historical_event_training_data",
@@ -307,7 +307,7 @@
       "source": "StatsBomb Open Data",
       "detail": "11 World Cup competition-season records found",
       "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "weather",
@@ -315,7 +315,7 @@
       "source": "Open-Meteo",
       "detail": "HTTP 200; venue coordinates must be mapped",
       "url": "https://api.open-meteo.com/v1/forecast?latitude=19.4326&longitude=-99.1332&current=temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "backup_fixtures",
@@ -323,7 +323,7 @@
       "source": "football-data.org",
       "detail": "HTTP 403; API token may be required",
       "url": "https://api.football-data.org/v4/competitions/WC",
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "injuries",
@@ -331,7 +331,7 @@
       "source": "Current audited sources",
       "detail": "Not consistently structured across all teams and matches",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "player_availability",
@@ -339,7 +339,7 @@
       "source": "Current audited sources",
       "detail": "Not consistently structured across all teams and matches",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "expected_goals",
@@ -347,7 +347,7 @@
       "source": "Current audited sources",
       "detail": "Not consistently structured across all teams and matches",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "market_consensus",
@@ -355,7 +355,7 @@
       "source": "Licensed odds provider required",
       "detail": "Excluded from initial public build",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "attack_rating",
@@ -363,7 +363,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "defence_rating",
@@ -371,7 +371,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "form_rating",
@@ -379,7 +379,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "match_probabilities",
@@ -387,7 +387,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "predicted_score",
@@ -395,7 +395,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "tournament_win_probability",
@@ -403,7 +403,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     },
     {
       "field": "model_confidence",
@@ -411,7 +411,7 @@
       "source": "ORACLE 26 model",
       "detail": "Computed only from validated inputs and labelled as a model estimate",
       "url": null,
-      "observedAt": "2026-07-17T11:39:24.849Z"
+      "observedAt": "2026-07-17T15:35:53.539Z"
     }
   ]
 }
